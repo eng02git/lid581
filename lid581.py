@@ -45,7 +45,7 @@ st.set_page_config(
 				#Configurando acesso ao firebase
 ######################################################################################################
 
-st.write('teste')
+st.write('teste 3' )
 
 # Pega as configurações do banco do segredo
 key_dict = json.loads(st.secrets["textkey"])
