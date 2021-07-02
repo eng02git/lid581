@@ -344,7 +344,7 @@ def Liner_semanal():
 	with st.form('Form'):
     
 		# Define a organização das colunas
-		I0, I1 = st.beta_columns(2)
+		I0, I1, I2 = st.beta_columns([4,2,2])
 		T00, Q00, C00 = st.beta_columns([3,1,3])
 		T01, Q01, C01 = st.beta_columns([3,1,3])
 		T02, Q02, C02 = st.beta_columns([3,1,3])
@@ -364,13 +364,14 @@ def Liner_semanal():
 		T05.info('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
 		T06.info('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
 		T07.info('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
-		T08.info('Limpeza na calha de rejeito das  correias transportadoras: \n1-Limpeza utilizando pano umedecido com álcool isopropílico.')
+		T08.info('Limpeza na calha de rejeito das  correias transportadoras: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
 			
 		respostas = ['NOK', 'OK']
 
 		# Questões
 		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
 		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
 		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
 		dic['C00'] = C00.text_input('Comentário item 0:', "")
 		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
@@ -393,7 +394,19 @@ def Liner_semanal():
 		
 	# Envio do formulário
 	if submitted:
-		pass
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+				
 				
 ######################################################################################################
                                            #Main
