@@ -354,6 +354,10 @@ def Liner_semanal():
 		st14, st15 = st.beta_columns(2)
 		st16, st17 = st.beta_columns(2)
 		
+		st.warning('teste')
+		st.info('teste')
+		st.success('teste')
+		
 		t0.write('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
 
 		respostas = ['NOK', 'OK']
