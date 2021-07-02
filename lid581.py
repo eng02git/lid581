@@ -354,25 +354,25 @@ def Liner_diario():
 		
 def Liner_diario_proc():
 	with st.beta_expander('Pontos'):
-		st.image('liner_diario/Pontos diaria liner.jpg', width=1000)
+		st.image('liner_diario/Pontos diaria liner.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('liner_diario/folha1.jpg')
 				
 	with st.beta_expander('Procedimentos folha 2'):
-		st.image('liner_diario/folha2.jpg', width=1000)
+		st.image('liner_diario/folha2.jpg')
 				
 	with st.beta_expander('Procedimentos folha 3'):
-		st.image('liner_diario/folha3.jpg', width=1000)
+		st.image('liner_diario/folha3.jpg')
 				
 	with st.beta_expander('Procedimentos folha 4'):
-		st.image('liner_diario/folha4.jpg', width=1000)
+		st.image('liner_diario/folha4.jpg')
 				
 	with st.beta_expander('Procedimentos folha 5'):
-		st.image('liner_diario/folha5.jpg', width=1000)
+		st.image('liner_diario/folha5.jpg')
 				
 	with st.beta_expander('Procedimentos folha 6'):
-		st.image('liner_diario/folha6.jpg', width=1000)
+		st.image('liner_diario/folha6.jpg')
 				
 
 ######################################################################################################
