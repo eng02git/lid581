@@ -419,7 +419,7 @@ def Liner_semanal():
 
 if __name__ == '__main__':
 	# Carrega dados do firebase
-	usuarios_fb = load_usuarios()
+	#usuarios_fb = load_usuarios()
 
 	# Constantes
 	turnos = ['Turno A', 'Turno B', 'Turno C']
