@@ -393,8 +393,7 @@ def Liner_semanal():
 		
 	# Envio do formulário
 	if submitted:
-		pass
-	'''
+
 		# Limpa cache
 		caching.clear_cache()
 		
@@ -412,7 +411,7 @@ def Liner_semanal():
 
 		# Armazena 5-Poruqes no banco
 		doc_ref = db.collection("Liner_diario").document(val_documento)
-		doc_ref.set(new_d) '''
+		doc_ref.set(new_d)
 		
 				
 ######################################################################################################
