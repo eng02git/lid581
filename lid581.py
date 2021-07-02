@@ -345,7 +345,7 @@ def Liner_semanal():
     
 		# Define a organização das colunas
 		st0, st1 = st.beta_columns(2)
-		t0, st2, st3 = st.beta_columns(3,1,3)
+		t0, st2, st3 = st.beta_columns([3,1,3])
 		st4, st5 = st.beta_columns(2)
 		st6, st7 = st.beta_columns(2)
 		st8, st9 = st.beta_columns(2)
