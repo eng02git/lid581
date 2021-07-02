@@ -47,11 +47,12 @@ st.set_page_config(
 
 # Pega as configurações do banco do segredo
 #key_dict = json.loads(st.secrets["textkey"])
-key_dict = ''
-creds = service_account.Credentials.from_service_account_info(key_dict)
+#key_dict = ''
+#creds = service_account.Credentials.from_service_account_info(key_dict)
 
 # Seleciona o projeto
-db = firestore.Client(credentials=creds, project="lid-forms")
+db =  ''
+#firestore.Client(credentials=creds, project="lid-forms")
 
 # Link do arquivo com os dados
 DATA_URL = "data.csv"
