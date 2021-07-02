@@ -353,6 +353,7 @@ def Liner_semanal():
 		T05, Q05, C05 = st.beta_columns([3,1,3])
 		T06, Q06, C06 = st.beta_columns([3,1,3])
 		T07, Q07, C07 = st.beta_columns([3,1,3])
+		T08, Q08, C08 = st.beta_columns([3,1,3])
 		
 		# Texto das questões
 		T00.info('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
@@ -363,6 +364,7 @@ def Liner_semanal():
 		T05.info('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
 		T06.info('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
 		T07.info('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
+		T08.info('Limpeza na calha de rejeito das  correias transportadoras: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
 			
 		respostas = ['NOK', 'OK']
 
@@ -385,6 +387,8 @@ def Liner_semanal():
 		dic['C06'] = C06.text_input('Comentário item 6:', "")
 		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
 		dic['C07'] = C07.text_input('Comentário item 7:', "")
+		dic['Q08'] = Q08.selectbox('Item 8:', respostas)
+		dic['C08'] = C08.text_input('Comentário item 8:', "")
 		submitted = st.form_submit_button('Enviar formulário')
 		
 	# Envio do formulário
