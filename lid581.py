@@ -373,7 +373,158 @@ def Liner_diario_proc():
 				
 	with st.beta_expander('Procedimentos folha 6'):
 		st.image('liner_diario/folha6.jpg')
+		
+def Liner_semanal():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T07, Q07, C07 = st.beta_columns([3,1,3])
+		T08, Q08, C08 = st.beta_columns([3,1,3])
+		T09, Q09, C09 = st.beta_columns([3,1,3])
+		T10, Q10, C10 = st.beta_columns([3,1,3])
+		T11, Q11, C11 = st.beta_columns([3,1,3])
+		T12, Q12, C12 = st.beta_columns([3,1,3])
+		T13, Q13, C13 = st.beta_columns([3,1,3])
+		T14, Q14, C14 = st.beta_columns([3,1,3])
+		T15, Q15, C15 = st.beta_columns([3,1,3])
+		T16, Q16, C16 = st.beta_columns([3,1,3])
+		T17, Q17, C17 = st.beta_columns([3,1,3])
+		T18, Q18, C18 = st.beta_columns([3,1,3])
+		T19, Q19, C19 = st.beta_columns([3,1,3])
+		T20, Q20, C20 = st.beta_columns([3,1,3])
+		T21, Q21, C21 = st.beta_columns([3,1,3])
+		T22, Q22, C22 = st.beta_columns([3,1,3])
+		
+		# Texto das questões
+		T00.info('Limpeza Conveyor #1 BALN e Pushers 1,2,3,4: 1- Limpar com pano umedecido  e álcool isopropílico.')
+		T01.info('Limpeza Conveyor #2 BA-LN e Pushers 1,2,3,4: 1- Limpar com pano umedecido  e álcool isopropílico.')
+		T02.info('Limpeza Conveyor #3 BA-LN e Pushers 1,2,3,4,5: 1- Limpar com pano umedecido  e álcool isopropílico.')
+		T03.info('Limpeza Conveyor #4 BA-LN e Pushers 1,2,3,4,5: 1- Limpar com pano umedecido  e álcool isopropílico.')
+		T04.info('Limpeza Conveyor #4 BA-LN e Pushers 1,2,3,4,5,6: 1- Limpar com pano umedecido  e álcool isopropílico.')
+		T05.info('Limpeza da esteira de alimentação:  1-Limpar a superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a esteira para detectar possíveis anomalias e desgastes.')
+		T06.info('Desmontagem e limpeza do Downstacker: 1- Limpar o seu interior com o auxílio de um aspirador pneumático, após limpe com um pano umedecido  em álcool isopropílico toda a área aspirada. Inspecionar o equipamento para detectar possíveis anomalias e desgastes.')
+		T07.info('Limpeza da mesa e da Star Wheel: 1- Limpar com pano umedecido em álcool isopropílico toda a superfície da mesa do Lower Turret que ainda não foi limpa, se necessário utilize a haste metálica pontiaguda para retirar compound preso nas juntas ou fissuras  Limpe toda a face da Star Wheel. Limpe as portas/gaiolas de proteção do lado externo e interno.')
+		T08.info('Limpeza da caixa de óleo: 1- Limpar com pano umedecido em álcool isopropílico as laterais do lado de dentro da caixa de gotejamento de óleo. Não é necessário fazer sangria ou limpar o fundo/parte de baixo da caixa.')
+		T09.info('Limpeza da correia transportadora de saída do Liner: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T10.info('Limpeza das guias de descargas: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T11.info('Limpeza da Plate Turrent Suport, Seal Retainer e Lower Chuck: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T12.info('Limpeza dos Hopper: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T13.info('Limpeza na estrutura dos fornos e pisos: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T14.info('Limpeza nas estruturas da máquina: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T15.info('Limpeza nos pushers do mezanino e nos pushers após o Hopper na parte de baixo proximo ao piso: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T16.info('Limpeza da guarda pelo lado interno: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T17.info('Limpeza da Conveyor #1 LN-BB e Pushers 1,2,3,4 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T18.info('Limpeza da Conveyor #2 LN-BB e Pushers 1,2,3,4 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T19.info('Limpeza da Conveyor #3 LN-BB e Pushers 1,2,3,4 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T20.info('Limpeza da Conveyor #4 LN-BB e Pushers 1,2,3 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T21.info('Limpeza da Conveyor #5 LN-BB e Pushers 1,2,3 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+		T22.info('Limpeza do filtro AIRCON painel elétrico, na alimentação de entrada: 1- Utilizar água e pistola de ar.')
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
+		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
+		dic['C07'] = C07.text_input('Comentário item 7:', "")
+		dic['Q08'] = Q08.selectbox('Item 8:', respostas)
+		dic['C08'] = C08.text_input('Comentário item 8:', "")
+		dic['Q09'] = Q08.selectbox('Item 9:', respostas)
+		dic['C09'] = C08.text_input('Comentário item 9:', "")
+		dic['Q10'] = Q08.selectbox('Item 10:', respostas)
+		dic['C10'] = C08.text_input('Comentário item 10:', "")
+		dic['Q11'] = Q08.selectbox('Item 11:', respostas)
+		dic['C11'] = C08.text_input('Comentário item 11:', "")
+		dic['Q12'] = Q08.selectbox('Item 12:', respostas)
+		dic['C12'] = C08.text_input('Comentário item 12:', "")
+		dic['Q13'] = Q08.selectbox('Item 13:', respostas)
+		dic['C13'] = C08.text_input('Comentário item 13:', "")
+		dic['Q14'] = Q08.selectbox('Item 14:', respostas)
+		dic['C14'] = C08.text_input('Comentário item 14:', "")
+		dic['Q15'] = Q08.selectbox('Item 15:', respostas)
+		dic['C15'] = C08.text_input('Comentário item 15:', "")
+		dic['Q16'] = Q08.selectbox('Item 16:', respostas)
+		dic['C16'] = C08.text_input('Comentário item 16:', "")
+		dic['Q17'] = Q08.selectbox('Item 17:', respostas)
+		dic['C17'] = C08.text_input('Comentário item 17:', "")
+		dic['Q18'] = Q08.selectbox('Item 18:', respostas)
+		dic['C18'] = C08.text_input('Comentário item 18:', "")
+		dic['Q19'] = Q08.selectbox('Item 19:', respostas)
+		dic['C19'] = C08.text_input('Comentário item 19:', "")
+		dic['Q20'] = Q08.selectbox('Item 20:', respostas)
+		dic['C20'] = C08.text_input('Comentário item 20:', "")
+		dic['Q21'] = Q08.selectbox('Item 21:', respostas)
+		dic['C21'] = C08.text_input('Comentário item 21:', "")
+		dic['Q22'] = Q08.selectbox('Item 22:', respostas)
+		dic['C22'] = C08.text_input('Comentário item 22:', "")
+        
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena 5-Poruqes no banco
+		doc_ref = db.collection("Liner_semanal").document(val_documento)
+		doc_ref.set(new_d)
+
+		
+def Liner_semanal_proc():
+	with st.beta_expander('Pontos'):
+		st.image('liner_semanal/Pontos semanal liner.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('liner_semanal/folha1.jpg')
 				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('liner_semanal/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('liner_semanal/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('liner_semanal/folha4.jpg')
+				
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('liner_semanal/folha5.jpg')				
 
 ######################################################################################################
                                            #Main
@@ -403,15 +554,18 @@ if __name__ == '__main__':
 	if func_escolhida == 'Liner diário':
 		st.subheader('Liner diário')
 		
-		proc_LD = st.checkbox('Deseja visualizar os procedimentos?')
-		
+		proc_LD = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_LD:
 			Liner_diario_proc()
-		
 		Liner_diario()
 		
 	if func_escolhida == 'Liner semanal':
 		st.subheader('Liner semanal')
+		
+		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_LS:
+			Liner_semanal_proc()
+		Liner_semanal()
 		
 	if func_escolhida == 'Shell diário':
 		st.subheader('Shell diário')
