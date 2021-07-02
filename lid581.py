@@ -89,6 +89,13 @@ func_escolhida = st.sidebar.radio('Selecione o formulário de saída', formulari
 ######################################################################################################
 # Efetua a leitura de todos os documentos presentes no banco e passa para um dataframe pandas
 # Função para carregar os dados do firebase (utiliza cache para agilizar a aplicação)
+
+# FUncionarios LIDS
+@st.cache
+def load_users():
+	users = pd.read_csv("LIDS_nomes.csv")
+	return users
+
 @st.cache
 def load_data():
 	data = pd.read_csv(DATA_URL)
@@ -532,11 +539,11 @@ def Liner_semanal_proc():
 
 if __name__ == '__main__':
 	# Carrega dados do firebase
-	#usuarios_fb = load_usuarios()
+	usuarios = load_users()
 
 	# Constantes
 	turnos = ['Turno A', 'Turno B', 'Turno C']
-	nomes = ['Mario', 'Ivan', 'Camila', 'Gilver', 'Ercílio', 'Thiago']
+	nomes = list(usuarios['nome'])
 
 	# Imagem
 	col1_, col2_, col3_ = st.beta_columns([1,1,1])
