@@ -45,8 +45,6 @@ st.set_page_config(
 				#Configurando acesso ao firebase
 ######################################################################################################
 
-st.write('teste 3' )
-
 # Pega as configurações do banco do segredo
 key_dict = json.loads(st.secrets["textkey"])
 creds = service_account.Credentials.from_service_account_info(key_dict)
@@ -281,42 +279,44 @@ def get_table_download_link(df):
 
 def Liner_diario():
 	
-	with st.form('Form_ins'):
-		st1, st2, st3, st4 = st.beta_columns(4)
-		dic['data'] = st1.date_input('Data da ocorrência')
-		dic['turno'] = st2.selectbox('Selecione o turno', turnos )
-		dic['hora'] = st3.time_input('Selecione o horário')
-		dic['definição do evento'] = st4.selectbox('Definição do Evento', tipos)
-		dic['linha'] = sap_nv2
-		dic['equipamento'] = sp3.selectbox('Selecione o equipamento', equipamentos)
-		dic['gatilho'] = st0.number_input('Gatilho em minutos (mínimo 30 min)', min_value=30)
-		dic['quantidade de ações'] = acoes.number_input('Quantidade de ações geradas', min_value=1, max_value=10)
-		dic['descrição anomalia'] = st.text_input('Descreva a anomalia', "")
-		st4, st5 = st.beta_columns(2)
-		dic['correção'] = st.text_input('Descreva a correção', "")
-		st6, st7 = st.beta_columns(2)
-		dic['pq1'] = st.text_input('1) Por que?', "")
-		dic['pq2'] = st.text_input('2) Por que?', "")
-		dic['pq3'] = st.text_input('3) Por que?', "")
-		dic['pq4'] = st.text_input('4) Por que?', "")
-		dic['pq5'] = st.text_input('5) Por que?', "")
-		dic['tipo de falha'] = st4.multiselect('Selecione o tipo da falha', falhas)
-		dic['falha deterioização'] = st5.multiselect('Selecione o tipo da deterioização (falha)', deterioização)
-		dic['tipo de correção'] = st6.multiselect('Selecione o tipo da correção', falhas)
-		dic['correção deterioização'] = st7.multiselect('Selecione o tipo da deterioização (correção)', deterioização)
-		dic['ações'] = dict_acoes
-		st8, st9 = st.beta_columns(2)
-		dic['notas de manutenção'] = st_tags(label='Notas de manutenção', text='Pressione enter')
-		dic['ordem manutenção'] = st_tags(label='Ordens de manutenção', text='Pressione enter')
-		dic['status'] = 'Pendente'
-		dic['responsável identificação'] = st8.selectbox('Responsável pela identificação',nao_gestores)
-		dic['responsável reparo'] = st9.selectbox('Responsável pela correção',nao_gestores)
-		dic['email responsável'] = st.text_input('E-mail do responsável pelo formulário')
-		dic['gestor'] = st.selectbox('Coordenador', gestores)
-		submitted_ins = st.form_submit_button('Enviar 5 Porquês')
+	with st.form('Form'):
+    
+        # Define a organização das colunas
+		st0, st1 = st.beta_columns(2)
+        st2, st3 = st.beta_columns(2)	
+        st4, st5 = st.beta_columns(2)	
+        st6, st7 = st.beta_columns(2)	
+        st8, st9 = st.beta_columns(2)	
+        st10, st11 = st.beta_columns(2)	
+        st12, st13 = st.beta_columns(2)	
+        st14, st15 = st.beta_columns(2)	
+        st16, st17 = st.beta_columns(2)	
+        
+        respostas = ['NOK', 'OK']
+        
+        # Questões
+		dic['q00'] = st0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['q01'] = st1.selectbox('Selecione o turno', turnos )
+		dic['q02'] = st2.selectbox('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.', respostas)
+		dic['q03'] = st3.text_input('Comentário', "")
+		dic['q04'] = st4.selectbox('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.', respostas)
+		dic['q05'] = st5.text_input('Comentário', "")
+		dic['q06'] = st6.selectbox('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.', respostas)
+		dic['q07'] = st7.text_input('Comentário', "")
+		dic['q08'] = st8.selectbox('Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.', respostas)
+		dic['q09'] = st9.text_input('Comentário', "")
+		dic['q10'] = st10.selectbox('Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
+		dic['q11'] = st11.text_input('Comentário', "")
+		dic['q12'] = st12.selectbox('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
+		dic['q13'] = st13.text_input('Comentário', "")
+		dic['q14'] = st14.selectbox('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
+		dic['q15'] = st15.text_input('Comentário', "")
+		dic['q16'] = st16.selectbox('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.', respostas)
+		dic['q17'] = st17.text_input('Comentário', "")text_input('Comentário', "")
+		submitted = st.form_submit_button('Enviar formulário')
 		
 	# Envio do formulário
-	if submitted_ins:
+	if submitted:
 		# Limpa cache
 		caching.clear_cache()
 		
