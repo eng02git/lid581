@@ -344,7 +344,7 @@ def Liner_semanal():
 	with st.form('Form'):
     
 		# Define a organização das colunas
-		I0, I1, I2 = st.beta_columns([10,2,2])
+		I0, I1, I2 = st.beta_columns([8,3,3])
 		T00, Q00, C00 = st.beta_columns([3,1,3])
 		T01, Q01, C01 = st.beta_columns([3,1,3])
 		T02, Q02, C02 = st.beta_columns([3,1,3])
