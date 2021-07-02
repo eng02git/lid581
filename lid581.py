@@ -281,68 +281,6 @@ def Liner_diario():
 	with st.form('Form'):
     
 		# Define a organização das colunas
-		st0, st1 = st.beta_columns(2)
-		st2, st3 = st.beta_columns(2)
-		st4, st5 = st.beta_columns(2)
-		st6, st7 = st.beta_columns(2)
-		st8, st9 = st.beta_columns(2)
-		st10, st11 = st.beta_columns(2)
-		st12, st13 = st.beta_columns(2)
-		st14, st15 = st.beta_columns(2)
-		st16, st17 = st.beta_columns(2)
-
-		respostas = ['NOK', 'OK']
-
-		# Questões
-		dic['q00'] = st0.selectbox('Nome do colaborador', nomes) #definir nomes
-		dic['q01'] = st1.selectbox('Selecione o turno', turnos )
-		dic['q02'] = st2.selectbox('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q03'] = st3.text_input(f" \n Comentário", "")
-		dic['q04'] = st4.selectbox('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q05'] = st5.text_input('Comentário  ', "")
-		dic['q06'] = st6.selectbox('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q07'] = st7.text_input('Comentário   ', "")
-		dic['q08'] = st8.selectbox('Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q09'] = st9.text_input('Comentário    ', "")
-		dic['q10'] = st10.selectbox('Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q11'] = st11.text_input('Comentário     ', "")
-		dic['q12'] = st12.selectbox('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q13'] = st13.text_input('Comentário      ', "")
-		dic['q14'] = st14.selectbox('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q15'] = st15.text_input('Comentário       ', "")
-		dic['q16'] = st16.selectbox('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q17'] = st17.text_input('Comentário        ', "")
-		submitted = st.form_submit_button('Enviar formulário')
-		
-	# Envio do formulário
-	if submitted:
-		pass
-	'''
-		# Limpa cache
-		caching.clear_cache()
-		
-		# Transforma dados do formulário em um dicionário
-		keys_values = dic.items()
-		new_d = {str(key): str(value) for key, value in keys_values}
-
-		# Verifica campos não preenchidos e os modifica
-		for key, value in new_d.items():
-			if (value == '') or value == '[]':
-				new_d[key] = '-'
-		
-		# Dfine o nome do documento a ser armazenado no banco
-		val_documento = new_d['linha'] + new_d['equipamento'].replace(" ", "") + new_d['data'] + new_d['hora'] 		#posso colocar como data+turno
-
-		# Armazena 5-Poruqes no banco
-		doc_ref = db.collection("5porques_2").document(val_documento)
-		doc_ref.set(new_d)
-	'''
-	
-def Liner_semanal():
-	
-	with st.form('Form'):
-    
-		# Define a organização das colunas
 		I0, I1, I2 = st.beta_columns([8,3,3])
 		T00, Q00, C00 = st.beta_columns([3,1,3])
 		T01, Q01, C01 = st.beta_columns([3,1,3])
@@ -412,8 +350,31 @@ def Liner_semanal():
 		# Armazena 5-Poruqes no banco
 		doc_ref = db.collection("Liner_diario").document(val_documento)
 		doc_ref.set(new_d)
+
 		
+def Liner_diario_proc():
+	with st.beta_expander('Pontos'):
+		st.image('Ambev.jpeg', width=1000)
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('Ambev.jpeg', width=1000)
 				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('Ambev.jpeg', width=1000)
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('Ambev.jpeg', width=1000)
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('Ambev.jpeg', width=1000)
+				
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('Ambev.jpeg', width=1000)
+				
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('Ambev.jpeg', width=1000)
+				
+
 ######################################################################################################
                                            #Main
 ######################################################################################################
@@ -441,11 +402,16 @@ if __name__ == '__main__':
 	
 	if func_escolhida == 'Liner diário':
 		st.subheader('Liner diário')
+		
+		proc_LD = st.checkbox('Deseja visualizar os procedimentos?')
+		
+		if proc_LD:
+			Liner_diario_proc()
+		
 		Liner_diario()
 		
 	if func_escolhida == 'Liner semanal':
 		st.subheader('Liner semanal')
-		Liner_semanal()
 		
 	if func_escolhida == 'Shell diário':
 		st.subheader('Shell diário')
