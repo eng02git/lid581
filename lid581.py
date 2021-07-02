@@ -347,6 +347,7 @@ if __name__ == '__main__':
 
 	# Constantes
 	turnos = ['Turno A', 'Turno B', 'Turno C']
+	nomes = ['Mario', 'Ivan', 'Camila', 'Gilver', 'Ercílio', 'Thiago']
 
 	# Imagem
 	col1_, col2_, col3_ = st.beta_columns([1,1,1])
