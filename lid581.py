@@ -317,6 +317,7 @@ def Liner_diario():
 		
 	# Envio do formulário
 	if submitted:
+		pass
 		# Limpa cache
 		caching.clear_cache()
 		
@@ -329,17 +330,12 @@ def Liner_diario():
 			if (value == '') or value == '[]':
 				new_d[key] = '-'
 		
-		#posso colocar como data+turno
 		# Dfine o nome do documento a ser armazenado no banco
-		val_documento = new_d['linha'] + new_d['equipamento'].replace(" ", "") + new_d['data'] + new_d['hora']
+		val_documento = new_d['linha'] + new_d['equipamento'].replace(" ", "") + new_d['data'] + new_d['hora'] 		#posso colocar como data+turno
 
 		# Armazena 5-Poruqes no banco
 		doc_ref = db.collection("5porques_2").document(val_documento)
 		doc_ref.set(new_d)
-
-		# Envia e-mail para gestor
-		#email_gestor = usuarios_fb[usuarios_fb['Nome'] == new_d['gestor']]['Email']
-		#send_email(str(email_gestor.iloc[0]), 0, val_documento, '', new_d['gatilho'])
 				
 ######################################################################################################
                                            #Main
@@ -367,6 +363,7 @@ if __name__ == '__main__':
 	
 	if func_escolhida == 'Liner diário':
 		st.subheader('Liner diário')
+		Liner_diario()
 		
 	if func_escolhida == 'Liner semanal':
 		st.subheader('Liner semanal')
