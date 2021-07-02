@@ -283,14 +283,14 @@ def Liner_diario():
     
         # Define a organização das colunas
 		st0, st1 = st.beta_columns(2)
-        st2, st3 = st.beta_columns(2)	
-        st4, st5 = st.beta_columns(2)	
-        st6, st7 = st.beta_columns(2)	
-        st8, st9 = st.beta_columns(2)	
-        st10, st11 = st.beta_columns(2)	
-        st12, st13 = st.beta_columns(2)	
-        st14, st15 = st.beta_columns(2)	
-        st16, st17 = st.beta_columns(2)	
+        st2, st3 = st.beta_columns(2)
+        st4, st5 = st.beta_columns(2)
+        st6, st7 = st.beta_columns(2)
+        st8, st9 = st.beta_columns(2)
+        st10, st11 = st.beta_columns(2)
+        st12, st13 = st.beta_columns(2)
+        st14, st15 = st.beta_columns(2)
+        st16, st17 = st.beta_columns(2)
         
         respostas = ['NOK', 'OK']
         
