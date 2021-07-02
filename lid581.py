@@ -312,7 +312,7 @@ def Liner_diario():
 		dic['q14'] = st14.selectbox('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
 		dic['q15'] = st15.text_input('Comentário', "")
 		dic['q16'] = st16.selectbox('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q17'] = st17.text_input('Comentário', "")text_input('Comentário', "")
+		dic['q17'] = st17.text_input('Comentário', "")
 		submitted = st.form_submit_button('Enviar formulário')
 		
 	# Envio do formulário
