@@ -544,8 +544,8 @@ if __name__ == '__main__':
 
 	# Constantes
 	turnos = ['Turno A', 'Turno B', 'Turno C']
-	nomes = ['Turno A', 'Turno B', 'Turno C']
-	#list(usuarios['nome'])
+	#nomes = ['Turno A', 'Turno B', 'Turno C']
+	nomes = list(usuarios['nome'])
 
 	# Imagem
 	col1_, col2_, col3_ = st.beta_columns([1,1,1])
