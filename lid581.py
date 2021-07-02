@@ -298,7 +298,7 @@ def Liner_diario():
 		dic['q00'] = st0.selectbox('Nome do colaborador', nomes) #definir nomes
 		dic['q01'] = st1.selectbox('Selecione o turno', turnos )
 		dic['q02'] = st2.selectbox('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q03'] = st3.text_input(f'\n Comentário ', "")
+		dic['q03'] = st3.text_input(f"\n Comentário", "")
 		dic['q04'] = st4.selectbox('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.', respostas)
 		dic['q05'] = st5.text_input('Comentário  ', "")
 		dic['q06'] = st6.selectbox('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.', respostas)
