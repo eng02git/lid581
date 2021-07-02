@@ -344,43 +344,47 @@ def Liner_semanal():
 	with st.form('Form'):
     
 		# Define a organização das colunas
-		st0, st1 = st.beta_columns(2)
-		t0, st2, st3 = st.beta_columns([3,1,3])
-		st4, st5 = st.beta_columns(2)
-		st6, st7 = st.beta_columns(2)
-		st8, st9 = st.beta_columns(2)
-		st10, st11 = st.beta_columns(2)
-		st12, st13 = st.beta_columns(2)
-		st14, st15 = st.beta_columns(2)
-		st16, st17 = st.beta_columns(2)
+		I0, I1 = st.beta_columns(2)
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T07, Q07, C07 = st.beta_columns([3,1,3])
 		
-		st.warning('teste')
-		st.info('teste')
-		st.success('teste')
-		
-		t0.info('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
-
+		# Texto das questões
+		T00.info('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
+		T01.info('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.')
+		T02.info('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.')
+		T03.info('Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.')
+		T04.info('Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
+		T05.info('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
+		T06.info('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
+		T07.info('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
+			
 		respostas = ['NOK', 'OK']
 
 		# Questões
-		dic['q00'] = st0.selectbox('Nome do colaborador', nomes) #definir nomes
-		dic['q01'] = st1.selectbox('Selecione o turno', turnos )
-		dic['q02'] = st2.selectbox('Q2: ', respostas)
-		dic['q03'] = st3.text_input(f" \n Comentário", "")
-		dic['q04'] = st4.selectbox('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q05'] = st5.text_input('Comentário  ', "")
-		dic['q06'] = st6.selectbox('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q07'] = st7.text_input('Comentário   ', "")
-		dic['q08'] = st8.selectbox('Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.', respostas)
-		dic['q09'] = st9.text_input('Comentário    ', "")
-		dic['q10'] = st10.selectbox('Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q11'] = st11.text_input('Comentário     ', "")
-		dic['q12'] = st12.selectbox('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q13'] = st13.text_input('Comentário      ', "")
-		dic['q14'] = st14.selectbox('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q15'] = st15.text_input('Comentário       ', "")
-		dic['q16'] = st16.selectbox('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.', respostas)
-		dic['q17'] = st17.text_input('Comentário        ', "")
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
+		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
+		dic['C07'] = C07.text_input('Comentário item 7:', "")
 		submitted = st.form_submit_button('Enviar formulário')
 		
 	# Envio do formulário
