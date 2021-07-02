@@ -357,7 +357,7 @@ def Liner_diario_proc():
 		st.image('liner_diario/Pontos diaria liner.jpg', width=1000)
 
 	with st.beta_expander('Procedimentos folha 1'):
-		st.image('liner_diario/folha1.jpg', width=1000)
+		st.image('liner_diario/folha1.jpg')
 				
 	with st.beta_expander('Procedimentos folha 2'):
 		st.image('liner_diario/folha2.jpg', width=1000)
