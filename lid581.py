@@ -364,7 +364,7 @@ def Liner_semanal():
 		T05.info('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
 		T06.info('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
 		T07.info('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
-		T08.info('Limpeza na calha de rejeito das  correias transportadoras: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
+		T08.info('Limpeza na calha de rejeito das  correias transportadoras: \n1-Limpeza utilizando pano umedecido com álcool isopropílico.')
 			
 		respostas = ['NOK', 'OK']
 
