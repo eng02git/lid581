@@ -345,7 +345,7 @@ def Liner_semanal():
     
 		# Define a organização das colunas
 		st0, st1 = st.beta_columns(2)
-		t0, st2, st3 = st.beta_columns(3)
+		t0, st2, st3 = st.beta_columns(3,1,3)
 		st4, st5 = st.beta_columns(2)
 		st6, st7 = st.beta_columns(2)
 		st8, st9 = st.beta_columns(2)
@@ -358,7 +358,7 @@ def Liner_semanal():
 		st.info('teste')
 		st.success('teste')
 		
-		t0.write('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
+		t0.info('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
 
 		respostas = ['NOK', 'OK']
 
