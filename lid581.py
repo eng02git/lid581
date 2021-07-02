@@ -50,8 +50,7 @@ key_dict = json.loads(st.secrets["textkey"])
 creds = service_account.Credentials.from_service_account_info(key_dict)
 
 # Seleciona o projeto
-db = firestore.Client(credentials=creds, project="st-5why")
-doc_ref = db.collection(u'5porques')
+db = firestore.Client(credentials=creds, project="lid-forms")
 
 # Link do arquivo com os dados
 DATA_URL = "data.csv"
@@ -406,7 +405,13 @@ def Liner_semanal():
 			if (value == '') or value == '[]':
 				new_d[key] = '-'
 		
-				
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena 5-Poruqes no banco
+		doc_ref = db.collection("Liner_diario").document(val_documento)
+		doc_ref.set(new_d)
+		
 				
 ######################################################################################################
                                            #Main
