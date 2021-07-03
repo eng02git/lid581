@@ -657,7 +657,7 @@ if __name__ == '__main__':
 	htmlfile = open('teste.html', 'r', encoding='utf-8')
 	source = htmlfile.read()
 	components.html(source.format(image=data_url))
-
+	st.write(source.format(image=data_url))
 	with st.form('form1'):
 		t1, t2, t3 = st.beta_columns([2,10,2])
 		val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
