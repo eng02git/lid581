@@ -645,4 +645,17 @@ if __name__ == '__main__':
 		reset_db = st.button('Atualizar base de dados')
 		if reset_db:
 			caching.clear_cache()
-		
+	
+	with st.form('form1'):
+	t1, t2, t3 = st.beta_columns([2,10,2])
+	val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+	val2 = t1.number_input('asd B:')
+	val3 = t1.number_input('asd C:')
+	with t2:
+		#components.html(source)
+		st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
+	val1 = t3.number_input('asd2 A:')
+	val2 = t3.number_input('asd2 B:')
+	val3 = t3.number_input('asd2 C:')	
+	submit = st.form_submit_button('Alterar valores')
+
