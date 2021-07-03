@@ -647,10 +647,16 @@ if __name__ == '__main__':
 			caching.clear_cache()
 			
 	import streamlit.components.v1 as components
+
+	
+	file_ = open("/home/rzwitch/Desktop/giphy.gif", "rb")
+	contents = file_.read()
+	data_url = base64.b64encode(contents).decode("utf-8")
+	file_.close()
+	
 	htmlfile = open('teste.html', 'r', encoding='utf-8')
 	source = htmlfile.read()
-	components.html(source)
-
+	components.html(source.format(image=data_url))
 
 	with st.form('form1'):
 		t1, t2, t3 = st.beta_columns([2,10,2])
