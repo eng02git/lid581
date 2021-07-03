@@ -358,7 +358,7 @@ def Liner_diario():
 		try:
 			doc_ref = db.collection("Liner_diario").document(val_documento)
 			doc_ref.set(new_d)
-			st.text('Formulário armazenado com sucesso!')
+			st.success('Formulário armazenado com sucesso!')
 		except:
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
