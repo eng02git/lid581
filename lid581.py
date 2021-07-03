@@ -656,7 +656,7 @@ if __name__ == '__main__':
 	
 	htmlfile = open('teste.html', 'r', encoding='utf-8')
 	source = htmlfile.read()
-	components.html(source.format(image=data_url))
+	#components.html(source.format(image=data_url))
 	#st.write(source.format(image=data_url))
 	with st.form('form1'):
 		t1, t2, t3 = st.beta_columns([2,10,2])
@@ -664,7 +664,7 @@ if __name__ == '__main__':
 		val2 = t1.number_input('asd B:')
 		val3 = t1.number_input('asd C:')
 		with t2:
-			components.html(source.format(image=data_url), height=1000)
+			components.html(source.format(image=data_url), height=800)
 			#components.html(source)
 			#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
 		val1 = t3.number_input('asd2 A:')
