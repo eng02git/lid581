@@ -649,7 +649,7 @@ if __name__ == '__main__':
 	import streamlit.components.v1 as components
 
 	
-	file_ = open("/home/rzwitch/Desktop/giphy.gif", "rb")
+	file_ = open("Untitled.png", "rb")
 	contents = file_.read()
 	data_url = base64.b64encode(contents).decode("utf-8")
 	file_.close()
