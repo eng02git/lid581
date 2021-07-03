@@ -354,9 +354,14 @@ def Liner_diario():
 		# Define o nome do documento a ser armazenado no banco
 		val_documento = new_d['I2'] + new_d['I1']
 
-		# Armazena 5-Poruqes no banco
-		doc_ref = db.collection("Liner_diario").document(val_documento)
-		doc_ref.set(new_d)
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("Liner_diario").document(val_documento)
+			doc_ref.set(new_d)
+			st.text('Formulário armazenado com sucesso!')
+			st.balloons()
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!'
 
 		
 def Liner_diario_proc():
@@ -509,7 +514,7 @@ def Liner_semanal():
 		# Define o nome do documento a ser armazenado no banco
 		val_documento = new_d['I2'] + new_d['I1']
 
-		# Armazena 5-Poruqes no banco
+		# Armazena no banco
 		doc_ref = db.collection("Liner_semanal").document(val_documento)
 		doc_ref.set(new_d)
 
