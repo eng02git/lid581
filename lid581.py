@@ -361,7 +361,7 @@ def Liner_diario():
 			st.text('Formulário armazenado com sucesso!')
 			st.balloons()
 		except:
-			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!'
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
 		
 def Liner_diario_proc():
