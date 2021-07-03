@@ -541,6 +541,165 @@ def Liner_semanal_proc():
 	with st.beta_expander('Procedimentos folha 5'):
 		st.image('liner_semanal/folha5.jpg')				
 
+def Shell_diario():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T07, Q07, C07 = st.beta_columns([3,1,3])
+		T08, Q08, C08 = st.beta_columns([3,1,3])
+		T09, Q09, C09 = st.beta_columns([3,1,3])
+		T10, Q10, C10 = st.beta_columns([3,1,3])
+		T11, Q11, C11 = st.beta_columns([3,1,3])
+		T12, Q12, C12 = st.beta_columns([3,1,3])
+		T13, Q13, C13 = st.beta_columns([3,1,3])
+		T14, Q14, C14 = st.beta_columns([3,1,3])
+		T15, Q15, C15 = st.beta_columns([3,1,3])
+		T16, Q16, C16 = st.beta_columns([3,1,3])
+		T17, Q17, C17 = st.beta_columns([3,1,3])
+		T18, Q18, C18 = st.beta_columns([3,1,3])
+		
+		# Texto das questões
+		T00.info('Limpeza Sistema de curlers e sincronizers: 1- Limpeza com uma flanela umedecida em álcool isopropílico das mesas quatro mesas de curlers  e sincronizers removendo o pó de alumínio acumulado sobre os mesmos.')
+		T01.info('Limpeza da parte interna do ferramental: 1- Limpar com uma flanela umedecida em álcool isopropílico todo o perímetro do ferramental, removendo pó de alumínio e pequenas farpas que possam danificar as shells durante a produção. 2-Com uma flanela limpa umedecida em álcool isopropílico, limpar toda a região das hastes dos cilindros da guardas de proteção após a limpeza soprar com o ar comprimido para secar. 3-Inspecionar o upper die verificando a existência de vazamento nos sistemas hidráulico e pneumático. Obs: Executar a limpeza a cada troca de bobina e observar o esqueleto da chapa para identificar possíveis rebarbas no produto.')
+		T02.info('Limpeza dos blowers: 1. Com um flanela umedecida em álcool isopropílico limpar todas as saídas removendo toda sujidade.')
+		T03.info('Cilindro do quick lifit: 1. Verificar quanto a vazamentos de óleo.')
+		T04.info('Unidade de ajuste de pressão (stand de ar): 1. Utilizando tato e audição verificar quanto a vazamentos.')
+		T05.info('Gaiola de esferas das colunas: 1-Verificar a eficiência da lubrificação do conjunto de guias, observando se há uma película fina de oleo e ausência de vazamentos.')
+		T06.info('Limpar o piso: 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
+		T07.info('Limpar área ao redor da prensa: 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
+		T08.info('Limpeza do painel de controle e bancadas: 1-Limpa com pano seco.')
+		T09.info('Limpeza no Balancer "A": 1- Limpeza com uma flanela umedecida em álcool isopropílico.')
+		T10.info('Limpeza da estrutura da máquina. (Acrílicos, Guarda Corpos, Proteções): 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
+		T11.info('Limpeza nas partes acessíveis da prensa: 1- Limpar com uma flanela umedecida em álcool isopropílico todo o perímetro do ferramental, removendo pó de alumínio e pequenas farpas que possam danificar as shells durante a produção. Bloquei ode energia SAM/LOTOTO. Realizar o bloqueio de energia e verificar a eficácia do mesmo.')
+		T12.info('Preparação: Separar e conferir todas as ferramentas, materiais e produtos indicados no item nº 2 do procedimento.')
+		T13.info('Inspeção e limpeza do GFS: Utilizando um pano umedecido com álcool isopropílico, limpe os rolos do acumulador de loop. Após a limpeza, utilizando o tato, passe a mão em torno dos rolos a fim de detectar possíveis ondulações e pequenas protuberâncias nos rolos. Observar também a existência de componentes necessitando de reaperto.')
+		T14.info('Inspeção e limpeza do rolo de alimentação de lâmina: Utilizando um pano umedecido com álcool isopropílico, limpe os rolos do acumulador de loop. Após a limpeza, utilizando o tato, passe a mão em torno dos rolos a fim de detectar possíveis ondulações e pequenas protuberâncias nos rolos. Observar também a existência de componentes necessitando de reaperto.')
+		T15.info('Curler: Bloqueio de energia. Execute o bloquei ode energia conforme o procedimento e em seguida verifique a eficácia do mesmo.')
+		T16.info('Preparação: Preparar os materiais para a limpeza e inspeção.')
+		T17.info('Limpeza dos segmentos do Curler: Utilizando uma haste de latão, retire todas as tampas presas nos segmentos do Curler (se houver). Em seguida, aplique ar comprimido e limpe todos os segmentos com um pano umedecido em álcool isopropílico.')
+		T18.info('Limpeza externa: "Utilizando um pano umedecido em álcool isopropílico, limpe toda a parte externa do Curler como mesa, estrutura externa (com exceção das tampas de acrílico) a fim de remover toda a poeira presente. Para limpar as tampas de acrílico, utilize um pano seco e limpo a fim de remover toda a sujidade existente."')
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
+		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
+		dic['C07'] = C07.text_input('Comentário item 7:', "")
+		dic['Q08'] = Q08.selectbox('Item 8:', respostas)
+		dic['C08'] = C08.text_input('Comentário item 8:', "")
+		dic['Q09'] = Q09.selectbox('Item 9:', respostas)
+		dic['C09'] = C09.text_input('Comentário item 9:', "")
+		dic['Q10'] = Q10.selectbox('Item 10:', respostas)
+		dic['C10'] = C10.text_input('Comentário item 10:', "")
+		dic['Q11'] = Q11.selectbox('Item 11:', respostas)
+		dic['C11'] = C11.text_input('Comentário item 11:', "")
+		dic['Q12'] = Q12.selectbox('Item 12:', respostas)
+		dic['C12'] = C12.text_input('Comentário item 12:', "")
+		dic['Q13'] = Q13.selectbox('Item 13:', respostas)
+		dic['C13'] = C13.text_input('Comentário item 13:', "")
+		dic['Q14'] = Q14.selectbox('Item 14:', respostas)
+		dic['C14'] = C14.text_input('Comentário item 14:', "")
+		dic['Q15'] = Q15.selectbox('Item 15:', respostas)
+		dic['C15'] = C15.text_input('Comentário item 15:', "")
+		dic['Q16'] = Q16.selectbox('Item 16:', respostas)
+		dic['C16'] = C16.text_input('Comentário item 16:', "")
+		dic['Q17'] = Q17.selectbox('Item 17:', respostas)
+		dic['C17'] = C17.text_input('Comentário item 17:', "")
+		dic['Q18'] = Q18.selectbox('Item 18:', respostas)
+		dic['C18'] = C18.text_input('Comentário item 18:', "")
+		
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("Shell_diario").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+
+		
+def Shell_diario_proc():
+	with st.beta_expander('Pontos'):
+		st.image('shell_diario/Pontos diario shell.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('shell_diario/Procedimento de limpeza curler_folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('shell_diario/Procedimento de limpeza curler_folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('shell_diario/Procedimento de limpeza curler_folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria gfs_folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria gfs_folha2.jpg')
+		
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria gfs_folha3.jpg')
+		
+	with st.beta_expander('Procedimentos folha 7'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria gfs_folha3.jpg')
+		
+	with st.beta_expander('Procedimentos folha 8'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria gfs_folha4.jpg')
+		
+	with st.beta_expander('Procedimentos folha 9'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria shell_folha1.jpg')
+	
+	with st.beta_expander('Procedimentos folha 10'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria shell_folha2.jpg')
+		
+	with st.beta_expander('Procedimentos folha 11'):
+		st.image('shell_diario/Procedimento de limpeza e inspeção diaria shell_folha3.jpg')
+		
+		
 ######################################################################################################
                                            #Main
 ######################################################################################################
@@ -585,6 +744,10 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Shell diário':
 		st.subheader('Shell diário')
+		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_LS:
+			Shell_diario_proc()
+		Shell_diario()
 		
 	if func_escolhida == 'Shell semanal':
 		st.subheader('Shell semanal')
