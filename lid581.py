@@ -359,7 +359,6 @@ def Liner_diario():
 			doc_ref = db.collection("Liner_diario").document(val_documento)
 			doc_ref.set(new_d)
 			st.text('Formulário armazenado com sucesso!')
-			st.balloons()
 		except:
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
@@ -515,8 +514,12 @@ def Liner_semanal():
 		val_documento = new_d['I2'] + new_d['I1']
 
 		# Armazena no banco
-		doc_ref = db.collection("Liner_semanal").document(val_documento)
-		doc_ref.set(new_d)
+		try:
+			doc_ref = db.collection("Liner_semanal").document(val_documento)
+			doc_ref.set(new_d)
+			st.text('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
 		
 def Liner_semanal_proc():
