@@ -991,7 +991,7 @@ def balancer_semanal():
 def balancer_semanal_proc():
 
 	with st.beta_expander('Pontos'):
-		st.image('balancer_diario/Pontos diario balancer.jpg')
+		st.image('balancer_semanal/Pontos semanal balancer.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('balancer_semanal/folha1.jpg')
