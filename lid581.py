@@ -1091,7 +1091,7 @@ if __name__ == '__main__':
 		proc_BS = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_BS:
 			balancer_semanal_proc()
-		balancer_diario()
+		balancer_semanal()
 		
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
