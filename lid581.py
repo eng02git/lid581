@@ -843,7 +843,270 @@ def Shell_semanal_proc():
 				
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('shell_semanal/folha4.jpg')
+		
 
+def Autobbager_diario():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		
+		# Texto das questões
+		T00.info('Recolhimento de tampas (Autobagger Área do piso no entorno do equipamento, é área do piso interior do equipamento.): 1- Limpeza utilizando uma vassoura, pá e soprador de ar. Com as mãos, retire as tampas que ficaram presas dentro dos trays do Auto Bagger. Utilize o soprador para retirar as tampas do chão em parte de difícil acesso e logo após deve-se varrer e recolher as tampas utilizando a pá, e colocar no balde de scrap.')
+		T01.info('Proteções e parte externa das máquinas (Área do pallettizer / autobagger): 1- Limpeza com pano umedecido em álcool isopropílico, nas proteções externas da máquina. Inspecionar toda a área se existe alguma anomalia.')
+		T02.info('Limpeza dos filtros (entrada e saída) - Autobagger e Palettizer Unidade de conservação (verificar a numeração em campo): 1- Limpeza de ambos os filtros (filtro de partículas e filtro coalescente) utilizando fluxo de ar e drenagem. Deve-se observar se os mesmos estão saturados, se caso estiver, devem ser trocados..')
+		T03.info('Temperatura do aquecedor (Autobagger Sistema de fechamento do Bag): 1- Realizar o check diário da correta especificação de temperatura.')
+		T04.info('Limpeza de todas as portas e teto da área do Autobagger. (Autobagger): 1- Limpar com pano  umedecido e álcool isopropílico.')
+		T05.info('Limpeza de todas as portas e teto da área do Autobagger: 1- Limpar com pano  umedecido e álcool isopropílico.')
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("Autobagger_diario").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+
+		
+def Autobagger_diario_proc():
+	with st.beta_expander('Pontos'):
+		st.image('Autobagger_diario/Pontos diario autobagger.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('Autobagger_diario/folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('Autobagger_diario/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('Autobagger_diario/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('Autobagger_diario/folha4.jpg')
+
+def Autobbager_semanal():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		
+		# Texto das questões
+		T00.info('Limpeza dos trilhos de transporte das tampas: 1- Limpar os trilhos com pano seco, após a limpeza observar se existem partes soltas ou com folga.')
+		T01.info('Limpar o braço do robô: 1- Limpeza com pano umedecido em álcool isopropílico, nas articulações e espelhos dos sensores. Inspecionar toda a área se existe  alguma anomalia.')
+		T02.info('Limpeza do painel de operação IHM: 1- Limpar com um pano seco toda a interface da IHM')
+		T03.info('Limpeza do sistema de armazenamento / transferência de tampas nas trays: 1- Executar limpeza do excesso de graxa dos rolamentos, mancais, limpeza dos rolos e correntes de transmissão. Limpar mesa de transferência e unidade de conservação.')
+		T04.info('Finalizar a limpeza e colocar a máquina em operação: 1- Após o procedimento de limpeza conferir se não há componentes esquecidos dentro da máquina. Deve-se garantir que não haja ninguém dentro do perímetro de proteção da máquina. Seguir todo o procedimento de partida após intervenção na máquina.')
+		T05.info('Limpeza do filtro AIRCON painel elétrico, na alimentação de entrada: 1- Utilizar pistola de ar.')
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("Autobagger_semanal").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+
+		
+def Autobagger_semanal_proc():
+	with st.beta_expander('Pontos'):
+		st.image('Autobagger_semanal/Pontos semanal autobagger.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('Autobagger_semanal/folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('Autobagger_semanal/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('Autobagger_semanal/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('Autobagger_semanal/folha4.jpg')
+
+def Autobbager_mensal():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		
+		# Texto das questões
+		T00.info('Guia linear (pivot bag tray) - Sistema de empacotamento (autobagger): Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
+		T01.info('Guia linear (bag cheio) - Sistema de empacotamento (auto bagger): Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
+		T02.info('Correia sincronizada (pick and place): Sistema de Alimentação de tampas. Inspeção da correia é realizada com a maquina parada realizando o bloqueio de energia (loto)verificando se possui algum desgaste.')
+		T03.info('Rolos de transmissão: Transporte saída do pallet. Realizar limpeza/inspeção/lubrificação do rolos de transmissão tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio.')
+		T04.info('Corrente (carriage lift) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
+		T05.info('Mancal (carriage lift) Sistema de paletização do pallet: Sera realizado a limpeza do excesso de graxa do rolamento do mancal , inspeção visual do estado do rolamento e lubrificação adequada do mesmo, a atividade é realizada com a maquina parada realizando o bloqueio de energia(loto).')
+		T06.info('Guia linear (Carriage) - Sistema de paletização do pallet: Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
+		T07.info('Corrente transporte (Pallet conveyor) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
+		T08.info('Corrente motora ( Pallet conveyor) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
+		
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
+		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
+		dic['C07'] = C07.text_input('Comentário item 7:', "")
+		dic['Q08'] = Q08.selectbox('Item 8:', respostas)
+		dic['C08'] = C08.text_input('Comentário item 8:', "")
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("Autobagger_mensal").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+
+		
+def Autobagger_mensal_proc():
+	with st.beta_expander('Pontos'):
+		st.image('Autobagger_mensal/Pontos mensal autobagger.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('Autobagger_mensal/folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('Autobagger_mensal/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('Autobagger_mensal/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('Autobagger_mensal/folha4.jpg')
+
+		
 def balancer_diario():
 	
 	with st.form('Form'):
@@ -1063,12 +1326,24 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Autobagger diário':
 		st.subheader('Autobagger diário')
+		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_LS:
+			Autobagger_diario_proc()
+		Autobagger_diario()
 		
 	if func_escolhida == 'Autobagger semanal':
 		st.subheader('Autobagger semanal')
+		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_LS:
+			Autobagger_semanal_proc()
+		Autobagger_semanal()
 		
 	if func_escolhida == 'Autobagger Mensal':
 		st.subheader('Autobagger Mensal')
+		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_LS:
+			Autobagger_mensal_proc()
+		Autobagger_mensal()
 		
 	if func_escolhida == 'Conversion diário':
 		st.subheader('Conversion diário')
