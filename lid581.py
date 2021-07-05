@@ -655,7 +655,7 @@ def Shell_diario():
 
 		# Armazena no banco
 		try:
-			doc_ref = db.collection("Shell_diario").document(val_documento)
+			doc_ref = db.collection("shell_diario").document(val_documento)
 			doc_ref.set(new_d)
 			st.success('Formulário armazenado com sucesso!')
 		except:
@@ -698,6 +698,152 @@ def Shell_diario_proc():
 		
 	with st.beta_expander('Procedimentos folha 11'):
 		st.image('shell_diario/Procedimento de limpeza e inspeção diaria shell_folha3.jpg')
+		
+def shell_semanal():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T07, Q07, C07 = st.beta_columns([3,1,3])
+		T08, Q08, C08 = st.beta_columns([3,1,3])
+		T09, Q09, C09 = st.beta_columns([3,1,3])
+		T10, Q10, C10 = st.beta_columns([3,1,3])
+		T11, Q11, C11 = st.beta_columns([3,1,3])
+		T12, Q12, C12 = st.beta_columns([3,1,3])
+		T13, Q13, C13 = st.beta_columns([3,1,3])
+		T14, Q14, C14 = st.beta_columns([3,1,3])
+		T15, Q15, C15 = st.beta_columns([3,1,3])
+		T16, Q16, C16 = st.beta_columns([3,1,3])
+		T17, Q17, C17 = st.beta_columns([3,1,3])
+		T18, Q18, C18 = st.beta_columns([3,1,3])
+		T19, Q19, C19 = st.beta_columns([3,1,3])
+		T20, Q20, C20 = st.beta_columns([3,1,3])
+
+		
+		# Texto das questões
+		T00.info('Saída de shells para as curlers: 1-Limpar o sistema transporte das shells fazendo movimentos alternados de vai e vem nas 24 saídas de forma a retirar toda sujeira do percurso.')
+		T01.info('Sistema de scrap: 1-Limpar o sistema de scrap verificando sempre se não há nenhum resto de chapa ou shell presa no percurso do sistema.')
+		T02.info('Die set: 1-Remover as striper plate e stock plate; 2-Limpar todo perímetro do lower die e upper die ;3- Limpar a stipper plate e montar as mesmas no lower die; 4- Limpar a stock plate  e montar no upper die.')
+		T03.info('Sistema de vácuo: 1-Limpeza e inspeção das válvulas.')
+		T04.info('Pushers: 1-Descarregar os pushers e com uma flanela umedecida com álcool isopropílico limpar e inspecionar toda a parte interna e externa dos mesmos .')
+		T05.info('Air eject: 1-Checar visualmente as condições do componente, e utilizando o tato e audição para identificar possíveis vazamentos.')
+		T06.info('Limpeza na estrutura da máquina (bases, mangueiras, laterais, acrílicos, bancadas e piso): 1- Limpeza com pano umedecido e álcool isopropílico')
+		T07.info('Limpeza com ar nos segmentos do Curler: 1- Utilizar a pistola de ar.')
+		T08.info('Limpeza nas áreas dos Curlers (curlers, mesas, plataformas e tampas caídas): 1-Limpeza com pano umedecido em álcool isopropílico .')
+		T09.info('Limpeza dos synchronizers (limpar guardas, tampas caídas, hopper, armor start´s e passar escovas no Screws): 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T10.info('Limpar Conveyor #1 SP-BA e Pushers 1,2,3,4 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T11.info('Limpar Conveyor #2 SP-BA e Pushers 1,2,3,4 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T12.info('Limpeza Conveyor #3 SP-BA e Pushers 1,2,3,4,5 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T13.info('Limpeza Conveyor #4 SP-BA e Pushers 1,2,3,4,5 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T14.info('Limpeza Conveyor #5 SP-BA e Pushers 1,2,3 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T15.info('Limpeza Conveyor #6 SP-BA e Pushers 1,2,3 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T16.info('Limpeza Conveyor #7 SP-BA e Pushers 1,2 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T17.info('Limpeza Conveyor #8 SP-BA e Pushers 1,2 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+		T18.info('GFS Bloqueio de energia: Execute o bloqueio de energia conforme o padrão e testar a eficácia do mesmo. Preparar os materiais conforme a necessidade.')
+		T19.info('Limpeza parte externa da máquina: Limpar parte externa do equipamento utilizando pano umedecido com álcool isopropílico.')
+		T20.info('Unidade de conservação de Ar: Drenar a água do filtro da linha pneumática.')
+
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
+		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
+		dic['C07'] = C07.text_input('Comentário item 7:', "")
+		dic['Q08'] = Q08.selectbox('Item 8:', respostas)
+		dic['C08'] = C08.text_input('Comentário item 8:', "")
+		dic['Q09'] = Q09.selectbox('Item 9:', respostas)
+		dic['C09'] = C09.text_input('Comentário item 9:', "")
+		dic['Q10'] = Q10.selectbox('Item 10:', respostas)
+		dic['C10'] = C10.text_input('Comentário item 10:', "")
+		dic['Q11'] = Q11.selectbox('Item 11:', respostas)
+		dic['C11'] = C11.text_input('Comentário item 11:', "")
+		dic['Q12'] = Q12.selectbox('Item 12:', respostas)
+		dic['C12'] = C12.text_input('Comentário item 12:', "")
+		dic['Q13'] = Q13.selectbox('Item 13:', respostas)
+		dic['C13'] = C13.text_input('Comentário item 13:', "")
+		dic['Q14'] = Q14.selectbox('Item 14:', respostas)
+		dic['C14'] = C14.text_input('Comentário item 14:', "")
+		dic['Q15'] = Q15.selectbox('Item 15:', respostas)
+		dic['C15'] = C15.text_input('Comentário item 15:', "")
+		dic['Q16'] = Q16.selectbox('Item 16:', respostas)
+		dic['C16'] = C16.text_input('Comentário item 16:', "")
+		dic['Q17'] = Q17.selectbox('Item 17:', respostas)
+		dic['C17'] = C17.text_input('Comentário item 17:', "")
+		dic['Q18'] = Q18.selectbox('Item 18:', respostas)
+		dic['C18'] = C18.text_input('Comentário item 18:', "")
+		dic['Q19'] = Q19.selectbox('Item 19:', respostas)
+		dic['C19'] = C19.text_input('Comentário item 19:', "")
+		dic['Q20'] = Q20.selectbox('Item 20:', respostas)
+		dic['C20'] = C20.text_input('Comentário item 20:', "")
+		
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("shell_semanal").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+
+		
+def shell_semanal_proc():
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('shell_semanal/folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('shell_semanal/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('shell_semanal/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('shell_semanal/folha4.jpg')
+
 		
 		
 ######################################################################################################
