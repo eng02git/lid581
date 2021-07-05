@@ -1149,7 +1149,7 @@ if __name__ == '__main__':
 		val2 = t1.number_input('asd B:')
 		val3 = t1.number_input('asd C:')
 		with t2:
-			components.html(source.format(image=data_url, index_html=index_html), height=950)
+			components.html(source.format(image=data_url, teste=0.15878), height=950)
 			#components.html(source)
 			#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
 		val1 = t3.number_input('asd2 A:')
