@@ -844,7 +844,7 @@ def Shell_semanal_proc():
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('shell_semanal/folha4.jpg')
 
-def balancer_semanal():
+def balancer_diario():
 	
 	with st.form('Form'):
     
