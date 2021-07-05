@@ -901,7 +901,7 @@ def balancer_semanal():
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
 		
-def balancer_semanal_proc():
+def balancer_diario_proc():
 
 	with st.beta_expander('Pontos'):
 		st.image('balancer_diario/Pontos diario balancer.jpg')
@@ -1090,7 +1090,7 @@ if __name__ == '__main__':
 		st.subheader('Balancer semanal')
 		proc_BS = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_BS:
-			balancer_diario_proc()
+			balancer_semanal_proc()
 		balancer_diario()
 		
 	if func_escolhida == 'Estatisticas':
