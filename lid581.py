@@ -699,7 +699,7 @@ def Shell_diario_proc():
 	with st.beta_expander('Procedimentos folha 11'):
 		st.image('shell_diario/Procedimento de limpeza e inspeção diaria shell_folha3.jpg')
 		
-def shell_semanal():
+def Shell_semanal():
 	
 	with st.form('Form'):
     
@@ -830,7 +830,7 @@ def shell_semanal():
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
 		
-def shell_semanal_proc():
+def Shell_semanal_proc():
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('shell_semanal/folha1.jpg')
@@ -890,13 +890,17 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Shell diário':
 		st.subheader('Shell diário')
-		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
-		if proc_LS:
+		proc_SD = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_SD:
 			Shell_diario_proc()
 		Shell_diario()
 		
 	if func_escolhida == 'Shell semanal':
 		st.subheader('Shell semanal')
+		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_LS:
+			Shell_semanal_proc()
+		Shell_semanal()
 		
 	if func_escolhida == 'Autobagger diário':
 		st.subheader('Autobagger diário')
