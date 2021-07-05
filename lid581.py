@@ -1134,9 +1134,9 @@ if __name__ == '__main__':
 	data_url = base64.b64encode(contents).decode("utf-8")
 	file_.close()
 	
-	file_ = open("index.html", "rb")
-	contents = file_.read()
-	index_html = base64.b64encode(contents).decode("utf-8")
+	file_ = open("index.html", "r")
+	index_html = file_.read()
+	#index_html = base64.b64encode(contents).decode("utf-8")
 	file_.close()
 	
 	htmlfile = open('teste.html', 'r', encoding='utf-8')
