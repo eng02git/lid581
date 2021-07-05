@@ -894,7 +894,7 @@ def balancer_diario():
 
 		# Armazena no banco
 		try:
-			doc_ref = db.collection("balancer_semanal").document(val_documento)
+			doc_ref = db.collection("balancer_diario").document(val_documento)
 			doc_ref.set(new_d)
 			st.success('Formulário armazenado com sucesso!')
 		except:
