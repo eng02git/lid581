@@ -1155,5 +1155,5 @@ if __name__ == '__main__':
 		val1 = t3.number_input('asd2 A:')
 		val2 = t3.number_input('asd2 B:')
 		val3 = t3.number_input('asd2 C:')	
-		submit = st.form_submit_button('Alterar valores')
+		submit = t1.form_submit_button('Alterar valores')
 
