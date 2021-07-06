@@ -1493,9 +1493,9 @@ if __name__ == '__main__':
 					      
 				
 				df_teste = pd.DataFrame.from_dict(teste_dados, orient='index')
-				df_teste2 = pd.DataFrame.from_dict(teste_dados, orient='columns')
+				#df_teste2 = pd.DataFrame.from_dict(teste_dados, orient='columns')
 				st.write(df_teste)
-				st.write(df_teste2)
+				#st.write(df_teste2)
 				#AgGrid(df_teste2)
 				
 				submit = t2.form_submit_button('Alterar valores')
