@@ -1492,7 +1492,7 @@ if __name__ == '__main__':
 					      }
 				
 				df_teste = pd.DataFrame.from_dict(teste_dados, orient='index')
-				df_teste2 = pd.DataFrame.from_dict(teste_dados)
+				df_teste2 = pd.DataFrame.from_dict(teste_dados, orient='index', columns=['A'])
 				st.write(df_teste2)
 				AgGrid(df_teste2)
 				
