@@ -915,19 +915,19 @@ def Autobbager_diario():
 		
 def Autobagger_diario_proc():
 	with st.beta_expander('Pontos'):
-		st.image('Autobagger_diario/Pontos diario autobagger.jpg')
+		st.image('autobagger_diario/Pontos diario autobagger.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
-		st.image('Autobagger_diario/folha1.jpg')
+		st.image('autobagger_diario/folha1.jpg')
 				
 	with st.beta_expander('Procedimentos folha 2'):
-		st.image('Autobagger_diario/folha2.jpg')
+		st.image('autobagger_diario/folha2.jpg')
 				
 	with st.beta_expander('Procedimentos folha 3'):
-		st.image('Autobagger_diario/folha3.jpg')
+		st.image('autobagger_diario/folha3.jpg')
 				
 	with st.beta_expander('Procedimentos folha 4'):
-		st.image('Autobagger_diario/folha4.jpg')
+		st.image('autobagger_diario/folha4.jpg')
 
 def Autobbager_semanal():
 	
@@ -999,19 +999,19 @@ def Autobbager_semanal():
 		
 def Autobagger_semanal_proc():
 	with st.beta_expander('Pontos'):
-		st.image('Autobagger_semanal/Pontos semanal autobagger.jpg')
+		st.image('autobagger_semanal/Pontos semanal autobagger.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
-		st.image('Autobagger_semanal/folha1.jpg')
+		st.image('autobagger_semanal/folha1.jpg')
 				
 	with st.beta_expander('Procedimentos folha 2'):
-		st.image('Autobagger_semanal/folha2.jpg')
+		st.image('autobagger_semanal/folha2.jpg')
 				
 	with st.beta_expander('Procedimentos folha 3'):
-		st.image('Autobagger_semanal/folha3.jpg')
+		st.image('autobagger_semanal/folha3.jpg')
 				
 	with st.beta_expander('Procedimentos folha 4'):
-		st.image('Autobagger_semanal/folha4.jpg')
+		st.image('autobagger_semanal/folha4.jpg')
 
 def Autobbager_mensal():
 	
@@ -1025,6 +1025,10 @@ def Autobbager_mensal():
 		T03, Q03, C03 = st.beta_columns([3,1,3])
 		T04, Q04, C04 = st.beta_columns([3,1,3])
 		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T07, Q07, C07 = st.beta_columns([3,1,3])
+		T08, Q08, C08 = st.beta_columns([3,1,3])
 		
 		# Texto das questões
 		T00.info('Guia linear (pivot bag tray) - Sistema de empacotamento (autobagger): Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
@@ -1092,19 +1096,19 @@ def Autobbager_mensal():
 		
 def Autobagger_mensal_proc():
 	with st.beta_expander('Pontos'):
-		st.image('Autobagger_mensal/Pontos mensal autobagger.jpg')
+		st.image('autobagger_mensal/Pontos mensal autobagger.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
-		st.image('Autobagger_mensal/folha1.jpg')
+		st.image('autobagger_mensal/folha1.jpg')
 				
 	with st.beta_expander('Procedimentos folha 2'):
-		st.image('Autobagger_mensal/folha2.jpg')
+		st.image('autobagger_mensal/folha2.jpg')
 				
 	with st.beta_expander('Procedimentos folha 3'):
-		st.image('Autobagger_mensal/folha3.jpg')
+		st.image('autobagger_mensal/folha3.jpg')
 				
 	with st.beta_expander('Procedimentos folha 4'):
-		st.image('Autobagger_mensal/folha4.jpg')
+		st.image('autobagger_mensal/folha4.jpg')
 
 		
 def balancer_diario():
@@ -1167,7 +1171,7 @@ def balancer_diario():
 def balancer_diario_proc():
 
 	with st.beta_expander('Pontos'):
-		st.image('balancer_diario/Pontos diario balancer.JPG')
+		st.image('balancer_diario/Pontos diario balancer.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('balancer_semanal/folha1.jpg')
