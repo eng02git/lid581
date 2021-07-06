@@ -1433,7 +1433,7 @@ if __name__ == '__main__':
 				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
 				dic['I02'] = i02.date_input('Data:')
 				
-				t1, t2, t3 = st.beta_columns([2,10,2])
+				t1, T1_1, t2, t3 = st.beta_columns([2,2,10,2])
 				t1.write('SPACER LOWER CAP')
 				dic['D00'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SLC A')
 				dic['D01'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SLC B')
@@ -1447,10 +1447,10 @@ if __name__ == '__main__':
 				dic['D13'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SUBD D')				
 				
 				t1.write('TOOLING PLATE')
-				dic['D20'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP A')
-				dic['D21'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP B')
-				dic['D22'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP C')
-				dic['D23'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP D')
+				dic['D20'] = T1_1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP A')
+				dic['D21'] = T1_1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP B')
+				dic['D22'] = T1_1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP C')
+				dic['D23'] = T1_1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP D')
 				
 				with t2:
 					components.html(source.format(image=data_url, teste=0.0010), height=2000)
