@@ -1439,7 +1439,7 @@ if __name__ == '__main__':
 				val1 = t1.number_input('SLC A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
 				
 				with t2:
-					components.html(source.format(image=data_url, teste=val1), height=1000)
+					components.html(source.format(image=data_url, teste=val1), height=1010)
 					
 				val1 = t3.number_input('asd2 A:')
 				val2 = t3.number_input('asd2 B:')
