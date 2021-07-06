@@ -1440,7 +1440,17 @@ if __name__ == '__main__':
 				dic['D02'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC C')
 				dic['D03'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC D')
 				
-				val1 = t1.number_input('SLC A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				t1.write('SPACER UPPER BLANK BEAD')
+				dic['D10'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SUBD A')
+				dic['D11'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SUBD B')
+				dic['D12'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SUBD C')
+				dic['D13'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SUBD D')				
+				
+				t1.write('TOOLING PLATE')
+				dic['D20'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP A')
+				dic['D21'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP B')
+				dic['D22'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP C')
+				dic['D23'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP D')
 				
 				with t2:
 					components.html(source.format(image=data_url, teste=val1), height=2000)
