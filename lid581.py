@@ -1430,17 +1430,24 @@ if __name__ == '__main__':
 
 			with st.form('form1'):
 				t1, t2, t3 = st.beta_columns([2,10,2])
-				val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
-				val2 = t1.number_input('asd B:')
-				val3 = t1.number_input('asd C:')
+				t1.write('SPACER LOWER CAP')
+				dic['D00'] = t1.number_input('SLC A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				dic['D01'] = t1.number_input('SLC B:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				dic['D02'] = t1.number_input('SLC C:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				dic['D03'] = t1.number_input('SLC D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				
+				val1 = t1.number_input('SLC A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				
 				with t2:
 					components.html(source.format(image=data_url, teste=val1), height=950)
-					#components.html(source)
-					#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
+					
 				val1 = t3.number_input('asd2 A:')
 				val2 = t3.number_input('asd2 B:')
-				val3 = t3.number_input('asd2 C:')	
-				submit = t1.form_submit_button('Alterar valores')
+				val3 = t3.number_input('asd2 C:')
+				
+				
+				nome_ferramental = st.selectbox('Nome do colaborador', nomes) 
+				submit = st.form_submit_button('Alterar valores')
 		
 		if lid_cordax == 'tela2':
 			htmlfile = open('teste2.html', 'r', encoding='utf-8')
