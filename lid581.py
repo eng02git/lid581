@@ -1453,7 +1453,7 @@ if __name__ == '__main__':
 				dic['D23'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP D')
 				
 				with t2:
-					components.html(source.format(image=data_url, teste=val1), height=2000)
+					components.html(source.format(image=data_url, teste=0.0010), height=2000)
 					
 				val1 = t3.number_input('asd2 A:')
 				val2 = t3.number_input('asd2 B:')
