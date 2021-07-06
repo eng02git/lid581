@@ -1445,9 +1445,10 @@ if __name__ == '__main__':
 				val2 = t3.number_input('asd2 B:')
 				val3 = t3.number_input('asd2 C:')
 				
-				dic['I01']
-				dic['I02'] = st.selectbox('Nome do colaborador:', nomes) 
-				submit = st.form_submit_button('Alterar valores')
+				i01, i02, sub = beta_columns(3)
+				dic['I01'] = i01.date_input('Selecione a data')
+				dic['I02'] = i02.selectbox('Nome do colaborador:', nomes) 
+				submit = sub.form_submit_button('Alterar valores')
 		
 		if lid_cordax == 'tela2':
 			htmlfile = open('teste2.html', 'r', encoding='utf-8')
