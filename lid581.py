@@ -1406,33 +1406,54 @@ if __name__ == '__main__':
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
 		import streamlit.components.v1 as components
+				cordax_otions = [
+			'tela1',
+			'tela2',
+		]
 
+		lid_cordax = st.sidebar.radio('Selecione a tela', cordax_otions, index=0)
 
+		
 		file_ = open("Untitled.png", "rb")
 		contents = file_.read()
 		data_url = base64.b64encode(contents).decode("utf-8")
 		file_.close()
 
-		file_ = open("index.html", "r")
-		index_html = file_.read()
+		#file_ = open("index.html", "r")
+		#index_html = file_.read()
 		#index_html = base64.b64encode(contents).decode("utf-8")
-		file_.close()
+		#file_.close()
+		
+		if lid_cordax == 'tela1':
+			htmlfile = open('teste.html', 'r', encoding='utf-8')
+			source = htmlfile.read()
 
-		htmlfile = open('teste.html', 'r', encoding='utf-8')
-		source = htmlfile.read()
-		#components.html(source.format(image=data_url))
-		#st.write(source.format(image=data_url))
-		with st.form('form1'):
-			t1, t2, t3 = st.beta_columns([2,10,2])
-			val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
-			val2 = t1.number_input('asd B:')
-			val3 = t1.number_input('asd C:')
-			with t2:
-				components.html(source.format(image=data_url, teste=val1), height=950)
-				#components.html(source)
-				#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
-			val1 = t3.number_input('asd2 A:')
-			val2 = t3.number_input('asd2 B:')
-			val3 = t3.number_input('asd2 C:')	
-			submit = t1.form_submit_button('Alterar valores')
+			with st.form('form1'):
+				t1, t2, t3 = st.beta_columns([2,10,2])
+				val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				val2 = t1.number_input('asd B:')
+				val3 = t1.number_input('asd C:')
+				with t2:
+					components.html(source.format(image=data_url, teste=val1), height=950)
+					#components.html(source)
+					#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
+				val1 = t3.number_input('asd2 A:')
+				val2 = t3.number_input('asd2 B:')
+				val3 = t3.number_input('asd2 C:')	
+				submit = t1.form_submit_button('Alterar valores')
+		
+		if lid_cordax == 'tela2':
+			htmlfile = open('teste2.html', 'r', encoding='utf-8')
+			source = htmlfile.read()
+
+			with st.form('form2'):
+				t1, t2, t3 = st.beta_columns([2,10,2])
+				val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
+				with t2:
+					components.html(source.format(image=data_url, teste=val1), height=950)
+					#components.html(source)
+					#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
+				val1 = t3.number_input('asd2 A:')	
+				submit = t1.form_submit_button('Alterar valores')
+
 
