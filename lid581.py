@@ -1429,10 +1429,9 @@ if __name__ == '__main__':
 			source = htmlfile.read()
 
 			with st.form('form1'):
-				i01, i02 = st.beta_columns([8,1])
+				i01, i02 = st.beta_columns([12,2])
 				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
 				dic['I02'] = i02.date_input('Data:')
-				
 				
 				t1, t2, t3 = st.beta_columns([2,10,2])
 				t1.write('SPACER LOWER CAP')
@@ -1461,8 +1460,6 @@ if __name__ == '__main__':
 				val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
 				with t2:
 					components.html(source.format(image=data_url, teste=val1), height=950)
-					#components.html(source)
-					#st.write('<iframe src="teste.html" width="1000" height="1000"></iframe>', unsafe_allow_html=True)
 				val1 = t3.number_input('asd2 A:')	
 				submit = t1.form_submit_button('Alterar valores')
 
