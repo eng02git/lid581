@@ -28,7 +28,7 @@ import time
 from datetime import  date
 import base64
 from io import BytesIO
-from st_aggdrid import AgGrid
+from st_aggrid import AgGrid
 
 from google.cloud import firestore
 from google.oauth2 import service_account
