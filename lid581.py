@@ -1490,6 +1490,6 @@ if __name__ == '__main__':
 					       'TOOLING PLATE C': 10,
 					       'TOOLING PLATE D': 10}
 				df_teste = pd.DataFrame.from_dict(teste_dados, orient='index')
-				t2.AgGrid(df_teste)
+				AgGrid(df_teste)
 				
 				submit = t2.form_submit_button('Alterar valores')
