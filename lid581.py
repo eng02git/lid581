@@ -1477,22 +1477,23 @@ if __name__ == '__main__':
 				with t1:
 					components.html(source.format(image=data_url, teste=0.0010), height=2000)
 					
-				teste_dados = {'SPACER LOWER CAP A': 10,
-					       'SPACER LOWER CAP B': 10,
-					       'SPACER LOWER CAP C': 10,
-					       'SPACER LOWER CAP D': 10,
-					       'SPACER UPPER BLANK BEAD A': 10,
-					       'SPACER UPPER BLANK BEAD B': 10,
-					       'SPACER UPPER BLANK BEAD C': 10,
-					       'SPACER UPPER BLANK BEAD D': 10,
-					       'TOOLING PLATE A': 10,
-					       'TOOLING PLATE B': 10,
-					       'TOOLING PLATE C': 10,
-					       'TOOLING PLATE D': 10
-					      }
+				teste_dados = {'Valores': [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]}
+				index_ = ['SPACER LOWER CAP A', 
+					 'SPACER LOWER CAP B', 
+					 'SPACER LOWER CAP C',
+					 'SPACER LOWER CAP D',
+					'SPACER UPPER BLANK BEAD A',
+					'SPACER UPPER BLANK BEAD B',
+					'SPACER UPPER BLANK BEAD C',
+					'SPACER UPPER BLANK BEAD D',
+					'TOOLING PLATE A',
+					'TOOLING PLATE B',
+					'TOOLING PLATE C',
+					'TOOLING PLATE D']
+					      
 				
 				df_teste = pd.DataFrame.from_dict(teste_dados, orient='index')
-				df_teste2 = pd.DataFrame.from_dict(teste_dados, orient='index', columns=['A'])
+				df_teste2 = pd.DataFrame.from_dict(teste_dados, index=index_)
 				st.write(df_teste2)
 				AgGrid(df_teste2)
 				
