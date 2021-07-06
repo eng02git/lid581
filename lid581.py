@@ -1406,7 +1406,7 @@ if __name__ == '__main__':
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
 		import streamlit.components.v1 as components
-				cordax_otions = [
+		cordax_otions = [
 			'tela1',
 			'tela2',
 		]
