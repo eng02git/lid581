@@ -1432,7 +1432,7 @@ if __name__ == '__main__':
 				t1, t2, t3 = st.beta_columns([2,10,2])
 				t1.write('SPACER LOWER CAP')
 				dic['D00'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC A')
-				dic['D01'] = t1.number_input('B:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC B')
+				dic['D01'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC B')
 				dic['D02'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC C')
 				dic['D03'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SLC D')
 				
@@ -1445,8 +1445,8 @@ if __name__ == '__main__':
 				val2 = t3.number_input('asd2 B:')
 				val3 = t3.number_input('asd2 C:')
 				
-				
-				nome_ferramental = st.selectbox('Nome do colaborador:', nomes) 
+				dic['I01']
+				dic['I02'] = st.selectbox('Nome do colaborador:', nomes) 
 				submit = st.form_submit_button('Alterar valores')
 		
 		if lid_cordax == 'tela2':
