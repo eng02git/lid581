@@ -1431,8 +1431,8 @@ if __name__ == '__main__':
 			with st.form('form1'):
 				i01, i02, sub = st.beta_columns([8,1,1])
 				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
-				dic['I02'] = i02.date_input('Selecione a data')
-				submit = sub.form_submit_button('Alterar valores')
+				dic['I02'] = i02.date_input('Data')
+				submit = sub.form_submit_button('Alterar \n valores')
 				
 				t1, t2, t3 = st.beta_columns([2,10,2])
 				t1.write('SPACER LOWER CAP')
