@@ -1445,9 +1445,9 @@ if __name__ == '__main__':
 				val2 = t3.number_input('asd2 B:')
 				val3 = t3.number_input('asd2 C:')
 				
-				i01, i02, sub = st.beta_columns(3)
-				dic['I01'] = i01.date_input('Selecione a data')
-				dic['I02'] = i02.selectbox('Nome do colaborador:', nomes) 
+				i01, i02, sub = st.beta_columns([8,1,1])
+				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
+				dic['I02'] = i02.date_input('Selecione a data')
 				submit = sub.form_submit_button('Alterar valores')
 		
 		if lid_cordax == 'tela2':
