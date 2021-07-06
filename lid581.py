@@ -1429,10 +1429,10 @@ if __name__ == '__main__':
 			source = htmlfile.read()
 
 			with st.form('form1'):
-				i01, i02, sub = st.beta_columns([8,1,1])
+				i01, i02 = st.beta_columns([8,1])
 				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
 				dic['I02'] = i02.date_input('Data:')
-				submit = sub.form_submit_button('Alterar .\n valores')
+				
 				
 				t1, t2, t3 = st.beta_columns([2,10,2])
 				t1.write('SPACER LOWER CAP')
@@ -1450,7 +1450,7 @@ if __name__ == '__main__':
 				val2 = t3.number_input('asd2 B:')
 				val3 = t3.number_input('asd2 C:')
 				
-
+				submit = t3.form_submit_button('Alterar .\n valores')
 		
 		if lid_cordax == 'tela2':
 			htmlfile = open('teste2.html', 'r', encoding='utf-8')
