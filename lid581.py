@@ -1449,7 +1449,7 @@ if __name__ == '__main__':
 				val2 = t3.number_input('asd2 B:')
 				val3 = t3.number_input('asd2 C:')
 				
-				submit = t3.form_submit_button('Alterar .\n valores')
+				submit = t3.form_submit_button('Alterar valores')
 		
 		if lid_cordax == 'tela2':
 			htmlfile = open('teste2.html', 'r', encoding='utf-8')
