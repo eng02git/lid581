@@ -915,7 +915,7 @@ def Autobagger_diario():
 		
 def Autobagger_diario_proc():
 	with st.beta_expander('Pontos'):
-		st.image('autobagger_diario/Pontos diario autobagger.jpg')
+		st.image('autobagger_diario/pontos diario autobagger.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('autobagger_diario/folha1.jpg')
@@ -999,7 +999,7 @@ def Autobagger_semanal():
 		
 def Autobagger_semanal_proc():
 	with st.beta_expander('Pontos'):
-		st.image('autobagger_semanal/Pontos semanal autobagger.jpg')
+		st.image('autobagger_semanal/pontos semanal autobagger.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('autobagger_semanal/folha1.jpg')
