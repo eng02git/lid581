@@ -845,7 +845,7 @@ def Shell_semanal_proc():
 		st.image('shell_semanal/folha4.jpg')
 		
 
-def Autobbager_diario():
+def Autobagger_diario():
 	
 	with st.form('Form'):
     
@@ -929,7 +929,7 @@ def Autobagger_diario_proc():
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('autobagger_diario/folha4.jpg')
 
-def Autobbager_semanal():
+def Autobagger_semanal():
 	
 	with st.form('Form'):
     
@@ -1013,7 +1013,7 @@ def Autobagger_semanal_proc():
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('autobagger_semanal/folha4.jpg')
 
-def Autobbager_mensal():
+def Autobagger_mensal():
 	
 	with st.form('Form'):
     
