@@ -28,6 +28,7 @@ import time
 from datetime import  date
 import base64
 from io import BytesIO
+from st_aggdrid import AgGrid
 
 from google.cloud import firestore
 from google.oauth2 import service_account
@@ -1462,15 +1463,33 @@ if __name__ == '__main__':
 				submit = t3.form_submit_button('Alterar valores')
 		
 		if lid_cordax == 'tela2':
-			htmlfile = open('teste2.html', 'r', encoding='utf-8')
+			htmlfile = open('teste.html', 'r', encoding='utf-8')
 			source = htmlfile.read()
 
 			with st.form('form2'):
-				t1, t2, t3 = st.beta_columns([2,10,2])
-				val1 = t1.number_input('asd A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f')
-				with t2:
-					components.html(source.format(image=data_url, teste=val1), height=950)
-				val1 = t3.number_input('asd2 A:')	
-				submit = t1.form_submit_button('Alterar valores')
-
-
+				
+				i01, i02 = st.beta_columns([12,2])
+				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
+				dic['I02'] = i02.date_input('Data:')
+				
+				t1, t2 = st.beta_columns([10,2])
+								
+				with t1:
+					components.html(source.format(image=data_url, teste=0.0010), height=2000)
+					
+				teste_dados = {'SPACER LOWER CAP A': 10,
+					       'SPACER LOWER CAP B': 10,
+					       'SPACER LOWER CAP C': 10,
+					       'SPACER LOWER CAP D': 10,
+					       'SPACER UPPER BLANK BEAD A': 10,
+					       'SPACER UPPER BLANK BEAD B': 10,
+					       'SPACER UPPER BLANK BEAD C': 10,
+					       'SPACER UPPER BLANK BEAD D': 10,
+					       'TOOLING PLATE A': 10,
+					       'TOOLING PLATE B': 10,
+					       'TOOLING PLATE C': 10,
+					       'TOOLING PLATE D': 10}
+				df_teste = pd.DataFrame.from_dict(teste_dados, orient='index')
+				t2.AgGrid(df_teste)
+				
+				submit = t2.form_submit_button('Alterar valores')
