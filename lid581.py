@@ -1447,7 +1447,7 @@ if __name__ == '__main__':
 				dic['D13'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='SUBD D')				
 				
 				t1.write('TOOLING PLATE')
-				dic['D20'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP A')
+				dic['D20'] = t1.number_input( min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP A')
 				dic['D21'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP B')
 				dic['D22'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP C')
 				dic['D23'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.001, format='%f', key='TP D')
