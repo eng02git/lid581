@@ -1273,6 +1273,176 @@ def balancer_semanal_proc():
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('balancer_semanal/folha4.jpg')		
 		
+		
+def conversion_semanal():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+		T07, Q07, C07 = st.beta_columns([3,1,3])
+		T08, Q08, C08 = st.beta_columns([3,1,3])
+		T09, Q09, C09 = st.beta_columns([3,1,3])
+		T10, Q10, C10 = st.beta_columns([3,1,3])
+		T11, Q11, C11 = st.beta_columns([3,1,3])
+		T12, Q12, C12 = st.beta_columns([3,1,3])
+		T13, Q13, C13 = st.beta_columns([3,1,3])
+		T14, Q14, C14 = st.beta_columns([3,1,3])
+		T15, Q15, C15 = st.beta_columns([3,1,3])
+		T16, Q16, C16 = st.beta_columns([3,1,3])
+		T17, Q17, C17 = st.beta_columns([3,1,3])
+		T18, Q18, C18 = st.beta_columns([3,1,3])
+		T19, Q19, C19 = st.beta_columns([3,1,3])
+		T20, Q20, C20 = st.beta_columns([3,1,3])
+		T21, Q21, C21 = st.beta_columns([3,1,3])
+		T22, Q22, C22 = st.beta_columns([3,1,3])
+		T23, Q23, C23 = st.beta_columns([3,1,3])
+		
+		# Texto das questões
+		T00.info('''Limpeza dentro da máquina: 
+                1- Limpeza da parte interna da máquina com ar comprimido. Limpeza das ferramentas de matriz Tab die e Lane die com pano umedecido em álcool isopropílico e escova de bronze . Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.
+                2- Remoção de materiais estranhos, panos, cavacos, sucata e outros que possam ter acumulado dentro da máquina;
+                3- Limpeza das linhas de retorno de lubrificação se estiverem restringindo  fluxo de óleo.''')
+		T01.info('''Limpeza do tab  uncoiler:
+                1- Desconectar a energia principal do desenrolador antes de ficar na mesa do desenrolador de guias.'
+                2 - Soprar e limpar o desbobinador de material da guia, o braço de dança, o painel de controle elétrico e o rolo / alimentador de compressão do material da guia.
+                3 - Limpar somente quando estiver ocorrendo troca do bobina do Tab.''')
+		T02.info('Bomba de circulação: 1-Inspecionar visualmente para detectar possíveis vazamentos.')
+		T03.info('União Rotativa (Embreagem/Freio): 1-Inspecionar visualmente para detectar possíveis vazamentos.')
+		T04.info('Limpeza da Conveyor #1 BB-CP e Pushers no mesanino: 1- Limpar com um pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T05.info('Limpeza da Conveyor #2 BB-CP e Pushers no mesanino: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T06.info('Limpeza da Conveyor #3 BB-CP e Pushers no mesanino: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T07.info('Limpeza da Conveyor #4 BB-CP e Pushers no mesanino: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T08.info('Limpeza das correias transportadoras dos 4 lanes 1º e 2º estagio: 1-Inpecionar quanto a integridade e executar a limpeza do mesmo.')
+		T09.info('Limpeza das correias transportadoras dos 4 lanes 1º e 2º estagio: 1-Inpecionar quanto a integridade e executar a limpeza do mesmo.')
+		T10.info('Limpar o Downstacker: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T11.info('Limpeza Light Test. (Suporte do Técnico Eletrônico): 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T12.info('Limpeza do ferramental da 6ª estação (Formação do Rebite): 1- Limpeza com álcool e escova todas as ferramentas superiores e inferiores do Lane e Tab Die.')
+		T13.info('Limpeza da área do Gap Control e Downstacker: 1- Limpeza com pano seco.')
+		T14.info('Limpar os filtros da bomba de vácuo. Da câmara de 1ª a 5ª e 7ª e 8ª estação inferior: 1- Limpar com pano umedecido com álcool isopropílico.')
+		T15.info('Limpeza na estrutura da máquina. (base, piso, laterais, acrílicos e etc): 1- Retirar as tampas que estiverem no chão. Utilizando soprador, vassoura e pá e verificar o sistema quanto a presença de vazamentos na area externa e possíveis anomalias.')
+		T16.info('Inspecionar e limpar se necessário as mangueiras da 6ª estação: 1- Limpar com pano umedecido.')
+		T17.info('Inspecionar e limpar se necessário as mangueiras de vácuo do Lane Die: 1- Limpar com pano umedecido.')
+		T18.info('Limpeza das guardas de proteção da Prensa: 1-Limpar com pano umedecido  com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T19.info('Limpeza das bancadas de lançamentos de dados e bancadas de retrabalho: 1- Limpar com  pano umedecido com álcool isopropílico.')
+		T20.info('Inspecionar e limpar Conveyor #1 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+		T21.info('Inspecionar e limpar Conveyor #2 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+		T22.info('Inspecionar e limpar Conveyor #3 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+		T23.info('Inspecionar e limpar Conveyor #4 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
+		dic['Q07'] = Q07.selectbox('Item 7:', respostas)
+		dic['C07'] = C07.text_input('Comentário item 7:', "")
+		dic['Q08'] = Q08.selectbox('Item 8:', respostas)
+		dic['C08'] = C08.text_input('Comentário item 8:', "")
+		dic['Q09'] = Q09.selectbox('Item 9:', respostas)
+		dic['C09'] = C09.text_input('Comentário item 9:', "")
+		dic['Q10'] = Q10.selectbox('Item 10:', respostas)
+		dic['C10'] = C10.text_input('Comentário item 10:', "")
+		dic['Q11'] = Q11.selectbox('Item 11:', respostas)
+		dic['C11'] = C11.text_input('Comentário item 11:', "")
+		dic['Q12'] = Q12.selectbox('Item 12:', respostas)
+		dic['C12'] = C12.text_input('Comentário item 12:', "")
+		dic['Q13'] = Q13.selectbox('Item 13:', respostas)
+		dic['C13'] = C13.text_input('Comentário item 13:', "")
+		dic['Q14'] = Q14.selectbox('Item 14:', respostas)
+		dic['C14'] = C14.text_input('Comentário item 14:', "")
+		dic['Q15'] = Q15.selectbox('Item 15:', respostas)
+		dic['C15'] = C15.text_input('Comentário item 15:', "")
+		dic['Q16'] = Q16.selectbox('Item 16:', respostas)
+		dic['C16'] = C16.text_input('Comentário item 16:', "")
+		dic['Q17'] = Q17.selectbox('Item 17:', respostas)
+		dic['C17'] = C17.text_input('Comentário item 17:', "")
+		dic['Q18'] = Q18.selectbox('Item 18:', respostas)
+		dic['C18'] = C18.text_input('Comentário item 18:', "")
+		dic['Q19'] = Q19.selectbox('Item 19:', respostas)
+		dic['C19'] = C19.text_input('Comentário item 19:', "")
+		dic['Q20'] = Q20.selectbox('Item 20:', respostas)
+		dic['C20'] = C20.text_input('Comentário item 20:', "")
+		dic['Q21'] = Q21.selectbox('Item 21:', respostas)
+		dic['C21'] = C21.text_input('Comentário item 21:', "")
+		dic['Q22'] = Q22.selectbox('Item 22:', respostas)
+		dic['C22'] = C22.text_input('Comentário item 22:', "")
+		dic['Q23'] = Q23.selectbox('Item 23:', respostas)
+		dic['C23'] = C23.text_input('Comentário item 23:', "")
+		
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("conversion_semanal").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+            
+            
+def conversion_semanal_proc():
+	#with st.beta_expander('Pontos'):
+	#	st.image('conversion_semanal/Pontos diaria conversion.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('conversion_semanal/folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('conversion_semanal/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('conversion_semanal/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('conversion_semanal/folha4.jpg')
+				
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('conversion_semanal/folha5.jpg')
+				
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('conversion_semanal/folha6.jpg')
+		
 ######################################################################################################
                                            #Main
 ######################################################################################################
