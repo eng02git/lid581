@@ -1525,6 +1525,11 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Conversion semanal':
 		st.subheader('Conversion semanal')
+		proc_CS = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_CS:
+			conversion_semanal_proc()
+		conversion_semanal()
+		
 		
 	if func_escolhida == 'Conversion mensal':
 		st.subheader('Conversion mensal')
