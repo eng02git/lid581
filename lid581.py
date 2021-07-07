@@ -1143,10 +1143,6 @@ def Autobagger_mensal_proc():
 				
 	with st.beta_expander('Procedimentos folha 15'):
 		st.image('autobagger_mensal/folha15.jpg')
-				
-	with st.beta_expander('Procedimentos folha 16'):
-		st.image('autobagger_mensal/folha16.jpg')
-
 		
 def balancer_diario():
 	
