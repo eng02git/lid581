@@ -907,7 +907,7 @@ def Autobagger_diario():
 
 		# Armazena no banco
 		try:
-			doc_ref = db.collection("Autobagger_diario").document(val_documento)
+			doc_ref = db.collection("autobagger_diario").document(val_documento)
 			doc_ref.set(new_d)
 			st.success('Formulário armazenado com sucesso!')
 		except:
@@ -991,7 +991,7 @@ def Autobagger_semanal():
 
 		# Armazena no banco
 		try:
-			doc_ref = db.collection("Autobagger_semanal").document(val_documento)
+			doc_ref = db.collection("autobagger_semanal").document(val_documento)
 			doc_ref.set(new_d)
 			st.success('Formulário armazenado com sucesso!')
 		except:
@@ -1088,7 +1088,7 @@ def Autobagger_mensal():
 
 		# Armazena no banco
 		try:
-			doc_ref = db.collection("Autobagger_mensal").document(val_documento)
+			doc_ref = db.collection("autobagger_mensal").document(val_documento)
 			doc_ref.set(new_d)
 			st.success('Formulário armazenado com sucesso!')
 		except:
