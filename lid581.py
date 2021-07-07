@@ -929,6 +929,12 @@ def Autobagger_diario_proc():
 				
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('autobagger_diario/folha4.jpg')
+		
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('autobagger_diario/folha5.jpg')
+				
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('autobagger_diario/folha6.jpg')
 
 def Autobagger_semanal():
 	
@@ -1013,6 +1019,30 @@ def Autobagger_semanal_proc():
 				
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('autobagger_semanal/folha4.jpg')
+		
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('autobagger_semanal/folha5.jpg')
+				
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('autobagger_semanal/folha6.jpg')
+				
+	with st.beta_expander('Procedimentos folha 7'):
+		st.image('autobagger_semanal/folha7.jpg')
+				
+	with st.beta_expander('Procedimentos folha 8'):
+		st.image('autobagger_semanal/folha8.jpg')
+
+	with st.beta_expander('Procedimentos folha 9'):
+		st.image('autobagger_semanal/folha9.jpg')
+				
+	with st.beta_expander('Procedimentos folha 10'):
+		st.image('autobagger_semanal/folha10.jpg')
+				
+	with st.beta_expander('Procedimentos folha 11'):
+		st.image('autobagger_semanal/folha11.jpg')
+				
+	with st.beta_expander('Procedimentos folha 12'):
+		st.image('autobagger_semanal/folha12.jpg')
 
 def Autobagger_mensal():
 	
