@@ -1096,8 +1096,8 @@ def Autobagger_mensal():
 
 		
 def Autobagger_mensal_proc():
-	with st.beta_expander('Pontos'):
-		st.image('autobagger_mensal/Pontos mensal autobagger.jpg')
+	#with st.beta_expander('Pontos'):
+		#st.image('autobagger_mensal/Pontos mensal autobagger.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('autobagger_mensal/folha1.jpg')
