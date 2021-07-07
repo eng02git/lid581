@@ -832,6 +832,8 @@ def Shell_semanal():
 
 		
 def Shell_semanal_proc():
+	with st.beta_expander('Pontos'):
+		st.image('shell_semanal/Pontos semanal shell.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('shell_semanal/folha1.jpg')
@@ -1126,8 +1128,8 @@ def Autobagger_mensal():
 
 		
 def Autobagger_mensal_proc():
-	#with st.beta_expander('Pontos'):
-		#st.image('autobagger_mensal/Pontos mensal autobagger.jpg')
+	with st.beta_expander('Pontos'):
+		st.image('autobagger_mensal/Pontos mensal autobagger.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('autobagger_mensal/folha1.jpg')
@@ -1407,8 +1409,8 @@ def conversion_diario():
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
                         
 def conversion_diario_proc():
-	#with st.beta_expander('Pontos'):
-	#	st.image('conversion_diario/Pontos diaria conversion.jpg')
+	with st.beta_expander('Pontos'):
+		st.image('conversion_diario/Pontos diario conversion.jpg')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('conversion_diario/folha1.jpg')
@@ -1592,8 +1594,8 @@ def conversion_semanal():
             
             
 def conversion_semanal_proc():
-	#with st.beta_expander('Pontos'):
-	#	st.image('conversion_semanal/Pontos diaria conversion.jpg')
+	with st.beta_expander('Pontos'):
+		st.image('conversion_semanal/Pontos semanal conversion.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('conversion_semanal/folha1.jpg')
@@ -1716,8 +1718,8 @@ def conversion_mensal():
             
             
 def conversion_mensal_proc():
-	#with st.beta_expander('Pontos'):
-	#	st.image('conversion_mensal/Pontos diaria conversion.jpg')
+	with st.beta_expander('Pontos'):
+		st.image('conversion_mensal/Pontos diaria conversion.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('conversion_mensal/folha1.jpg')
