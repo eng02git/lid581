@@ -1110,6 +1110,42 @@ def Autobagger_mensal_proc():
 				
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('autobagger_mensal/folha4.jpg')
+		
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('autobagger_mensal/folha5.jpg')
+				
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('autobagger_mensal/folha6.jpg')
+				
+	with st.beta_expander('Procedimentos folha 7'):
+		st.image('autobagger_mensal/folha7.jpg')
+				
+	with st.beta_expander('Procedimentos folha 8'):
+		st.image('autobagger_mensal/folha8.jpg')
+
+	with st.beta_expander('Procedimentos folha 9'):
+		st.image('autobagger_mensal/folha9.jpg')
+				
+	with st.beta_expander('Procedimentos folha 10'):
+		st.image('autobagger_mensal/folha10.jpg')
+				
+	with st.beta_expander('Procedimentos folha 11'):
+		st.image('autobagger_mensal/folha11.jpg')
+				
+	with st.beta_expander('Procedimentos folha 12'):
+		st.image('autobagger_mensal/folha12.jpg')
+		
+	with st.beta_expander('Procedimentos folha 13'):
+		st.image('autobagger_mensal/folha13.jpg')
+				
+	with st.beta_expander('Procedimentos folha 14'):
+		st.image('autobagger_mensal/folha14.jpg')
+				
+	with st.beta_expander('Procedimentos folha 15'):
+		st.image('autobagger_mensal/folha15.jpg')
+				
+	with st.beta_expander('Procedimentos folha 16'):
+		st.image('autobagger_mensal/folha16.jpg')
 
 		
 def balancer_diario():
@@ -1254,7 +1290,6 @@ def balancer_semanal():
 			st.success('Formulário armazenado com sucesso!')
 		except:
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
-
 		
 def balancer_semanal_proc():
 
