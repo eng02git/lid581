@@ -1272,7 +1272,116 @@ def balancer_semanal_proc():
 				
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('balancer_semanal/folha4.jpg')		
+
+def conversion_diario():
+	
+	with st.form('Form'):
+    
+		# Define a organização das colunas
+		I0, I1, I2 = st.beta_columns([8,3,3])
+		T00, Q00, C00 = st.beta_columns([3,1,3])
+		T01, Q01, C01 = st.beta_columns([3,1,3])
+		T02, Q02, C02 = st.beta_columns([3,1,3])
+		T03, Q03, C03 = st.beta_columns([3,1,3])
+		T04, Q04, C04 = st.beta_columns([3,1,3])
+		T05, Q05, C05 = st.beta_columns([3,1,3])
+		T06, Q06, C06 = st.beta_columns([3,1,3])
+	
+		# Texto das questões
+		T00.info('Die set superior/inferior Tab Die: 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T01.info('Die set superior/inferior Lane Die (1ª á 8ª estação): 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
+		T02.info('Limpeza interior da máquina: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades. OBS: Atentar-se para não deixar ferramentas ou materiais de limpeza no interior da máquina.')
+		T03.info('Cilindro de acionamento da guarda: 1- Utilizando um pano limpo com solvente, deve-se limpar toda a região e logo após soprar com ar comprimido para secar. Realizar inspeção das guardas para detecção de possíveis anomalias.')
+		T04.info('Limpar câmara interna do MLT: 1- Limpar câmara interna somente com água.')
+		T05.info('Limpeza da mesa TAB Uncoiler: 1- Limpar com pano umedecido com álcool isopropílico e inspecionar possíveis anomalias ou anormalidades.')
+		T06.info('Limpeza nas proteções acrílicas na área do Downstacker: 1- Limpar com pano umedecido com álcool isopropílico  e inspecionar possíveis anomalias ou anormalidades.')
+			
+		respostas = ['NOK', 'OK']
+
+		# Questões
+		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
+		dic['C00'] = C00.text_input('Comentário item 0:', "")
+		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
+		dic['C01'] = C01.text_input('Comentário item 1:', "")
+		dic['Q02'] = Q02.selectbox('Item 2:', respostas)
+		dic['C02'] = C02.text_input('Comentário item 2:', "")
+		dic['Q03'] = Q03.selectbox('Item 3:', respostas)
+		dic['C03'] = C03.text_input('Comentário item 3:', "")
+		dic['Q04'] = Q04.selectbox('Item 4:', respostas)
+		dic['C04'] = C04.text_input('Comentário item 4:', "")
+		dic['Q05'] = Q05.selectbox('Item 5:', respostas)
+		dic['C05'] = C05.text_input('Comentário item 5:', "")
+		dic['Q06'] = Q06.selectbox('Item 6:', respostas)
+		dic['C06'] = C06.text_input('Comentário item 6:', "")
 		
+		submitted = st.form_submit_button('Enviar formulário')
+		
+	# Envio do formulário
+	if submitted:
+
+		# Limpa cache
+		caching.clear_cache()
+		
+		# Transforma dados do formulário em um dicionário
+		keys_values = dic.items()
+		new_d = {str(key): str(value) for key, value in keys_values}
+
+		# Verifica campos não preenchidos e os modifica
+		for key, value in new_d.items():
+			if (value == '') or value == '[]':
+				new_d[key] = '-'
+		
+		# Define o nome do documento a ser armazenado no banco
+		val_documento = new_d['I2'] + new_d['I1']
+
+		# Armazena no banco
+		try:
+			doc_ref = db.collection("conversion_diario").document(val_documento)
+			doc_ref.set(new_d)
+			st.success('Formulário armazenado com sucesso!')
+		except:
+			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
+                        
+def conversion_diario_proc():
+	#with st.beta_expander('Pontos'):
+	#	st.image('conversion_diario/Pontos diaria conversion.jpg')
+
+	with st.beta_expander('Procedimentos folha 1'):
+		st.image('conversion_diario/folha1.jpg')
+				
+	with st.beta_expander('Procedimentos folha 2'):
+		st.image('conversion_diario/folha2.jpg')
+				
+	with st.beta_expander('Procedimentos folha 3'):
+		st.image('conversion_diario/folha3.jpg')
+				
+	with st.beta_expander('Procedimentos folha 4'):
+		st.image('conversion_diario/folha4.jpg')
+				
+	with st.beta_expander('Procedimentos folha 5'):
+		st.image('conversion_diario/folha5.jpg')
+				
+	with st.beta_expander('Procedimentos folha 6'):
+		st.image('conversion_diario/folha6.jpg')
+        
+	with st.beta_expander('Procedimentos folha 7'):
+		st.image('conversion_diario/folha7.jpg')
+				
+	with st.beta_expander('Procedimentos folha 8'):
+		st.image('conversion_diario/folha8.jpg')
+				
+	with st.beta_expander('Procedimentos folha 9'):
+		st.image('conversion_diario/folha9.jpg')
+				
+	with st.beta_expander('Procedimentos folha 10'):
+		st.image('conversion_diario/folha10.jpg')
+				
+	with st.beta_expander('Procedimentos folha 11'):
+		st.image('conversion_diario/folha11.jpg')
+
 		
 def conversion_semanal():
 	
@@ -1640,6 +1749,10 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Conversion diário':
 		st.subheader('Conversion diário')
+		proc_CD = st.checkbox('Deseja visualizar os procedimentos?')	
+		if proc_CD:
+			conversion_diario_proc()
+		conversion_diario()
 		
 	if func_escolhida == 'Conversion semanal':
 		st.subheader('Conversion semanal')
@@ -1647,8 +1760,7 @@ if __name__ == '__main__':
 		if proc_CS:
 			conversion_semanal_proc()
 		conversion_semanal()
-		
-		
+			
 	if func_escolhida == 'Conversion mensal':
 		st.subheader('Conversion mensal')
 		proc_CM = st.checkbox('Deseja visualizar os procedimentos?')	
