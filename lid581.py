@@ -833,7 +833,7 @@ def Shell_semanal():
 		
 def Shell_semanal_proc():
 	with st.beta_expander('Pontos'):
-		st.image('shell_semanal/Pontos semanal shell.jfif')
+		st.image('shell_semanal/Pontos shell semanal.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('shell_semanal/folha1.jpg')
@@ -1129,7 +1129,7 @@ def Autobagger_mensal():
 		
 def Autobagger_mensal_proc():
 	with st.beta_expander('Pontos'):
-		st.image('autobagger_mensal/Pontos mensal autobagger.jfif')
+		st.image('autobagger_mensal/Pontos autobagger mensal.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('autobagger_mensal/folha1.jpg')
@@ -1719,7 +1719,7 @@ def conversion_mensal():
             
 def conversion_mensal_proc():
 	with st.beta_expander('Pontos'):
-		st.image('conversion_mensal/Pontos diaria conversion.jfif')
+		st.image('conversion_mensal/Pontos mensal conversion.jfif')
 
 	with st.beta_expander('Procedimentos folha 1'):
 		st.image('conversion_mensal/folha1.jpg')
