@@ -1755,6 +1755,55 @@ def conversion_mensal_proc():
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('conversion_mensal/folha4.jpg')
 		
+		
+##################################################################################################
+#			Formularios de troubleshooting
+##################################################################################################
+
+
+def trouble_liner_proc():
+	pass
+	
+def trouble_liner():
+	pass
+	
+def trouble_shell_proc():	
+	pass
+	
+def trouble_shell():
+	pass
+	
+def trouble_autobagger_proc():
+	pass
+	
+def trouble_autobagger():
+	pass
+	
+def trouble_conversion_proc():
+	pass
+	
+def trouble_conversion():
+	pass
+	
+def rouble_balancer_a_proc():	
+	pass
+	
+def trouble_balancer_a():
+	pass
+	
+def trouble_balancer_b_proc():	
+	pass
+	
+def trouble_balancer_b():
+	pass
+	
+def trouble_gfs_proc():	
+	pass
+	
+def trouble_gfs():		
+	pass
+
+		
 ######################################################################################################
                                            #Main
 ######################################################################################################
@@ -1778,7 +1827,7 @@ if __name__ == '__main__':
 	dic = {} #dicionario
 
 	##################################################################################################
-	#			Definiçào das páginas
+	#			Chamadada das páginas do cil
 	##################################################################################################
 	
 	if func_escolhida == 'Liner diário':
@@ -1866,6 +1915,66 @@ if __name__ == '__main__':
 		if proc_BS:
 			balancer_semanal_proc()
 		balancer_semanal()
+		
+	##################################################################################################
+	#			Chamada das páginas do troubleshooting
+	##################################################################################################
+		
+	if func_escolhida == 'Liner':
+		st.subheader('Troubleshooting Liner')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_liner_proc()	
+		trouble_liner()
+		
+	if func_escolhida == 'Shell Press':
+		st.subheader('Troubleshooting Shell Press')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_shell_proc()	
+		trouble_shell()
+		
+	if func_escolhida == 'Autobagger':
+		st.subheader('Troubleshooting Autobagger')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_autobagger_proc()	
+		trouble_autobagger()
+		
+	if func_escolhida == 'Conversion Press':
+		st.subheader('Troubleshooting Conversion Press')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_conversion_proc()	
+		trouble_conversion()
+		
+	if func_escolhida == 'Balancer A':
+		st.subheader('Troubleshooting Balancer A')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_balancer_a_proc()	
+		trouble_balancer_a()
+		
+	if func_escolhida == 'Balancer B':
+		st.subheader('Troubleshooting Balancer B')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_balancer_b_proc()	
+		trouble_balancer_b()
+		
+	if func_escolhida == 'GFS':
+		st.subheader('Troubleshooting GFS')
+		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		if proc_trouble:
+			trouble_gfs_proc()	
+		trouble_gfs()
+		
+
+	##################################################################################################
+	#			Demais funcionalidades
+	##################################################################################################
+	
+
 		
 	if func_escolhida == 'Visualizar formulários':
 		st.subheader('Visualizar formulários')
