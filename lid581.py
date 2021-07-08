@@ -87,18 +87,16 @@ formularios_cil = [
 ]
 
 formularios_trouble = [
-	'Troubleshoot 1',
-	'Troubleshoot 2',
-	'Troubleshoot 3',
-	'Troubleshoot 4',
-	'Troubleshoot 5',
-	'Troubleshoot 6',
-	'Troubleshoot 7',
-	'Troubleshoot 8',
+	'Liner',
+	'Shell Press',
+	'Autobagger',
+	'Conversion Press',
+	'Balancer A',
+	'Balancer B',
+	'GFS',
 	'Estatisticas',			# Gráficos com filtros
 	'Visualizar formulários',	# Filtros para visualizar os questionários desejeados
-	'Suporte Engenharia'
-]
+	'Suporte Engenharia']
 
 if selecao_tipo == 'Cil':
 	func_escolhida = st.sidebar.radio('Selecione o formulário Cil', formularios_cil, index=0)
