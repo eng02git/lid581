@@ -65,7 +65,10 @@ fig1s.write('')
 fig2s.image('latas minas.png', width=150)
 fig3s.write('')
 st.sidebar.title("LID Forms")
-formularios = [
+tipos = ['Cil', 'Troubleshoot']
+selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
+
+formularios_cil = [
 	'Liner diário',
 	'Liner semanal',
 	'Shell diário',
@@ -83,7 +86,26 @@ formularios = [
 	'Suporte Engenharia'
 ]
 
-func_escolhida = st.sidebar.radio('Selecione o formulário de saída', formularios, index=0)
+formularios_trouble = [
+	'Troubleshoot 1',
+	'Troubleshoot 2',
+	'Troubleshoot 3',
+	'Troubleshoot 4',
+	'Troubleshoot 5',
+	'Troubleshoot 6',
+	'Troubleshoot 7',
+	'Troubleshoot 8',
+	'Estatisticas',			# Gráficos com filtros
+	'Visualizar formulários',	# Filtros para visualizar os questionários desejeados
+	'Suporte Engenharia'
+]
+
+if selecao_tipo == 'Cil':
+	func_escolhida = st.sidebar.radio('Selecione o formulário Cil', formularios_cil, index=0)
+	
+if selecao_tipo == 'Troubleshoot':
+	func_escolhida = st.sidebar.radio('Selecione o formulário de Troubleshoot', formularios_trouble, index=0)
+
 
 ######################################################################################################
                                #Função para leitura do banco (Firebase)
