@@ -1941,6 +1941,14 @@ if __name__ == '__main__':
 		
 		solucao = st4.radio('Solução', df_causa['Solucao'].unique())
 		
+		s1, s2, s3, s4 = st.beta_columns([1,3,3,1,1])
+		
+		dic['Resolveu'] = s1.radio('Resolveu o problema?', ['Sim', 'Não'])
+		dic['Comentario'] = s2.text_input('Comentário')
+		dic['Nome'] = s3.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
+		dic['Data'] = s5.date_input('Selecione a data')
+		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
 		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
