@@ -1932,9 +1932,14 @@ if __name__ == '__main__':
 		
 		nv1 = st1.radio('Qual o problema?', df_liner['Nv1'].unique())
 		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
-		st.write(df_nv1)
 		
 		nv2 = st2.radio('Qual o problema?', df_nv1['Nv2'].unique())
+		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+		
+		causa = st3.radio('Causa', df_nv2['Causa'].unique())
+		df_causa = df_nv2[df_nv2['Causa'] == causa]
+		
+		solucao = st4.radio('Solução', df_causa['Solucao'].unique())
 		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
