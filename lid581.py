@@ -1932,6 +1932,7 @@ if __name__ == '__main__':
 		
 		nv1 = st1.radio('Qual o problema?', df_liner['Nv1'].unique())
 		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
+		st.write(df_nv1)
 		
 		nv2 = st2.radio('Qual o problema?', df_nv1['Nv2'].unique())
 		
