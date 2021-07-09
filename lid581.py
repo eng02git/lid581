@@ -1941,13 +1941,13 @@ if __name__ == '__main__':
 		
 		solucao = st4.radio('Solução', df_causa['Solucao'].unique())
 		
-		s1, s2,  = st.beta_columns([2,6])
-		s3, s4, s5 = st.beta_columns([6, 2, 2])
+		s1, s2,  = st.beta_columns([2,8])
+		s3, s4, s5 = st.beta_columns([2, 2, 6])
 		dic['Resolveu'] = s1.radio('Resolveu o problema?', ['Sim', 'Não'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Nome'] = s3.selectbox('Nome do colaborador', nomes) #definir nomes
 		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s5.date_input('Selecione a data')
+		dic['Data'] = s3.date_input('Selecione a data')
+		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
 		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
