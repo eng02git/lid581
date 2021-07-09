@@ -1930,16 +1930,16 @@ if __name__ == '__main__':
 		
 		st1, st2, st3, st4 = st.beta_columns(4)
 		
-		nv1 = st1.radio('Qual o problema?', df_liner['Nv1'].unique(), index=0)
+		nv1 = st1.radio('1) Qual o problema?', df_liner['Nv1'].unique(), index=0)
 		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
 		
-		nv2 = st2.radio('Qual o problema?', df_nv1['Nv2'].unique())
+		nv2 = st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique())
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 		
-		causa = st3.radio('Causa', df_nv2['Causa'].unique())
+		causa = st3.radio('3) Causa', df_nv2['Causa'].unique())
 		df_causa = df_nv2[df_nv2['Causa'] == causa]
 		
-		solucao = st4.radio('Solução', df_causa['Solucao'].unique())
+		solucao = st4.radio('4) Solução', df_causa['Solucao'].unique())
 		
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
