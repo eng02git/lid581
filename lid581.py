@@ -1925,6 +1925,9 @@ if __name__ == '__main__':
 			trouble_liner_proc()	
 		trouble_liner()
 		
+		df_liner = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
+		st.write(df_liner)
+		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
 		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
