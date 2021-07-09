@@ -1941,8 +1941,8 @@ if __name__ == '__main__':
 		
 		solucao = st4.radio('Solução', df_causa['Solucao'].unique())
 		
-		s1, s2, s3, s4, s5 = st.beta_columns([2,6,6,2,2])
-		
+		s1, s2,  = st.beta_columns([2,6])
+		s3, s4, s5 = st.beta_columns([6, 2, 2])
 		dic['Resolveu'] = s1.radio('Resolveu o problema?', ['Sim', 'Não'])
 		dic['Comentario'] = s2.text_input('Comentário')
 		dic['Nome'] = s3.selectbox('Nome do colaborador', nomes) #definir nomes
