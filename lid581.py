@@ -1930,7 +1930,7 @@ if __name__ == '__main__':
 		
 		st1, st2, st3, st4 = st.beta_columns(4)
 		
-		st1.radio('Qual o problema', df['Nv1'].unique())
+		st1.radio('Qual o problema', df_liner['Nv1'].unique())
 		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
