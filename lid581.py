@@ -1928,7 +1928,19 @@ if __name__ == '__main__':
 		df_liner = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
 		#st.write(df_liner)
 		
-
+		# teste 1
+		st1, st2, st3, st4 = st.beta_columns(4)
+		
+		nv1 = st1.radio('1) Qual o problema?', df_liner['Nv1'].unique(), index=0)
+		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
+		
+		nv2 = st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique())
+		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+		
+		causa = st3.radio('3) Causa', df_nv2['Causa'].unique())
+		df_causa = df_nv2[df_nv2['Causa'] == causa]
+		
+		solucao = st4.radio('4) Solução', df_causa['Solucao'].unique())
 		
 		# teste 2
 		st.subheader('Identificando o problema')
