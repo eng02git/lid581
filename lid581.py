@@ -1920,13 +1920,13 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Liner':
 		st.subheader('Troubleshooting Liner')
-		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		if proc_trouble:
-			trouble_liner_proc()	
+		#proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
+		#if proc_trouble:
+			#trouble_liner_proc()	
 		trouble_liner()
 		
 		df_liner = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
-		st.write(df_liner)
+		#st.write(df_liner)
 		
 		st1, st2, st3, st4 = st.beta_columns(4)
 		
