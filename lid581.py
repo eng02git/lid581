@@ -1930,7 +1930,7 @@ if __name__ == '__main__':
 		
 		st1, st2, st3, st4 = st.beta_columns(4)
 		
-		nv1 = st1.radio('Qual o problema?', df_liner['Nv1'].unique())
+		nv1 = st1.radio('Qual o problema?', df_liner['Nv1'].unique(), index=0)
 		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
 		
 		nv2 = st2.radio('Qual o problema?', df_nv1['Nv2'].unique())
