@@ -1950,16 +1950,16 @@ if __name__ == '__main__':
 		st.subheader('Avaliando causa e solução')
 		_st3, _st4 = st.beta_columns(2)
 		
-		nv1 = _st1.radio('1) Qual o problema?', df_liner['Nv1'].unique(), index=0)
+		nv1 = _st1.radio('1) Qual o problema?', df_liner['Nv1'].unique(), index=0, key=1)
 		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
 		
-		nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique())
+		nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), key=2)
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 		
-		causa = _st3.radio('3) Causa', df_nv2['Causa'].unique())
+		causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), key=3)
 		df_causa = df_nv2[df_nv2['Causa'] == causa]
 		
-		solucao = _st4.radio('4) Solução', df_causa['Solucao'].unique())
+		solucao = _st4.radio('4) Solução', df_causa['Solucao'].unique(), key=4)
 		
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
