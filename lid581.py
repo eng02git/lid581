@@ -1970,16 +1970,16 @@ if __name__ == '__main__':
 		#st.subheader('Avaliando causa e solução')
 		#_st3, _st4 = st.beta_columns(2)
 		
-		nv1 = st.selectbox('1) Qual o problema?', df_liner['Nv1'].unique(), index=0, key='1')
+		nv1 = st.selectbox('1) Qual o problema?', df_liner['Nv1'].unique(), index=0, key='11')
 		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
 		
-		nv2 = st.selectbox('2) Qual o problema?', df_nv1['Nv2'].unique(), key='2')
+		nv2 = st.selectbox('2) Qual o problema?', df_nv1['Nv2'].unique(), key='12')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 		
-		causa = st.selectbox('3) Causa', df_nv2['Causa'].unique(), key='3')
+		causa = st.selectbox('3) Causa', df_nv2['Causa'].unique(), key='13')
 		df_causa = df_nv2[df_nv2['Causa'] == causa]
 		
-		solucao = st.selectbox('4) Solução', df_causa['Solucao'].unique(), key='4')
+		solucao = st.selectbox('4) Solução', df_causa['Solucao'].unique(), key='14')
 		
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
