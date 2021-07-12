@@ -53,9 +53,6 @@ creds = service_account.Credentials.from_service_account_info(key_dict)
 # Seleciona o projeto
 db = firestore.Client(credentials=creds, project="lid-forms")
 
-# Link do arquivo com os dados
-DATA_URL = "data.csv"
-
 ######################################################################################################
 				     #Definição da sidebar
 ######################################################################################################
