@@ -1784,7 +1784,7 @@ def trouble_shell():
 	causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), key='3')
 	df_causa = df_nv2[df_nv2['Causa'] == causa]
 
-	solucao = _st4.radio('4) Solução', df_causa['Solucao'].unique(), key='4')
+	solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), key='4')
 
 def trouble_autobagger():
 	pass
