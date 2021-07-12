@@ -1781,7 +1781,7 @@ def trouble_shell():
 	st.subheader('Avaliando causa e solução')
 	_st3, _st4 = st.beta_columns(2)
 
-	nv1 = st.selectbox('1) Qual o problema?', df['Nv1'].unique() , index=0, key='1')
+	nv1 = _st1.selectbox('1) Qual o problema?', df['Nv1'].unique() , index=0, key='1')
 	#nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique(), index=0, key='1')
 	df_nv1 = df[df['Nv1'] == nv1]
 	
