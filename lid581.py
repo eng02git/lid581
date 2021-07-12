@@ -1822,7 +1822,7 @@ def trouble_shell():
 
 		# Armazena no banco
 		try:
-			doc_ref = db.collection("troubleshoot_shel") #.document(val_documento)
+			doc_ref = db.collection("troubleshoot_shell").document()
 			doc_ref.set(new_d)
 			st.success('Formulário armazenado com sucesso!')
 		except:
