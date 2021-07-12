@@ -1817,10 +1817,10 @@ def trouble_autobagger():
 		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='shell2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
-		st.subheader('Possìveis soluções')
+		st.subheader('Possíveis soluções')
 		if df_nv2.shape[0] > 0:
 
-			solucao = st.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='shell4')
+			solucao = st.radio('3) Solução', list(df_nv2['Solucao'].unique()), key='shell4')
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
