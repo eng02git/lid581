@@ -1760,19 +1760,12 @@ def conversion_mensal_proc():
 def trouble_liner():
 	pass
 
-@st.cache
-def load_shell():
-	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
-	return df
-
 def test():
 	pass
 	
 
 def trouble_shell():
-	#df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
-	#dic = {}
-	df = load_shell()
+	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 
 	st.subheader('Identificando o problema')
 
