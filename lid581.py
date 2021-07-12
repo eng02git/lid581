@@ -1801,7 +1801,7 @@ def trouble_shell():
 		dic['Data'] = s3.date_input('Selecione a data')
 		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
 
-	submitted = st.form_submit_button('Enviar Troubleshoot')
+		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
 	# Envio do formulário
 	if submitted:		
