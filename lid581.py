@@ -1770,9 +1770,9 @@ def test():
 	
 
 def trouble_shell():
-	#df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
+	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 	#dic = {}
-	df = load_shell()
+	#df = load_shell()
 
 	st.subheader('Identificando o problema')
 
