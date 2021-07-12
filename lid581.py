@@ -1773,8 +1773,7 @@ def trouble_shell():
 	df_nv1 = df[df['Nv1'] == nv1]
 	
 	if df_nv1.shape[0] > 0:
-		valor = 0
-		nv2 = st.selectbox('2) Qual o problema?', df_nv1['Nv2'].unique(), index=valor,  key='shell2')
+		nv2 = st.selectbox('2) Qual o problema?', df_nv1['Nv2'].unique(),  key='shell2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 		
 		st.subheader('Avaliando causa e solução')
