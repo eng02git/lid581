@@ -1785,6 +1785,14 @@ def trouble_shell():
 	df_causa = df_nv2[df_nv2['Causa'] == causa]
 
 	solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), key='4')
+	
+	s1, s2,  = st.beta_columns([2,8])
+	s3, s4, s5 = st.beta_columns([2, 2, 6])
+	dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
+	dic['Comentario'] = s2.text_input('Comentário')
+	dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
+	dic['Data'] = s3.date_input('Selecione a data')
+	dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
 
 def trouble_autobagger():
 	pass
