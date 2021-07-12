@@ -1784,14 +1784,15 @@ def trouble_shell():
 	if df_nv1.shape[0] != 0:
 		nv2 = st.selectbox('2) Qual o problema?', df_nv1['Nv2'].unique(), index=0,  key='2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
-
+		
 		st.subheader('Avaliando causa e solução')
-		_st3, _st4 = st.beta_columns(2)
+		if if df_nv2.shape[0] != 0:
+			_st3, _st4 = st.beta_columns(2)
 
-		causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), index=0, key='3')
-		df_causa = df_nv2[df_nv2['Causa'] == causa]
+			causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), index=0, key='3')
+			df_causa = df_nv2[df_nv2['Causa'] == causa]
 
-		solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), index=0, key='4')
+			solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), index=0, key='4')
 		
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
