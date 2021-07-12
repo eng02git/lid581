@@ -2033,85 +2033,27 @@ if __name__ == '__main__':
 		st.subheader('Troubleshooting Liner')	
 		trouble_liner()
 		
-		''''df_liner = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
-		#st.write(df_liner)
-		
-		# teste 1
-		st1, st2, st3, st4 = st.beta_columns(4)
-		
-		nv1 = st1.radio('1) Qual o problema?', df_liner['Nv1'].unique(), index=0)
-		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
-		
-		nv2 = st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique())
-		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
-		
-		causa = st3.radio('3) Causa', df_nv2['Causa'].unique())
-		df_causa = df_nv2[df_nv2['Causa'] == causa]
-		
-		solucao = st4.radio('4) Solução', df_causa['Solucao'].unique())
-		
-		# teste 2
-		st.subheader('Identificando o problema')
-		
-		_st1, _st2 = st.beta_columns(2)
-		
-		st.subheader('Avaliando causa e solução')
-		_st3, _st4 = st.beta_columns(2)
-		#df_liner = pd.concat([df_liner, df_liner, df_liner, df_liner])
-		nv1 = _st1.radio('1) Qual o problema?', df_liner['Nv1'].unique() , index=0, key='11')
-		df_nv1 = df_liner[df_liner['Nv1'] == nv1]
-		
-		nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), key='12')
-		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
-		
-		causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), key='13')
-		df_causa = df_nv2[df_nv2['Causa'] == causa]
-		
-		solucao = _st4.radio('4) Solução', df_causa['Solucao'].unique(), key='14')
-				
-		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
-		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
-		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes '''
-		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
 		trouble_shell()
 
-		
 	if func_escolhida == 'Autobagger':
 		st.subheader('Troubleshooting Autobagger')
 		trouble_autobagger()
 		
 	if func_escolhida == 'Conversion Press':
-		st.subheader('Troubleshooting Conversion Press')
-		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		if proc_trouble:
-			trouble_conversion_proc()	
+		st.subheader('Troubleshooting Conversion Press')	
 		trouble_conversion()
 		
 	if func_escolhida == 'Balancer A':
 		st.subheader('Troubleshooting Balancer A')
-		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		if proc_trouble:
-			trouble_balancer_a_proc()	
 		trouble_balancer_a()
 		
 	if func_escolhida == 'Balancer B':
 		st.subheader('Troubleshooting Balancer B')
-		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		if proc_trouble:
-			trouble_balancer_b_proc()	
 		trouble_balancer_b()
 		
 	if func_escolhida == 'GFS':
-		st.subheader('Troubleshooting GFS')
-		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		if proc_trouble:
-			trouble_gfs_proc()	
 		trouble_gfs()
 		
 
