@@ -1758,15 +1758,11 @@ def conversion_mensal_proc():
 #			Formularios de troubleshooting
 ##################################################################################################
 
-
-def trouble_liner_proc():
-	pass
-	
 def trouble_liner():
 	pass
 
 @st.cache
-def trouble_shell_proc():
+def trouble_shell():
 	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 
 	# teste 2
@@ -1785,35 +1781,17 @@ def trouble_shell_proc():
 	df_causa = df_nv2[df_nv2['Causa'] == causa]
 
 	solucao = _st4.radio('4) Solução', df_causa['Solucao'].unique(), key='4')
-	
-def trouble_shell():
-	pass
-	
-def trouble_autobagger_proc():
-	pass
-	
+
 def trouble_autobagger():
-	pass
-	
-def trouble_conversion_proc():
 	pass
 	
 def trouble_conversion():
 	pass
 	
-def rouble_balancer_a_proc():	
-	pass
-	
 def trouble_balancer_a():
 	pass
 	
-def trouble_balancer_b_proc():	
-	pass
-	
 def trouble_balancer_b():
-	pass
-	
-def trouble_gfs_proc():	
 	pass
 	
 def trouble_gfs():		
