@@ -1776,19 +1776,19 @@ def trouble_shell():
 	_st1, _st2 = st.beta_columns(2)
 	st.subheader('Avaliando causa e solução')
 	_st3, _st4 = st.beta_columns(2)
-	try:
-		nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique(), index=0, key='1')
-		df_nv1 = df[df['Nv1'] == nv1]
-	
-		nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), index=0,  key='2')
-		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
-		causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), index=0, key='3')
-		df_causa = df_nv2[df_nv2['Causa'] == causa]
+	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique(), index=0, key='1', on_change= Pass)
+	df_nv1 = df[df['Nv1'] == nv1]
 
-		solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), index=0, key='4')
-	except:
-		st.error('Tente novamente')
+	nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), index=0,  key='2')
+	df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+
+	causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), index=0, key='3')
+	df_causa = df_nv2[df_nv2['Causa'] == causa]
+
+	solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), index=0, key='4')
+
+	st.error('Tente novamente')
 
 		
 	with st.form('Form'):
