@@ -1797,10 +1797,7 @@ def trouble_shell():
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
-		dic['Nv1'] = nv1
-		dic['Nv2'] = nv2
-		dic['Causa'] = causa
-		dic['Solucao'] = solucao
+
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
 		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
@@ -1810,7 +1807,11 @@ def trouble_shell():
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
 	# Envio do formulário
-	if submitted:		
+	if submitted:
+		dic['Nv1'] = nv1
+		dic['Nv2'] = nv2
+		dic['Causa'] = causa
+		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_shell")
 
 def trouble_autobagger():
@@ -1835,9 +1836,7 @@ def trouble_autobagger():
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
-		dic['Nv1'] = nv1
-		dic['Nv2'] = nv2
-		dic['Solucao'] = solucao
+
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
 		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
@@ -1847,7 +1846,10 @@ def trouble_autobagger():
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
 	# Envio do formulário
-	if submitted:		
+	if submitted:	
+		dic['Nv1'] = nv1
+		dic['Nv2'] = nv2
+		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_autobagger")
 	
 def trouble_conversion():
