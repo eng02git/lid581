@@ -1786,7 +1786,7 @@ def trouble_shell():
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 		
 		st.subheader('Avaliando causa e solução')
-		if if df_nv2.shape[0] != 0:
+		if df_nv2.shape[0] != 0:
 			_st3, _st4 = st.beta_columns(2)
 
 			causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), index=0, key='3')
