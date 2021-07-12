@@ -2027,7 +2027,7 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
-		trouble_shell()
+		#trouble_shell()
 		df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 
 		st.subheader('Identificando o problema')
