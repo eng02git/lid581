@@ -1806,7 +1806,7 @@ def trouble_shell():
 		enviar_troubleshoot(dic, "troubleshoot_shell")
 
 def trouble_autobagger():
-	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
+	df = pd.read_csv("troubleshoot_csv/autobagger.csv", sep=';')
 
 	st.subheader('Identificando o problema')
 
