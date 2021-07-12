@@ -1777,7 +1777,7 @@ def trouble_shell():
 	st.subheader('Avaliando causa e solução')
 	_st3, _st4 = st.beta_columns(2)
 
-	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique(), index=0, key='1', on_change= Pass)
+	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique(), index=0, key='1', on_change= main())
 	df_nv1 = df[df['Nv1'] == nv1]
 
 	nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), index=0,  key='2')
@@ -1888,7 +1888,6 @@ def enviar_troubleshoot(dic, colecao):
 if __name__ == '__main__':
 	# Carrega dados dos colaboradores
 	usuarios = load_users()
-
 
 	# Constantes
 	turnos = ['Turno A', 'Turno B', 'Turno C']
