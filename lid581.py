@@ -1788,24 +1788,24 @@ def trouble_shell():
 
 	solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), index=0, key='4')
 	
-	with st.form('Form'):
-		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
-		dic['Nv1'] = nv1
-		dic['Nv2'] = nv2
-		dic['Causa'] = causa
-		dic['Solucao'] = solucao
-		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
-		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+	#with st.form('Form'):
+	s1, s2,  = st.beta_columns([2,8])
+	s3, s4, s5 = st.beta_columns([2, 2, 6])
+	dic['Nv1'] = nv1
+	dic['Nv2'] = nv2
+	dic['Causa'] = causa
+	dic['Solucao'] = solucao
+	dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
+	dic['Comentario'] = s2.text_input('Comentário')
+	dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
+	dic['Data'] = s3.date_input('Selecione a data')
+	dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
 
-		submitted = st.form_submit_button('Enviar Troubleshoot')
+	submitted = st.form_submit_button('Enviar Troubleshoot')
 		
 	# Envio do formulário
-	if submitted:		
-		enviar_troubleshoot(dic, "troubleshoot_shell")
+	#if submitted:		
+	#	enviar_troubleshoot(dic, "troubleshoot_shell")
 
 
 
