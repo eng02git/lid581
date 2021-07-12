@@ -1,4 +1,4 @@
-Nv1;	Nv2;	Nv3;	Causa;	Solucao
+Nv1;Nv2;Nv3;Causa;Solucao
 Problema contador de tampas?;	Número impróprio de tampas em um bag;	;	;	O número adequado de terminais foi definido na tela de configuração da HMI
 Problema contador de tampas?;	Número impróprio de tampas em um bag;	;	;	Seleção correta do sensor de cor / contagem na configuração da tela de configuração HMI
 Problema contador de tampas?;	Número impróprio de tampas em um bag;	;	;	A ponte do sensor de bastão curto é ajustada na posição adequada para a contagem de bolsas.
