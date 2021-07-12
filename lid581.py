@@ -2030,13 +2030,10 @@ if __name__ == '__main__':
 	##################################################################################################
 		
 	if func_escolhida == 'Liner':
-		st.subheader('Troubleshooting Liner')
-		#proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		#if proc_trouble:
-			#trouble_liner_proc()	
+		st.subheader('Troubleshooting Liner')	
 		trouble_liner()
 		
-		df_liner = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
+		''''df_liner = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
 		#st.write(df_liner)
 		
 		# teste 1
@@ -2078,7 +2075,7 @@ if __name__ == '__main__':
 		dic['Comentario'] = s2.text_input('Comentário')
 		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
 		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes '''
 		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
