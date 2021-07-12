@@ -1766,9 +1766,9 @@ def trouble_shell():
 	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 
 	# teste 2
-	st.subheader('Identificando o problema')
+	#st.subheader('Identificando o problema')
 	_st1, _st2 = st.beta_columns(2)
-	st.subheader('Avaliando causa e solução')
+	#st.subheader('Avaliando causa e solução')
 	_st3, _st4 = st.beta_columns(2)
 
 	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique() , index=0, key='1')
