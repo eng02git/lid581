@@ -1785,7 +1785,7 @@ def trouble_shell():
 			df_causa = df_nv2[df_nv2['Causa'] == causa]
 
 			solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), key='shell4')
-		
+	'''	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
@@ -1804,7 +1804,7 @@ def trouble_shell():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_shell")
+		enviar_troubleshoot(dic, "troubleshoot_shell")'''
 
 def trouble_autobagger():
 	df = pd.read_csv("troubleshoot_csv/autobagger.csv", sep=';')
