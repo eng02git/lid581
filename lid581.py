@@ -1823,16 +1823,16 @@ def trouble_autobagger():
 	st.subheader('Avaliando causa e solução')
 	#_st3, _st4 = st.beta_columns(2)
 
-	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique() , index=0, key='1')
+	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique() , index=0, key='auto1')
 	df_nv1 = df[df['Nv1'] == nv1]
 
-	nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), key='2')
+	nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), index=0, key='auto2')
 	df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
 	#causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), key='3')
 	#df_causa = df_nv2[df_nv2['Causa'] == causa]
 
-	solucao = st.radio('3) Solução', df_nv2['Solucao'].unique(), key='4')
+	solucao = st.radio('3) Solução', df_nv2['Solucao'].unique(), index=0, key='auto4')
 	
 	s1, s2,  = st.beta_columns([2,8])
 	s3, s4, s5 = st.beta_columns([2, 2, 6])
