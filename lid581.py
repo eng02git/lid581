@@ -1758,16 +1758,16 @@ def conversion_mensal_proc():
 #			Formularios de troubleshooting
 ##################################################################################################
 
+@st.cache
+def load_csv(arquivo_csv):
+	df = pd.read_csv(arquivo_csv, sep=';')
+	return df
+
 def trouble_liner():
 	pass
 
-@st.cache
-def load_shell():
-	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
-	return df
-
 def trouble_shell():
-	df = load_shell()
+	df = load_csv("troubleshoot_csv/shell.csv")
 	
 	dic = {}
 
