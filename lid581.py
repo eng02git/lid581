@@ -1804,29 +1804,10 @@ def trouble_shell():
 		
 	# Envio do formulário
 	if submitted:
-
-		# Limpa cache
-		caching.clear_cache()
 		
-		# Transforma dados do formulário em um dicionário
-		keys_values = dic.items()
-		new_d = {str(key): str(value) for key, value in keys_values}
+		enviar_troubleshoot(dic, "troubleshoot_shell")
 
-		# Verifica campos não preenchidos e os modifica
-		for key, value in new_d.items():
-			if (value == '') or value == '[]':
-				new_d[key] = '-'
-		
-		# Define o nome do documento a ser armazenado no banco
-		#val_documento = new_d['Data'] + new_d['Turno']
 
-		# Armazena no banco
-		try:
-			doc_ref = db.collection("troubleshoot_shell").document()
-			doc_ref.set(new_d)
-			st.success('Formulário armazenado com sucesso!')
-		except:
-			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 
 @st.cache
 def load_autobagger():
@@ -1873,6 +1854,27 @@ def trouble_balancer_b():
 def trouble_gfs():		
 	pass
 
+def enviar_troubleshoot(dic, colecao):
+
+	# Limpa cache
+	caching.clear_cache()
+
+	# Transforma dados do formulário em um dicionário
+	keys_values = dic.items()
+	new_d = {str(key): str(value) for key, value in keys_values}
+
+	# Verifica campos não preenchidos e os modifica
+	for key, value in new_d.items():
+		if (value == '') or value == '[]':
+			new_d[key] = '-'
+
+	# Armazena no banco
+	try:
+		doc_ref = db.collection(colecao).document()
+		doc_ref.set(new_d)
+		st.success('Formulário armazenado com sucesso!')
+	except:
+		st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
 		
 ######################################################################################################
                                            #Main
