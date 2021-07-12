@@ -1769,7 +1769,7 @@ def trouble_shell():
 
 	st.subheader('Identificando o problema')
 
-	nv1 = st.selectbox('1) Qual o problema?', list(df['Nv1'].unique()) , key='shell1')
+	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='shell1')
 	df_nv1 = df[df['Nv1'] == nv1]
 
 	if df_nv1.shape[0] > 0:
@@ -1806,23 +1806,21 @@ def trouble_shell():
 		enviar_troubleshoot(dic, "troubleshoot_shell")
 
 def trouble_autobagger():
-	df = pd.read_csv("troubleshoot_csv/autobagger.csv", sep=';')
+	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 
-	# teste 2
-	#st.subheader('Identificando o problema')
-	
-	#st.subheader('Avaliando causa e solução')
-	#_st3, _st4 = st.beta_columns(2)
+	st.subheader('Identificando o problema')
 
-	nv1 = st.selectbox('1) Qual o problema?', df['Nv1'].unique() , index=0, key='auto1')
+	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='shell1')
 	df_nv1 = df[df['Nv1'] == nv1]
-	
-	_st1, _st2 = st.beta_columns(2)
 
-	nv2 = _st1.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), index=0, key='auto2')
-	df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+	if df_nv1.shape[0] > 0:
+		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='shell2')
+		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
-	solucao = _st2.radio('3) Solução', df_nv2['Solucao'].unique(), index=0, key='auto4')
+		st.subheader('Possìveis soluções')
+		if df_nv2.shape[0] > 0:
+
+			solucao = st.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='shell4')
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
@@ -1837,9 +1835,10 @@ def trouble_autobagger():
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
 	# Envio do formulário
-	if submitted:	
+	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
+		dic['Causa'] = causa
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_autobagger")
 	
