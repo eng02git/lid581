@@ -1765,8 +1765,26 @@ def test():
 	
 
 def trouble_shell():
+	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 
-	'''	
+	st.subheader('Identificando o problema')
+
+	nv1 = st.selectbox('1) Qual o problema?', list(df['Nv1'].unique()) , key='shell1')
+	df_nv1 = df[df['Nv1'] == nv1]
+
+	if df_nv1.shape[0] > 0:
+		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='shell2')
+		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+
+		st.subheader('Avaliando causa e solução')
+		if df_nv2.shape[0] > 0:
+			_st3, _st4 = st.beta_columns(2)
+
+			causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='shell3')
+			df_causa = df_nv2[df_nv2['Causa'] == causa]
+
+			solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='shell4')
+	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
 		s3, s4, s5 = st.beta_columns([2, 2, 6])
@@ -1785,7 +1803,7 @@ def trouble_shell():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_shell")'''
+		enviar_troubleshoot(dic, "troubleshoot_shell")
 
 def trouble_autobagger():
 	df = pd.read_csv("troubleshoot_csv/autobagger.csv", sep=';')
@@ -2027,26 +2045,8 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Shell Press':
 		st.subheader('Troubleshooting Shell Press')
-		#trouble_shell()
-		df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
+		trouble_shell()
 
-		st.subheader('Identificando o problema')
-
-		nv1 = st.selectbox('1) Qual o problema?', list(df['Nv1'].unique()) , key='shell1')
-		df_nv1 = df[df['Nv1'] == nv1]
-
-		if df_nv1.shape[0] > 0:
-			nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='shell2')
-			df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
-
-			st.subheader('Avaliando causa e solução')
-			if df_nv2.shape[0] > 0:
-				_st3, _st4 = st.beta_columns(2)
-
-				causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='shell3')
-				df_causa = df_nv2[df_nv2['Causa'] == causa]
-
-				solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='shell4')
 		
 	if func_escolhida == 'Autobagger':
 		st.subheader('Troubleshooting Autobagger')
