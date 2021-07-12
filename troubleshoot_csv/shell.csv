@@ -36,11 +36,11 @@ Problema Conformação inferior?;	Sujidade;	;	Sujeiras nos recurvadores;	Limpar 
 Problema Conformação inferior?;	Clip Out (Tampas cortadas);	;	Opistão inferior (Lower Piston) está acima está acima da Cut Edge.;	Verificar dimensões de ambos.
 Problema Conformação inferior?;	Clip Out (Tampas cortadas);	;	Punção de corte danificado.;	Trocar as ferramentas.
 Problema Conformação inferior?;	Fratura do painel;	;	Raio do painel do punção (Punch Panel) muito pequeno.;	Verificar e trocar ferramental.
-Problema Curler?;	Variação na altura da borda;	;	Segmentos do Curler desajustado ou desalinhado das calhas de saída.;	Verificar o ajuste e o alinhamento das calhas de saída
+Problema Curler?;Variação na altura da borda;;Segmentos do Curler desajustado ou desalinhado das calhas de saída.;Verificar o ajuste e o alinhamento das calhas de saída
 Problema conformação superior/inferior?;	Variação na altura da borda;	;	Resíduo de material estranho entre a matriz de corte e repuxo (Draw die) e o pistão superior (Die Center Punch);	Remover a matriz de corte e repuxo e o pistão superior e limpar
 Problema conformação superior/inferior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Altura incorreta do Pistão Superior (Upper Piston) em relação ao anel núcleo da matriz (Die Core Ring);	Corrigir diminuindo a altura do espaçador do psitão superior para as dimensões corretas.
 Problema conformação superior/inferior?;	Marcas no painel;	;	Ferramental riscado;	Trocar o anel do núcleo da matriz
-Problema conformação superior/inferior?;	Marcas no raio do recurvado;	;	Risco no raio do anel do núcleo da matriz (Die Core Ring);	Trocar o anel do núcleo da matriz
+Problema conformação superior/inferior?;Marcas no raio do recurvado;;Risco no raio do anel do núcleo da matriz (Die Core Ring);Trocar o anel do núcleo da matriz
 Problemas Die?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	O Stripper Plate não está totalmente justo ao Stock Plate.;	Verificar o aperto dos parafusos e também a planicidade (área de contato) entre eles
 Problemas Die?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Sujeira acumulada no ferramental;	Limpar o ferramental
 Problemas Die?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Ferramenta travada;	Desmontar, verificar as vedações e ajustar as ferramentas, se necessário
