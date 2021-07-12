@@ -1770,18 +1770,18 @@ def test():
 	
 
 def trouble_shell():
-	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
+	#df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
 	#dic = {}
-	#df = load_shell()
+	df = load_shell()
 
 	st.subheader('Identificando o problema')
 
-	nv1 = st.selectbox('1) Qual o problema?', df['Nv1'].unique() , index=0, key='shell1')
+	nv1 = st.radio('1) Qual o problema?', df['Nv1'].unique() , index=0, key='shell1')
 	df_nv1 = df[df['Nv1'] == nv1]
 	
 	if df_nv1.shape[0] > 0:
 		valor = 0
-		nv2 = st.selectbox('2) Qual o problema?', df_nv1['Nv2'].unique(), index=valor,  key='shell2')
+		nv2 = st.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), index=valor,  key='shell2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 		
 		st.subheader('Avaliando causa e solução')
