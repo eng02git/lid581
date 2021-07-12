@@ -1,232 +1,232 @@
-Nv1;Nv2;Nv3;Causa;Solucao;
-Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está baixa;	Ajustar pressão de ar até atingir a altura correta do Countersink;
-Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	A pressão de ar do pistão superior (Die Center Piston) está alta;	Diminuir a pressão para a referência;
-Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Espaçador da matriz central (Die Center Piston) está com dimensão baixa;	Aumentar a altura do espaçador da matriz central;
-Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Todas as estações estão baixas e o Shut Right está elevado.;	Abaixar a altura do Shut Right (anotando os valores);
-Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está alta.;	Ajustar pressão de ar até atingir a altura correta do Countersink;
-Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está baixa;	Ajustar pressão de ar até atingir a altura correta do Countersink;
-Problema na Conformação superior?;	Profundidade do Countersink alta;	;	A pressão de ar do pistão superior (Die Center Piston) está alta;	Diminuir a pressão para a referência;
-Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Espaçador da matriz central (Die Center Piston) está com dimensão baixa;	Aumentar a altura do espaçador da matriz central;
-Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Todas as estações estão baixas e o Shut Right está elevado.;	Abaixar a altura do Shut Right (anotando os valores);
-Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está alta.;	Ajustar pressão de ar até atingir a altura correta do Countersink;
-Problema na Conformação superior?;	Profundidade do Painel é baixa;	;	Presença de scrap entre o punção do painel e a face do Die Center.;	Remover o anel do núcleo da matriz, limpar e polir;
-Problema na Conformação superior?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pistão superior (Upper Piston) prendendo. (Tampa atrasada);	Remover o pistão superior, polir e trocar as vedações;
-Problema na Conformação superior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Ajuste da pressão do pistão superior (Upper Piston) do painel está muito alta;	Ajustar a pressão de ar para o valor de referência;
-Problema na Conformação superior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Parafuso de fixação do espaçador do pistão superior folgado ou solto.;	Fixar parafuso com a cola apropriada;
-Problema na Conformação superior?;	Marcas no Countersink;	;	Matriz central (Blank & Draw Die) com riscos no raio.;	Trocar a matriz central;
-Problema na Conformação superior?;	Diâmetro da tampa maior;	;	Especificação incorreta da matriz de corte e repuxo (Blank & Draw Die);	Trocar a matriz de corte e repuxo;
-Problema na Conformação superior?;	Diâmetro da tampa menor;	;	Especificação errada da matriz de corte e repuxo (Blank & Draw Die).;	Trocar a matriz de corte e repuxo pela matriz com as dimensões corretas.;
-Problema na Conformação superior?;	Clip Out (Tampas cortadas);	;	Área de corte da matriz de corte está gasta.;	Trocar as ferramentas.;
-Problema na Conformação superior?;	Fratura do painel;	;	Área de corte da matriz de corte está gasta.;	Verificar e trocar ferramental.;
-Problema na Conformação superior?;	Fratura do painel;	;	Ferramental (Die Center) quebrado.;	Verificar e trocar ferramental.;
-Problema Conformação inferior?;	Profundidade do Countersink baixa;	;	Altura do anel do núcleo da matriz (Die Core Ring) está baixo da especificação do fabricante;	Trocar o anel do núcleo da matriz;
-Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	A vedação do punção do painel (Panel Punch) está vazando.;	Remover o pistão do painel e trocar a vedação;
-Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	A pressão de ar do retentor inferior (Lower Tooling Retainer) está baixa.;	Verificar e trocar a mangueira ou reapertar a conexão;
-Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	Pressão no pistão do punção do painel (Panel Punch Piston) está baixa.;	Aumentar a pressão de ar para o de referência;
-Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	Existe uma falha dimensional na Matriz Central (Die Center Nose);	Verificar as dimensões no desenho;
-Problema Conformação inferior?;	Variação na altura da borda;	;	Problema na matriz de corte e repuxo (Blank e Draw Die).;	Trocar ou afiar a matriz de corte e repuxo.;
-Problema Conformação inferior?;	Variação na altura da borda;	;	Anel do núcleo da matriz (Die Core Ring) não está propriamente alojado sobre os orings.;	Remover o anel do núcleo da matriz e verificar a presença de material estranho no alojamento.;
-Problema Conformação inferior?;	Variação na altura da borda;	;	Vedação do pistão inferior (Panel Punch Piston) está vazando.;	Remover o pistão inferior e trocar as vedações;
-Problema Conformação inferior?;	Variação na altura da borda;	;	Linha de ar do pistão inferior está vazando.;	Apertar as conexões ou trocar as mangueiras;
-Problema Conformação inferior?;	Variação na altura da borda;	;	Scrap resiudal entre o cut edge e o pistão inferior;	Remover o conjunto e limpar o resíduo de scrap;
-Problema Conformação inferior?;	Variação na altura da borda;	;	Ângulo incorreto de corte (Cut edge) e a matriz de corte e repuxo;	Remover a borda de corte e verificar se há arranhões ou desgastes ou problemas com as vedações. Substituir, se necessário.;
-Problema Conformação inferior?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Vedação no punção do painel (Panel Punch) vazando, o ar escapa através das laterais da tampa (Shell);	Remover o pistão do punção do painel e trocar as vedações;
-Problema Conformação inferior?;	Riscos na tampa;	;	Verificar scrap preso no recurvador (Die core);	Limpar o recurvador;
-Problema Conformação inferior?;	Sujidade;	;	Sujeiras nos recurvadores;	Limpar recurvadores;
-Problema Conformação inferior?;	Clip Out (Tampas cortadas);	;	Opistão inferior (Lower Piston) está acima está acima da Cut Edge.;	Verificar dimensões de ambos.;
-Problema Conformação inferior?;	Clip Out (Tampas cortadas);	;	Punção de corte danificado.;	Trocar as ferramentas.;
-Problema Conformação inferior?;	Fratura do painel;	;	Raio do painel do punção (Punch Panel) muito pequeno.;	Verificar e trocar ferramental.;
-Problema Curler?;	Variação na altura da borda;	;	Segmentos do Curler desajustado ou desalinhado das calhas de saída.;	Verificar o ajuste e o alinhamento das calhas de saída;
-Problema conformação superior/inferior?;	Variação na altura da borda;	;	Resíduo de material estranho entre a matriz de corte e repuxo (Draw die) e o pistão superior (Die Center Punch);	Remover a matriz de corte e repuxo e o pistão superior e limpar;
-Problema conformação superior/inferior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Altura incorreta do Pistão Superior (Upper Piston) em relação ao anel núcleo da matriz (Die Core Ring);	Corrigir diminuindo a altura do espaçador do psitão superior para as dimensões corretas.;
-Problema conformação superior/inferior?;	Marcas no painel;	;	Ferramental riscado;	Trocar o anel do núcleo da matriz;
-Problema conformação superior/inferior?;	Marcas no raio do recurvado;	;	Risco no raio do anel do núcleo da matriz (Die Core Ring);	Trocar o anel do núcleo da matriz;
-Problemas Die?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	O Stripper Plate não está totalmente justo ao Stock Plate.;	Verificar o aperto dos parafusos e também a planicidade (área de contato) entre eles;
-Problemas Die?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Sujeira acumulada no ferramental;	Limpar o ferramental;
-Problemas Die?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Ferramenta travada;	Desmontar, verificar as vedações e ajustar as ferramentas, se necessário;
-Problemas Die?;	Sujidade;	;	Sujeiras nas ferramentas inferiores e superiores;	Limpar todas as ferramentas;
-Problemas Die?;	Diâmetro da tampa maior;	;	Dimensionais da tampa estão baixos.;	Verificar dimensões;
-Problemas Die?;	Atolamentos (Jams);	;	Scrap preso nas ferramentas.;	Limpar as ferramentas.;
-Problemas Die?;	Atolamentos (Jams);	;	Fita correndo para as laterais da mesa.;	Ajustar as guias da catenária e a pressão do feed roll.;
-Problemas Die?;	Atolamentos (Jams);	;	Ferramentas travadas.;	Trocar as ferramentas, se necessário.;
-Problemas Die?;	Clip Out (Tampas cortadas);	;	A tampa não sai do pocket em tempo.;	Verificar ítem: Falha na ejeção.;
-Problemas Die?;	Clip Out (Tampas cortadas);	;	Os parafusos de fixação estão protuberantes.;	Verificar e corrigir.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Pneumático?;	Sujidade;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	Sujidade;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	Sujidade;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	Sujidade;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	Sujidade;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	Sujidade;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	Sujidade;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	Sujidade;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	Sujidade;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	Sujidade;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	Sujidade;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	Sujidade;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	Sujidade;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	Sujidade;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	Sujidade;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	Sujidade;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	Sujidade;	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	Diâmetro da tampa maior;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	Diâmetro da tampa maior;	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	Diâmetro da tampa menor;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	Diâmetro da tampa menor;	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	Atolamentos (Jams);	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	Atolamentos (Jams);	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	Atolamentos (Jams);	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	Atolamentos (Jams);	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	Atolamentos (Jams);	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	Atolamentos (Jams);	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell);
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.;
-Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Filtro de ar sujo.;	Trocar o filtro.;
-Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Desalinhamento entre a saída da matriz e as guias do conveyor que levam as tampas (Shells) até o Curlers.;	Verificar as condições dos chutes corrigindo, se necessário.;
-Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Tampa (Shell) sai atrasada;	Instalar parafusos novos nos chutes;
-Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Saídas do ferramental (chutes) estão folgadas;	Ajustar as guias que levam as tampas (shells) até o Curlers;
-Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Guias que levam as tampas (Shells) até o Curlers desajustadas;	Verificar ítem do trobleshooting: Problemas de ejeção da tampa (Shell);
-Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Desalinhamento entre a saída da matriz e as guias do conveyor que levam as tampas (Shells) até o Curlers.;	Verificar as condições dos chutes corrigindo, se necessário.;
-Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Tampa (Shell) sai atrasada;	Instalar parafusos novos nos chutes;
-Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Saídas do ferramental (chutes) estão folgadas;	Ajustar as guias que levam as tampas (shells) até o Curlers;
-Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Guias que levam as tampas (Shells) até o Curlers desajustadas;	Verificar ítem do trobleshooting: Problemas de ejeção da tampa (Shell);
-Problema Indexação?;	Riscos na tampa;	;	Falha na indexação da prensa;	Limpar os rolos;
-Problema Indexação?;	Riscos na tampa;	;	Verificar rolos puxadores (Feed Roll);	Verificar a indexação e refazer, se necessário;
-Problema Indexação?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Falha na indexação da prensa;	Limpar os rolos;
-Problema Indexação?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Verificar rolos puxadores (Feed Roll);	Verificar a indexação e refazer, se necessário;
-Problema qualidade?;	Riscos na tampa;	;	Verificar o material da chapa;	Trocar a bobina, se necessário;
-Problema Scrap?;	Riscos na tampa;	;	Verificar scrap preso na calha;	Limpar as calhas;
-Problema Scrap?;	Riscos na tampa;	;	Transportadora de scrap desativada.;	Ativar o transportador.;
-Problema Scrap?;	Riscos na tampa;	;	Sistema de transporte ou sucata desligado.;	Ativar o transportador.;
-Problema Scrap?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Verificar scrap preso na calha;	Limpar as calhas;
-Problema Scrap?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Transportadora de scrap desativada.;	Ativar o transportador.;
-Problema Scrap?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Sistema de transporte ou sucata desligado.;	Ativar o transportador.;
-Problema Scrap?;	A prensa não opera em Jog ativado ou curso único, mas não opera em modo automático;	;	Verificar scrap preso na calha;	Limpar as calhas;
-Problema Scrap?;	A prensa não opera em Jog ativado ou curso único, mas não opera em modo automático;	;	Transportadora de scrap desativada.;	Ativar o transportador.;
-Problema Scrap?;	A prensa não opera em Jog ativado ou curso único, mas não opera em modo automático;	;	Sistema de transporte ou sucata desligado.;	Ativar o transportador.;
-Problema GFS/Die?;	Clip Out (Tampas cortadas);	;	Alimentação não está alinhada ao ferramental (Die);	Alinhar o sistema de alimentação.;
-Problema GFS?;	Clip Out (Tampas cortadas);	;	O Pinch Roll está desalinhado.;	Limpar os rolos.;
-Problema GFS?;	Clip Out (Tampas cortadas);	;	Alimentação da lâmina está dessincronizada.;	Verificar pressão e o estado da superfície dos rolos ajustando ou trocando, se necessário.;
-Problema GFS?;	Clip Out (Tampas cortadas);	;	Acionamento da alimentação com problema.;	Verificar a correia, o acoplamento e trocar a caixa, se necessário.;
-Problema GFS?;	Clip Out (Tampas cortadas);	;	Rolos de alimentação com problemas.;	Alinhar o Pinch Roll.;
-Problema GFS?;	Clip Out (Tampas cortadas);	;	Sujeira nos rolos (Feed rolls).;	Verificar e ajustar a alimentação.;
-Problema GFS?;	Morsa na folha de alumínio;	;	O Pinch Roll está desalinhado.;	Limpar os rolos.;
-Problema GFS?;	Morsa na folha de alumínio;	;	Alimentação da lâmina está dessincronizada.;	Verificar pressão e o estado da superfície dos rolos ajustando ou trocando, se necessário.;
-Problema GFS?;	Morsa na folha de alumínio;	;	Acionamento da alimentação com problema.;	Verificar a correia, o acoplamento e trocar a caixa, se necessário.;
-Problema GFS?;	Morsa na folha de alumínio;	;	Rolos de alimentação com problemas.;	Alinhar o Pinch Roll.;
-Problema GFS?;	Morsa na folha de alumínio;	;	Sujeira nos rolos (Feed rolls).;	Verificar e ajustar a alimentação.;
-Problema Insumo?;	Fratura do painel;	;	Espessura incorreta da chapa.;	Verificar dimensões e trocar bobina.;
-Problema Insumo?;	Fratura do painel;	;	Material da chapa incorreto.;	Verificar a quantidade de lubrificante e corrigir.;
-Problema Insumo?;	Fratura do painel;	;	Lubrificação insuficiente da chapa.;	Verificar e soltar o material.;
-Problema Insumo?;	Fratura do painel;	;	Material desbobinado enjambrado ou colado.;	Verificar e soltar o material.;
-Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Espessura incorreta da chapa.;	Verificar dimensões e trocar bobina.;
-Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Material da chapa incorreto.;	Verificar a quantidade de lubrificante e corrigir.;
-Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Lubrificação insuficiente da chapa.;	Verificar e soltar o material.;
-Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Material desbobinado enjambrado ou colado.;	Verificar e soltar o material.;
-Problema Elétrico?;	O motor não dá partida;	;	Falta de energia.;	Válvula solenóide do conjunto freio/embreagem defeituosa.;
-Problema Elétrico?;	O motor não dá partida;	;	Dispositivo de travamento elétrico de emergência acionado.;	Remover o dispositivo de bloqueio.;
-Problema Elétrico?;	O motor não dá partida;	;	Blocos de segurança do cabeçote fora dos respectivos alojamentos.;	Remover o bloco de segurança.;
-Problema Elétrico?;	O motor não dá partida;	;	Falta de chapa protetora ou placa presa incorretamente.;	Verificar a presença e a fixação, corrigindo se necessário.;
-Problema Elétrico?;	O motor não dá partida;	;	Chave ou motor com defeito.;	Verificar e trocar a chave, se necessário.;
-Problema Elétrico?;	O motor não dá partida;	;	Válvula solenóide do conjunto freio/embreagem defeituosa.;	Verificar o sensor e reparar.;
-Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Falta de energia.;	Válvula solenóide do conjunto freio/embreagem defeituosa.;
-Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Dispositivo de travamento elétrico de emergência acionado.;	Remover o dispositivo de bloqueio.;
-Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Blocos de segurança do cabeçote fora dos respectivos alojamentos.;	Remover o bloco de segurança.;
-Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Falta de chapa protetora ou placa presa incorretamente.;	Verificar a presença e a fixação, corrigindo se necessário.;
-Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Chave ou motor com defeito.;	Verificar e trocar a chave, se necessário.;
-Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Válvula solenóide do conjunto freio/embreagem defeituosa.;	Verificar o sensor e reparar.;
-Problema Comandos?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Uncoiler desativado.;	Ativar o Uncoiler.;
-Problema Comandos?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Jog ativado. Operação na posição gradual.;	Desativar o modo Jog e colocar em modo operação.;
-Problema Hidráulico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Sistema hidráulico do freio/embreagem não atingiu a pressão correta.;	Verificar a pressão e reparar o componente.;
-Problema Elétrico/Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Falha no motor elétrico.;	Verificar e trocar o motor ou acoplamento.;
-Problema Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Engrenagem está solta.;	Verificar a correia, apertar ou trocar.;
-Problema Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Rolamento travado.;	Fixar engrenagem.;
-Problema Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Correia de temporização para alimentar o indexador frouxa ou rompida.;	Trocar rolamento.;
+Nv1;Nv2;Nv3;Causa;Solucao
+Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está baixa;	Ajustar pressão de ar até atingir a altura correta do Countersink
+Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	A pressão de ar do pistão superior (Die Center Piston) está alta;	Diminuir a pressão para a referência
+Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Espaçador da matriz central (Die Center Piston) está com dimensão baixa;	Aumentar a altura do espaçador da matriz central
+Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Todas as estações estão baixas e o Shut Right está elevado.;	Abaixar a altura do Shut Right (anotando os valores)
+Problema na Conformação superior?;	Profundidade do Countersink baixa;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está alta.;	Ajustar pressão de ar até atingir a altura correta do Countersink
+Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está baixa;	Ajustar pressão de ar até atingir a altura correta do Countersink
+Problema na Conformação superior?;	Profundidade do Countersink alta;	;	A pressão de ar do pistão superior (Die Center Piston) está alta;	Diminuir a pressão para a referência
+Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Espaçador da matriz central (Die Center Piston) está com dimensão baixa;	Aumentar a altura do espaçador da matriz central
+Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Todas as estações estão baixas e o Shut Right está elevado.;	Abaixar a altura do Shut Right (anotando os valores)
+Problema na Conformação superior?;	Profundidade do Countersink alta;	;	Pressão de ar do pistão da matriz central (Die Center Piston) está alta.;	Ajustar pressão de ar até atingir a altura correta do Countersink
+Problema na Conformação superior?;	Profundidade do Painel é baixa;	;	Presença de scrap entre o punção do painel e a face do Die Center.;	Remover o anel do núcleo da matriz, limpar e polir
+Problema na Conformação superior?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pistão superior (Upper Piston) prendendo. (Tampa atrasada);	Remover o pistão superior, polir e trocar as vedações
+Problema na Conformação superior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Ajuste da pressão do pistão superior (Upper Piston) do painel está muito alta;	Ajustar a pressão de ar para o valor de referência
+Problema na Conformação superior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Parafuso de fixação do espaçador do pistão superior folgado ou solto.;	Fixar parafuso com a cola apropriada
+Problema na Conformação superior?;	Marcas no Countersink;	;	Matriz central (Blank & Draw Die) com riscos no raio.;	Trocar a matriz central
+Problema na Conformação superior?;	Diâmetro da tampa maior;	;	Especificação incorreta da matriz de corte e repuxo (Blank & Draw Die);	Trocar a matriz de corte e repuxo
+Problema na Conformação superior?;	Diâmetro da tampa menor;	;	Especificação errada da matriz de corte e repuxo (Blank & Draw Die).;	Trocar a matriz de corte e repuxo pela matriz com as dimensões corretas.
+Problema na Conformação superior?;	Clip Out (Tampas cortadas);	;	Área de corte da matriz de corte está gasta.;	Trocar as ferramentas.
+Problema na Conformação superior?;	Fratura do painel;	;	Área de corte da matriz de corte está gasta.;	Verificar e trocar ferramental.
+Problema na Conformação superior?;	Fratura do painel;	;	Ferramental (Die Center) quebrado.;	Verificar e trocar ferramental.
+Problema Conformação inferior?;	Profundidade do Countersink baixa;	;	Altura do anel do núcleo da matriz (Die Core Ring) está baixo da especificação do fabricante;	Trocar o anel do núcleo da matriz
+Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	A vedação do punção do painel (Panel Punch) está vazando.;	Remover o pistão do painel e trocar a vedação
+Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	A pressão de ar do retentor inferior (Lower Tooling Retainer) está baixa.;	Verificar e trocar a mangueira ou reapertar a conexão
+Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	Pressão no pistão do punção do painel (Panel Punch Piston) está baixa.;	Aumentar a pressão de ar para o de referência
+Problema Conformação inferior?;	Profundidade do Painel é baixa;	;	Existe uma falha dimensional na Matriz Central (Die Center Nose);	Verificar as dimensões no desenho
+Problema Conformação inferior?;	Variação na altura da borda;	;	Problema na matriz de corte e repuxo (Blank e Draw Die).;	Trocar ou afiar a matriz de corte e repuxo.
+Problema Conformação inferior?;	Variação na altura da borda;	;	Anel do núcleo da matriz (Die Core Ring) não está propriamente alojado sobre os orings.;	Remover o anel do núcleo da matriz e verificar a presença de material estranho no alojamento.
+Problema Conformação inferior?;	Variação na altura da borda;	;	Vedação do pistão inferior (Panel Punch Piston) está vazando.;	Remover o pistão inferior e trocar as vedações
+Problema Conformação inferior?;	Variação na altura da borda;	;	Linha de ar do pistão inferior está vazando.;	Apertar as conexões ou trocar as mangueiras
+Problema Conformação inferior?;	Variação na altura da borda;	;	Scrap resiudal entre o cut edge e o pistão inferior;	Remover o conjunto e limpar o resíduo de scrap
+Problema Conformação inferior?;	Variação na altura da borda;	;	Ângulo incorreto de corte (Cut edge) e a matriz de corte e repuxo;	Remover a borda de corte e verificar se há arranhões ou desgastes ou problemas com as vedações. Substituir, se necessário.
+Problema Conformação inferior?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Vedação no punção do painel (Panel Punch) vazando, o ar escapa através das laterais da tampa (Shell);	Remover o pistão do punção do painel e trocar as vedações
+Problema Conformação inferior?;	Riscos na tampa;	;	Verificar scrap preso no recurvador (Die core);	Limpar o recurvador
+Problema Conformação inferior?;	Sujidade;	;	Sujeiras nos recurvadores;	Limpar recurvadores
+Problema Conformação inferior?;	Clip Out (Tampas cortadas);	;	Opistão inferior (Lower Piston) está acima está acima da Cut Edge.;	Verificar dimensões de ambos.
+Problema Conformação inferior?;	Clip Out (Tampas cortadas);	;	Punção de corte danificado.;	Trocar as ferramentas.
+Problema Conformação inferior?;	Fratura do painel;	;	Raio do painel do punção (Punch Panel) muito pequeno.;	Verificar e trocar ferramental.
+Problema Curler?;	Variação na altura da borda;	;	Segmentos do Curler desajustado ou desalinhado das calhas de saída.;	Verificar o ajuste e o alinhamento das calhas de saída
+Problema conformação superior/inferior?;	Variação na altura da borda;	;	Resíduo de material estranho entre a matriz de corte e repuxo (Draw die) e o pistão superior (Die Center Punch);	Remover a matriz de corte e repuxo e o pistão superior e limpar
+Problema conformação superior/inferior?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Altura incorreta do Pistão Superior (Upper Piston) em relação ao anel núcleo da matriz (Die Core Ring);	Corrigir diminuindo a altura do espaçador do psitão superior para as dimensões corretas.
+Problema conformação superior/inferior?;	Marcas no painel;	;	Ferramental riscado;	Trocar o anel do núcleo da matriz
+Problema conformação superior/inferior?;	Marcas no raio do recurvado;	;	Risco no raio do anel do núcleo da matriz (Die Core Ring);	Trocar o anel do núcleo da matriz
+Problemas Die?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	O Stripper Plate não está totalmente justo ao Stock Plate.;	Verificar o aperto dos parafusos e também a planicidade (área de contato) entre eles
+Problemas Die?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Sujeira acumulada no ferramental;	Limpar o ferramental
+Problemas Die?;	Enrugamento na parede do Chuck da tampa (Shell);	;	Ferramenta travada;	Desmontar, verificar as vedações e ajustar as ferramentas, se necessário
+Problemas Die?;	Sujidade;	;	Sujeiras nas ferramentas inferiores e superiores;	Limpar todas as ferramentas
+Problemas Die?;	Diâmetro da tampa maior;	;	Dimensionais da tampa estão baixos.;	Verificar dimensões
+Problemas Die?;	Atolamentos (Jams);	;	Scrap preso nas ferramentas.;	Limpar as ferramentas.
+Problemas Die?;	Atolamentos (Jams);	;	Fita correndo para as laterais da mesa.;	Ajustar as guias da catenária e a pressão do feed roll.
+Problemas Die?;	Atolamentos (Jams);	;	Ferramentas travadas.;	Trocar as ferramentas, se necessário.
+Problemas Die?;	Clip Out (Tampas cortadas);	;	A tampa não sai do pocket em tempo.;	Verificar ítem: Falha na ejeção.
+Problemas Die?;	Clip Out (Tampas cortadas);	;	Os parafusos de fixação estão protuberantes.;	Verificar e corrigir.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Pneumático?;	Sujidade;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	Sujidade;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	Sujidade;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	Sujidade;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	Sujidade;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	Sujidade;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	Sujidade;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	Sujidade;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	Sujidade;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	Sujidade;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	Sujidade;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	Sujidade;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	Sujidade;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	Sujidade;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	Sujidade;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	Sujidade;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	Sujidade;	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	Diâmetro da tampa maior;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	Diâmetro da tampa maior;	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	Diâmetro da tampa menor;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	Diâmetro da tampa menor;	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Pneumático?;	Atolamentos (Jams);	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	Atolamentos (Jams);	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	Atolamentos (Jams);	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	Atolamentos (Jams);	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	Atolamentos (Jams);	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	Atolamentos (Jams);	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	Atolamentos (Jams);	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	Atolamentos (Jams);	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	Atolamentos (Jams);	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	Atolamentos (Jams);	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	Atolamentos (Jams);	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	Atolamentos (Jams);	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	Atolamentos (Jams);	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	Atolamentos (Jams);	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	Atolamentos (Jams);	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	Atolamentos (Jams);	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	Atolamentos (Jams);	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	A prensa opera, mas não indexa ou alimenta o material;	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão baixa por vazamentos de ar na linha que alimenta o bloco de ejeção;	Verificar e ajustar a pressão de ar da ejeção da tampa (Shell)
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	A pressão de ejeção da tampa (Shell) está incorreta.;	Verificar o aperto ou trincas trocando, se necessário.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão de elevação da tampa (Shell) está incorreta.;	Ajustar a pressão de ar para o valor de referência
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Resíduo de material no orifício do ejetor da tampa (Shell);	Remover o ejetor, desobstruir e limpar
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Furo de elevação das tampas (Shells) estão entupidos;	Remover o punção do painel e desbloquear os furos.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Furo no nariz de ejeção (Eject Nozzle) desalinhado com o pocket.;	Remover e limpar o furo de ejeção.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Sujeiras nos aeorstackers e bandeiras;	Limpar todos os aerostackers e bandeiras
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão de ar do ferramental está baixa;	Verificar pressão de ar na entrada das ferramentas, limpar o filtro, se necessário
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Pressão de ar do ferramental alta;	Verificar pressões de ar e reduzir, se necessário.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Vazamento de ar nas ferramentas.;	Desmontar e trocar as vedações das ferramentas.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Ejeção de tampas.;	Verificar item: Problemas de ejeção. Verificar e ajustar a pressão de ejeção.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Cilindros pneumáticos de alimentação abertos ou com pressão insuficiente.;	Verificar a pressão geral na entrada do equipamento.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Cilindro pneumático defeituoso.;	Trocar o cilindro.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Problema no fornecimento geral de ar da planta.;	Verificar funcionamento dos compressores de ar.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Problema com a válvula reguladora de pressão de entrada.;	Ajudar e trocar, se necessário.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Filtro de ar sujo.;	Eliminar pontos de vazamento em conexões e mangueiras danificadas.
+Problema Pneumático?;	Pressão geral da máquina varia muito;	;	Filtro de ar sujo.;	Trocar o filtro.
+Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Desalinhamento entre a saída da matriz e as guias do conveyor que levam as tampas (Shells) até o Curlers.;	Verificar as condições dos chutes corrigindo, se necessário.
+Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Tampa (Shell) sai atrasada;	Instalar parafusos novos nos chutes
+Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Saídas do ferramental (chutes) estão folgadas;	Ajustar as guias que levam as tampas (shells) até o Curlers
+Problema Transporte?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Guias que levam as tampas (Shells) até o Curlers desajustadas;	Verificar ítem do trobleshooting: Problemas de ejeção da tampa (Shell)
+Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Desalinhamento entre a saída da matriz e as guias do conveyor que levam as tampas (Shells) até o Curlers.;	Verificar as condições dos chutes corrigindo, se necessário.
+Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Tampa (Shell) sai atrasada;	Instalar parafusos novos nos chutes
+Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Saídas do ferramental (chutes) estão folgadas;	Ajustar as guias que levam as tampas (shells) até o Curlers
+Problema Transporte?;	Dupla tampa (Shell) causa JAM nas guias de transporte que alimentam o Curler;	;	Guias que levam as tampas (Shells) até o Curlers desajustadas;	Verificar ítem do trobleshooting: Problemas de ejeção da tampa (Shell)
+Problema Indexação?;	Riscos na tampa;	;	Falha na indexação da prensa;	Limpar os rolos
+Problema Indexação?;	Riscos na tampa;	;	Verificar rolos puxadores (Feed Roll);	Verificar a indexação e refazer, se necessário
+Problema Indexação?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Falha na indexação da prensa;	Limpar os rolos
+Problema Indexação?;	Problemas de ejeção de tampas (Shells), provocando Jams na saída do ferramental e atraso na entrada do Curler;	;	Verificar rolos puxadores (Feed Roll);	Verificar a indexação e refazer, se necessário
+Problema qualidade?;	Riscos na tampa;	;	Verificar o material da chapa;	Trocar a bobina, se necessário
+Problema Scrap?;	Riscos na tampa;	;	Verificar scrap preso na calha;	Limpar as calhas
+Problema Scrap?;	Riscos na tampa;	;	Transportadora de scrap desativada.;	Ativar o transportador.
+Problema Scrap?;	Riscos na tampa;	;	Sistema de transporte ou sucata desligado.;	Ativar o transportador.
+Problema Scrap?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Verificar scrap preso na calha;	Limpar as calhas
+Problema Scrap?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Transportadora de scrap desativada.;	Ativar o transportador.
+Problema Scrap?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Sistema de transporte ou sucata desligado.;	Ativar o transportador.
+Problema Scrap?;	A prensa não opera em Jog ativado ou curso único, mas não opera em modo automático;	;	Verificar scrap preso na calha;	Limpar as calhas
+Problema Scrap?;	A prensa não opera em Jog ativado ou curso único, mas não opera em modo automático;	;	Transportadora de scrap desativada.;	Ativar o transportador.
+Problema Scrap?;	A prensa não opera em Jog ativado ou curso único, mas não opera em modo automático;	;	Sistema de transporte ou sucata desligado.;	Ativar o transportador.
+Problema GFS/Die?;	Clip Out (Tampas cortadas);	;	Alimentação não está alinhada ao ferramental (Die);	Alinhar o sistema de alimentação.
+Problema GFS?;	Clip Out (Tampas cortadas);	;	O Pinch Roll está desalinhado.;	Limpar os rolos.
+Problema GFS?;	Clip Out (Tampas cortadas);	;	Alimentação da lâmina está dessincronizada.;	Verificar pressão e o estado da superfície dos rolos ajustando ou trocando, se necessário.
+Problema GFS?;	Clip Out (Tampas cortadas);	;	Acionamento da alimentação com problema.;	Verificar a correia, o acoplamento e trocar a caixa, se necessário.
+Problema GFS?;	Clip Out (Tampas cortadas);	;	Rolos de alimentação com problemas.;	Alinhar o Pinch Roll.
+Problema GFS?;	Clip Out (Tampas cortadas);	;	Sujeira nos rolos (Feed rolls).;	Verificar e ajustar a alimentação.
+Problema GFS?;	Morsa na folha de alumínio;	;	O Pinch Roll está desalinhado.;	Limpar os rolos.
+Problema GFS?;	Morsa na folha de alumínio;	;	Alimentação da lâmina está dessincronizada.;	Verificar pressão e o estado da superfície dos rolos ajustando ou trocando, se necessário.
+Problema GFS?;	Morsa na folha de alumínio;	;	Acionamento da alimentação com problema.;	Verificar a correia, o acoplamento e trocar a caixa, se necessário.
+Problema GFS?;	Morsa na folha de alumínio;	;	Rolos de alimentação com problemas.;	Alinhar o Pinch Roll.
+Problema GFS?;	Morsa na folha de alumínio;	;	Sujeira nos rolos (Feed rolls).;	Verificar e ajustar a alimentação.
+Problema Insumo?;	Fratura do painel;	;	Espessura incorreta da chapa.;	Verificar dimensões e trocar bobina.
+Problema Insumo?;	Fratura do painel;	;	Material da chapa incorreto.;	Verificar a quantidade de lubrificante e corrigir.
+Problema Insumo?;	Fratura do painel;	;	Lubrificação insuficiente da chapa.;	Verificar e soltar o material.
+Problema Insumo?;	Fratura do painel;	;	Material desbobinado enjambrado ou colado.;	Verificar e soltar o material.
+Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Espessura incorreta da chapa.;	Verificar dimensões e trocar bobina.
+Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Material da chapa incorreto.;	Verificar a quantidade de lubrificante e corrigir.
+Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Lubrificação insuficiente da chapa.;	Verificar e soltar o material.
+Problema Insumo?;	A prensa opera, mas não indexa ou alimenta o material.;	;	Material desbobinado enjambrado ou colado.;	Verificar e soltar o material.
+Problema Elétrico?;	O motor não dá partida;	;	Falta de energia.;	Válvula solenóide do conjunto freio/embreagem defeituosa.
+Problema Elétrico?;	O motor não dá partida;	;	Dispositivo de travamento elétrico de emergência acionado.;	Remover o dispositivo de bloqueio.
+Problema Elétrico?;	O motor não dá partida;	;	Blocos de segurança do cabeçote fora dos respectivos alojamentos.;	Remover o bloco de segurança.
+Problema Elétrico?;	O motor não dá partida;	;	Falta de chapa protetora ou placa presa incorretamente.;	Verificar a presença e a fixação, corrigindo se necessário.
+Problema Elétrico?;	O motor não dá partida;	;	Chave ou motor com defeito.;	Verificar e trocar a chave, se necessário.
+Problema Elétrico?;	O motor não dá partida;	;	Válvula solenóide do conjunto freio/embreagem defeituosa.;	Verificar o sensor e reparar.
+Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Falta de energia.;	Válvula solenóide do conjunto freio/embreagem defeituosa.
+Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Dispositivo de travamento elétrico de emergência acionado.;	Remover o dispositivo de bloqueio.
+Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Blocos de segurança do cabeçote fora dos respectivos alojamentos.;	Remover o bloco de segurança.
+Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Falta de chapa protetora ou placa presa incorretamente.;	Verificar a presença e a fixação, corrigindo se necessário.
+Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Chave ou motor com defeito.;	Verificar e trocar a chave, se necessário.
+Problema Elétrico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Válvula solenóide do conjunto freio/embreagem defeituosa.;	Verificar o sensor e reparar.
+Problema Comandos?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Uncoiler desativado.;	Ativar o Uncoiler.
+Problema Comandos?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Jog ativado. Operação na posição gradual.;	Desativar o modo Jog e colocar em modo operação.
+Problema Hidráulico?;	O motor dá partida, mas a prensa não opera em ciclos;	;	Sistema hidráulico do freio/embreagem não atingiu a pressão correta.;	Verificar a pressão e reparar o componente.
+Problema Elétrico/Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Falha no motor elétrico.;	Verificar e trocar o motor ou acoplamento.
+Problema Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Engrenagem está solta.;	Verificar a correia, apertar ou trocar.
+Problema Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Rolamento travado.;	Fixar engrenagem.
+Problema Transmissão?;	Rolos de alimentação (Feed rolls) não giram.;	;	Correia de temporização para alimentar o indexador frouxa ou rompida.;	Trocar rolamento.
