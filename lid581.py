@@ -1791,10 +1791,10 @@ def trouble_shell():
 	#with st.form('Form'):
 	s1, s2,  = st.beta_columns([2,8])
 	s3, s4, s5 = st.beta_columns([2, 2, 6])
-	dic['Nv1'] = nv1
-	dic['Nv2'] = nv2
-	dic['Causa'] = causa
-	dic['Solucao'] = solucao
+	#dic['Nv1'] = nv1
+	#dic['Nv2'] = nv2
+	#dic['Causa'] = causa
+	#dic['Solucao'] = solucao
 	dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 	dic['Comentario'] = s2.text_input('Comentário')
 	dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
