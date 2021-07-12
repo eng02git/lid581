@@ -1794,8 +1794,38 @@ def trouble_shell():
 	dic['Data'] = s3.date_input('Selecione a data')
 	dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
 
+@st.cache
+def load_autobagger():
+	df = pd.read_csv("troubleshoot_csv/autobagger.csv", sep=';')
+	return df
+	
 def trouble_autobagger():
-	pass
+	df = load_autobagger()
+
+	# teste 2
+	st.subheader('Identificando o problema')
+	_st1, _st2 = st.beta_columns(2)
+	st.subheader('Avaliando causa e solução')
+	_st3, _st4 = st.beta_columns(2)
+
+	nv1 = _st1.radio('1) Qual o problema?', df['Nv1'].unique() , index=0, key='1')
+	df_nv1 = df[df['Nv1'] == nv1]
+
+	nv2 = _st2.radio('2) Qual o problema?', df_nv1['Nv2'].unique(), key='2')
+	df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+
+	#causa = _st3.radio('3) Causa', df_nv2['Causa'].unique(), key='3')
+	#df_causa = df_nv2[df_nv2['Causa'] == causa]
+
+	solucao = _st4.radio('4) Solução', df_nv2['Solucao'].unique(), key='4')
+	
+	s1, s2,  = st.beta_columns([2,8])
+	s3, s4, s5 = st.beta_columns([2, 2, 6])
+	dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
+	dic['Comentario'] = s2.text_input('Comentário')
+	dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
+	dic['Data'] = s3.date_input('Selecione a data')
+	dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
 	
 def trouble_conversion():
 	pass
@@ -1983,9 +2013,6 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Autobagger':
 		st.subheader('Troubleshooting Autobagger')
-		proc_trouble = st.checkbox('Deseja visualizar os procedimentos?')
-		if proc_trouble:
-			trouble_autobagger_proc()	
 		trouble_autobagger()
 		
 	if func_escolhida == 'Conversion Press':
