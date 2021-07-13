@@ -72,7 +72,7 @@ formularios_cil = [
 	'Shell semanal',
 	'Autobagger diário',
 	'Autobagger semanal',
-	'Autobagger Mensal',
+	'Autobagger mensal',
 	'Conversion diário',
 	'Conversion semanal',
 	'Conversion mensal',
@@ -2265,8 +2265,8 @@ if __name__ == '__main__':
 			Autobagger_semanal_proc()
 		Autobagger_semanal()
 		
-	if func_escolhida == 'Autobagger Mensal':
-		st.subheader('Autobagger Mensal')
+	if func_escolhida == 'Autobagger mensal':
+		st.subheader('Autobagger mensal')
 		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_LS:
 			Autobagger_mensal_proc()
@@ -2293,8 +2293,8 @@ if __name__ == '__main__':
 			conversion_mensal_proc()
 		conversion_mensal()
 		
-	if func_escolhida == 'Balnacer diário':
-		st.subheader('Balnacer diário')
+	if func_escolhida == 'Balancer diário':
+		st.subheader('Balancer diário')
 		proc_BD = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_BD:
 			balancer_diario_proc()
@@ -2504,7 +2504,6 @@ if __name__ == '__main__':
 		selected = response['selected_rows']
 		if selected != []:
 			st.table(selected)
-		
 		
 	if func_escolhida == 'Visualizar Troubleshoot':
 		st.subheader('Visualizar Troubleshoot')
