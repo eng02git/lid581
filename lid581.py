@@ -127,7 +127,7 @@ def config_grid(df):
 	paginationAutoSize = False
 	use_checkbox = True
 	enable_selection = False
-	selection_mode = 'single'
+	selection_mode = 'multiple'
 	rowMultiSelectWithClick = False
 	suppressRowDeselection = False
 
