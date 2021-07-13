@@ -94,7 +94,7 @@ formularios_trouble = [
 	'Dry Oven',
 	'Tab Uncoiler',
 	'Estatisticas',			# Gráficos com filtros
-	'Visualizar formulários',	# Filtros para visualizar os questionários desejeados
+	'Visualizar Troubleshoot',	# Filtros para visualizar os questionários desejeados
 	'Suporte Engenharia']
 
 if selecao_tipo == 'Cil':
@@ -164,7 +164,37 @@ def config_grid(df):
 # Efetua a leitura de todos os documentos presentes no banco e passa para um dataframe pandas
 # Função para carregar os dados do firebase (utiliza cache para agilizar a aplicação)
 
-# Formularios
+# Formularios cil
+@st.cache
+def load_forms_cil(colecao):
+
+	# Cria dicionário vazio
+	dicionario = {}
+	
+	# Define o caminho da coleção do firebase
+	posts_ref = db.collection(colecao)
+	
+	index = 0
+	# Busca todos os documentos presentes na coleção e salva num dicionário
+	for doc in posts_ref.stream():
+		dic_auxiliar = doc.to_dict()
+		dicionario[str(index)] = dic_auxiliar
+		index += 1
+	
+	# Ajusta o dicionário para um dataframe
+	forms_df = pd.DataFrame.from_dict(dicionario)
+	forms_df = forms_df.T
+	forms_df.reset_index(inplace=True)
+	forms_df.drop('index', axis=1, inplace=True)
+	
+	# Formata as colunas de data e hora para possibilitar filtros
+	forms_df['I0'] = pd.to_datetime(forms_df['I0']).dt.date
+	
+	# Ordena os valores pela data
+	forms_df.sort_values(by=['I0'], inplace=True)
+	return forms_df
+
+# Formularios troubleshoot
 @st.cache
 def load_forms(colecao):
 	# Cria dicionário vazio
@@ -2321,8 +2351,63 @@ if __name__ == '__main__':
 	#			Demais funcionalidades
 	##################################################################################################
 		
-	if func_escolhida == 'Visualizar formulários':
-		st.subheader('Visualizar formulários')
+	if func_escolhida ==  'Visualizar formulários':
+		form_selecionado = st.selectbox('Selecione o tipo de formulário que deseja visualizar', formularios_cil)
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil(Liner_diario)
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08'
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+		
+		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
+		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
+		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
+		df_cil_filt = (df_cil[(df_cil[''] >= inicio_filtro) & (df_cil['Data'] <= fim_filtro)]) 
+
+		# Gera lista dos turnos
+		list_turno = list(df_cil_filt['I1'].drop_duplicates())
+		list_turno.append('todos') 
+		turno_filter = _turno.selectbox("Selecione o equipamento", list_turno, list_turno.index('todos'))
+		
+		# Inicia o filtro com todos
+		if turno_filter == 'todos':
+			pass
+		elif turno_filter is not None and (str(turno_filter) != 'nan'):
+			df_cil_filt = df_cil_filt[df_cil_filt['I1'] == equip]
+
+		# Gera lista dos gestor	
+		list_nome = list(df_cil_filt['I0'].drop_duplicates())
+		list_nome.append('todos')  
+		colaborador = _nome.selectbox("Selecione o colaborador", list_nome, list_nome.index('todos'))
+		
+		# Inicia o filtro com todos
+		if colaborador == 'todos':
+			pass
+		elif colaborador is not None and (str(colaborador) != 'nan'):
+			df_cil_filt = df_cil_filt[df_cil_filt['I0'] == colaborador]		
+		
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
+		response = AgGrid(
+			    df_cil_filt, 
+			    gridOptions=gridOptions,
+			    height=grid_height, 
+			    width='100%',
+			    data_return_mode=return_mode_value, 
+			    update_mode=update_mode_value,
+			    fit_columns_on_grid_load=fit_columns_on_grid_load,
+			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+			    enable_enterprise_modules=enable_enterprise_modules)
+		
+		selected = response['selected_rows']
+		if selected != []:
+			st.table(selected)
+		
+		
+	if func_escolhida == 'Visualizar Troubleshoot':
+		st.subheader('Visualizar Troubleshoot')
 		df_troubleshoot = load_forms('troubleshoot')
 		col1, col2, _equipamento, _nome = st.beta_columns([2,2,3,9])
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
