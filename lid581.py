@@ -2338,7 +2338,8 @@ if __name__ == '__main__':
 			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
 			    enable_enterprise_modules=enable_enterprise_modules)
 		
-		st.write(response['data'])
+		st.write(response['selected_rows'])
+		
 
 		
 
