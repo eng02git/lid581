@@ -114,7 +114,7 @@ def config_grid(df):
 	return_mode = 'AS_INPUT'
 	return_mode_value = DataReturnMode.__members__[return_mode]
 
-	update_mode = 'FILTERING_CHANGED'
+	update_mode = 'MODEL_CHANGED'
 	update_mode_value = GridUpdateMode.__members__[update_mode]
 
 	#enterprise modules
