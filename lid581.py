@@ -110,6 +110,8 @@ if selecao_tipo == 'Troubleshoot':
 # Efetua a leitura de todos os documentos presentes no banco e passa para um dataframe pandas
 # Função para carregar os dados do firebase (utiliza cache para agilizar a aplicação)
 
+# Formularios
+
 # FUncionarios LIDS
 @st.cache
 def load_users():
@@ -1883,7 +1885,7 @@ def trouble_autobagger():
 	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
-		#dic['Causa'] = causa
+		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_autobagger")
 	
@@ -1920,7 +1922,7 @@ def trouble_conversion():
 	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
-		#dic['Causa'] = causa
+		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_conversion")
 	
@@ -1963,7 +1965,7 @@ def trouble_gfs():
 	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
-		#dic['Causa'] = causa
+		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_gfs")
 		
