@@ -2470,7 +2470,7 @@ if __name__ == '__main__':
 		# Gera lista dos turnos
 		list_turno = list(df_cil_filt['I1'].drop_duplicates())
 		list_turno.append('todos') 
-		turno_filter = _turno.selectbox("Selecione o equipamento", list_turno, list_turno.index('todos'))
+		turno_filter = _turno.selectbox("Selecione o turno", list_turno, list_turno.index('todos'))
 		
 		# Inicia o filtro com todos
 		if turno_filter == 'todos':
