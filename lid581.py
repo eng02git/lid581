@@ -119,10 +119,12 @@ def load_forms(colecao):
 	# Define o caminho da coleção do firebase
 	posts_ref = db.collection(colecao)
 	
+	index = 0
 	# Busca todos os documentos presentes na coleção e salva num dicionário
 	for doc in posts_ref.stream():
-		dicionario = doc.to_dict()
-		#dicionario[dic_auxiliar['documento']] = dic_auxiliar
+		dic_auxiliar = doc.to_dict()
+		dicionario[str(index)] = dic_auxiliar
+		index += 1
 	
 	# Ajusta o dicionário para um dataframe
 	forms_df = pd.DataFrame.from_dict(dicionario)
