@@ -188,10 +188,10 @@ def load_forms_cil(col):
 	forms_df.drop('index', axis=1, inplace=True)
 	
 	# Formata as colunas de data e hora para possibilitar filtros
-	forms_df['I0'] = pd.to_datetime(forms_df['I0']).dt.date
+	forms_df['I2'] = pd.to_datetime(forms_df['I2']).dt.date
 	
 	# Ordena os valores pela data
-	forms_df.sort_values(by=['I0'], inplace=True)
+	forms_df.sort_values(by=['I2'], inplace=True)
 	return forms_df
 
 # Formularios troubleshoot
