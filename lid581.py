@@ -165,7 +165,7 @@ def config_grid(df):
 # Função para carregar os dados do firebase (utiliza cache para agilizar a aplicação)
 
 # Formularios cil
-#@st.cache
+@st.cache
 def load_forms_cil(col):
 
 	# Cria dicionário vazio
@@ -2354,7 +2354,7 @@ if __name__ == '__main__':
 	if func_escolhida ==  'Visualizar formulários':
 		form_selecionado = st.selectbox('Selecione o tipo de formulário que deseja visualizar', formularios_cil)
 		if form_selecionado == 'Liner diário':
-			df_cil = load_forms_cil(Liner_diario)
+			df_cil = load_forms_cil('Liner_diario')
 			
 			# Lista e ordena as colunas do dataframe
 			lista_colunas = ['I2', 'I0', 'I1',
