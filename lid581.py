@@ -91,6 +91,8 @@ formularios_trouble = [
 	'Balancer A',
 	'Balancer B',
 	'GFS',
+	'Dry Oven',
+	'Tab Uncoiler',
 	'Estatisticas',			# Gráficos com filtros
 	'Visualizar formulários',	# Filtros para visualizar os questionários desejeados
 	'Suporte Engenharia']
@@ -1959,6 +1961,12 @@ def trouble_gfs():
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_gfs")
+		
+def trouble_dry():
+	pass
+	
+def trouble_tab():
+	pass
 
 def enviar_troubleshoot(dic, colecao):
 
@@ -2124,7 +2132,11 @@ if __name__ == '__main__':
 	if func_escolhida == 'GFS':
 		trouble_gfs()
 		
-
+	if func_escolhida == 'Dry Oven':
+		trouble_dry()
+		
+	if func_escolhida == 'Tab Uncoiler':
+		trouble_tab()
 	##################################################################################################
 	#			Demais funcionalidades
 	##################################################################################################
