@@ -2389,7 +2389,7 @@ if __name__ == '__main__':
 		elif colaborador is not None and (str(colaborador) != 'nan'):
 			df_cil_filt = df_cil_filt[df_cil_filt['I0'] == colaborador]		
 		
-		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_cil)
 		response = AgGrid(
 			    df_cil_filt, 
 			    gridOptions=gridOptions,
