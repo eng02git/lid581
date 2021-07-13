@@ -109,7 +109,7 @@ if selecao_tipo == 'Troubleshoot':
 	
 def config_grid(df):
 	sample_size = 12
-	grid_height = 500
+	grid_height = 400
 
 	return_mode = 'AS_INPUT'
 	return_mode_value = DataReturnMode.__members__[return_mode]
@@ -2323,12 +2323,41 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Visualizar formulários':
 		st.subheader('Visualizar formulários')
-		df_troubleshoot = load_forms('troubleshoot')		
+		df_troubleshoot = load_forms('troubleshoot')
 		
+		st.text('Selecione a data')
+		#col1, col2, col3 = st.beta_columns(2)
+		#_equipamento, _nome = st.beta_columns(2)
+		col1, col2, _equipamento, _nome = st.beta_columns([2,2,2,10])
+		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
+		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
+		df_troubleshootfiltrado = (df_troubleshoot[(df_troubleshoot['data'] >= inicio_filtro) & (df_troubleshoot['data'] <= fim_filtro)]) 
+
+		# Gera lista dos responsáveis
+		list_eq = list(df_troubleshootfiltrado['Equipamento'].drop_duplicates())
+		list_eq.append('todos') 
+		equip = _equipamento.selectbox("Selecione o equipamento", list_eq, list_eq.index('todos'))
+		
+		# Inicia o filtro com todos
+		if equip == 'todos':
+			pass
+		elif equip is not None and (str(equip) != 'nan'):
+			df_troubleshootfiltrado = df_troubleshootfiltrado[df_troubleshootfiltrado['Equipamento'] == equip]
+
+		# Gera lista dos gestor	
+		list_nome = list(df_troubleshootfiltrado['Nome'].drop_duplicates())
+		list_nome.append('todos')  
+		colaborador = _nome.selectbox("Selecione o gestor", list_nome, list_nome.index('todos'))
+		
+		# Inicia o filtro com todos
+		if colaborador == 'todos':
+			pass
+		elif colaborador is not None and (str(colaborador) != 'nan'):
+			df_troubleshootfiltrado = df_troubleshootfiltrado[df_troubleshootfiltrado['Nome'] == colaborador]		
 		
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
 		response = AgGrid(
-			    df_troubleshoot, 
+			    df_troubleshootfiltrado, 
 			    gridOptions=gridOptions,
 			    height=grid_height, 
 			    width='100%',
@@ -2337,12 +2366,11 @@ if __name__ == '__main__':
 			    fit_columns_on_grid_load=fit_columns_on_grid_load,
 			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
 			    enable_enterprise_modules=enable_enterprise_modules)
+		
 		selected = response['selected_rows']
-		selected_df = pd.DataFrame(selected)
-		#st.write(selected)
-		#st.write(selected_df)
-		#st.table(selected)
-		st.table(selected_df)
+		st.table(selected)
+
+		
 		
 
 		
