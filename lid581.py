@@ -2339,6 +2339,7 @@ if __name__ == '__main__':
 			    enable_enterprise_modules=enable_enterprise_modules)
 		
 		st.write(response['selected_rows'])
+		st.button('vai')
 		
 
 		
