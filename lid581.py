@@ -2324,10 +2324,6 @@ if __name__ == '__main__':
 	if func_escolhida == 'Visualizar formulários':
 		st.subheader('Visualizar formulários')
 		df_troubleshoot = load_forms('troubleshoot')
-		
-		st.text('Selecione a data')
-		#col1, col2, col3 = st.beta_columns(2)
-		#_equipamento, _nome = st.beta_columns(2)
 		col1, col2, _equipamento, _nome = st.beta_columns([2,2,3,9])
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
@@ -2367,9 +2363,8 @@ if __name__ == '__main__':
 			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
 			    enable_enterprise_modules=enable_enterprise_modules)
 		
-		
 		selected = response['selected_rows']
-		if selected != '':
+		if selected != []:
 			st.table(selected)
 	
 	if func_escolhida == 'Suporte Engenharia':
