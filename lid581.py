@@ -111,6 +111,35 @@ if selecao_tipo == 'Troubleshoot':
 # Função para carregar os dados do firebase (utiliza cache para agilizar a aplicação)
 
 # Formularios
+@st.cache
+def load_forms(colecao):
+	# Cria dicionário vazio
+	dicionario = {}
+	
+	# Define o caminho da coleção do firebase
+	posts_ref = db.collection(colecao)
+	
+	# Busca todos os documentos presentes na coleção e salva num dicionário
+	for doc in posts_ref.stream():
+		dic_auxiliar = doc.to_dict()
+		dicionario[dic_auxiliar['documento']] = dic_auxiliar
+	
+	# Ajusta o dicionário para um dataframe
+	forms_df = pd.DataFrame.from_dict(dicionario)
+	forms_df = forms_df.T
+	forms_df.reset_index(inplace=True)
+	forms_df.drop('index', axis=1, inplace=True)
+	
+	# Lista e ordena as colunas do dataframe
+	lista_colunas = ['Equipamento', 'Data', 'Nome', 'Turno', 'Nv1', 'Nv2', 'Causa', 'Solucao', 'Resolveu', 'Comentario']
+	forms_df = forms_df.reindex(columns=lista_colunas)
+	
+	# Formata as colunas de data e hora para possibilitar filtros
+	forms_df['Data'] = pd.to_datetime(forms_df['Data']).dt.date
+	
+	# Ordena os valores pela data
+	forms_df.sort_values(by=['Data'], inplace=True)
+	return forms_df
 
 # FUncionarios LIDS
 @st.cache
@@ -2231,14 +2260,15 @@ if __name__ == '__main__':
 	if func_escolhida == 'Tab Uncoiler':
 		st.subheader('Troubleshooting Tab Uncoiler')
 		trouble_tab()
+		
 	##################################################################################################
 	#			Demais funcionalidades
 	##################################################################################################
-	
-
 		
 	if func_escolhida == 'Visualizar formulários':
 		st.subheader('Visualizar formulários')
+		df_troubleshoot = load_forms('troubleshoot')
+		st.write(df_troubleshoot)
 				
 	if func_escolhida == 'Suporte Engenharia':
 		st.subheader('Suporte da aplicação LID Forms')
@@ -2267,99 +2297,5 @@ if __name__ == '__main__':
 		if reset_db:
 			caching.clear_cache()
 			
-			
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
-		import streamlit.components.v1 as components
-		cordax_otions = [
-			'tela1',
-			'tela2',
-		]
-
-		lid_cordax = st.sidebar.radio('Selecione a tela', cordax_otions, index=0)
-
-		
-		file_ = open("Untitled.png", "rb")
-		contents = file_.read()
-		data_url = base64.b64encode(contents).decode("utf-8")
-		file_.close()
-
-		#file_ = open("index.html", "r")
-		#index_html = file_.read()
-		#index_html = base64.b64encode(contents).decode("utf-8")
-		#file_.close()
-		
-		if lid_cordax == 'tela1':
-			htmlfile = open('teste.html', 'r', encoding='utf-8')
-			source = htmlfile.read()
-
-			with st.form('form1'):
-				i01, i02 = st.beta_columns([12,2])
-				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
-				dic['I02'] = i02.date_input('Data:')
-				
-				t1, T1_1, t2, t3 = st.beta_columns([2,2,10,2])
-				t1.write('SPACER LOWER CAP')
-				dic['D00'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SLC A')
-				dic['D01'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SLC B')
-				dic['D02'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SLC C')
-				dic['D03'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SLC D')
-				
-				t1.write('SPACER UPPER BLANK BEAD')
-				dic['D10'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SUBD A')
-				dic['D11'] = t1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SUBD B')
-				dic['D12'] = t1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SUBD C')
-				dic['D13'] = t1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='SUBD D')				
-				
-				t1.write('TOOLING PLATE')
-				dic['D20'] = T1_1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP A')
-				dic['D21'] = T1_1.number_input('A:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP B')
-				dic['D22'] = T1_1.number_input('C:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP C')
-				dic['D23'] = T1_1.number_input('D:', min_value=0.00010, max_value=0.1001, step=0.0001, format='%f', key='TP D')
-				
-				with t2:
-					components.html(source.format(image=data_url, teste=0.0010), height=2000)
-					
-				val1 = t3.number_input('asd2 A:')
-				val2 = t3.number_input('asd2 B:')
-				val3 = t3.number_input('asd2 C:')
-				
-				submit = t3.form_submit_button('Alterar valores')
-		
-		if lid_cordax == 'tela2':
-			htmlfile = open('teste.html', 'r', encoding='utf-8')
-			source = htmlfile.read()
-
-			with st.form('form2'):
-				
-				i01, i02 = st.beta_columns([12,2])
-				dic['I01'] = i01.selectbox('Nome do colaborador:', nomes) 
-				dic['I02'] = i02.date_input('Data:')
-				
-				t1, t2 = st.beta_columns([10,2])
-								
-				with t1:
-					components.html(source.format(image=data_url, teste=0.0010), height=2000)
-					
-				#teste_dados = {'Valores': [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]}
-				teste_dados = {	'SPACER LOWER CAP A': 10,
-					  	'SPACER LOWER CAP B': 10,
-					  	'SPACER LOWER CAP C': 10,
-					  	'SPACER LOWER CAP D': 10,
-					  	'SPACER UPPER BLANK BEAD A': 10,
-					  	'SPACER UPPER BLANK BEAD B': 10,
-					  	'SPACER UPPER BLANK BEAD C': 10,
-					  	'SPACER UPPER BLANK BEAD D': 10,
-					  	'TOOLING PLATE A': 10,
-					  	'TOOLING PLATE B': 10,
-					  	'TOOLING PLATE C': 10,
-					  	'TOOLING PLATE D': 10}
-					      
-				
-				df_teste = pd.DataFrame.from_dict(teste_dados, orient='index')
-				#df_teste2 = pd.DataFrame.from_dict(teste_dados, orient='columns')
-				st.write(df_teste)
-				#st.write(df_teste2)
-				#AgGrid(df_teste2)
-				
-				submit = t2.form_submit_button('Alterar valores')
