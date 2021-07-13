@@ -2005,7 +2005,45 @@ def trouble_dry():
 
 	
 def trouble_tab():
-	pass
+	df = pd.read_csv("troubleshoot_csv/tab.csv", sep=';')
+
+	st.subheader('Identificando o problema')
+
+	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='dry1')
+	df_nv1 = df[df['Nv1'] == nv1]
+
+	if df_nv1.shape[0] > 0:
+		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='dry2')
+		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
+
+		st.subheader('Avaliando causa e solução')
+		if df_nv2.shape[0] > 0:
+			_st3, _st4 = st.beta_columns(2)
+
+			causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='dry3')
+			df_causa = df_nv2[df_nv2['Causa'] == causa]
+
+			solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='dry4')
+	
+	with st.form('Form'):
+		s1, s2,  = st.beta_columns([2,8])
+		s3, s4, s5 = st.beta_columns([2, 2, 6])
+
+		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
+		dic['Comentario'] = s2.text_input('Comentário')
+		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
+		dic['Data'] = s3.date_input('Selecione a data')
+		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		submitted = st.form_submit_button('Enviar Troubleshoot')
+		
+	# Envio do formulário
+	if submitted:
+		dic['Nv1'] = nv1
+		dic['Nv2'] = nv2
+		dic['Causa'] = causa
+		dic['Solucao'] = solucao
+		enviar_troubleshoot(dic, "troubleshoot_tab")
 
 def enviar_troubleshoot(dic, colecao):
 
