@@ -1805,7 +1805,7 @@ def trouble_liner():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'Liner'
+		dic['Equipamento'] = 'Liner'
 		enviar_troubleshoot(dic, "troubleshoot")
 
 def test():
@@ -1851,7 +1851,7 @@ def trouble_shell():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'Shell'          
+		dic['Equipamento'] = 'Shell'          
 		enviar_troubleshoot(dic, "troubleshoot")
 
 def trouble_autobagger():
@@ -1889,7 +1889,7 @@ def trouble_autobagger():
 		dic['Nv2'] = nv2
 		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'Autobagger'
+		dic['Equipamento'] = 'Autobagger'
 		enviar_troubleshoot(dic, "troubleshoot")
 	
 def trouble_conversion():
@@ -1927,7 +1927,7 @@ def trouble_conversion():
 		dic['Nv2'] = nv2
 		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'Conversion'
+		dic['Equipamento'] = 'Conversion'
 		enviar_troubleshoot(dic, "troubleshoot")
 	
 def trouble_balancer_a():
@@ -1971,7 +1971,7 @@ def trouble_gfs():
 		dic['Nv2'] = nv2
 		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'GFS'
+		dic['Equipamento'] = 'GFS'
 		enviar_troubleshoot(dic, "troubleshoot")
 		
 def trouble_dry():
@@ -2013,7 +2013,7 @@ def trouble_dry():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'Dry Oven'
+		dic['Equipamento'] = 'Dry Oven'
 		enviar_troubleshoot(dic, "troubleshoot")
 
 	
@@ -2056,7 +2056,7 @@ def trouble_tab():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-        dic['Equipamento'] = 'Tab Uncoiler'
+		dic['Equipamento'] = 'Tab Uncoiler'
 		enviar_troubleshoot(dic, "troubleshoot")
 
 def enviar_troubleshoot(dic, colecao):
