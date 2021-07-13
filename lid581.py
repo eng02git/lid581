@@ -2331,7 +2331,7 @@ if __name__ == '__main__':
 		col1, col2, _equipamento, _nome = st.beta_columns([2,2,2,10])
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
-		df_troubleshootfiltrado = (df_troubleshoot[(df_troubleshoot['data'] >= inicio_filtro) & (df_troubleshoot['data'] <= fim_filtro)]) 
+		df_troubleshootfiltrado = (df_troubleshoot[(df_troubleshoot['Data'] >= inicio_filtro) & (df_troubleshoot['Data'] <= fim_filtro)]) 
 
 		# Gera lista dos responsáveis
 		list_eq = list(df_troubleshootfiltrado['Equipamento'].drop_duplicates())
