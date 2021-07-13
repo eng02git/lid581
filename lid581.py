@@ -28,7 +28,7 @@ import time
 from datetime import  date
 import base64
 from io import BytesIO
-from st_aggrid import AgGrid
+from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode, JsCode
 
 from google.cloud import firestore
 from google.oauth2 import service_account
@@ -103,6 +103,60 @@ if selecao_tipo == 'Cil':
 if selecao_tipo == 'Troubleshoot':
 	func_escolhida = st.sidebar.radio('Selecione o formulário de Troubleshoot', formularios_trouble, index=0)
 
+######################################################################################################
+                               #Função para gerar planilha interativa
+######################################################################################################	
+	
+def config_grid(df):
+	sample_size = 12
+	grid_height = 800
+
+	return_mode = 'AS_INPUT'
+	return_mode_value = DataReturnMode.__members__[return_mode]
+
+	update_mode = 'VALUE_CHANGED'
+	update_mode_value = GridUpdateMode.__members__[update_mode]
+
+	#enterprise modules
+	enable_enterprise_modules = False
+	enable_sidebar = False
+
+	#features
+	fit_columns_on_grid_load = False
+	enable_pagination = False
+	paginationAutoSize = False
+	use_checkbox = True
+	enable_selection = False
+	selection_mode = 'single'
+	rowMultiSelectWithClick = False
+	suppressRowDeselection = False
+
+	if use_checkbox:
+		groupSelectsChildren = True
+		groupSelectsFiltered = True
+
+	#Infer basic colDefs from dataframe types
+	gb = GridOptionsBuilder.from_dataframe(df)
+
+	#customize gridOptions
+	gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, aggFunc='sum', editable=False)
+
+	if enable_selection:
+		gb.configure_selection(selection_mode)
+	if use_checkbox:
+		gb.configure_selection(selection_mode, use_checkbox=True, groupSelectsChildren=groupSelectsChildren, groupSelectsFiltered=groupSelectsFiltered)
+	if ((selection_mode == 'multiple') & (not use_checkbox)):
+		gb.configure_selection(selection_mode, use_checkbox=False, rowMultiSelectWithClick=rowMultiSelectWithClick, suppressRowDeselection=suppressRowDeselection)
+
+	if enable_pagination:
+		if paginationAutoSize:
+			gb.configure_pagination(paginationAutoPageSize=True)
+		else:
+			gb.configure_pagination(paginationAutoPageSize=False, paginationPageSize=paginationPageSize)
+
+	gb.configure_grid_options(domLayout='normal')
+	gridOptions = gb.build()
+	return gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules
 
 ######################################################################################################
                                #Função para leitura do banco (Firebase)
@@ -2271,6 +2325,19 @@ if __name__ == '__main__':
 		st.subheader('Visualizar formulários')
 		df_troubleshoot = load_forms('troubleshoot')
 		st.write(df_troubleshoot)
+		
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
+		response = AgGrid(
+			    df[df['Medidas'] == med], 
+			    gridOptions=gridOptions,
+			    height=grid_height, 
+			    width='100%',
+			    data_return_mode=return_mode_value, 
+			    update_mode=update_mode_value,
+			    fit_columns_on_grid_load=fit_columns_on_grid_load,
+			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+			    enable_enterprise_modules=enable_enterprise_modules)
+
 				
 	if func_escolhida == 'Suporte Engenharia':
 		st.subheader('Suporte da aplicação LID Forms')
