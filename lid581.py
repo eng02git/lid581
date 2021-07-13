@@ -121,8 +121,8 @@ def load_forms(colecao):
 	
 	# Busca todos os documentos presentes na coleção e salva num dicionário
 	for doc in posts_ref.stream():
-		dic_auxiliar = doc.to_dict()
-		dicionario[dic_auxiliar['documento']] = dic_auxiliar
+		dicionario = doc.to_dict()
+		#dicionario[dic_auxiliar['documento']] = dic_auxiliar
 	
 	# Ajusta o dicionário para um dataframe
 	forms_df = pd.DataFrame.from_dict(dicionario)
