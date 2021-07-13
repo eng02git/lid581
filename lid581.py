@@ -2339,9 +2339,9 @@ if __name__ == '__main__':
 			    enable_enterprise_modules=enable_enterprise_modules)
 		selected = response['selected_rows']
 		selected_df = pd.DataFrame(selected)
-		st.write(selected)
-		st.write(selected_df)
-		st.table(selected)
+		#st.write(selected)
+		#st.write(selected_df)
+		#st.table(selected)
 		st.table(selected_df)
 		
 
