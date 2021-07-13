@@ -1805,7 +1805,8 @@ def trouble_liner():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_liner")
+        dic['Equipamento'] = 'Liner'
+		enviar_troubleshoot(dic, "troubleshoot")
 
 def test():
 	pass
@@ -1850,7 +1851,8 @@ def trouble_shell():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_shell")
+        dic['Equipamento'] = 'Shell'          
+		enviar_troubleshoot(dic, "troubleshoot")
 
 def trouble_autobagger():
 	df = pd.read_csv("troubleshoot_csv/autobagger.csv", sep=';')
@@ -1887,7 +1889,8 @@ def trouble_autobagger():
 		dic['Nv2'] = nv2
 		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_autobagger")
+        dic['Equipamento'] = 'Autobagger'
+		enviar_troubleshoot(dic, "troubleshoot")
 	
 def trouble_conversion():
 	df = pd.read_csv("troubleshoot_csv/conversion.csv", sep=';')
@@ -1924,7 +1927,8 @@ def trouble_conversion():
 		dic['Nv2'] = nv2
 		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_conversion")
+        dic['Equipamento'] = 'Conversion'
+		enviar_troubleshoot(dic, "troubleshoot")
 	
 def trouble_balancer_a():
 	pass
@@ -1967,7 +1971,8 @@ def trouble_gfs():
 		dic['Nv2'] = nv2
 		dic['Causa'] = '-'
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_gfs")
+        dic['Equipamento'] = 'GFS'
+		enviar_troubleshoot(dic, "troubleshoot")
 		
 def trouble_dry():
 	df = pd.read_csv("troubleshoot_csv/dry.csv", sep=';')
@@ -2008,7 +2013,8 @@ def trouble_dry():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_dry")
+        dic['Equipamento'] = 'Dry Oven'
+		enviar_troubleshoot(dic, "troubleshoot")
 
 	
 def trouble_tab():
@@ -2050,7 +2056,8 @@ def trouble_tab():
 		dic['Nv2'] = nv2
 		dic['Causa'] = causa
 		dic['Solucao'] = solucao
-		enviar_troubleshoot(dic, "troubleshoot_tab")
+        dic['Equipamento'] = 'Tab Uncoiler'
+		enviar_troubleshoot(dic, "troubleshoot")
 
 def enviar_troubleshoot(dic, colecao):
 
