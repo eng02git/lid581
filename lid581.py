@@ -1878,7 +1878,7 @@ def trouble_autobagger():
 	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
-		dic['Causa'] = causa
+		#dic['Causa'] = causa
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_autobagger")
 	
@@ -1915,7 +1915,7 @@ def trouble_conversion():
 	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
-		dic['Causa'] = causa
+		#dic['Causa'] = causa
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_conversion")
 	
@@ -1930,17 +1930,17 @@ def trouble_gfs():
 
 	st.subheader('Identificando o problema')
 
-	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='conv1')
+	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='gfs1')
 	df_nv1 = df[df['Nv1'] == nv1]
 
 	if df_nv1.shape[0] > 0:
-		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='conv2')
+		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='gfs2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
 		st.subheader('Possíveis soluções')
 		if df_nv2.shape[0] > 0:
 
-			solucao = st.radio('3) Solução', list(df_nv2['Solucao'].unique()), key='conv3')
+			solucao = st.radio('3) Solução', list(df_nv2['Solucao'].unique()), key='gfs3')
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
@@ -1958,7 +1958,7 @@ def trouble_gfs():
 	if submitted:
 		dic['Nv1'] = nv1
 		dic['Nv2'] = nv2
-		dic['Causa'] = causa
+		#dic['Causa'] = causa
 		dic['Solucao'] = solucao
 		enviar_troubleshoot(dic, "troubleshoot_gfs")
 		
@@ -1967,21 +1967,21 @@ def trouble_dry():
 
 	st.subheader('Identificando o problema')
 
-	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='liner1')
+	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='dry1')
 	df_nv1 = df[df['Nv1'] == nv1]
 
 	if df_nv1.shape[0] > 0:
-		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='liner2')
+		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='dry2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
 		st.subheader('Avaliando causa e solução')
 		if df_nv2.shape[0] > 0:
 			_st3, _st4 = st.beta_columns(2)
 
-			causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='liner3')
+			causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='dry3')
 			df_causa = df_nv2[df_nv2['Causa'] == causa]
 
-			solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='liner4')
+			solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='dry4')
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
