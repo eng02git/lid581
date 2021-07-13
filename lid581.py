@@ -2341,7 +2341,8 @@ if __name__ == '__main__':
 		selected_df = pd.DataFrame(selected)
 		st.write(selected)
 		st.write(selected_df)
-		st.button('vai')
+		st.table(selected)
+		st.table(selected_df)
 		
 
 		
