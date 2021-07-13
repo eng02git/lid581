@@ -165,7 +165,7 @@ def config_grid(df):
 # Função para carregar os dados do firebase (utiliza cache para agilizar a aplicação)
 
 # Formularios cil
-@st.cache
+#@st.cache
 def load_forms_cil(colecao):
 
 	# Cria dicionário vazio
