@@ -2009,21 +2009,21 @@ def trouble_tab():
 
 	st.subheader('Identificando o problema')
 
-	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='dry1')
+	nv1 = st.selectbox('1) Qual o tipo do problema?', list(df['Nv1'].unique()) , key='tab1')
 	df_nv1 = df[df['Nv1'] == nv1]
 
 	if df_nv1.shape[0] > 0:
-		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='dry2')
+		nv2 = st.selectbox('2) Qual o problema?', list(df_nv1['Nv2'].unique()),  key='tab2')
 		df_nv2 = df_nv1[df_nv1['Nv2'] == nv2]
 
 		st.subheader('Avaliando causa e solução')
 		if df_nv2.shape[0] > 0:
 			_st3, _st4 = st.beta_columns(2)
 
-			causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='dry3')
+			causa = _st3.radio('3) Causa', list(df_nv2['Causa'].unique()), key='tab3')
 			df_causa = df_nv2[df_nv2['Causa'] == causa]
 
-			solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='dry4')
+			solucao = _st4.radio('4) Solução', list(df_nv2['Solucao'].unique()), key='tab4')
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
