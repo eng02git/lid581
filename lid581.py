@@ -2328,7 +2328,7 @@ if __name__ == '__main__':
 		
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
 		response = AgGrid(
-			    df[df['Medidas'] == med], 
+			    df_troubleshoot, 
 			    gridOptions=gridOptions,
 			    height=grid_height, 
 			    width='100%',
