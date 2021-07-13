@@ -2130,12 +2130,15 @@ if __name__ == '__main__':
 		trouble_balancer_b()
 		
 	if func_escolhida == 'GFS':
+		st.subheader('Troubleshooting GFS')
 		trouble_gfs()
 		
 	if func_escolhida == 'Dry Oven':
+		st.subheader('Troubleshooting Dry Oven')
 		trouble_dry()
 		
 	if func_escolhida == 'Tab Uncoiler':
+		st.subheader('Troubleshooting Tab Uncoiler')
 		trouble_tab()
 	##################################################################################################
 	#			Demais funcionalidades
