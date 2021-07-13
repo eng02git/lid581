@@ -2353,6 +2353,106 @@ if __name__ == '__main__':
 		
 	if func_escolhida ==  'Visualizar formulários':
 		form_selecionado = st.selectbox('Selecione o tipo de formulário que deseja visualizar', formularios_cil)
+		
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner semanal':
+			df_cil = load_forms_cil('Liner_semanal')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08', 'Q09', 'Q10', 'Q11', 'Q12',  'Q13', 'Q14', 'Q15', 'Q16', 'Q17','Q18', 'Q19', 'Q20', 'Q21', 'Q22',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12',  'C13', 'C14', 'C15', 'C16', 'C17','C18', 'C19', 'C20', 'C21', 'C22',]
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+		if form_selecionado == 'Liner diário':
+			df_cil = load_forms_cil('Liner_diario')
+			
+			# Lista e ordena as colunas do dataframe
+			lista_colunas = ['I2', 'I0', 'I1',
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
+					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
+			df_cil = df_cil.reindex(columns=lista_colunas)
+			
 		if form_selecionado == 'Liner diário':
 			df_cil = load_forms_cil('Liner_diario')
 			
