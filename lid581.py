@@ -243,6 +243,11 @@ def send_email(to, atividade, documento, comentario, gatilho):
 		body = "Olá, foi gerada um novo 5-Porques, acesse a plataforma para avaliar.\nhttps://share.streamlit.io/eng01git/5pq/main/5pq.py\n\nAtenciosamente, \nAmbev 5-Porques"
 		subject = """Gerado 5-Porques %s""" % (documento)
 	
+	# Mensagem pro suporte
+	elif atividade == 4:
+		body = """Olá, segue mensagem enviada ao suporte.\n\n%s \n\nAtenciosamente, \nAmbev 5-Porques""" %(comentario)
+		subject = 'Suporte 5-Porques'
+	
 	# Transforma o remetente em lista
 	list_to = [to]
 	
