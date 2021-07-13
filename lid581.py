@@ -2337,8 +2337,10 @@ if __name__ == '__main__':
 			    fit_columns_on_grid_load=fit_columns_on_grid_load,
 			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
 			    enable_enterprise_modules=enable_enterprise_modules)
-		
-		st.write(response['selected_rows'])
+		selected = response['selected_rows']
+		selected_df = pd.selected()
+		st.write(selected)
+		st.write(selected_df)
 		st.button('vai')
 		
 
