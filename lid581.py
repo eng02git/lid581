@@ -2358,7 +2358,7 @@ if __name__ == '__main__':
 			
 			# Lista e ordena as colunas do dataframe
 			lista_colunas = ['I2', 'I0', 'I1',
-					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08'
+					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
 			df_cil = df_cil.reindex(columns=lista_colunas)
 		
