@@ -166,13 +166,13 @@ def config_grid(df):
 
 # Formularios cil
 #@st.cache
-def load_forms_cil(colecao):
+def load_forms_cil(col):
 
 	# Cria dicionário vazio
 	dicionario = {}
 	
 	# Define o caminho da coleção do firebase
-	posts_ref = db.collection(colecao)
+	posts_ref = db.collection(col)
 	
 	index = 0
 	# Busca todos os documentos presentes na coleção e salva num dicionário
