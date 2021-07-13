@@ -109,7 +109,7 @@ if selecao_tipo == 'Troubleshoot':
 	
 def config_grid(df):
 	sample_size = 12
-	grid_height = 800
+	grid_height = 500
 
 	return_mode = 'AS_INPUT'
 	return_mode_value = DataReturnMode.__members__[return_mode]
@@ -2323,8 +2323,8 @@ if __name__ == '__main__':
 		
 	if func_escolhida == 'Visualizar formulários':
 		st.subheader('Visualizar formulários')
-		df_troubleshoot = load_forms('troubleshoot')
-		st.write(df_troubleshoot)
+		df_troubleshoot = load_forms('troubleshoot')		
+		
 		
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
 		response = AgGrid(
@@ -2337,6 +2337,10 @@ if __name__ == '__main__':
 			    fit_columns_on_grid_load=fit_columns_on_grid_load,
 			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
 			    enable_enterprise_modules=enable_enterprise_modules)
+		
+		st.write(response['data'])
+
+		
 
 				
 	if func_escolhida == 'Suporte Engenharia':
