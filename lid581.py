@@ -246,7 +246,7 @@ def send_email(to, atividade, documento, comentario, gatilho):
 	# Mensagem pro suporte
 	elif atividade == 4:
 		body = """Olá, segue mensagem enviada ao suporte.\n\n%s \n\nAtenciosamente, \nAmbev 5-Porques""" %(comentario)
-		subject = 'Suporte 5-Porques'
+		subject = 'Suporte LID Forms'
 	
 	# Transforma o remetente em lista
 	list_to = [to]
