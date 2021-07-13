@@ -2328,7 +2328,7 @@ if __name__ == '__main__':
 		st.text('Selecione a data')
 		#col1, col2, col3 = st.beta_columns(2)
 		#_equipamento, _nome = st.beta_columns(2)
-		col1, col2, _equipamento, _nome = st.beta_columns([2,2,2,10])
+		col1, col2, _equipamento, _nome = st.beta_columns([2,2,3,9])
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
 		df_troubleshootfiltrado = (df_troubleshoot[(df_troubleshoot['Data'] >= inicio_filtro) & (df_troubleshoot['Data'] <= fim_filtro)]) 
@@ -2347,7 +2347,7 @@ if __name__ == '__main__':
 		# Gera lista dos gestor	
 		list_nome = list(df_troubleshootfiltrado['Nome'].drop_duplicates())
 		list_nome.append('todos')  
-		colaborador = _nome.selectbox("Selecione o gestor", list_nome, list_nome.index('todos'))
+		colaborador = _nome.selectbox("Selecione o colaborador", list_nome, list_nome.index('todos'))
 		
 		# Inicia o filtro com todos
 		if colaborador == 'todos':
@@ -2367,15 +2367,11 @@ if __name__ == '__main__':
 			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
 			    enable_enterprise_modules=enable_enterprise_modules)
 		
+		
 		selected = response['selected_rows']
-		st.table(selected)
-
-		
-		
-
-		
-
-				
+		if selected != '':
+			st.table(selected)
+	
 	if func_escolhida == 'Suporte Engenharia':
 		st.subheader('Suporte da aplicação LID Forms')
 		
