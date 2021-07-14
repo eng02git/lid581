@@ -2856,6 +2856,7 @@ if __name__ == '__main__':
 		inicio_semana = inicio_filtro.strftime('%V')
 		fim_semana = fim_filtro.strftime('%V')
 		cil_semanal = cil_semanal[(cil_semanal['Semana'] >= int(inicio_semana)) & (cil_semanal['Semana'] <= int(fim_semana))]
+		st.write(inicio_semana)
 		
 		# trata dados faltantes
 		cil_semanal = cil_semanal.replace(np.nan, '-', regex=True)
