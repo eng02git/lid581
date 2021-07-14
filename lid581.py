@@ -2725,7 +2725,7 @@ if __name__ == '__main__':
 		df_cil_auto_dia = df_cil_auto_dia.rename(columns={'I2': 'Datas'})
 		df_cil_auto_dia = df_cil_auto_dia.replace({'NOK':0, 'OK':0})
 		st.write(df_cil_auto_dia)
-		df_cil_auto_dia['Autobagger'] = 0
+		df_cil_auto_dia['Autobagger'] = df_cil_auto_dia.mean(axis=0)
 			
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
