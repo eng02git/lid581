@@ -2779,14 +2779,14 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		# concatena dataframes
-		cil_teste = pd.merge(cil_diario, liner_d[['Datas','Liner']], on='Datas', how='left')
-		cil_teste = pd.merge(cil_teste, shell_d[['Datas','Shell']], on='Datas', how='left')
-		cil_teste = pd.merge(cil_teste, auto_d[['Datas','Autobagger']], on='Datas', how='left')
-		cil_teste = pd.merge(cil_teste, conv_d[['Datas','Conversion']], on='Datas', how='left')
-		cil_teste = pd.merge(cil_teste, bala_d[['Datas','Balancer']], on='Datas', how='left')		
+		cil_diario = pd.merge(cil_diario, liner_d[['Datas','Liner']], on='Datas', how='left')
+		cil_diario = pd.merge(cil_diario, shell_d[['Datas','Shell']], on='Datas', how='left')
+		cil_diario = pd.merge(cil_diario, auto_d[['Datas','Autobagger']], on='Datas', how='left')
+		cil_diario = pd.merge(cil_diario, conv_d[['Datas','Conversion']], on='Datas', how='left')
+		cil_diario = pd.merge(cil_diario, bala_d[['Datas','Balancer']], on='Datas', how='left')		
 		
 		# trata dados faltantes
-		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
+		cil_diario = cil_diario.replace(np.nan, '-', regex=True)
 		
 		###############################################
 		# Cil semanal
@@ -2805,16 +2805,28 @@ if __name__ == '__main__':
 		liner_s['Liner'] = round((liner_s['Q00'] + liner_s['Q01'] + liner_s['Q02'] + liner_s['Q03'] + liner_s['Q04'] + liner_s['Q05'] + liner_s['Q06'] + liner_s['Q07'] + liner_s['Q08'] + liner_s['Q09'] + liner_s['Q10'] + liner_s['Q11'] + liner_s['Q12'] + liner_s['Q13'] + liner_s['Q14'] + liner_s['Q15'] + liner_s['Q16'] + liner_s['Q17'] + liner_s['Q18'] + liner_s['Q19'] + liner_s['Q20'] + liner_s['Q21'] + liner_s['Q22'])*100/23, 2)
 		liner_s = liner_s.groupby(['Semanas']).mean()
 		
-		
+		# shell semanal
+		df_cil = load_forms_cil('shell_semanal')
+		shell_s = df_cil.copy()
+		shell_s['Semana'] = shell_s['I2'].dt.strftime('%V')
+		shell_s['Semana'] = shell_s['Semana'].astype(int)
+		shell_s['Semanas'] = shell_s['Semana']
+		shell_s = shell_s.replace({'NOK':0, 'OK':1})
+		shell_s['Liner'] = round((shell_s['Q00'] + shell_s['Q01'] + shell_s['Q02'] + shell_s['Q03'] + shell_s['Q04'] + shell_s['Q05'] + shell_s['Q06'] + shell_s['Q07'] + shell_s['Q08'] + shell_s['Q09'] + shell_s['Q10'] + shell_s['Q11'] + shell_s['Q12'] + shell_s['Q13'] + shell_s['Q14'] + shell_s['Q15'] + shell_s['Q16'] + shell_s['Q17'] + shell_s['Q18'] + shell_s['Q19'] + shell_s['Q20'])*100/21, 2)
+		shell_s = shell_s.groupby(['Semanas']).mean()
 		
 		
 		# concatena dataframes
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
+		cil_semanal = pd.merge(cil_semanal, shell_s[['Semana','Liner']], on='Semana', how='left')
 		
 		# aplica filtros de datas
 		inicio_semana = inicio_filtro.strftime('%V')
 		fim_semana = fim_filtro.strftime('%V')
 		cil_semanal = cil_semanal[(cil_semanal['Semana'] >= int(inicio_semana)) & (cil_semanal['Semana'] <= int(fim_semana))]
+		
+		# trata dados faltantes
+		cil_semanal = cil_semanal.replace(np.nan, '-', regex=True)
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
@@ -2822,9 +2834,9 @@ if __name__ == '__main__':
 		with col_d:
 			st.subheader('Dados Cil diário:')
 			# Monta planilha para exibir dados
-			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste, True)
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario, True)
 			response = AgGrid(
-				    cil_teste, 
+				    cil_diario, 
 				    gridOptions=gridOptions,
 				    height=grid_height, 
 				    width='100%',
