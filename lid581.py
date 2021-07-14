@@ -2800,8 +2800,8 @@ if __name__ == '__main__':
 		liner_s.drop_duplicates(subset=['Datas'])
 		liner_s = liner_s.replace({'NOK':0, 'OK':1})
 		#liner_s['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
-		cil_semanal = pd.merge(cil_semanal, liner_s[['Datas','Semana']], on='Datas', how='left')
-
+		#cil_semanal = pd.merge(cil_semanal, liner_s[['Datas','Semana']], on='Datas', how='left')
+		st.write(liner_s)
 		#datetime.date(2010, 6, 16).isocalendar()[1]
 		
 
