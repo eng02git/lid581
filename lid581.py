@@ -2723,7 +2723,7 @@ if __name__ == '__main__':
 		df_cil_auto_dia = df_cil.copy()
 		df_cil_auto_dia['I2'] = df_cil_auto_dia['I2'].dt.date
 		df_cil_auto_dia = df_cil_auto_dia.rename(columns={'I2': 'Datas'})
-		#df_cil_auto_dia['Percentual'] = 
+		df_cil_auto_dia['Percentual'] = 0
 			
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
@@ -2734,7 +2734,7 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		#cil_teste = pd.concat([cil_diario, df_cil_auto_dia], axis=1, join='inner')
-		cil_teste = pd.merge(cil_diario, df_cil_auto_dia[['Datas','Q01']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_diario, df_cil_auto_dia[['Datas','Percentual']], on='Datas', how='left')
 		#cil_diario.join(df_cil_auto_dia, on='Datas', how='left')
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 		
