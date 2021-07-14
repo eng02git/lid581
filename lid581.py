@@ -2788,7 +2788,7 @@ if __name__ == '__main__':
 		
 		# Cil semanal
 		cil_semanal = pd.DataFrame()
-		cil_semanal['Semanas'] = [*range(0, 55, 1)]
+		cil_semanal['Semanas'] = [*range(1, 56, 1)]
 		#datetime.date(2010, 6, 16).isocalendar()[1]
 		
 
