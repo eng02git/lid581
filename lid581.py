@@ -2727,18 +2727,12 @@ if __name__ == '__main__':
 		df_cil = load_forms_cil('Liner_diario')
 		liner_d = df_cil.copy()
 		liner_d['I2'] = liner_d['I2'].dt.date
-		liner_d['Datas'] = liner_d['I2']
+		liner_d = liner_d.rename(columns={'I2': 'Datas'})
 		st.write(liner_d)
-		#liner_d.rename(columns={'I2': 'Datas'})
-		#liner_d.drop_duplicates(subset=['Datas'])
+		liner_d.drop_duplicates(subset=['Datas'])
+		st.write(liner_d)
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
 		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
-
-		#liner_s['Semana'] = liner_s['I2'].dt.strftime('%V')
-		#liner_s['Semana'] = liner_s['Semana'].astype(int)
-		#liner_s['Semanas'] = liner_s['Semana']
-		liner_d = liner_d.groupby(['I2']).mean()
-		st.write(liner_d)
 		
 		# Shell diario
 		df_cil = load_forms_cil('shell_diario')
