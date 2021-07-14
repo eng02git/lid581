@@ -2472,7 +2472,9 @@ if __name__ == '__main__':
 		#datetime.strftime(datetime.strptime(str(inicio),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 
 		fim = col2.date_input("Fim (ano/mês/dia)")
-		fim_filtro = datetime.combine(inicio, datetime.max.time())
+		fim_filtro = datetime.combine(fim, datetime.max.time())
+		st.write(fim_filtro)
+		st.write(inicio_filtro)
 		#datetime.strftime(datetime.strptime(str(fim),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 		df_cil_filt = (df_cil[(df_cil['I2'] >= inicio_filtro) & (df_cil['I2'] <= fim_filtro)]) 
 
