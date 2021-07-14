@@ -2746,7 +2746,7 @@ if __name__ == '__main__':
 		auto_d['Autobagger'] = round((auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6, 2)
 		
 		# conversion diario
-		df_cil = load_forms_cil('coneversion_diario')
+		df_cil = load_forms_cil('conversion_diario')
 		conv_d = df_cil.copy()
 		conv_d['I2'] = conv_d['I2'].dt.date
 		conv_d = conv_d.rename(columns={'I2': 'Datas'})
