@@ -2812,13 +2812,13 @@ if __name__ == '__main__':
 		shell_s['Semana'] = shell_s['Semana'].astype(int)
 		shell_s['Semanas'] = shell_s['Semana']
 		shell_s = shell_s.replace({'NOK':0, 'OK':1})
-		shell_s['Liner'] = round((shell_s['Q00'] + shell_s['Q01'] + shell_s['Q02'] + shell_s['Q03'] + shell_s['Q04'] + shell_s['Q05'] + shell_s['Q06'] + shell_s['Q07'] + shell_s['Q08'] + shell_s['Q09'] + shell_s['Q10'] + shell_s['Q11'] + shell_s['Q12'] + shell_s['Q13'] + shell_s['Q14'] + shell_s['Q15'] + shell_s['Q16'] + shell_s['Q17'] + shell_s['Q18'] + shell_s['Q19'] + shell_s['Q20'])*100/21, 2)
+		shell_s['Shell'] = round((shell_s['Q00'] + shell_s['Q01'] + shell_s['Q02'] + shell_s['Q03'] + shell_s['Q04'] + shell_s['Q05'] + shell_s['Q06'] + shell_s['Q07'] + shell_s['Q08'] + shell_s['Q09'] + shell_s['Q10'] + shell_s['Q11'] + shell_s['Q12'] + shell_s['Q13'] + shell_s['Q14'] + shell_s['Q15'] + shell_s['Q16'] + shell_s['Q17'] + shell_s['Q18'] + shell_s['Q19'] + shell_s['Q20'])*100/21, 2)
 		shell_s = shell_s.groupby(['Semanas']).mean()
 		
 		
 		# concatena dataframes
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
-		cil_semanal = pd.merge(cil_semanal, shell_s[['Semana','Liner']], on='Semana', how='left')
+		cil_semanal = pd.merge(cil_semanal, shell_s[['Semana','Shell']], on='Semana', how='left')
 		
 		# aplica filtros de datas
 		inicio_semana = inicio_filtro.strftime('%V')
