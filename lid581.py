@@ -2720,13 +2720,12 @@ if __name__ == '__main__':
 		st.subheader('Estatisticas')
 		
 		df_cil = load_forms_cil('autobagger_diario')
-		df_cil_auto_dia = df_cil.copy()
-		df_cil_auto_dia['I2'] = df_cil_auto_dia['I2'].dt.date
-		df_cil_auto_dia = df_cil_auto_dia.rename(columns={'I2': 'Datas'})
-		df_cil_auto_dia = df_cil_auto_dia.replace({'NOK':0, 'OK':1})
-		
-		df_cil_auto_dia['Autobagger'] = df_cil_auto_dia.mean(axis=0)
-		st.write(df_cil_auto_dia)
+		auto_d = df_cil.copy()
+		auto_d['I2'] = auto_d['I2'].dt.date
+		auto_d = auto_d.rename(columns={'I2': 'Datas'})
+		auto_d = auto_d.replace({'NOK':0, 'OK':1})
+		auto_d['Autobagger'] = (auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6
+		st.write(auto_d)
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
@@ -2736,7 +2735,7 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		#cil_teste = pd.concat([cil_diario, df_cil_auto_dia], axis=1, join='inner')
-		cil_teste = pd.merge(cil_diario, df_cil_auto_dia[['Datas','Autobagger']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_diario, auto_d[['Datas','Autobagger']], on='Datas', how='left')
 		#cil_diario.join(df_cil_auto_dia, on='Datas', how='left')
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 		
