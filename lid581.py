@@ -2791,7 +2791,7 @@ if __name__ == '__main__':
 		cil_semanal['Semana'] = [*range(1, 56, 1)]
 		
 		# liner semanal
-		df_cil = load_forms_cil('Liner_diario')
+		df_cil = load_forms_cil('Liner_semanal')
 		liner_s = df_cil.copy()
 		liner_s['Semana'] = liner_s['I2'].dt.strftime('%V')
 		liner_s['Semana'] = liner_s['Semana'].astype(int)
