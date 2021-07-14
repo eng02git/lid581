@@ -2719,10 +2719,6 @@ if __name__ == '__main__':
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
 		
-		# organizacao das colunas
-		
-		col_d, col_s, col_m = st.beta_columns(3)
-		
 		# carrega e trata os dados de cada equipamento
 		
 		# liner diario
@@ -2780,12 +2776,13 @@ if __name__ == '__main__':
 		cil_teste = pd.merge(cil_teste, shell_d[['Datas','Shell']], on='Datas', how='left')
 		cil_teste = pd.merge(cil_teste, auto_d[['Datas','Autobagger']], on='Datas', how='left')
 		cil_teste = pd.merge(cil_teste, conv_d[['Datas','Conversion']], on='Datas', how='left')
-		cil_teste = pd.merge(cil_teste, bala_d[['Datas','Balancer']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_teste, bala_d[['Datas','Balancer']], on='Datas', how='left')		
 		
-		
-		# trata dados faltants
+		# trata dados faltantes
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
-		#cil_teste = cil_teste.replace(np.nan, 0, regex=True)
+
+		# organizacao das colunas
+		col_d, col_s, col_m = st.beta_columns(3)
 		
 		with col_d:
 			st.subheader('Dados Cil diário:')
