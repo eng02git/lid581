@@ -2795,8 +2795,9 @@ if __name__ == '__main__':
 		liner_s = df_cil.copy()
 		liner_s['Semana'] = liner_s['I2'].dt.strftime('%V')
 		liner_s['Semana'] = liner_s['Semana'].astype(int)
+		liner_s['Semanas'] = liner_s['Semana']
 		liner_s['Liner'] = 1
-		liner_s = liner_s.groupby(['Semana']).sum()
+		liner_s = liner_s.groupby(['Semanas']).sum()
 		st.write(liner_s)
 		#liner_s['I2'] = liner_s['I2'].dt.date
 		#liner_s = liner_s.rename(columns={'I2': 'Datas'})
