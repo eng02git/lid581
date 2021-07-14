@@ -134,7 +134,7 @@ def config_grid(df, definition):
 	enable_selection = False
 	selection_mode = 'multiple'
 	rowMultiSelectWithClick = False
-	suppressRowDeselection = True
+	suppressRowDeselection = False
 
 	if use_checkbox:
 		groupSelectsChildren = True
@@ -2782,7 +2782,7 @@ if __name__ == '__main__':
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 
 		# organizacao das colunas
-		col_d, col_s, col_m = st.beta_columns(3)
+		col_d, col_s, col_m = st.beta_columns([4,4,2])
 		
 		with col_d:
 			st.subheader('Dados Cil diário:')
