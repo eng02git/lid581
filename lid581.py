@@ -462,7 +462,7 @@ def Liner_diario():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -598,7 +598,7 @@ def Liner_semanal():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -753,7 +753,7 @@ def Shell_diario():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -924,7 +924,7 @@ def Shell_semanal():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1047,7 +1047,7 @@ def Autobagger_diario():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1144,7 +1144,7 @@ def Autobagger_semanal():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1266,7 +1266,7 @@ def Autobagger_mensal():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1390,7 +1390,7 @@ def balancer_diario():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1479,7 +1479,7 @@ def balancer_semanal():
 		
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1573,7 +1573,7 @@ def conversion_diario():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1730,7 +1730,7 @@ def conversion_semanal():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -1880,7 +1880,7 @@ def conversion_mensal():
 		# Questões
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		st.write(hora_atual)
+		
 		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
@@ -2728,7 +2728,15 @@ if __name__ == '__main__':
 		liner_d = liner_d.rename(columns={'I2': 'Datas'})
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
 		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
-		
+
+		# Shell diario
+		df_cil = load_forms_cil('shell_diario')
+		shell_d = df_cil.copy()
+		shell_d['I2'] = shell_d['I2'].dt.date
+		shell_d = shell_d.rename(columns={'I2': 'Datas'})
+		shell_d = shell_d.replace({'NOK':0, 'OK':1})
+		shell_d['Liner'] = round((shell_d['Q00'] + shell_d['Q01'] + shell_d['Q02'] + shell_d['Q03'] + shell_d['Q04'] + shell_d['Q05'] + shell_d['Q06'] + shell_d['Q07'] + shell_d['Q08'] + shell_d['Q09'] + shell_d['Q10'] + shell_d['Q11'] + shell_d['Q12'] + shell_d['Q13'] + shell_d['Q14'] + shell_d['Q15'] + shell_d['Q16'] + shell_d['Q17'] + shell_d['Q18'])*100/19, 2)
+
 		# autobagger diario
 		df_cil = load_forms_cil('autobagger_diario')
 		auto_d = df_cil.copy()
@@ -2736,6 +2744,23 @@ if __name__ == '__main__':
 		auto_d = auto_d.rename(columns={'I2': 'Datas'})
 		auto_d = auto_d.replace({'NOK':0, 'OK':1})
 		auto_d['Autobagger'] = round((auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6, 2)
+		
+		# conversion diario
+		df_cil = load_forms_cil('coneversion_diario')
+		conv_d = df_cil.copy()
+		conv_d['I2'] = conv_d['I2'].dt.date
+		conv_d = conv_d.rename(columns={'I2': 'Datas'})
+		conv_d = conv_d.replace({'NOK':0, 'OK':1})
+		conv_d['Liner'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
+		
+		# Balancer diario
+		df_cil = load_forms_cil('balancer_diario')
+		bala_d = df_cil.copy()
+		bala_d['I2'] = bala_d['I2'].dt.date
+		bala_d = bala_d.rename(columns={'I2': 'Datas'})
+		bala_d = bala_d.replace({'NOK':0, 'OK':1})
+		bala_d['Autobagger'] = round((bala_d['Q00'] + bala_d['Q01'] + bala_d['Q02'] )*100/3, 2)
+
 
 		# filtro para as datas
 		col1, col2 = st.beta_columns(2)
@@ -2773,7 +2798,6 @@ if __name__ == '__main__':
 		
 		if selected != []:
 			st.table(selected)
-			
-			
-			
-		
+	
+	
+	
