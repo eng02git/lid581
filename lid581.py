@@ -2813,8 +2813,37 @@ if __name__ == '__main__':
 		shell_s['Semanas'] = shell_s['Semana']
 		shell_s = shell_s.replace({'NOK':0, 'OK':1})
 		shell_s['Shell'] = round((shell_s['Q00'] + shell_s['Q01'] + shell_s['Q02'] + shell_s['Q03'] + shell_s['Q04'] + shell_s['Q05'] + shell_s['Q06'] + shell_s['Q07'] + shell_s['Q08'] + shell_s['Q09'] + shell_s['Q10'] + shell_s['Q11'] + shell_s['Q12'] + shell_s['Q13'] + shell_s['Q14'] + shell_s['Q15'] + shell_s['Q16'] + shell_s['Q17'] + shell_s['Q18'] + shell_s['Q19'] + shell_s['Q20'])*100/21, 2)
-		shell_s = shell_s.groupby(['Semanas']).mean()
+		shell_s = shell_s.groupby(['Semanas']).mean()	
 		
+		# autobagger semanal
+		df_cil = load_forms_cil('shell_semanal')
+		auto_s = df_cil.copy()
+		auto_s['Semana'] = auto_s['I2'].dt.strftime('%V')
+		auto_s['Semana'] = auto_s['Semana'].astype(int)
+		auto_s['Semanas'] = auto_s['Semana']
+		auto_s = auto_s.replace({'NOK':0, 'OK':1})
+		auto_s['Autobagger'] = round((auto_s['Q00'] + auto_s['Q01'] + auto_s['Q02'] + auto_s['Q03'] + auto_s['Q04'] + auto_s['Q05'])*100/6, 2)
+		auto_s = auto_s.groupby(['Semanas']).mean()		
+		
+		# conversion semanal
+		df_cil = load_forms_cil('conversion_semanal')
+		conv_s = df_cil.copy()
+		conv_s['Semana'] = conv_s['I2'].dt.strftime('%V')
+		conv_s['Semana'] = conv_s['Semana'].astype(int)
+		conv_s['Semanas'] = conv_s['Semana']
+		conv_s = conv_s.replace({'NOK':0, 'OK':1})
+		conv_s['Conversion'] = round((conv_s['Q00'] + conv_s['Q01'] + conv_s['Q02'] + conv_s['Q03'] + conv_s['Q04'] + conv_s['Q05'] + conv_s['Q06'] + conv_s['Q07'] + conv_s['Q08'] + conv_s['Q09'] + conv_s['Q10'] + conv_s['Q11'] + conv_s['Q12'] + conv_s['Q13'] + conv_s['Q14'] + conv_s['Q15'] + conv_s['Q16'] + conv_s['Q17'] + conv_s['Q18'] + conv_s['Q19'] + conv_s['Q20'] + conv_s['Q21'] + conv_s['Q22'] + conv_s['Q23'])*100/24, 2)
+		conv_s = conv_s.groupby(['Semanas']).mean()	
+		
+		# balancer semanal
+		df_cil = load_forms_cil('balancer_semanal')
+		bala_s = df_cil.copy()
+		bala_s['Semana'] = bala_s['I2'].dt.strftime('%V')
+		bala_s['Semana'] = bala_s['Semana'].astype(int)
+		bala_s['Semanas'] = bala_s['Semana']
+		bala_s = bala_s.replace({'NOK':0, 'OK':1})
+		bala_s['balancer'] = round((bala_s['Q00'] + bala_s['Q01'] + bala_s['Q02'])*100/3, 2)
+		bala_s = shell_s.groupby(['Semanas']).mean()
 		
 		# concatena dataframes
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
