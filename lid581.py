@@ -2734,12 +2734,13 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		#cil_teste = pd.concat([cil_diario, df_cil_auto_dia], axis=1, join='inner')
-		cil_diario.join(df_cil_auto_dia, on='Datas', how='left')
-		cil_diario = cil_diario.replace(np.nan, '-', regex=True)
+		cil_teste = pd.merge([cil_diario, df_cil_auto_dia], on='Datas', how='left')
+		#cil_diario.join(df_cil_auto_dia, on='Datas', how='left')
+		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 		
-		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario)
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
 		response = AgGrid(
-			    cil_diario, 
+			    cil_teste, 
 			    gridOptions=gridOptions,
 			    height=grid_height, 
 			    width='100%',
