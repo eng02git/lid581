@@ -2733,7 +2733,7 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = pd.date_range(start=inicio_filtro, end=fim_filtro)
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
-		cil_teste = pd.concat([cil_diario, df_cil_auto_dia])
+		cil_teste = pd.concat([cil_diario, df_cil_auto_dia], axis=1)
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 		
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
