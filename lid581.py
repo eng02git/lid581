@@ -2785,6 +2785,12 @@ if __name__ == '__main__':
 		
 		# trata dados faltantes
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
+		
+		# Cil semanal
+		cil_semanal = pd.DataFrame()
+		cil_semanal['Semanas'] = [*range(0, 55, 1)]
+		#datetime.date(2010, 6, 16).isocalendar()[1]
+		
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
