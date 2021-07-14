@@ -2481,7 +2481,7 @@ if __name__ == '__main__':
 		#st.write(df_cil['I2'])
 		#st.write(type(df_cil['I2']))
 		df_cil_filt = (df_cil[(df_cil['I2'].dt.date >= inicio_filtro) & (df_cil['I2'].dt.date <= fim_filtro)]) 
-
+		st.write(df_cil_filt)
 		# Gera lista dos turnos
 		list_turno = list(df_cil_filt['I1'].drop_duplicates())
 		list_turno.append('todos') 
@@ -2492,6 +2492,7 @@ if __name__ == '__main__':
 			pass
 		elif turno_filter is not None and (str(turno_filter) != 'nan'):
 			df_cil_filt = df_cil_filt[df_cil_filt['I1'] == equip]
+		st.write(df_cil_filt)
 
 		# Gera lista dos gestor	
 		list_nome = list(df_cil_filt['I0'].drop_duplicates())
