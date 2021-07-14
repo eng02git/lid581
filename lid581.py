@@ -2729,7 +2729,7 @@ if __name__ == '__main__':
 		liner_d['I2'] = liner_d['I2'].dt.date
 		liner_d['Datas'] = liner_d['I2']
 		#liner_d.rename(columns={'I2': 'Datas'})
-		liner_d.drop_duplicates(subset=['Datas'])
+		#liner_d.drop_duplicates(subset=['Datas'])
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
 		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
 
