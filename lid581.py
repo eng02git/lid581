@@ -84,6 +84,8 @@ formularios_cil = [
 	'Visualizar formulários',	# Filtros para visualizar os questionários desejeados
 	'Suporte Engenharia'
 ]
+formularios_cil_2 = ['Liner diário','Liner semanal','Shell diário','Shell semanal','Autobagger diário','Autobagger semanal','Autobagger mensal',
+		     'Conversion diário','Conversion semanal','Conversion mensal','Balancer diário','Balancer semanal']
 
 formularios_trouble = [
 	'Liner',
@@ -2487,7 +2489,7 @@ if __name__ == '__main__':
 	##################################################################################################
 		
 	if func_escolhida ==  'Visualizar formulários':
-		form_selecionado = st.selectbox('Selecione o tipo de formulário que deseja visualizar', formularios_cil)
+		form_selecionado = st.selectbox('Selecione o tipo de formulário que deseja visualizar', formularios_cil_2)
 		
 		if form_selecionado == 'Liner diário':
 			df_cil = load_forms_cil('Liner_diario')
