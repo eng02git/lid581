@@ -2722,12 +2722,7 @@ if __name__ == '__main__':
 		df_cil_auto_dia = df_cil.copy()
 		df_cil_auto_dia['I2'] = df_cil_auto_dia['I2'].dt.date
 		df_cil_auto_dia = df_cil_auto_dia.rename(columns={'I2': 'Datas'})
-		#df_cil_auto_dia['Percentual'] = 
-			
-			# Lista e ordena as colunas do dataframe
-		lista_colunas = ['I2', 'I0', 'I1',
-				'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05',
-				'C00', 'C01', 'C02', 'C03',  'C04', 'C05',]
+		df_cil_auto_dia['Percentual'] = 
 			
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
@@ -2738,6 +2733,7 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		cil_teste = pd.concat([cil_diario, df_cil_auto_dia])
+		cil_teste = cil_teste.fillna('-', inplace=True)
 		
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
 		response = AgGrid(
