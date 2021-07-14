@@ -2798,7 +2798,7 @@ if __name__ == '__main__':
 		#liner_s['I2'] = liner_s['I2'].dt.date
 		#liner_s = liner_s.rename(columns={'I2': 'Datas'})
 		#liner_s['Semana'] = liner_s['Datas'].dt.strftime('%G-%V') pd.to_datetime(df['Time'])
-		liner_s.drop_duplicates(subset=['Datas'])
+		#liner_s.drop_duplicates(subset=['Datas'])
 		liner_s = liner_s.replace({'NOK':0, 'OK':1})
 		#liner_s['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
