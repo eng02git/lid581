@@ -2877,17 +2877,27 @@ if __name__ == '__main__':
 		auto_s['Autobagger'] = round((auto_s['Q00'] + auto_s['Q01'] + auto_s['Q02'] + auto_s['Q03'] + auto_s['Q04'] + auto_s['Q05'] + auto_s['Q06'] + auto_s['Q07'] + auto_s['Q08'])*100/9, 2)
 		auto_s = auto_s.groupby(['Meses']).mean()	
 		
+		# autobagger semanal
+		df_cil = load_forms_cil('conversion_mensal')
+		conv_s = df_cil.copy()
+		conv_s['Mes'] = conv_s['I2'].dt.month
+		conv_s['Mes'] = conv_s['Mes'].astype(int)
+		conv_s['Meses'] = conv_s['Mes']
+		conv_s = conv_s.replace({'NOK':0, 'OK':1})
+		conv_s['Conversion'] = round((conv_s['Q00'] + conv_s['Q01'] + conv_s['Q02'] + conv_s['Q03'] + conv_s['Q04'] + conv_s['Q05'] + conv_s['Q06'] + conv_s['Q07'] + conv_s['Q08'] + conv_s['Q09'] + conv_s['Q10'] + conv_s['Q11'] + conv_s['Q12'] + conv_s['Q13'])*100/14, 2)
+		conv_s = conv_s.groupby(['Meses']).mean()
+		
 		# concatena dataframes
 		cil_mensal = pd.merge(cil_mensal, auto_s[['Mes','Autobagger']], on='Mes', how='left')
+		cil_mensal = pd.merge(cil_mensal, conv_s[['Mes','Conversion']], on='Mes', how='left')
 
-		
 		# aplica filtros de datas
 		inicio_mes = inicio_filtro.month
 		fim_mes = fim_filtro.month
 		cil_mensal = cil_mensal[(cil_mensal['Mes'] >= int(inicio_mes)) & (cil_mensal['Mes'] <= int(fim_mes))]
 		
 		# trata dados faltantes
-		cil_semanal = cil_semanal.replace(np.nan, '-', regex=True)
+		cil_mensal = cil_mensal.replace(np.nan, '-', regex=True)
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
