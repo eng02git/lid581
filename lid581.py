@@ -2877,7 +2877,17 @@ if __name__ == '__main__':
 		auto_s['Autobagger'] = round((auto_s['Q00'] + auto_s['Q01'] + auto_s['Q02'] + auto_s['Q03'] + auto_s['Q04'] + auto_s['Q05'] + auto_s['Q06'] + auto_s['Q07'] + auto_s['Q08'])*100/9, 2)
 		auto_s = auto_s.groupby(['Meses']).mean()	
 		
+		# concatena dataframes
+		cil_mensal = pd.merge(cil_mensal, liner_s[['Mes','Autobagger']], on='Semana', how='left')
+
 		
+		# aplica filtros de datas
+		inicio_mes = inicio_filtro.month
+		fim_mes = fim_filtro.month
+		cil_mensal = cil_mensal[(cil_mensal['Mes'] >= int(inicio_mes)) & (cil_mensal['Mes'] <= int(fim_mes))]
+		
+		# trata dados faltantes
+		cil_semanal = cil_semanal.replace(np.nan, '-', regex=True)
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
