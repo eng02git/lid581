@@ -2723,7 +2723,7 @@ if __name__ == '__main__':
 		df_cil_auto_dia = df_cil.copy()
 		df_cil_auto_dia['I2'] = df_cil_auto_dia['I2'].dt.date
 		df_cil_auto_dia = df_cil_auto_dia.rename(columns={'I2': 'Datas'})
-		df_cil_auto_dia = df_cil_auto_dia.map({'NOK':0, 'OK':0})
+		df_cil_auto_dia = df_cil_auto_dia.replace({'NOK':0, 'OK':0})
 		st.write(df_cil_auto_dia)
 		df_cil_auto_dia['Autobagger'] = 0
 			
