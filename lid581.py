@@ -1424,13 +1424,13 @@ def balancer_semanal():
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
 		
-		if (dic['I2'].dt.time >= datetime.time(23, 0, 0)) | (dic['I2'].dt.time < datetime.time(7, 0, 0)):
+		if (hora_atual >= datetime.time(23, 0, 0)) | (hora_atual < datetime.time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
-		elif (dic['I2'].dt.time >= datetime.time(7, 0, 0)) & (dic['I2'].dt.time < datetime.time(15, 0, 0)):
+		elif (hora_atual >= datetime.time(7, 0, 0)) & (hora_atual < datetime.time(15, 0, 0)):
 			dic['I1' ] = 'Turno B'
 		else:
 			dic['I1' ] = 'Turno C'
-			
+			#dic['I2'].dt.time
 		#mes_df.loc[(mes_df['Hora'] >= datetime.time(23, 0, 0)) | (mes_df['Hora'] < datetime.time(7, 0, 0)), 'Turno'] = 'Turno A'
 		#mes_df.loc[(mes_df['Hora'] >= datetime.time(7, 0, 0)) & (mes_df['Hora'] < datetime.time(15, 0, 0)), 'Turno'] = 'Turno B'
 		#mes_df.loc[(mes_df['Hora'] >= datetime.time(15, 0, 0)) & (mes_df['Hora'] < datetime.time(23, 0, 0)), 'Turno'] = 'Turno C'		
