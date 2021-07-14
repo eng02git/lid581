@@ -22,8 +22,6 @@ import plotly.graph_objects as go
 import pandas as pd
 import json
 import smtplib
-#import time
-#import datetime
 from datetime import  date, datetime, time
 import pytz
 import base64
@@ -1836,8 +1834,7 @@ def conversion_semanal_proc():
 				
 	with st.beta_expander('Procedimentos folha 6'):
 		st.image('conversion_semanal/folha6.jpg')
-		
-		
+			
 def conversion_mensal():
 	
 	with st.form('Form'):
@@ -1945,7 +1942,6 @@ def conversion_mensal():
 		except:
 			st.error('Falha ao armazenar formulário, tente novamente ou entre em contato com suporte!')
             
-            
 def conversion_mensal_proc():
 	with st.beta_expander('Pontos'):
 		st.image('conversion_mensal/Pontos mensal conversion.jfif')
@@ -1962,12 +1958,9 @@ def conversion_mensal_proc():
 	with st.beta_expander('Procedimentos folha 4'):
 		st.image('conversion_mensal/folha4.jpg')
 		
-		
 ##################################################################################################
 #			Formularios de troubleshooting
 ##################################################################################################
-
-
 
 def trouble_liner():
 	df = pd.read_csv("troubleshoot_csv/liner.csv", sep=';')
@@ -1992,13 +1985,21 @@ def trouble_liner():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
 
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes) 
+		
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
@@ -2037,13 +2038,21 @@ def trouble_shell():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes)
 
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
@@ -2075,13 +2084,21 @@ def trouble_autobagger():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
-
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes)
+   
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
@@ -2113,13 +2130,21 @@ def trouble_conversion():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes)
 
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
@@ -2157,13 +2182,21 @@ def trouble_gfs():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes)
 
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
@@ -2199,13 +2232,21 @@ def trouble_dry():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes)
 
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
@@ -2241,13 +2282,21 @@ def trouble_tab():
 	
 	with st.form('Form'):
 		s1, s2,  = st.beta_columns([2,8])
-		s3, s4, s5 = st.beta_columns([2, 2, 6])
+		dic['Nome'] = st.selectbox('Nome do colaborador', nomes)
 
 		dic['Resolveu'] = s1.selectbox('Resolveu o problema?', ['Não', 'Sim'])
 		dic['Comentario'] = s2.text_input('Comentário')
-		dic['Turno'] = s4.selectbox('Selecione o turno', turnos )
-		dic['Data'] = s3.date_input('Selecione a data')
-		dic['Nome'] = s5.selectbox('Nome do colaborador', nomes) #definir nomes
+
+		# definição da hora e turno
+		dic['Data' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		hora_atual = datetime.now(tz).time()
+
+		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+			dic['Turno' ] = 'Turno A'
+		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+			dic['Turno' ] = 'Turno B'
+		else:
+			dic['Turno' ] = 'Turno C'
 
 		submitted = st.form_submit_button('Enviar Troubleshoot')
 		
