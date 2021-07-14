@@ -127,14 +127,14 @@ def config_grid(df, definition):
 	enable_sidebar = False
 
 	#features
-	fit_columns_on_grid_load = definition
+	fit_columns_on_grid_load = False
 	enable_pagination = False
 	paginationAutoSize = False
 	use_checkbox = True
 	enable_selection = False
 	selection_mode = 'multiple'
 	rowMultiSelectWithClick = False
-	suppressRowDeselection = False
+	suppressRowDeselection = True
 
 	if use_checkbox:
 		groupSelectsChildren = True
