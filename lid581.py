@@ -2806,7 +2806,9 @@ if __name__ == '__main__':
 		liner_s = liner_s.groupby(['Semanas']).mean()
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
 		inicio_semana = inicio_filtro.strftime('%V')
+		fim_semana = fim_filtro.strftime('%V')
 		st.write(inicio_semana)
+		st.write(fim_semana)
 		
 
 
