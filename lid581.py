@@ -2793,7 +2793,7 @@ if __name__ == '__main__':
 		###############################################
 		
 		cil_semanal = pd.DataFrame()
-		cil_semanal['Semana'] = [*range(0, 56, 1)]
+		cil_semanal['Semana'] = [*range(1, 56, 1)]
 		
 		# liner semanal
 		df_cil = load_forms_cil('Liner_semanal')
