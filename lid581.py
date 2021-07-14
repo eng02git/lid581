@@ -2734,11 +2734,7 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		cil_teste = pd.concat([cil_diario, df_cil_auto_dia])
-		st.write(cil_teste)
-
-		#cil_teste = cil_teste.fillna('-', inplace=True)
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
-		st.write(cil_teste)
 		
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
 		response = AgGrid(
@@ -2753,6 +2749,7 @@ if __name__ == '__main__':
 			    enable_enterprise_modules=enable_enterprise_modules)
 		
 		selected = response['selected_rows']
+		
 		if selected != []:
 			st.table(selected)
 			
