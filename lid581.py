@@ -2814,7 +2814,7 @@ if __name__ == '__main__':
 		# aplica filtros de datas
 		inicio_semana = inicio_filtro.strftime('%V')
 		fim_semana = fim_filtro.strftime('%V')
-		cil_semnanal = cil_semanal[cil_semanal['Semanas'] >= inicio_semana | cil_semanal['Semanas'] <= fim_semana]
+		cil_semnanal = cil_semanal[cil_semanal['Semana'] >= inicio_semana | cil_semanal['Semana'] <= fim_semana]
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
