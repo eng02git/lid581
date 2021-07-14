@@ -2718,7 +2718,8 @@ if __name__ == '__main__':
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
 		
-		df_cil_auto_dia = load_forms_cil('autobagger_diario')
+		df_cil = load_forms_cil('autobagger_diario')
+		df_cil_auto_dia = df_cil.copy()
 		df_cil_auto_dia['I2'] = df_cil_auto_dia['I2'].dt.date
 		#df_cil_auto_dia['Percentual'] = 
 			
