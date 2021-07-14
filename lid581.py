@@ -23,7 +23,7 @@ import pandas as pd
 import json
 import smtplib
 import time
-import datetime
+#import datetime
 from datetime import  date, datetime
 import pytz
 import base64
