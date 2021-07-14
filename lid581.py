@@ -2719,26 +2719,44 @@ if __name__ == '__main__':
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
 		
+		# carrega e trata os dados de cada equipamento
+		
+		# liner diario
+		df_cil = load_forms_cil('liner_diario')
+		liner_d = df_cil.copy()
+		liner_d['I2'] = liner_d['I2'].dt.date
+		liner_d = liner_d.rename(columns={'I2': 'Datas'})
+		liner_d = liner_d.replace({'NOK':0, 'OK':1})
+		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
+		
+		# autobagger diario
 		df_cil = load_forms_cil('autobagger_diario')
 		auto_d = df_cil.copy()
 		auto_d['I2'] = auto_d['I2'].dt.date
 		auto_d = auto_d.rename(columns={'I2': 'Datas'})
 		auto_d = auto_d.replace({'NOK':0, 'OK':1})
 		auto_d['Autobagger'] = round((auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6, 2)
-		st.write(auto_d)
+
+		# filtro para as datas
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
 		
+		# Cria dataframe vazio para as datas
 		cil_diario = pd.DataFrame()
 		cil_diario['Datas'] = pd.date_range(start=inicio_filtro, end=fim_filtro)
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
-		#cil_teste = pd.concat([cil_diario, df_cil_auto_dia], axis=1, join='inner')
-		cil_teste = pd.merge(cil_diario, auto_d[['Datas','Autobagger']], on='Datas', how='left')
-		#cil_diario.join(df_cil_auto_dia, on='Datas', how='left')
-		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
+		# concatena dataframe das datas com os dados
+		cil_teste = pd.merge(cil_diario, liner_d[['Datas','Liner']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_teste, auto_d[['Datas','Autobagger']], on='Datas', how='left')
 		
+		
+		# trata dados faltants
+		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
+		#cil_teste = cil_teste.replace(np.nan, 0, regex=True)
+		
+		# Monta planilha para exibir dados
 		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
 		response = AgGrid(
 			    cil_teste, 
