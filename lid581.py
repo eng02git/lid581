@@ -2722,7 +2722,7 @@ if __name__ == '__main__':
 		df_cil_auto_dia = df_cil.copy()
 		df_cil_auto_dia['I2'] = df_cil_auto_dia['I2'].dt.date
 		df_cil_auto_dia = df_cil_auto_dia.rename(columns={'I2': 'Datas'})
-		df_cil_auto_dia['Percentual'] = 
+		#df_cil_auto_dia['Percentual'] = 
 			
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
