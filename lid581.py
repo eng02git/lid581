@@ -2467,8 +2467,11 @@ if __name__ == '__main__':
 			df_cil = df_cil.reindex(columns=lista_colunas)
 		
 		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
-		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
-		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
+		inicio = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
+		inicio_filtro = datetime.strftime(datetime.strptime(inicio,'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
+
+		fim = col2.date_input("Fim (ano/mês/dia)")
+		fim_filtro = datetime.strftime(datetime.strptime(fim,'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 		df_cil_filt = (df_cil[(df_cil['I2'] >= inicio_filtro) & (df_cil['I2'] <= fim_filtro)]) 
 
 		# Gera lista dos turnos
