@@ -2848,6 +2848,9 @@ if __name__ == '__main__':
 		# concatena dataframes
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
 		cil_semanal = pd.merge(cil_semanal, shell_s[['Semana','Shell']], on='Semana', how='left')
+		cil_semanal = pd.merge(cil_semanal, auto_s[['Semana','Autobagger']], on='Semana', how='left')
+		cil_semanal = pd.merge(cil_semanal, conv_s[['Semana','Conversion']], on='Semana', how='left')
+		cil_semanal = pd.merge(cil_semanal, bala_s[['Semana','Balancer']], on='Semana', how='left')
 		
 		# aplica filtros de datas
 		inicio_semana = inicio_filtro.strftime('%V')
