@@ -2725,10 +2725,9 @@ if __name__ == '__main__':
 				'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05',
 				'C00', 'C01', 'C02', 'C03',  'C04', 'C05',]
 			
-		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
+		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
-		df_cil_filt = (df_cil[(df_cil['I2'].dt.date >= inicio_filtro) & (df_cil['I2'].dt.date <= fim_filtro)]) 
 		
 		cil_diario = pd.DataFrame()
 		cil_diario['Datas'] = pd.date_range(start=inicio_filtro, end=fim_filtro)
