@@ -23,7 +23,7 @@ import pandas as pd
 import json
 import smtplib
 import time
-#import datetime
+import datetime
 from datetime import  date, datetime
 import pytz
 import base64
@@ -1423,14 +1423,16 @@ def balancer_semanal():
 		
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
-		
+		st.write(hora_atual)
 		if (hora_atual >= datetime.time(23, 0, 0)) | (hora_atual < datetime.time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
 		elif (hora_atual >= datetime.time(7, 0, 0)) & (hora_atual < datetime.time(15, 0, 0)):
 			dic['I1' ] = 'Turno B'
 		else:
 			dic['I1' ] = 'Turno C'
-			#dic['I2'].dt.time
+			
+			
+		#dic['I2'].dt.time
 		#mes_df.loc[(mes_df['Hora'] >= datetime.time(23, 0, 0)) | (mes_df['Hora'] < datetime.time(7, 0, 0)), 'Turno'] = 'Turno A'
 		#mes_df.loc[(mes_df['Hora'] >= datetime.time(7, 0, 0)) & (mes_df['Hora'] < datetime.time(15, 0, 0)), 'Turno'] = 'Turno B'
 		#mes_df.loc[(mes_df['Hora'] >= datetime.time(15, 0, 0)) & (mes_df['Hora'] < datetime.time(23, 0, 0)), 'Turno'] = 'Turno C'		
