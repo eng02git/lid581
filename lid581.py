@@ -2731,6 +2731,7 @@ if __name__ == '__main__':
 		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
 		liner_d = liner_d.groupby('Datas', group_keys=False).mean()
 		liner_d.reset_index(level=0, inplace=True)
+		liner_d['Liner'] = round(liner_d['Liner'],2) 
 		
 		# Shell diario
 		df_cil = load_forms_cil('shell_diario')
@@ -2742,6 +2743,7 @@ if __name__ == '__main__':
 		shell_d['Shell'] = round((shell_d['Q00'] + shell_d['Q01'] + shell_d['Q02'] + shell_d['Q03'] + shell_d['Q04'] + shell_d['Q05'] + shell_d['Q06'] + shell_d['Q07'] + shell_d['Q08'] + shell_d['Q09'] + shell_d['Q10'] + shell_d['Q11'] + shell_d['Q12'] + shell_d['Q13'] + shell_d['Q14'] + shell_d['Q15'] + shell_d['Q16'] + shell_d['Q17'] + shell_d['Q18'])*100/19, 2)
 		shell_d = shell_d.groupby('Datas', group_keys=False).mean()
 		shell_d.reset_index(level=0, inplace=True)
+		shell_d['Shell'] = round(shell_d['Shell'],2) 
 		
 		# autobagger diario
 		df_cil = load_forms_cil('autobagger_diario')
@@ -2753,6 +2755,7 @@ if __name__ == '__main__':
 		auto_d['Autobagger'] = round((auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6, 2)
 		auto_d = auto_d.groupby('Datas', group_keys=False).mean()
 		auto_d.reset_index(level=0, inplace=True)
+		auto_d['Autobagger'] = round(auto_d['Autobagger'],2) 
 		
 		# conversion diario
 		df_cil = load_forms_cil('conversion_diario')
@@ -2764,6 +2767,7 @@ if __name__ == '__main__':
 		conv_d['Conversion'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
 		conv_d = conv_d.groupby('Datas', group_keys=False).mean()
 		conv_d.reset_index(level=0, inplace=True)
+		conv_d['Conversion'] = round(conv_d['Conversion'],2) 
 				
 		# Balancer diario
 		df_cil = load_forms_cil('balancer_diario')
@@ -2775,6 +2779,7 @@ if __name__ == '__main__':
 		bala_d['Balancer'] = round((bala_d['Q00'] + bala_d['Q01'] + bala_d['Q02'] )*100/3, 2)
 		bala_d = bala_d.groupby('Datas', group_keys=False).mean()
 		bala_d.reset_index(level=0, inplace=True)
+		bala_d['Balancer'] = round(bala_d['Balancer'],2) 
 		
 		# filtro para as datas
 		col1, col2 = st.beta_columns(2)
