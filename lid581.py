@@ -2716,7 +2716,8 @@ if __name__ == '__main__':
 			caching.clear_cache()
 			
 	if func_escolhida == 'Estatisticas':
-		st.subheader('Estatisticas')
+		st.subheader('Estatisticas de preenchimento de Cil')
+		st.write('Selecione as datas:'
 		
 		###############################################
 		# Cil diario
