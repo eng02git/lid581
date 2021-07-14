@@ -24,8 +24,7 @@ import json
 import smtplib
 import time
 import datetime
-import time
-from datetime import  date
+from datetime import  date, datetime
 import base64
 from io import BytesIO
 from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode, JsCode
@@ -65,7 +64,7 @@ st.sidebar.title("LID Forms")
 tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
-ts = time.time()
+ts = now = datetime.now()
 st.sidebar.write(ts)
 formularios_cil = [
 	'Liner diário',
