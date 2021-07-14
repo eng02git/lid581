@@ -192,7 +192,9 @@ def load_forms_cil(col):
 	forms_df.drop('index', axis=1, inplace=True)
 	
 	# Formata as colunas de data e hora para possibilitar filtros
-	forms_df['I2'] = pd.to_datetime(forms_df['I2'])
+	forms_df['I3'] = pd.to_datetime(forms_df['I2']).dt.time
+	forms_df['I2'] = pd.to_datetime(forms_df['I2']).dt.date
+	 
 	
 	# Ordena os valores pela data
 	#forms_df.sort_values(by=['I2'], inplace=True)
@@ -2461,20 +2463,20 @@ if __name__ == '__main__':
 			df_cil = load_forms_cil('balancer_semanal')
 			
 			# Lista e ordena as colunas do dataframe
-			lista_colunas = ['I2', 'I0', 'I1',
+			lista_colunas = ['I2', 'I3' 'I0', 'I1',
 					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05',
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05']
 			df_cil = df_cil.reindex(columns=lista_colunas)
 		
 		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
-		inicio = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
-		inicio_filtro = datetime.combine(inicio, datetime.min.time())
+		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
+		#inicio_filtro = datetime.combine(inicio, datetime.min.time())
 		#datetime.strftime(datetime.strptime(str(inicio),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 
-		fim = col2.date_input("Fim (ano/mês/dia)")
+		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
 		fim_filtro = datetime.combine(fim, datetime.max.time())
-		st.write(fim_filtro)
-		st.write(inicio_filtro)
+		#st.write(fim_filtro)
+		#st.write(inicio_filtro)
 		#datetime.strftime(datetime.strptime(str(fim),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 		df_cil_filt = (df_cil[(df_cil['I2'] >= inicio_filtro) & (df_cil['I2'] <= fim_filtro)]) 
 
