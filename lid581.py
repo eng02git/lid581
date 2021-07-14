@@ -2722,7 +2722,7 @@ if __name__ == '__main__':
 		# carrega e trata os dados de cada equipamento
 		
 		# liner diario
-		df_cil = load_forms_cil('liner_diario')
+		df_cil = load_forms_cil('Liner_diario')
 		liner_d = df_cil.copy()
 		liner_d['I2'] = liner_d['I2'].dt.date
 		liner_d = liner_d.rename(columns={'I2': 'Datas'})
