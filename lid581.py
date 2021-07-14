@@ -2878,7 +2878,7 @@ if __name__ == '__main__':
 		auto_s = auto_s.groupby(['Meses']).mean()	
 		
 		# concatena dataframes
-		cil_mensal = pd.merge(cil_mensal, liner_s[['Mes','Autobagger']], on='Semana', how='left')
+		cil_mensal = pd.merge(cil_mensal, auto_s[['Mes','Autobagger']], on='Mes', how='left')
 
 		
 		# aplica filtros de datas
