@@ -1424,9 +1424,9 @@ def balancer_semanal():
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		hora_atual = datetime.now(tz).time()
 		st.write(hora_atual)
-		if (hora_atual >= time(23, 0, 0)) | (hora_atual < time(7, 0, 0)):
+		if (hora_atual >= datetime.time(23, 0, 0)) | (hora_atual < datetime.time(7, 0, 0)):
 			dic['I1' ] = 'Turno A'
-		elif (hora_atual >= time(7, 0, 0)) & (hora_atual < time(15, 0, 0)):
+		elif (hora_atual >= datetime.time(7, 0, 0)) & (hora_atual < datetime.time(15, 0, 0)):
 			dic['I1' ] = 'Turno B'
 		else:
 			dic['I1' ] = 'Turno C'
