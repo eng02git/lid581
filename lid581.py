@@ -66,7 +66,7 @@ tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
 tz = pytz.timezone('America/Bahia')
-ts = now = datetime.now(tz)
+ts = datetime.now(tz)
 st.sidebar.write(ts)
 #st.write(pytz.all_timezones)
 formularios_cil = [
@@ -1400,7 +1400,7 @@ def balancer_semanal():
 	with st.form('Form'):
     
 		# Define a organização das colunas
-		I0, I1, I2 = st.beta_columns([8,3,3])
+		I0, I1 = st.beta_columns([8,3])
 		T00, Q00, C00 = st.beta_columns([3,1,3])
 		T01, Q01, C01 = st.beta_columns([3,1,3])
 		T02, Q02, C02 = st.beta_columns([3,1,3])
@@ -1422,7 +1422,7 @@ def balancer_semanal():
 		# Questões
 		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
 		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
-		dic['I2' ] = I2.date_input('Selecione a data')
+		dic['I2' ] = datetime.now(tz)
 		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
 		dic['C00'] = C00.text_input('Comentário item 0:', "")
 		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
