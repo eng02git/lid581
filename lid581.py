@@ -2468,7 +2468,7 @@ if __name__ == '__main__':
 		
 		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
 		inicio = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
-		inicio_filtro = datetime.combine(inicio, datetime.time())
+		inicio_filtro = datetime.combine(inicio, datetime.time.min)
 		#datetime.strftime(datetime.strptime(str(inicio),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 
 		fim = col2.date_input("Fim (ano/mês/dia)")
