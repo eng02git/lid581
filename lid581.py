@@ -66,8 +66,8 @@ tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
 tz = pytz.timezone('America/Bahia')
-ts = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
-st.sidebar.write(ts)
+#ts = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+#st.sidebar.write(ts)
 
 formularios_cil = [
 	'Liner diário',
@@ -1421,8 +1421,20 @@ def balancer_semanal():
 
 		# Questões
 		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
-		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+		
+		if (dic['I2'].dt.time >= datetime.time(23, 0, 0)) | (dic['I2'].dt.time < datetime.time(7, 0, 0)):
+			dic['I1' ] = 'Turno A'
+		elif (dic['I2'].dt.time >= datetime.time(7, 0, 0)) & (dic['I2'].dt.time < datetime.time(15, 0, 0)):
+			dic['I1' ] = 'Turno B'
+		else:
+			dic['I1' ] = 'Turno C'
+			
+		#mes_df.loc[(mes_df['Hora'] >= datetime.time(23, 0, 0)) | (mes_df['Hora'] < datetime.time(7, 0, 0)), 'Turno'] = 'Turno A'
+		#mes_df.loc[(mes_df['Hora'] >= datetime.time(7, 0, 0)) & (mes_df['Hora'] < datetime.time(15, 0, 0)), 'Turno'] = 'Turno B'
+		#mes_df.loc[(mes_df['Hora'] >= datetime.time(15, 0, 0)) & (mes_df['Hora'] < datetime.time(23, 0, 0)), 'Turno'] = 'Turno C'		
+		#dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
+		
 		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
 		dic['C00'] = C00.text_input('Comentário item 0:', "")
 		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
@@ -1928,8 +1940,7 @@ def trouble_liner():
 		enviar_troubleshoot(dic, "troubleshoot")
 
 def test():
-	pass
-	
+	pass	
 
 def trouble_shell():
 	df = pd.read_csv("troubleshoot_csv/shell.csv", sep=';')
@@ -2134,7 +2145,6 @@ def trouble_dry():
 		dic['Solucao'] = solucao
 		dic['Equipamento'] = 'Dry Oven'
 		enviar_troubleshoot(dic, "troubleshoot")
-
 	
 def trouble_tab():
 	df = pd.read_csv("troubleshoot_csv/tab.csv", sep=';')
@@ -2468,18 +2478,9 @@ if __name__ == '__main__':
 		
 		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
-		#inicio_filtro = datetime.combine(inicio, datetime.min.time())
-		#datetime.strftime(datetime.strptime(str(inicio),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
-
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
-		#fim_filtro = datetime.combine(fim, datetime.max.time())
-		#st.write(fim_filtro)
-		#st.write(inicio_filtro)
-		#datetime.strftime(datetime.strptime(str(fim),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
-		#st.write(df_cil['I2'])
-		#st.write(type(df_cil['I2']))
 		df_cil_filt = (df_cil[(df_cil['I2'].dt.date >= inicio_filtro) & (df_cil['I2'].dt.date <= fim_filtro)]) 
-		st.write(df_cil_filt)
+
 		# Gera lista dos turnos
 		list_turno = list(df_cil_filt['I1'].drop_duplicates())
 		list_turno.append('todos') 
@@ -2490,7 +2491,6 @@ if __name__ == '__main__':
 			pass
 		elif turno_filter is not None and (str(turno_filter) != 'nan'):
 			df_cil_filt = df_cil_filt[df_cil_filt['I1'] == equip]
-		st.write(df_cil_filt)
 
 		# Gera lista dos gestor	
 		list_nome = list(df_cil_filt['I0'].drop_duplicates())
