@@ -2719,6 +2719,10 @@ if __name__ == '__main__':
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas')
 		
+		# organizacao das colunas
+		
+		col_d, col_s, col_m = st.beta_columns(3)
+		
 		# carrega e trata os dados de cada equipamento
 		
 		# liner diario
@@ -2783,23 +2787,25 @@ if __name__ == '__main__':
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 		#cil_teste = cil_teste.replace(np.nan, 0, regex=True)
 		
-		# Monta planilha para exibir dados
-		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
-		response = AgGrid(
-			    cil_teste, 
-			    gridOptions=gridOptions,
-			    height=grid_height, 
-			    width='100%',
-			    data_return_mode=return_mode_value, 
-			    update_mode=update_mode_value,
-			    fit_columns_on_grid_load=fit_columns_on_grid_load,
-			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
-			    enable_enterprise_modules=enable_enterprise_modules)
-		
-		selected = response['selected_rows']
-		
-		if selected != []:
-			st.table(selected)
+		with col_d:
+			st.subheader('Dados Cil diário:')
+			# Monta planilha para exibir dados
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
+			response = AgGrid(
+				    cil_teste, 
+				    gridOptions=gridOptions,
+				    height=grid_height, 
+				    width='100%',
+				    data_return_mode=return_mode_value, 
+				    update_mode=update_mode_value,
+				    fit_columns_on_grid_load=fit_columns_on_grid_load,
+				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+				    enable_enterprise_modules=enable_enterprise_modules)
+
+			selected = response['selected_rows']
+
+			if selected != []:
+				st.table(selected)
 	
 	
 	
