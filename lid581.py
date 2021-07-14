@@ -2737,6 +2737,7 @@ if __name__ == '__main__':
 		#liner_s['Semana'] = liner_s['Semana'].astype(int)
 		#liner_s['Semanas'] = liner_s['Semana']
 		liner_d = liner_d.groupby(['I2']).mean()
+		st.write(liner_d)
 		
 		# Shell diario
 		df_cil = load_forms_cil('shell_diario')
