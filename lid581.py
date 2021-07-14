@@ -2816,7 +2816,7 @@ if __name__ == '__main__':
 		shell_s = shell_s.groupby(['Semanas']).mean()	
 		
 		# autobagger semanal
-		df_cil = load_forms_cil('shell_semanal')
+		df_cil = load_forms_cil('autobagger_semanal')
 		auto_s = df_cil.copy()
 		auto_s['Semana'] = auto_s['I2'].dt.strftime('%V')
 		auto_s['Semana'] = auto_s['Semana'].astype(int)
@@ -2856,10 +2856,28 @@ if __name__ == '__main__':
 		inicio_semana = inicio_filtro.strftime('%V')
 		fim_semana = fim_filtro.strftime('%V')
 		cil_semanal = cil_semanal[(cil_semanal['Semana'] >= int(inicio_semana)) & (cil_semanal['Semana'] <= int(fim_semana))]
-		st.write(inicio_semana)
 		
 		# trata dados faltantes
 		cil_semanal = cil_semanal.replace(np.nan, '-', regex=True)
+		
+		###############################################
+		# Cil mensal
+		###############################################
+		
+		cil_mensal = pd.DataFrame()
+		cil_mensal['Mes'] = [*range(1, 12, 1)]
+		
+		# autobagger semanal
+		df_cil = load_forms_cil('autobagger_mensal')
+		auto_s = df_cil.copy()
+		auto_s['Mes'] = auto_s['I2'].dt.month
+		auto_s['Mes'] = auto_s['Mes'].astype(int)
+		auto_s['Meses'] = auto_s['Mes']
+		auto_s = auto_s.replace({'NOK':0, 'OK':1})
+		auto_s['Autobagger'] = round((auto_s['Q00'] + auto_s['Q01'] + auto_s['Q02'] + auto_s['Q03'] + auto_s['Q04'] + auto_s['Q05'] + auto_s['Q06'] + auto_s['Q07'] + auto_s['Q08'])*100/9, 2)
+		auto_s = auto_s.groupby(['Meses']).mean()	
+		
+		
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
@@ -2890,6 +2908,23 @@ if __name__ == '__main__':
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_semanal, True)
 			response = AgGrid(
 				    cil_semanal, 
+				    gridOptions=gridOptions,
+				    height=grid_height, 
+				    width='100%',
+				    data_return_mode=return_mode_value, 
+				    update_mode=update_mode_value,
+				    fit_columns_on_grid_load=fit_columns_on_grid_load,
+				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+				    enable_enterprise_modules=enable_enterprise_modules)
+
+			selected = response['selected_rows']
+			
+		with col_m:
+			st.subheader('Dados Cil mensal:')
+			# Monta planilha para exibir dados
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_mensal, True)
+			response = AgGrid(
+				    cil_mensal, 
 				    gridOptions=gridOptions,
 				    height=grid_height, 
 				    width='100%',
