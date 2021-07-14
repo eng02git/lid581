@@ -112,7 +112,7 @@ if selecao_tipo == 'Troubleshoot':
                                #Função para gerar planilha interativa
 ######################################################################################################	
 	
-def config_grid(df):
+def config_grid(df, definition):
 	sample_size = 12
 	grid_height = 400
 
@@ -127,7 +127,7 @@ def config_grid(df):
 	enable_sidebar = False
 
 	#features
-	fit_columns_on_grid_load = False
+	fit_columns_on_grid_load = definition
 	enable_pagination = False
 	paginationAutoSize = False
 	use_checkbox = True
@@ -2627,7 +2627,7 @@ if __name__ == '__main__':
 		elif colaborador is not None and (str(colaborador) != 'nan'):
 			df_cil_filt = df_cil_filt[df_cil_filt['I0'] == colaborador]		
 		
-		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_cil)
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_cil, False)
 		response = AgGrid(
 			    df_cil_filt, 
 			    gridOptions=gridOptions,
@@ -2673,7 +2673,7 @@ if __name__ == '__main__':
 		elif colaborador is not None and (str(colaborador) != 'nan'):
 			df_troubleshootfiltrado = df_troubleshootfiltrado[df_troubleshootfiltrado['Nome'] == colaborador]		
 		
-		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot)
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(df_troubleshoot, False)
 		response = AgGrid(
 			    df_troubleshootfiltrado, 
 			    gridOptions=gridOptions,
@@ -2787,7 +2787,7 @@ if __name__ == '__main__':
 		with col_d:
 			st.subheader('Dados Cil diário:')
 			# Monta planilha para exibir dados
-			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste)
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_teste, True)
 			response = AgGrid(
 				    cil_teste, 
 				    gridOptions=gridOptions,
