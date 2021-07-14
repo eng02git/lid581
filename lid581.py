@@ -2794,6 +2794,7 @@ if __name__ == '__main__':
 		df_cil = load_forms_cil('Liner_diario')
 		liner_s = df_cil.copy()
 		liner_s['Semana'] = liner_s['I2'].dt.strftime('%V')
+		liner_s['Semana'] = liner_s['Semana'].astype(int)
 		liner_s['Liner'] = 1
 		#liner_s['I2'] = liner_s['I2'].dt.date
 		#liner_s = liner_s.rename(columns={'I2': 'Datas'})
