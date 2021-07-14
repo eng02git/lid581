@@ -2735,7 +2735,7 @@ if __name__ == '__main__':
 		shell_d['I2'] = shell_d['I2'].dt.date
 		shell_d = shell_d.rename(columns={'I2': 'Datas'})
 		shell_d = shell_d.replace({'NOK':0, 'OK':1})
-		shell_d['Liner'] = round((shell_d['Q00'] + shell_d['Q01'] + shell_d['Q02'] + shell_d['Q03'] + shell_d['Q04'] + shell_d['Q05'] + shell_d['Q06'] + shell_d['Q07'] + shell_d['Q08'] + shell_d['Q09'] + shell_d['Q10'] + shell_d['Q11'] + shell_d['Q12'] + shell_d['Q13'] + shell_d['Q14'] + shell_d['Q15'] + shell_d['Q16'] + shell_d['Q17'] + shell_d['Q18'])*100/19, 2)
+		shell_d['Shell'] = round((shell_d['Q00'] + shell_d['Q01'] + shell_d['Q02'] + shell_d['Q03'] + shell_d['Q04'] + shell_d['Q05'] + shell_d['Q06'] + shell_d['Q07'] + shell_d['Q08'] + shell_d['Q09'] + shell_d['Q10'] + shell_d['Q11'] + shell_d['Q12'] + shell_d['Q13'] + shell_d['Q14'] + shell_d['Q15'] + shell_d['Q16'] + shell_d['Q17'] + shell_d['Q18'])*100/19, 2)
 
 		# autobagger diario
 		df_cil = load_forms_cil('autobagger_diario')
@@ -2751,7 +2751,7 @@ if __name__ == '__main__':
 		conv_d['I2'] = conv_d['I2'].dt.date
 		conv_d = conv_d.rename(columns={'I2': 'Datas'})
 		conv_d = conv_d.replace({'NOK':0, 'OK':1})
-		conv_d['Liner'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
+		conv_d['Conersion'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
 		
 		# Balancer diario
 		df_cil = load_forms_cil('balancer_diario')
@@ -2759,8 +2759,7 @@ if __name__ == '__main__':
 		bala_d['I2'] = bala_d['I2'].dt.date
 		bala_d = bala_d.rename(columns={'I2': 'Datas'})
 		bala_d = bala_d.replace({'NOK':0, 'OK':1})
-		bala_d['Autobagger'] = round((bala_d['Q00'] + bala_d['Q01'] + bala_d['Q02'] )*100/3, 2)
-
+		bala_d['Balancer'] = round((bala_d['Q00'] + bala_d['Q01'] + bala_d['Q02'] )*100/3, 2)
 
 		# filtro para as datas
 		col1, col2 = st.beta_columns(2)
@@ -2774,7 +2773,10 @@ if __name__ == '__main__':
 		
 		# concatena dataframe das datas com os dados
 		cil_teste = pd.merge(cil_diario, liner_d[['Datas','Liner']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_teste, shell_d[['Datas','Shell']], on='Datas', how='left')
 		cil_teste = pd.merge(cil_teste, auto_d[['Datas','Autobagger']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_teste, conv_d[['Datas','Conversion']], on='Datas', how='left')
+		cil_teste = pd.merge(cil_teste, bala_d[['Datas','Balancer']], on='Datas', how='left')
 		
 		
 		# trata dados faltants
