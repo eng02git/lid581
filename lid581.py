@@ -1400,7 +1400,7 @@ def balancer_semanal():
 	with st.form('Form'):
     
 		# Define a organização das colunas
-		I0, I1 = st.beta_columns([8,3])
+		#I0, I1 = st.beta_columns([8,3])
 		T00, Q00, C00 = st.beta_columns([3,1,3])
 		T01, Q01, C01 = st.beta_columns([3,1,3])
 		T02, Q02, C02 = st.beta_columns([3,1,3])
@@ -1420,7 +1420,7 @@ def balancer_semanal():
 		respostas = ['NOK', 'OK']
 
 		# Questões
-		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
+		dic['I0' ] = st.selectbox('Nome do colaborador', nomes) #definir nomes
 		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		
 		if (dic['I2'].dt.time >= datetime.time(23, 0, 0)) | (dic['I2'].dt.time < datetime.time(7, 0, 0)):
