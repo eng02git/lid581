@@ -2467,7 +2467,7 @@ if __name__ == '__main__':
 			df_cil = df_cil.reindex(columns=lista_colunas)
 		
 		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
-		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime.datetime(2021, 6, 1))
+		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
 		df_cil_filt = (df_cil[(df_cil['I2'] >= inicio_filtro) & (df_cil['I2'] <= fim_filtro)]) 
 
