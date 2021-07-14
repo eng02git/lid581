@@ -2474,7 +2474,7 @@ if __name__ == '__main__':
 		#datetime.strftime(datetime.strptime(str(inicio),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
 
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
-		fim_filtro = datetime.combine(fim, datetime.max.time())
+		#fim_filtro = datetime.combine(fim, datetime.max.time())
 		#st.write(fim_filtro)
 		#st.write(inicio_filtro)
 		#datetime.strftime(datetime.strptime(str(fim),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
