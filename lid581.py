@@ -2751,7 +2751,7 @@ if __name__ == '__main__':
 		conv_d['I2'] = conv_d['I2'].dt.date
 		conv_d = conv_d.rename(columns={'I2': 'Datas'})
 		conv_d = conv_d.replace({'NOK':0, 'OK':1})
-		conv_d['Conersion'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
+		conv_d['Conversion'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
 		
 		# Balancer diario
 		df_cil = load_forms_cil('balancer_diario')
