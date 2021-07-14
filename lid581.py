@@ -1424,7 +1424,7 @@ def balancer_semanal():
 		# Questões
 		dic['I0' ] = I0.selectbox('Nome do colaborador', nomes) #definir nomes
 		dic['I1' ] = I1.selectbox('Selecione o turno', turnos )
-		dic['I2' ] = datetime.now(tz)
+		dic['I2' ] = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 		dic['Q00'] = Q00.selectbox('Item 0: ', respostas)
 		dic['C00'] = C00.text_input('Comentário item 0:', "")
 		dic['Q01'] = Q01.selectbox('Item 1:', respostas)
