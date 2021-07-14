@@ -2724,7 +2724,7 @@ if __name__ == '__main__':
 		auto_d['I2'] = auto_d['I2'].dt.date
 		auto_d = auto_d.rename(columns={'I2': 'Datas'})
 		auto_d = auto_d.replace({'NOK':0, 'OK':1})
-		auto_d['Autobagger'] = (auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6
+		auto_d['Autobagger'] = round((auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6, 2)
 		st.write(auto_d)
 		col1, col2 = st.beta_columns(2)
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
