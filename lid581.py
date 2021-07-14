@@ -2731,6 +2731,6 @@ if __name__ == '__main__':
 		
 		cil_diario = pd.DataFrame()
 		cil_diario['Datas'] = pd.date_range(start=inicio_filtro, end=fim_filtro)
-		st.write(cil_diario['Datas'])
+		st.write(cil_diario['Datas'].strftime("%Y-%m-%d %H:%M:%S"))
 			
 		
