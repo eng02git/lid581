@@ -2734,7 +2734,7 @@ if __name__ == '__main__':
 		cil_diario['Datas'] = cil_diario['Datas'].dt.date
 		
 		#cil_teste = pd.concat([cil_diario, df_cil_auto_dia], axis=1, join='inner')
-		cil_teste = pd.merge(cil_diario, df_cil_auto_dia, on='Datas', how='left')
+		cil_teste = pd.merge(cil_diario, df_cil_auto_dia['Q01'], on='Datas', how='left')
 		#cil_diario.join(df_cil_auto_dia, on='Datas', how='left')
 		cil_teste = cil_teste.replace(np.nan, '-', regex=True)
 		
