@@ -65,6 +65,8 @@ st.sidebar.title("LID Forms")
 tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
+ts = time.time()
+st.sidebar.write(ts)
 formularios_cil = [
 	'Liner diário',
 	'Liner semanal',
