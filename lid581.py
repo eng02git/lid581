@@ -2842,7 +2842,7 @@ if __name__ == '__main__':
 		bala_s['Semana'] = bala_s['Semana'].astype(int)
 		bala_s['Semanas'] = bala_s['Semana']
 		bala_s = bala_s.replace({'NOK':0, 'OK':1})
-		bala_s['balancer'] = round((bala_s['Q00'] + bala_s['Q01'] + bala_s['Q02'])*100/3, 2)
+		bala_s['Balancer'] = round((bala_s['Q00'] + bala_s['Q01'] + bala_s['Q02'])*100/3, 2)
 		bala_s = shell_s.groupby(['Semanas']).mean()
 		
 		# concatena dataframes
