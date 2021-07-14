@@ -65,10 +65,10 @@ st.sidebar.title("LID Forms")
 tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
-tz = pytz.timezone('Europe/Berlin')
+tz = pytz.timezone('America/Bahia')
 ts = now = datetime.now(tz)
 st.sidebar.write(ts)
-st.write(pytz.all_timezones)
+#st.write(pytz.all_timezones)
 formularios_cil = [
 	'Liner diário',
 	'Liner semanal',
