@@ -2731,6 +2731,22 @@ if __name__ == '__main__':
 		
 		cil_diario = pd.DataFrame()
 		cil_diario['Datas'] = pd.date_range(start=inicio_filtro, end=fim_filtro)
-		st.write(cil_diario['Datas'].dt.date)
+		cil_diario['Datas'] = cil_diario['Datas'].dt.date)
+		
+		gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario)
+		response = AgGrid(
+			    cil_diario, 
+			    gridOptions=gridOptions,
+			    height=grid_height, 
+			    width='100%',
+			    data_return_mode=return_mode_value, 
+			    update_mode=update_mode_value,
+			    fit_columns_on_grid_load=fit_columns_on_grid_load,
+			    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+			    enable_enterprise_modules=enable_enterprise_modules)
+		
+		selected = response['selected_rows']
+		if selected != []:
+			st.table(selected)
 			
 		
