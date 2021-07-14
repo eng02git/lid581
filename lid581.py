@@ -195,7 +195,7 @@ def load_forms_cil(col):
 	forms_df['I2'] = pd.to_datetime(forms_df['I2'])
 	
 	# Ordena os valores pela data
-	forms_df.sort_values(by=['I2'], inplace=True)
+	#forms_df.sort_values(by=['I2'], inplace=True)
 	return forms_df
 
 # Formularios troubleshoot
