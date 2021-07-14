@@ -2478,7 +2478,7 @@ if __name__ == '__main__':
 		#st.write(fim_filtro)
 		#st.write(inicio_filtro)
 		#datetime.strftime(datetime.strptime(str(fim),'%Y-%m-%d'),'%Y-%m-%dT%H:%M:%S.%f')
-		df_cil_filt = (df_cil[(df_cil['I2'] >= inicio_filtro) & (df_cil['I2'] <= fim_filtro)]) 
+		df_cil_filt = (df_cil[(df_cil['I2'].dt.date >= inicio_filtro) & (df_cil['I2'].dt.date <= fim_filtro)]) 
 
 		# Gera lista dos turnos
 		list_turno = list(df_cil_filt['I1'].drop_duplicates())
