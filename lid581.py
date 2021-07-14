@@ -2805,7 +2805,7 @@ if __name__ == '__main__':
 		liner_s['Liner'] = round((liner_s['Q00'] + liner_s['Q01'] + liner_s['Q02'] + liner_s['Q03'] + liner_s['Q04'] + liner_s['Q05'] + liner_s['Q06'] + liner_s['Q07'] + liner_s['Q08'] + liner_s['Q09'] + liner_s['Q10'] + liner_s['Q11'] + liner_s['Q12'] + liner_s['Q13'] + liner_s['Q14'] + liner_s['Q15'] + liner_s['Q16'] + liner_s['Q17'] + liner_s['Q18'] + liner_s['Q19'] + liner_s['Q20'] + liner_s['Q21'] + liner_s['Q22'])*100/23, 2)
 		liner_s = liner_s.groupby(['Semanas']).mean()
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
-		inicio_semana = inicio_filtro.dt.strftime('%V')
+		inicio_semana = inicio_filtro.strftime('%V')
 		st.write(inicio_semana)
 		
 
