@@ -2734,7 +2734,7 @@ if __name__ == '__main__':
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
 		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
 		liner_d = liner_d.groupby('Datas', group_keys=False).mean()
-		liner_d['Datas'] = liner_d.index
+		liner_d.reset_index(level=0, inplace=True)
 		#liner_s = liner_s.groupby(['Semanas']).mean()
 		st.write(liner_d)
 		
