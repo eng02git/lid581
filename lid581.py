@@ -2728,6 +2728,7 @@ if __name__ == '__main__':
 		liner_d = df_cil.copy()
 		liner_d['I2'] = liner_d['I2'].dt.date
 		liner_d['Datas'] = liner_d['I2']
+		st.write(liner_d)
 		#liner_d.rename(columns={'I2': 'Datas'})
 		#liner_d.drop_duplicates(subset=['Datas'])
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
