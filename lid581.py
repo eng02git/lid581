@@ -25,6 +25,7 @@ import smtplib
 import time
 import datetime
 from datetime import  date, datetime
+import pytz
 import base64
 from io import BytesIO
 from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode, JsCode
@@ -64,8 +65,10 @@ st.sidebar.title("LID Forms")
 tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
-ts = now = datetime.now()
+tz = pytz.timezone('Europe/Berlin')
+ts = now = datetime.now(tz)
 st.sidebar.write(ts)
+st.write(pytz.all_timezones)
 formularios_cil = [
 	'Liner diário',
 	'Liner semanal',
