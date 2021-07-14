@@ -2726,6 +2726,7 @@ if __name__ == '__main__':
 		liner_d = df_cil.copy()
 		liner_d['I2'] = liner_d['I2'].dt.date
 		liner_d = liner_d.rename(columns={'I2': 'Datas'})
+		liner_d.drop_duplicates(subset=['Datas'])
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
 		liner_d['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
 
@@ -2734,6 +2735,7 @@ if __name__ == '__main__':
 		shell_d = df_cil.copy()
 		shell_d['I2'] = shell_d['I2'].dt.date
 		shell_d = shell_d.rename(columns={'I2': 'Datas'})
+		shell_d.drop_duplicates(subset=['Datas'])
 		shell_d = shell_d.replace({'NOK':0, 'OK':1})
 		shell_d['Shell'] = round((shell_d['Q00'] + shell_d['Q01'] + shell_d['Q02'] + shell_d['Q03'] + shell_d['Q04'] + shell_d['Q05'] + shell_d['Q06'] + shell_d['Q07'] + shell_d['Q08'] + shell_d['Q09'] + shell_d['Q10'] + shell_d['Q11'] + shell_d['Q12'] + shell_d['Q13'] + shell_d['Q14'] + shell_d['Q15'] + shell_d['Q16'] + shell_d['Q17'] + shell_d['Q18'])*100/19, 2)
 
@@ -2742,6 +2744,7 @@ if __name__ == '__main__':
 		auto_d = df_cil.copy()
 		auto_d['I2'] = auto_d['I2'].dt.date
 		auto_d = auto_d.rename(columns={'I2': 'Datas'})
+		auto_d.drop_duplicates(subset=['Datas'])
 		auto_d = auto_d.replace({'NOK':0, 'OK':1})
 		auto_d['Autobagger'] = round((auto_d['Q00'] + auto_d['Q01'] + auto_d['Q02'] + auto_d['Q03'] + auto_d['Q04'] + auto_d['Q05'])*100/6, 2)
 		
@@ -2750,6 +2753,7 @@ if __name__ == '__main__':
 		conv_d = df_cil.copy()
 		conv_d['I2'] = conv_d['I2'].dt.date
 		conv_d = conv_d.rename(columns={'I2': 'Datas'})
+		conv_d.drop_duplicates(subset=['Datas'])
 		conv_d = conv_d.replace({'NOK':0, 'OK':1})
 		conv_d['Conversion'] = round((conv_d['Q00'] + conv_d['Q01'] + conv_d['Q02'] + conv_d['Q03'] + conv_d['Q04'] + conv_d['Q05'] + conv_d['Q06'] )*100/7, 2)
 		
@@ -2758,6 +2762,7 @@ if __name__ == '__main__':
 		bala_d = df_cil.copy()
 		bala_d['I2'] = bala_d['I2'].dt.date
 		bala_d = bala_d.rename(columns={'I2': 'Datas'})
+		bala_d.drop_duplicates(subset=['Datas'])
 		bala_d = bala_d.replace({'NOK':0, 'OK':1})
 		bala_d['Balancer'] = round((bala_d['Q00'] + bala_d['Q01'] + bala_d['Q02'] )*100/3, 2)
 
