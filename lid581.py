@@ -66,9 +66,9 @@ tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
 tz = pytz.timezone('America/Bahia')
-ts = datetime.now(tz)
+ts = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S"))
 st.sidebar.write(ts)
-#st.write(pytz.all_timezones)
+
 formularios_cil = [
 	'Liner diário',
 	'Liner semanal',
