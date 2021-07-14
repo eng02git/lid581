@@ -2796,19 +2796,17 @@ if __name__ == '__main__':
 		liner_s['Semana'] = liner_s['I2'].dt.strftime('%V')
 		liner_s['Semana'] = liner_s['Semana'].astype(int)
 		liner_s['Semanas'] = liner_s['Semana']
-		liner_s['Liner'] = 1
-		liner_s = liner_s.groupby(['Semanas']).sum()
+		
 		st.write(liner_s)
 		#liner_s['I2'] = liner_s['I2'].dt.date
 		#liner_s = liner_s.rename(columns={'I2': 'Datas'})
 		#liner_s['Semana'] = liner_s['Datas'].dt.strftime('%G-%V') pd.to_datetime(df['Time'])
 		#liner_s.drop_duplicates(subset=['Datas'])
 		liner_s = liner_s.replace({'NOK':0, 'OK':1})
-		#liner_s['Liner'] = round((liner_d['Q00'] + liner_d['Q01'] + liner_d['Q02'] + liner_d['Q03'] + liner_d['Q04'] + liner_d['Q05'] + liner_d['Q06'] + liner_d['Q07'] + liner_d['Q08'])*100/9, 2)
+		liner_s['Liner'] = round((liner_s['Q00'] + liner_s['Q01'] + liner_s['Q02'] + liner_s['Q03'] + liner_s['Q04'] + liner_s['Q05'] + liner_s['Q06'] + liner_s['Q07'] + liner_s['Q08'] + liner_s['Q09'] + liner_s['Q10'] + liner_s['Q11'] + liner_s['Q12'] + liner_s['Q13'] + liner_s['Q14'] + liner_s['Q15'] + liner_s['Q16'] + liner_s['Q17'] + liner_s['Q18'] + liner_s['Q19'] + liner_s['Q20'] + liner_s['Q21'] + liner_s['Q22'])*100/23, 2)
+		liner_s = liner_s.groupby(['Semanas']).mean()
 		cil_semanal = pd.merge(cil_semanal, liner_s[['Semana','Liner']], on='Semana', how='left')
 		st.write(liner_s)
-		#datetime.date(2010, 6, 16).isocalendar()[1]
-		
 
 		# organizacao das colunas
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
