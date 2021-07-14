@@ -2463,7 +2463,7 @@ if __name__ == '__main__':
 			df_cil = load_forms_cil('balancer_semanal')
 			
 			# Lista e ordena as colunas do dataframe
-			lista_colunas = ['I2', 'I3' 'I0', 'I1',
+			lista_colunas = ['I2', 'I0', 'I1',
 					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05',
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05']
 			df_cil = df_cil.reindex(columns=lista_colunas)
