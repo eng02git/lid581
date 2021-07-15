@@ -3141,7 +3141,7 @@ if __name__ == '__main__':
 			#st.write(df_cil_liner_d)
 			liner_d_t = df_cil_liner_d['I1']
 			st.write(liner_d_t)
-			liner_d_t.append(df_cil_shell_d['I1'], ignore_index=True)
+			liner_d_t = liner_d_t.append(df_cil_shell_d['I1'], ignore_index=True)
 			#liner_d_t.append(df_cil_liner_d['I1'])
 			#liner_d_t.append(df_cil_liner_d['I1'])
 			#liner_d_t.append(df_cil_liner_d['I1'])
