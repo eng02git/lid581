@@ -3139,7 +3139,7 @@ if __name__ == '__main__':
 			grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
 			st.write(grafico_d)
 			
-			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
+			fig.add_trace(go.Histogram(x=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
 			fig.update_layout(height=300, width=500,showlegend=False)
 			col_d.write(fig)
