@@ -3130,7 +3130,13 @@ if __name__ == '__main__':
 				    column_widths=[0.3, 0.7]
 				   )
 			
-			st.write(response['data'])
+			aux_d = response['data']
+			
+			grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
+			st.write(grafico_d['Liner'])
+			
+			
+			#for index, rows response['data'].iterrows
 			
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
