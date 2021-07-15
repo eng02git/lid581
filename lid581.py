@@ -3105,7 +3105,7 @@ if __name__ == '__main__':
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
 		
 		with col_d:
-			st.subheader('Dados CIL diário:')
+			st.subheader('Percentual de CIL diário:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario, True)
 			response = AgGrid(
@@ -3125,7 +3125,7 @@ if __name__ == '__main__':
 				st.table(selected)
 				
 		with col_s:
-			st.subheader('Dados CIL semanal:')
+			st.subheader('Percentual de CIL semanal:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_semanal, True)
 			response = AgGrid(
@@ -3142,7 +3142,7 @@ if __name__ == '__main__':
 			selected = response['selected_rows']
 			
 		with col_m:
-			st.subheader('Dados CIL mensal:')
+			st.subheader('Percentual de CIL mensal:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_mensal, True)
 			response = AgGrid(
