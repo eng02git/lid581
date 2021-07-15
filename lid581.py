@@ -3211,6 +3211,7 @@ if __name__ == '__main__':
 		grafico_m['Conversion'] = np.where(aux_m['Conversion']=='-', 0, 1) 
 		grafico_m['Esperado'] = 1
 		
+		# definicao das cores
 		colors = ['lightslategray',] * 6
 		colors[5] = 'crimson'
 		colors_m = ['lightslategray',] * 3
