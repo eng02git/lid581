@@ -3131,7 +3131,7 @@ if __name__ == '__main__':
 				   )
 			
 			aux_d = response['data']
-			
+			grafico_d = pd.DataFrame()
 			grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
 			st.write(grafico_d['Liner'])
 			
