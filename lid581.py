@@ -3222,4 +3222,4 @@ if __name__ == '__main__':
 		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion', 'Esperado'], y=grafico_m.sum(),  marker_color=colors_m), row=1, col=5)
 
 		fig.update_layout(height=300, showlegend=False)
-		col_m.write(fig)
+		st.write(fig)
