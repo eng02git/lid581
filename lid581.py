@@ -3100,65 +3100,8 @@ if __name__ == '__main__':
 		
 		# trata dados faltantes
 		cil_mensal = cil_mensal.replace(np.nan, '-', regex=True)
-
-		# organizacao das colunas
-		col_d, col_s, col_m = st.beta_columns([4,4,2])
 		
-		with col_d:
-			st.subheader('Percentual de CIL diário:')
-			# Monta planilha para exibir dados
-			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario, True)
-			response = AgGrid(
-				    cil_diario, 
-				    gridOptions=gridOptions,
-				    height=grid_height, 
-				    width='100%',
-				    data_return_mode=return_mode_value, 
-				    update_mode=update_mode_value,
-				    fit_columns_on_grid_load=fit_columns_on_grid_load,
-				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
-				    enable_enterprise_modules=enable_enterprise_modules)
-
-			selected = response['selected_rows']
-			
-			if selected != []:
-				st.table(selected)
-				
-		with col_s:
-			st.subheader('Percentual de CIL semanal:')
-			# Monta planilha para exibir dados
-			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_semanal, True)
-			response = AgGrid(
-				    cil_semanal, 
-				    gridOptions=gridOptions,
-				    height=grid_height, 
-				    width='100%',
-				    data_return_mode=return_mode_value, 
-				    update_mode=update_mode_value,
-				    fit_columns_on_grid_load=fit_columns_on_grid_load,
-				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
-				    enable_enterprise_modules=enable_enterprise_modules)
-
-			selected = response['selected_rows']
-			
-		with col_m:
-			st.subheader('Percentual de CIL mensal:')
-			# Monta planilha para exibir dados
-			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_mensal, True)
-			response = AgGrid(
-				    cil_mensal, 
-				    gridOptions=gridOptions,
-				    height=grid_height, 
-				    width='100%',
-				    data_return_mode=return_mode_value, 
-				    update_mode=update_mode_value,
-				    fit_columns_on_grid_load=fit_columns_on_grid_load,
-				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
-				    enable_enterprise_modules=enable_enterprise_modules)
-
-			selected = response['selected_rows']
-			
-		# Criação dos gráficos (2 subplots)
+		# Criação dos gráficos (5 subplots)
 		fig = make_subplots(rows=1, 
 			    cols=5,
 			    subplot_titles=("CIL por equipamento (diario)", "Distribuição por turno(diario)", "CIL por equipamento (semanal)", "Distribuição por turno(semanal)", "CIL por equipamento (mensal)"),
@@ -3223,3 +3166,62 @@ if __name__ == '__main__':
 
 		fig.update_layout(height=300, width=1800, showlegend=False)
 		st.write(fig)
+
+		# organizacao das colunas
+		col_d, col_s, col_m = st.beta_columns([4,4,2])
+		
+		with col_d:
+			st.subheader('Percentual de CIL diário:')
+			# Monta planilha para exibir dados
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario, True)
+			response = AgGrid(
+				    cil_diario, 
+				    gridOptions=gridOptions,
+				    height=grid_height, 
+				    width='100%',
+				    data_return_mode=return_mode_value, 
+				    update_mode=update_mode_value,
+				    fit_columns_on_grid_load=fit_columns_on_grid_load,
+				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+				    enable_enterprise_modules=enable_enterprise_modules)
+
+			selected = response['selected_rows']
+			
+			if selected != []:
+				st.table(selected)
+				
+		with col_s:
+			st.subheader('Percentual de CIL semanal:')
+			# Monta planilha para exibir dados
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_semanal, True)
+			response = AgGrid(
+				    cil_semanal, 
+				    gridOptions=gridOptions,
+				    height=grid_height, 
+				    width='100%',
+				    data_return_mode=return_mode_value, 
+				    update_mode=update_mode_value,
+				    fit_columns_on_grid_load=fit_columns_on_grid_load,
+				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+				    enable_enterprise_modules=enable_enterprise_modules)
+
+			selected = response['selected_rows']
+			
+		with col_m:
+			st.subheader('Percentual de CIL mensal:')
+			# Monta planilha para exibir dados
+			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_mensal, True)
+			response = AgGrid(
+				    cil_mensal, 
+				    gridOptions=gridOptions,
+				    height=grid_height, 
+				    width='100%',
+				    data_return_mode=return_mode_value, 
+				    update_mode=update_mode_value,
+				    fit_columns_on_grid_load=fit_columns_on_grid_load,
+				    allow_unsafe_jscode=True, #Set it to True to allow jsfunction to be injected
+				    enable_enterprise_modules=enable_enterprise_modules)
+
+			selected = response['selected_rows']
+			
+
