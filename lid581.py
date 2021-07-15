@@ -3131,7 +3131,8 @@ if __name__ == '__main__':
 				   )
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
-			st.write(fig)
+			col_d.write(fig)
+			
 			if selected != []:
 				st.table(selected)
 				
