@@ -3092,8 +3092,8 @@ if __name__ == '__main__':
 		conv_m = conv_m.groupby(['Meses']).mean()
 		
 		# concatena dataframes
-		cil_mensal = pd.merge(cil_mensal, auto_s[['Mes','Autobagger']], on='Mes', how='left')
-		cil_mensal = pd.merge(cil_mensal, conv_s[['Mes','Conversion']], on='Mes', how='left')
+		cil_mensal = pd.merge(cil_mensal, auto_m[['Mes','Autobagger']], on='Mes', how='left')
+		cil_mensal = pd.merge(cil_mensal, conv_m[['Mes','Conversion']], on='Mes', how='left')
 
 		# aplica filtros de datas
 		inicio_mes = inicio_filtro.month
