@@ -3137,7 +3137,7 @@ if __name__ == '__main__':
 			grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
 			grafico_d['Conversion'] = np.where(aux_d['Conversion']=='-', 0, 1) 
 			grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
-			st.write(grafico_d['Liner'])
+			st.write(grafico_d)
 			
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
