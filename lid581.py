@@ -3123,34 +3123,6 @@ if __name__ == '__main__':
 
 			selected = response['selected_rows']
 			
-			# Criação dos gráficos (2 subplots)
-			fig = make_subplots(rows=1, 
-				    cols=2,
-				    subplot_titles=("Cil por equipamento", "Distribuição por turno"),
-				    column_widths=[0.5, 0.5]
-				   )
-			
-			# gera dados sobre a quantidade de cil de cada maquina
-			aux_d = response['data']
-			grafico_d = pd.DataFrame()
-			grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
-			grafico_d['Shell'] = np.where(aux_d['Shell']=='-', 0, 1) 
-			grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
-			grafico_d['Conversion'] = np.where(aux_d['Conversion']=='-', 0, 1) 
-			grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
-			
-			# quantidade de cil por turno
-			turnos_d = df_cil_liner_d['I1']
-			turnos_d = turnos_d.append(df_cil_shell_d['I1'])
-			turnos_d = turnos_d.append(df_cil_auto_d['I1'])
-			turnos_d = turnos_d.append(df_cil_conv_d['I1'])
-			turnos_d = turnos_d.append(df_cil_bala_d['I1'])
-
-			fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
-			fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
-			fig.update_layout(height=300, showlegend=False)
-			col_d.write(fig)
-			
 			if selected != []:
 				st.table(selected)
 				
@@ -3187,4 +3159,54 @@ if __name__ == '__main__':
 				    enable_enterprise_modules=enable_enterprise_modules)
 
 			selected = response['selected_rows']
+			
+		# Criação dos gráficos (2 subplots)
+		fig = make_subplots(rows=1, 
+			    cols=5,
+			    subplot_titles=("Cil por equipamento (diario)", "Distribuição por turno(diario)", "Cil por equipamento (semanal)", "Distribuição por turno(semanal)", "Cil por equipamento (mensal)"),
+			    column_widths=[0.2, 0.2, 0.2, 0.2, 0.2]
+			   )
+		
+		########### diario ##############
+		# gera dados sobre a quantidade de cil de cada maquina diario
+		aux_d = cil_diario
+		grafico_d = pd.DataFrame()
+		grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
+		grafico_d['Shell'] = np.where(aux_d['Shell']=='-', 0, 1) 
+		grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
+		grafico_d['Conversion'] = np.where(aux_d['Conversion']=='-', 0, 1) 
+		grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
+
+		# quantidade de cil por turno diario
+		turnos_d = df_cil_liner_d['I1']
+		turnos_d = turnos_d.append(df_cil_shell_d['I1'])
+		turnos_d = turnos_d.append(df_cil_auto_d['I1'])
+		turnos_d = turnos_d.append(df_cil_conv_d['I1'])
+		turnos_d = turnos_d.append(df_cil_bala_d['I1'])
+
+		########### semanal ##############
+		# gera dados sobre a quantidade de cil de cada maquina diario
+		aux_s = cil_semanal
+		grafico_s = pd.DataFrame()
+		grafico_s['Liner'] = np.where(aux_s['Liner']=='-', 0, 1) 
+		grafico_s['Shell'] = np.where(aux_s['Shell']=='-', 0, 1) 
+		grafico_s['Autobagger'] = np.where(aux_s['Autobagger']=='-', 0, 1) 
+		grafico_s['Conversion'] = np.where(aux_s['Conversion']=='-', 0, 1) 
+		grafico_s['Balancer'] = np.where(aux_s['Balancer']=='-', 0, 1) 
+
+		# quantidade de cil por turno diario
+		turnos_s = df_cil_liner_s['I1']
+		turnos_s = turnos_s.append(df_cil_shell_s['I1'])
+		turnos_s = turnos_s.append(df_cil_auto_s['I1'])
+		turnos_s = turnos_s.append(df_cil_conv_s['I1'])
+		turnos_s = turnos_s.append(df_cil_bala_s['I1'])
+
+		
+
+		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
+		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
+		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_s.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=3)
+		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
+		fig.update_layout(height=300, showlegend=False)
+		col_d.write(fig)
 	
