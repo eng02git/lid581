@@ -3139,7 +3139,7 @@ if __name__ == '__main__':
 			grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
 			
 			st.write(df_cil_liner_d)
-			grafico_d['t_liner'] = df_cil_liner_d['Turno']
+			grafico_d['t_liner'] = df_cil_liner_d['I1']
 			st.write(grafico_d['t_liner'])
 			
 			fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
