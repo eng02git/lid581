@@ -61,7 +61,7 @@ fig1s.write('')
 fig2s.image('latas minas.png', width=150)
 fig3s.write('')
 st.sidebar.title("LID Forms")
-tipos = ['Cil', 'Troubleshoot']
+tipos = ['CIL', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
 tz = pytz.timezone('America/Bahia')
@@ -100,8 +100,8 @@ formularios_trouble = [
 	'Visualizar Troubleshoot',	# Filtros para visualizar os questionários desejeados
 	'Suporte Engenharia']
 
-if selecao_tipo == 'Cil':
-	func_escolhida = st.sidebar.radio('Selecione o formulário Cil', formularios_cil, index=0)
+if selecao_tipo == 'CIL':
+	func_escolhida = st.sidebar.radio('Selecione o formulário CIL', formularios_cil, index=0)
 	
 if selecao_tipo == 'Troubleshoot':
 	func_escolhida = st.sidebar.radio('Selecione o formulário de Troubleshoot', formularios_trouble, index=0)
@@ -728,7 +728,7 @@ def Shell_diario():
 		T00.info('Limpeza Sistema de curlers e sincronizers: 1- Limpeza com uma flanela umedecida em álcool isopropílico das mesas quatro mesas de curlers  e sincronizers removendo o pó de alumínio acumulado sobre os mesmos.')
 		T01.info('Limpeza da parte interna do ferramental: 1- Limpar com uma flanela umedecida em álcool isopropílico todo o perímetro do ferramental, removendo pó de alumínio e pequenas farpas que possam danificar as shells durante a produção. 2-Com uma flanela limpa umedecida em álcool isopropílico, limpar toda a região das hastes dos cilindros da guardas de proteção após a limpeza soprar com o ar comprimido para secar. 3-Inspecionar o upper die verificando a existência de vazamento nos sistemas hidráulico e pneumático. Obs: Executar a limpeza a cada troca de bobina e observar o esqueleto da chapa para identificar possíveis rebarbas no produto.')
 		T02.info('Limpeza dos blowers: 1. Com um flanela umedecida em álcool isopropílico limpar todas as saídas removendo toda sujidade.')
-		T03.info('Cilindro do quick lifit: 1. Verificar quanto a vazamentos de óleo.')
+		T03.info('CILindro do quick lifit: 1. Verificar quanto a vazamentos de óleo.')
 		T04.info('Unidade de ajuste de pressão (stand de ar): 1. Utilizando tato e audição verificar quanto a vazamentos.')
 		T05.info('Gaiola de esferas das colunas: 1-Verificar a eficiência da lubrificação do conjunto de guias, observando se há uma película fina de oleo e ausência de vazamentos.')
 		T06.info('Limpar o piso: 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
@@ -1560,7 +1560,7 @@ def conversion_diario():
 		T00.info('Die set superior/inferior Tab Die: 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
 		T01.info('Die set superior/inferior Lane Die (1ª á 8ª estação): 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
 		T02.info('Limpeza interior da máquina: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades. OBS: Atentar-se para não deixar ferramentas ou materiais de limpeza no interior da máquina.')
-		T03.info('Cilindro de acionamento da guarda: 1- Utilizando um pano limpo com solvente, deve-se limpar toda a região e logo após soprar com ar comprimido para secar. Realizar inspeção das guardas para detecção de possíveis anomalias.')
+		T03.info('CILindro de acionamento da guarda: 1- Utilizando um pano limpo com solvente, deve-se limpar toda a região e logo após soprar com ar comprimido para secar. Realizar inspeção das guardas para detecção de possíveis anomalias.')
 		T04.info('Limpar câmara interna do MLT: 1- Limpar câmara interna somente com água.')
 		T05.info('Limpeza da mesa TAB Uncoiler: 1- Limpar com pano umedecido com álcool isopropílico e inspecionar possíveis anomalias ou anormalidades.')
 		T06.info('Limpeza nas proteções acrílicas na área do Downstacker: 1- Limpar com pano umedecido com álcool isopropílico  e inspecionar possíveis anomalias ou anormalidades.')
@@ -1858,11 +1858,11 @@ def conversion_mensal():
 		
 		# Texto das questões
 		T00.info('Válvula direcional feed roll (tab feed roll): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
-		T01.info('Cilindro tensionador da transfer belt: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+		T01.info('CILindro tensionador da transfer belt: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
 		T02.info('Válvula direcional do cilindro do freio da lâmina (stock stop): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
-		T03.info('Cilindro (Stock Stop): Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
-		T04.info('Válvula direcional (Cilindro da guarda): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
-		T05.info('Cilindro de acionamento da guarda: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+		T03.info('CILindro (Stock Stop): Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+		T04.info('Válvula direcional (CILindro da guarda): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+		T05.info('CILindro de acionamento da guarda: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
 		T06.info('Válvula de bloqueio: Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
 		T07.info('Válvula do lubrifil: Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
 		T08.info('Filtro de ar: Verificar visualmente se existe algum desgaste.')
@@ -2560,7 +2560,7 @@ if __name__ == '__main__':
 				st.info('Q00) Limpeza Sistema de curlers e sincronizers: 1- Limpeza com uma flanela umedecida em álcool isopropílico das mesas quatro mesas de curlers  e sincronizers removendo o pó de alumínio acumulado sobre os mesmos.')
 				st.info('Q01) Limpeza da parte interna do ferramental: 1- Limpar com uma flanela umedecida em álcool isopropílico todo o perímetro do ferramental, removendo pó de alumínio e pequenas farpas que possam danificar as shells durante a produção. 2-Com uma flanela limpa umedecida em álcool isopropílico, limpar toda a região das hastes dos cilindros da guardas de proteção após a limpeza soprar com o ar comprimido para secar. 3-Inspecionar o upper die verificando a existência de vazamento nos sistemas hidráulico e pneumático. Obs: Executar a limpeza a cada troca de bobina e observar o esqueleto da chapa para identificar possíveis rebarbas no produto.')
 				st.info('Q02) Limpeza dos blowers: 1. Com um flanela umedecida em álcool isopropílico limpar todas as saídas removendo toda sujidade.')
-				st.info('Q03) Cilindro do quick lifit: 1. Verificar quanto a vazamentos de óleo.')
+				st.info('Q03) CILindro do quick lifit: 1. Verificar quanto a vazamentos de óleo.')
 				st.info('Q04) Unidade de ajuste de pressão (stand de ar): 1. Utilizando tato e audição verificar quanto a vazamentos.')
 				st.info('Q05) Gaiola de esferas das colunas: 1-Verificar a eficiência da lubrificação do conjunto de guias, observando se há uma película fina de oleo e ausência de vazamentos.')
 				st.info('Q06) Limpar o piso: 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
@@ -2681,7 +2681,7 @@ if __name__ == '__main__':
 				st.info('Q00) Die set superior/inferior Tab Die: 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
 				st.info('Q01) Die set superior/inferior Lane Die (1ª á 8ª estação): 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
 				st.info('Q02) Limpeza interior da máquina: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades. OBS: Atentar-se para não deixar ferramentas ou materiais de limpeza no interior da máquina.')
-				st.info('Q03) Cilindro de acionamento da guarda: 1- Utilizando um pano limpo com solvente, deve-se limpar toda a região e logo após soprar com ar comprimido para secar. Realizar inspeção das guardas para detecção de possíveis anomalias.')
+				st.info('Q03) CILindro de acionamento da guarda: 1- Utilizando um pano limpo com solvente, deve-se limpar toda a região e logo após soprar com ar comprimido para secar. Realizar inspeção das guardas para detecção de possíveis anomalias.')
 				st.info('Q04) Limpar câmara interna do MLT: 1- Limpar câmara interna somente com água.')
 				st.info('Q05) Limpeza da mesa TAB Uncoiler: 1- Limpar com pano umedecido com álcool isopropílico e inspecionar possíveis anomalias ou anormalidades.')
 				st.info('Q06) Limpeza nas proteções acrílicas na área do Downstacker: 1- Limpar com pano umedecido com álcool isopropílico  e inspecionar possíveis anomalias ou anormalidades.')
@@ -2740,11 +2740,11 @@ if __name__ == '__main__':
 			with st.beta_expander('Visualizar as questões?'):
 
 				st.info('Q00) Válvula direcional feed roll (tab feed roll): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
-				st.info('Q01) Cilindro tensionador da transfer belt: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+				st.info('Q01) CILindro tensionador da transfer belt: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
 				st.info('Q02) Válvula direcional do cilindro do freio da lâmina (stock stop): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
-				st.info('Q03) Cilindro (Stock Stop): Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
-				st.info('Q04) Válvula direcional (Cilindro da guarda): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
-				st.info('Q05) Cilindro de acionamento da guarda: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+				st.info('Q03) CILindro (Stock Stop): Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+				st.info('Q04) Válvula direcional (CILindro da guarda): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q05) CILindro de acionamento da guarda: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
 				st.info('Q06) Válvula de bloqueio: Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
 				st.info('Q07) Válvula do lubrifil: Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
 				st.info('Q08) Filtro de ar: Verificar visualmente se existe algum desgaste.')
@@ -2904,11 +2904,11 @@ if __name__ == '__main__':
 			caching.clear_cache()
 			
 	if func_escolhida == 'Estatisticas':
-		st.subheader('Estatisticas de preenchimento de Cil')
+		st.subheader('Estatisticas de preenchimento de CIL')
 		#st.write('Selecione as datas:')
 		
 		###############################################
-		# Cil diario
+		# CIL diario
 		###############################################
 		
 		# liner diario
@@ -2991,7 +2991,7 @@ if __name__ == '__main__':
 		cil_diario = cil_diario.replace(np.nan, '-', regex=True)
 		
 		###############################################
-		# Cil semanal
+		# CIL semanal
 		###############################################
 		
 		cil_semanal = pd.DataFrame()
@@ -3063,7 +3063,7 @@ if __name__ == '__main__':
 		cil_semanal = cil_semanal.replace(np.nan, '-', regex=True)
 		
 		###############################################
-		# Cil mensal
+		# CIL mensal
 		###############################################
 		
 		cil_mensal = pd.DataFrame()
@@ -3105,7 +3105,7 @@ if __name__ == '__main__':
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
 		
 		with col_d:
-			st.subheader('Dados Cil diário:')
+			st.subheader('Dados CIL diário:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario, True)
 			response = AgGrid(
@@ -3125,7 +3125,7 @@ if __name__ == '__main__':
 				st.table(selected)
 				
 		with col_s:
-			st.subheader('Dados Cil semanal:')
+			st.subheader('Dados CIL semanal:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_semanal, True)
 			response = AgGrid(
@@ -3142,7 +3142,7 @@ if __name__ == '__main__':
 			selected = response['selected_rows']
 			
 		with col_m:
-			st.subheader('Dados Cil mensal:')
+			st.subheader('Dados CIL mensal:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_mensal, True)
 			response = AgGrid(
@@ -3161,7 +3161,7 @@ if __name__ == '__main__':
 		# Criação dos gráficos (2 subplots)
 		fig = make_subplots(rows=1, 
 			    cols=5,
-			    subplot_titles=("Cil por equipamento (diario)", "Distribuição por turno(diario)", "Cil por equipamento (semanal)", "Distribuição por turno(semanal)", "Cil por equipamento (mensal)"),
+			    subplot_titles=("CIL por equipamento (diario)", "Distribuição por turno(diario)", "CIL por equipamento (semanal)", "Distribuição por turno(semanal)", "CIL por equipamento (mensal)"),
 			    column_widths=[0.2, 0.2, 0.2, 0.2, 0.2]
 			   )
 		
