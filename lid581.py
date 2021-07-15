@@ -2907,7 +2907,7 @@ if __name__ == '__main__':
 			
 	if func_escolhida == 'Estatisticas':
 		st.subheader('Estatisticas de preenchimento de Cil')
-		st.write('Selecione as datas:')
+		#st.write('Selecione as datas:')
 		
 		###############################################
 		# Cil diario
