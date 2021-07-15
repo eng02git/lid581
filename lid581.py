@@ -2974,7 +2974,7 @@ if __name__ == '__main__':
 		
 		# filtro para as datas
 		col1, col2 = st.beta_columns(2)
-		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
+		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 7, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
 		
 		# Cria dataframe vazio para as datas
