@@ -3129,6 +3129,9 @@ if __name__ == '__main__':
 				    subplot_titles=("teste", "teste2"),
 				    column_widths=[0.3, 0.7]
 				   )
+			
+			st.write(response['data'])
+			
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
 			fig.update_layout(height=300, width=500,showlegend=False)
