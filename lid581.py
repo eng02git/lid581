@@ -3171,7 +3171,7 @@ if __name__ == '__main__':
 		# gera dados sobre a quantidade de cil de cada maquina diario
 		aux_d = cil_diario
 		grafico_d = pd.DataFrame()
-		grafico_d['Esperado'] = aux_d.shape[0]
+		grafico_d['Esperado'] = 1
 		grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
 		grafico_d['Shell'] = np.where(aux_d['Shell']=='-', 0, 1) 
 		grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
