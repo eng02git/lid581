@@ -3138,6 +3138,7 @@ if __name__ == '__main__':
 			grafico_d['Conversion'] = np.where(aux_d['Conversion']=='-', 0, 1) 
 			grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
 			
+			st.write(df_cil_liner_d)
 			grafico_d['t_liner'] = df_cil_liner_d['Turno']
 			st.write(grafico_d['t_liner'])
 			
