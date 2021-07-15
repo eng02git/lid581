@@ -2346,10 +2346,10 @@ if __name__ == '__main__':
 	nomes = list(usuarios.iloc[:,2])
 
 	# Imagem
-	col1_, col2_, col3_ = st.beta_columns([1,1,1])
-	col1_.write('')
-	col2_.image('Ambev.jpeg', width=250)
-	col3_.write('')
+	#col1_, col2_, col3_ = st.beta_columns([1,1,1])
+	#col1_.write('')
+	#col2_.image('Ambev.jpeg', width=250)
+	#col3_.write('')
 
 	# Lista vazia para input dos dados do formulário
 	dic = {} #dicionario
