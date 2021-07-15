@@ -3171,6 +3171,7 @@ if __name__ == '__main__':
 		# gera dados sobre a quantidade de cil de cada maquina diario
 		aux_d = cil_diario
 		grafico_d = pd.DataFrame()
+		grafico_d['Esperado'] = aux_d.shape[0]
 		grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
 		grafico_d['Shell'] = np.where(aux_d['Shell']=='-', 0, 1) 
 		grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
@@ -3208,7 +3209,7 @@ if __name__ == '__main__':
 		grafico_m['Autobagger'] = np.where(aux_m['Autobagger']=='-', 0, 1) 
 		grafico_m['Conversion'] = np.where(aux_m['Conversion']=='-', 0, 1) 		
 
-		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
+		fig.add_trace(go.Bar(x=['Esperado','Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
 		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_s.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=3)
 		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
