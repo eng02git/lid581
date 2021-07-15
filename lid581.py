@@ -3148,7 +3148,7 @@ if __name__ == '__main__':
 
 			fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 			fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
-			fig.update_layout(showlegend=False)
+			fig.update_layout(height=300, showlegend=False)
 			col_d.write(fig)
 			
 			if selected != []:
