@@ -3172,7 +3172,7 @@ if __name__ == '__main__':
 		aux_d = cil_diario
 		grafico_d = pd.DataFrame()
 		grafico_d['Esperado'] = 1
-		st.write(grafico_d['Esperado'] = 1)
+		st.write(grafico_d['Esperado'])
 		grafico_d['Liner'] = np.where(aux_d['Liner']=='-', 0, 1) 
 		grafico_d['Shell'] = np.where(aux_d['Shell']=='-', 0, 1) 
 		grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
