@@ -65,8 +65,6 @@ tipos = ['Cil', 'Troubleshoot']
 selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 
 tz = pytz.timezone('America/Bahia')
-#ts = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
-#st.sidebar.write(ts)
 
 formularios_cil = [
 	'Liner diário',
@@ -3224,5 +3222,4 @@ if __name__ == '__main__':
 		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion', 'Esperado'], y=grafico_m.sum(),  marker_color=colors_m), row=1, col=5)
 
 		fig.update_layout(height=300, showlegend=False)
-		st.write(fig)
-	
+		col_m.write(fig)
