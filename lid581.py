@@ -3177,7 +3177,6 @@ if __name__ == '__main__':
 		grafico_d['Conversion'] = np.where(aux_d['Conversion']=='-', 0, 1) 
 		grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
 		grafico_d['Esperado'] = 1
-		st.write(grafico_d)
 
 		# quantidade de cil por turno diario
 		turnos_d = df_cil_liner_d['I1']
@@ -3195,6 +3194,7 @@ if __name__ == '__main__':
 		grafico_s['Autobagger'] = np.where(aux_s['Autobagger']=='-', 0, 1) 
 		grafico_s['Conversion'] = np.where(aux_s['Conversion']=='-', 0, 1) 
 		grafico_s['Balancer'] = np.where(aux_s['Balancer']=='-', 0, 1) 
+		grafico_s['Esperado'] = 1
 
 		# quantidade de cil por turno diario
 		turnos_s = df_cil_liner_s['I1']
@@ -3208,13 +3208,14 @@ if __name__ == '__main__':
 		aux_m = cil_mensal
 		grafico_m = pd.DataFrame()
 		grafico_m['Autobagger'] = np.where(aux_m['Autobagger']=='-', 0, 1) 
-		grafico_m['Conversion'] = np.where(aux_m['Conversion']=='-', 0, 1) 		
+		grafico_m['Conversion'] = np.where(aux_m['Conversion']=='-', 0, 1) 
+		grafico_m['Esperado'] = 1
 
-		fig.add_trace(go.Bar(x=[ 'Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
+		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
-		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_s.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=3)
+		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_s.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=3)
 		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
-		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion'], y=grafico_m.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=5)
+		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion', 'Esperado'], y=grafico_m.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=5)
 
 		fig.update_layout(height=300, showlegend=False)
 		st.write(fig)
