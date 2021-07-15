@@ -3214,6 +3214,6 @@ if __name__ == '__main__':
 		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
 		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion'], y=grafico_m.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=5)
 
-		fig.update_layout( showlegend=False)
+		fig.update_layout(height=300, showlegend=False)
 		st.write(fig)
 	
