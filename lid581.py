@@ -3217,7 +3217,7 @@ if __name__ == '__main__':
 		colors_m[2] = 'crimson'
 		
 		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_d.sum(), marker_color=colors), row=1, col=1)
-		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='lightslategray', row=1, col=2)
+		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='lightslategray'), row=1, col=2)
 		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_s.sum(), marker_color=colors), row=1, col=3)
 		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
 		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion', 'Esperado'], y=grafico_m.sum(),  marker_color=colors_m), row=1, col=5)
