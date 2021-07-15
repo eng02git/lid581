@@ -3122,6 +3122,15 @@ if __name__ == '__main__':
 				    enable_enterprise_modules=enable_enterprise_modules)
 
 			selected = response['selected_rows']
+			
+			# Criação dos gráficos (2 subplots)
+			fig = make_subplots(rows=1, 
+				    cols=2,
+				    subplot_titles=("teste", "teste2"),
+				    column_widths=[0.3, 0.7]
+				   )
+			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
+			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
 
 			if selected != []:
 				st.table(selected)
