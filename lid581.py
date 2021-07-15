@@ -3200,13 +3200,20 @@ if __name__ == '__main__':
 		turnos_s = turnos_s.append(df_cil_auto_s['I1'])
 		turnos_s = turnos_s.append(df_cil_conv_s['I1'])
 		turnos_s = turnos_s.append(df_cil_bala_s['I1'])
-
 		
+		########### mensal ##############
+		# gera dados sobre a quantidade de cil de cada maquina diario
+		aux_m = cil_mensal
+		grafico_m = pd.DataFrame()
+		grafico_m['Autobagger'] = np.where(aux_m['Autobagger']=='-', 0, 1) 
+		grafico_m['Conversion'] = np.where(aux_m['Conversion']=='-', 0, 1) 		
 
 		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
 		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
 		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_s.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=3)
 		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
+		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion'], y=grafico_m.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=5)
+
 		fig.update_layout(height=300, showlegend=False)
 		st.write(fig)
 	
