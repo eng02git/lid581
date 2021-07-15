@@ -3140,10 +3140,10 @@ if __name__ == '__main__':
 			
 			st.write(df_cil_liner_d)
 			liner_d_t = df_cil_liner_d['I1']
-			liner_d_t += df_cil_liner_d['I1']
-			liner_d_t += df_cil_liner_d['I1']
-			liner_d_t += df_cil_liner_d['I1']
-			liner_d_t += df_cil_liner_d['I1']
+			liner_d_t.append(df_cil_liner_d['I1'])
+			liner_d_t.append(df_cil_liner_d['I1'])
+			liner_d_t.append(df_cil_liner_d['I1'])
+			liner_d_t.append(df_cil_liner_d['I1'])
 			st.write(liner_d_t)
 			
 			fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
