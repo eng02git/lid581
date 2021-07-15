@@ -2503,15 +2503,15 @@ if __name__ == '__main__':
 			with st.beta_expander('Visualizar as questões?'):
 				
 				# Texto das questões
-				st.info('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
-				st.info('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.')
-				st.info('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.')
-				st.info('Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.')
-				st.info('Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
-				st.info('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
-				st.info('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
-				st.info('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
-				st.info('Limpeza na calha de rejeito das  correias transportadoras: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
+				st.info('Q00) Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
+				st.info('Q01) Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.')
+				st.info('Q02) Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.')
+				st.info('Q03) Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.')
+				st.info('Q04) Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
+				st.info('Q05) Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
+				st.info('Q06) Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
+				st.info('Q07) Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
+				st.info('Q08) Limpeza na calha de rejeito das  correias transportadoras: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
 
 		if form_selecionado == 'Liner semanal':
 			df_cil = load_forms_cil('Liner_semanal')
@@ -2522,6 +2522,32 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12',  'C13', 'C14', 'C15', 'C16', 'C17','C18', 'C19', 'C20', 'C21', 'C22',]
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+				# Texto das questões
+				st.info('Q00) Limpeza Conveyor #1 BALN e Pushers 1,2,3,4: 1- Limpar com pano umedecido  e álcool isopropílico.')
+				st.info('Q01) Limpeza Conveyor #2 BA-LN e Pushers 1,2,3,4: 1- Limpar com pano umedecido  e álcool isopropílico.')
+				st.info('Q02) Limpeza Conveyor #3 BA-LN e Pushers 1,2,3,4,5: 1- Limpar com pano umedecido  e álcool isopropílico.')
+				st.info('Q03) Limpeza Conveyor #4 BA-LN e Pushers 1,2,3,4,5: 1- Limpar com pano umedecido  e álcool isopropílico.')
+				st.info('Q04) Limpeza Conveyor #4 BA-LN e Pushers 1,2,3,4,5,6: 1- Limpar com pano umedecido  e álcool isopropílico.')
+				st.info('Q05) Limpeza da esteira de alimentação:  1-Limpar a superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a esteira para detectar possíveis anomalias e desgastes.')
+				st.info('Q06) Desmontagem e limpeza do Downstacker: 1- Limpar o seu interior com o auxílio de um aspirador pneumático, após limpe com um pano umedecido  em álcool isopropílico toda a área aspirada. Inspecionar o equipamento para detectar possíveis anomalias e desgastes.')
+				st.info('Q07) Limpeza da mesa e da Star Wheel: 1- Limpar com pano umedecido em álcool isopropílico toda a superfície da mesa do Lower Turret que ainda não foi limpa, se necessário utilize a haste metálica pontiaguda para retirar compound preso nas juntas ou fissuras  Limpe toda a face da Star Wheel. Limpe as portas/gaiolas de proteção do lado externo e interno.')
+				st.info('Q08) Limpeza da caixa de óleo: 1- Limpar com pano umedecido em álcool isopropílico as laterais do lado de dentro da caixa de gotejamento de óleo. Não é necessário fazer sangria ou limpar o fundo/parte de baixo da caixa.')
+				st.info('Q09) Limpeza da correia transportadora de saída do Liner: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q10) Limpeza das guias de descargas: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q11) Limpeza da Plate Turrent Suport, Seal Retainer e Lower Chuck: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q12) Limpeza dos Hopper: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q13) Limpeza na estrutura dos fornos e pisos: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q14) Limpeza nas estruturas da máquina: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q15) Limpeza nos pushers do mezanino e nos pushers após o Hopper na parte de baixo proximo ao piso: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q16) Limpeza da guarda pelo lado interno: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q17) Limpeza da Conveyor #1 LN-BB e Pushers 1,2,3,4 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q18) Limpeza da Conveyor #2 LN-BB e Pushers 1,2,3,4 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q19) Limpeza da Conveyor #3 LN-BB e Pushers 1,2,3,4 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q20) Limpeza da Conveyor #4 LN-BB e Pushers 1,2,3 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q21) Limpeza da Conveyor #5 LN-BB e Pushers 1,2,3 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
+				st.info('Q22) Limpeza do filtro AIRCON painel elétrico, na alimentação de entrada: 1- Utilizar água e pistola de ar.')
+
 		if form_selecionado == 'Shell diário':
 			df_cil = load_forms_cil('shell_diario')
 			
@@ -2531,6 +2557,28 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12',  'C13', 'C14', 'C15', 'C16', 'C17','C18',]
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+				# Texto das questões
+				st.info('Q00) Limpeza Sistema de curlers e sincronizers: 1- Limpeza com uma flanela umedecida em álcool isopropílico das mesas quatro mesas de curlers  e sincronizers removendo o pó de alumínio acumulado sobre os mesmos.')
+				st.info('Q01) Limpeza da parte interna do ferramental: 1- Limpar com uma flanela umedecida em álcool isopropílico todo o perímetro do ferramental, removendo pó de alumínio e pequenas farpas que possam danificar as shells durante a produção. 2-Com uma flanela limpa umedecida em álcool isopropílico, limpar toda a região das hastes dos cilindros da guardas de proteção após a limpeza soprar com o ar comprimido para secar. 3-Inspecionar o upper die verificando a existência de vazamento nos sistemas hidráulico e pneumático. Obs: Executar a limpeza a cada troca de bobina e observar o esqueleto da chapa para identificar possíveis rebarbas no produto.')
+				st.info('Q02) Limpeza dos blowers: 1. Com um flanela umedecida em álcool isopropílico limpar todas as saídas removendo toda sujidade.')
+				st.info('Q03) Cilindro do quick lifit: 1. Verificar quanto a vazamentos de óleo.')
+				st.info('Q04) Unidade de ajuste de pressão (stand de ar): 1. Utilizando tato e audição verificar quanto a vazamentos.')
+				st.info('Q05) Gaiola de esferas das colunas: 1-Verificar a eficiência da lubrificação do conjunto de guias, observando se há uma película fina de oleo e ausência de vazamentos.')
+				st.info('Q06) Limpar o piso: 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
+				st.info('Q07) Limpar área ao redor da prensa: 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
+				st.info('Q08) Limpeza do painel de controle e bancadas: 1-Limpa com pano seco.')
+				st.info('Q09) Limpeza no Balancer "A": 1- Limpeza com uma flanela umedecida em álcool isopropílico.')
+				st.info('Q10) Limpeza da estrutura da máquina. (Acrílicos, Guarda Corpos, Proteções): 1-Limpeza com uma flanela umedecida em álcool isopropílico.')
+				st.info('Q11) Limpeza nas partes acessíveis da prensa: 1- Limpar com uma flanela umedecida em álcool isopropílico todo o perímetro do ferramental, removendo pó de alumínio e pequenas farpas que possam danificar as shells durante a produção. Bloquei ode energia SAM/LOTOTO. Realizar o bloqueio de energia e verificar a eficácia do mesmo.')
+				st.info('Q12) Preparação: Separar e conferir todas as ferramentas, materiais e produtos indicados no item nº 2 do procedimento.')
+				st.info('Q13) Inspeção e limpeza do GFS: Utilizando um pano umedecido com álcool isopropílico, limpe os rolos do acumulador de loop. Após a limpeza, utilizando o tato, passe a mão em torno dos rolos a fim de detectar possíveis ondulações e pequenas protuberâncias nos rolos. Observar também a existência de componentes necessitando de reaperto.')
+				st.info('Q14) Inspeção e limpeza do rolo de alimentação de lâmina: Utilizando um pano umedecido com álcool isopropílico, limpe os rolos do acumulador de loop. Após a limpeza, utilizando o tato, passe a mão em torno dos rolos a fim de detectar possíveis ondulações e pequenas protuberâncias nos rolos. Observar também a existência de componentes necessitando de reaperto.')
+				st.info('Q15) Curler: Bloqueio de energia. Execute o bloquei ode energia conforme o procedimento e em seguida verifique a eficácia do mesmo.')
+				st.info('Q16) Preparação: Preparar os materiais para a limpeza e inspeção.')
+				st.info('Q17) Limpeza dos segmentos do Curler: Utilizando uma haste de latão, retire todas as tampas presas nos segmentos do Curler (se houver). Em seguida, aplique ar comprimido e limpe todos os segmentos com um pano umedecido em álcool isopropílico.')
+				st.info('Q18) Limpeza externa: "Utilizando um pano umedecido em álcool isopropílico, limpe toda a parte externa do Curler como mesa, estrutura externa (com exceção das tampas de acrílico) a fim de remover toda a poeira presente. Para limpar as tampas de acrílico, utilize um pano seco e limpo a fim de remover toda a sujidade existente."')
+
 		if form_selecionado == 'Shell semanal':
 			df_cil = load_forms_cil('shell_semanal')
 			
@@ -2539,6 +2587,30 @@ if __name__ == '__main__':
 					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08', 'Q09', 'Q10', 'Q11', 'Q12',  'Q13', 'Q14', 'Q15', 'Q16', 'Q17','Q18', 'Q19', 'Q20', 
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12',  'C13', 'C14', 'C15', 'C16', 'C17','C18', 'C19', 'C20',]
 			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+			with st.beta_expander('Visualizar as questões?'):
+				# Texto das questões
+				st.info('Q00) Saída de shells para as curlers: 1-Limpar o sistema transporte das shells fazendo movimentos alternados de vai e vem nas 24 saídas de forma a retirar toda sujeira do percurso.')
+				st.info('Q01) Sistema de scrap: 1-Limpar o sistema de scrap verificando sempre se não há nenhum resto de chapa ou shell presa no percurso do sistema.')
+				st.info('Q02) Die set: 1-Remover as striper plate e stock plate; 2-Limpar todo perímetro do lower die e upper die ;3- Limpar a stipper plate e montar as mesmas no lower die; 4- Limpar a stock plate  e montar no upper die.')
+				st.info('Q03) Sistema de vácuo: 1-Limpeza e inspeção das válvulas.')
+				st.info('Q04) Pushers: 1-Descarregar os pushers e com uma flanela umedecida com álcool isopropílico limpar e inspecionar toda a parte interna e externa dos mesmos .')
+				st.info('Q05) Air eject: 1-Checar visualmente as condições do componente, e utilizando o tato e audição para identificar possíveis vazamentos.')
+				st.info('Q06) Limpeza na estrutura da máquina (bases, mangueiras, laterais, acrílicos, bancadas e piso): 1- Limpeza com pano umedecido e álcool isopropílico')
+				st.info('Q07) Limpeza com ar nos segmentos do Curler: 1- Utilizar a pistola de ar.')
+				st.info('Q08) Limpeza nas áreas dos Curlers (curlers, mesas, plataformas e tampas caídas): 1-Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q09) Limpeza dos synchronizers (limpar guardas, tampas caídas, hopper, armor start´s e passar escovas no Screws): 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q10) Limpar Conveyor #1 SP-BA e Pushers 1,2,3,4 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q11) Limpar Conveyor #2 SP-BA e Pushers 1,2,3,4 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q12) Limpeza Conveyor #3 SP-BA e Pushers 1,2,3,4,5 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q13) Limpeza Conveyor #4 SP-BA e Pushers 1,2,3,4,5 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q14) Limpeza Conveyor #5 SP-BA e Pushers 1,2,3 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q15) Limpeza Conveyor #6 SP-BA e Pushers 1,2,3 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q16) Limpeza Conveyor #7 SP-BA e Pushers 1,2 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q17) Limpeza Conveyor #8 SP-BA e Pushers 1,2 no mesanino: 1- Limpeza com pano umedecido em álcool isopropílico .')
+				st.info('Q18) GFS Bloqueio de energia: Execute o bloqueio de energia conforme o padrão e testar a eficácia do mesmo. Preparar os materiais conforme a necessidade.')
+				st.info('Q19) Limpeza parte externa da máquina: Limpar parte externa do equipamento utilizando pano umedecido com álcool isopropílico.')
+				st.info('Q20) Unidade de conservação de Ar: Drenar a água do filtro da linha pneumática.')
 			
 		if form_selecionado == 'Autobagger diário':
 			df_cil = load_forms_cil('autobagger_diario')
@@ -2549,6 +2621,15 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05',]
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+				
+				st.info('Q00) Recolhimento de tampas (Autobagger Área do piso no entorno do equipamento, é área do piso interior do equipamento.): 1- Limpeza utilizando uma vassoura, pá e soprador de ar. Com as mãos, retire as tampas que ficaram presas dentro dos trays do Auto Bagger. Utilize o soprador para retirar as tampas do chão em parte de difícil acesso e logo após deve-se varrer e recolher as tampas utilizando a pá, e colocar no balde de scrap.')
+				st.info('Q01) Proteções e parte externa das máquinas (Área do pallettizer / autobagger): 1- Limpeza com pano umedecido em álcool isopropílico, nas proteções externas da máquina. Inspecionar toda a área se existe alguma anomalia.')
+				st.info('Q02) Limpeza dos filtros (entrada e saída) - Autobagger e Palettizer Unidade de conservação (verificar a numeração em campo): 1- Limpeza de ambos os filtros (filtro de partículas e filtro coalescente) utilizando fluxo de ar e drenagem. Deve-se observar se os mesmos estão saturados, se caso estiver, devem ser trocados..')
+				st.info('Q03) Temperatura do aquecedor (Autobagger Sistema de fechamento do Bag): 1- Realizar o check diário da correta especificação de temperatura.')
+				st.info('Q04) Limpeza de todas as portas e teto da área do Autobagger. (Autobagger): 1- Limpar com pano  umedecido e álcool isopropílico.')
+				st.info('Q05) Limpeza de todas as portas e teto da área do Autobagger: 1- Limpar com pano  umedecido e álcool isopropílico.')
+		
 		if form_selecionado == 'Autobagger semanal':
 			df_cil = load_forms_cil('autobagger_semanal')
 			
@@ -2558,6 +2639,15 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05',]
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+
+				st.info('Q00) Limpeza dos trilhos de transporte das tampas: 1- Limpar os trilhos com pano seco, após a limpeza observar se existem partes soltas ou com folga.')
+				st.info('Q01) Limpar o braço do robô: 1- Limpeza com pano umedecido em álcool isopropílico, nas articulações e espelhos dos sensores. Inspecionar toda a área se existe  alguma anomalia.')
+				st.info('Q02) Limpeza do painel de operação IHM: 1- Limpar com um pano seco toda a interface da IHM')
+				st.info('Q03) Limpeza do sistema de armazenamento / transferência de tampas nas trays: 1- Executar limpeza do excesso de graxa dos rolamentos, mancais, limpeza dos rolos e correntes de transmissão. Limpar mesa de transferência e unidade de conservação.')
+				st.info('Q04) Finalizar a limpeza e colocar a máquina em operação: 1- Após o procedimento de limpeza conferir se não há componentes esquecidos dentro da máquina. Deve-se garantir que não haja ninguém dentro do perímetro de proteção da máquina. Seguir todo o procedimento de partida após intervenção na máquina.')
+				st.info('Q05) Limpeza do filtro AIRCON painel elétrico, na alimentação de entrada: 1- Utilizar pistola de ar.')
+				
 		if form_selecionado == 'Autobagger mensal':
 			df_cil = load_forms_cil('autobagger_mensal')
 			
@@ -2566,6 +2656,18 @@ if __name__ == '__main__':
 					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08',
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08']
 			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+			with st.beta_expander('Visualizar as questões?'):
+				
+				st.info('Q00) Guia linear (pivot bag tray) - Sistema de empacotamento (autobagger): Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
+				st.info('Q01) Guia linear (bag cheio) - Sistema de empacotamento (auto bagger): Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
+				st.info('Q02) Correia sincronizada (pick and place): Sistema de Alimentação de tampas. Inspeção da correia é realizada com a maquina parada realizando o bloqueio de energia (loto)verificando se possui algum desgaste.')
+				st.info('Q03) Rolos de transmissão: Transporte saída do pallet. Realizar limpeza/inspeção/lubrificação do rolos de transmissão tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio.')
+				st.info('Q04) Corrente (carriage lift) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
+				st.info('Q05) Mancal (carriage lift) Sistema de paletização do pallet: Sera realizado a limpeza do excesso de graxa do rolamento do mancal , inspeção visual do estado do rolamento e lubrificação adequada do mesmo, a atividade é realizada com a maquina parada realizando o bloqueio de energia(loto).')
+				st.info('Q06) Guia linear (Carriage) - Sistema de paletização do pallet: Realizar limpeza/inspeção/lubrificação do Rolamento, tirando excesso de lubrificante e sujidades com o equipamento parado, devidamente com o bloqueio Loto.')
+				st.info('Q07) Corrente transporte (Pallet conveyor) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
+				st.info('Q08) Corrente motora ( Pallet conveyor) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
 			
 		if form_selecionado == 'Conversion diário':
 			df_cil = load_forms_cil('conversion_diario')
@@ -2576,6 +2678,16 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06',]
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+				
+				st.info('Q00) Die set superior/inferior Tab Die: 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q01) Die set superior/inferior Lane Die (1ª á 8ª estação): 1- Utilize ar comprimido e  escova de bronze para remover excesso de alumínio ou impurezas das ferramentas e matriz do tab die.  Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q02) Limpeza interior da máquina: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades. OBS: Atentar-se para não deixar ferramentas ou materiais de limpeza no interior da máquina.')
+				st.info('Q03) Cilindro de acionamento da guarda: 1- Utilizando um pano limpo com solvente, deve-se limpar toda a região e logo após soprar com ar comprimido para secar. Realizar inspeção das guardas para detecção de possíveis anomalias.')
+				st.info('Q04) Limpar câmara interna do MLT: 1- Limpar câmara interna somente com água.')
+				st.info('Q05) Limpeza da mesa TAB Uncoiler: 1- Limpar com pano umedecido com álcool isopropílico e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q06) Limpeza nas proteções acrílicas na área do Downstacker: 1- Limpar com pano umedecido com álcool isopropílico  e inspecionar possíveis anomalias ou anormalidades.')
+			
 		if form_selecionado == 'Conversion semanal':
 			df_cil = load_forms_cil('conversion_semanal')
 			
@@ -2584,6 +2696,39 @@ if __name__ == '__main__':
 					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05', 'Q06', 'Q07', 'Q08', 'Q09', 'Q10', 'Q11', 'Q12',  'Q13', 'Q14', 'Q15', 'Q16', 'Q17','Q18', 'Q19', 'Q20', 'Q21', 'Q22', 'Q23', 
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12',  'C13', 'C14', 'C15', 'C16', 'C17','C18', 'C19', 'C20', 'C21', 'C22', 'C23']
 			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+			with st.beta_expander('Visualizar as questões?'):
+				
+				st.info('''Q00) Limpeza dentro da máquina: 
+					1- Limpeza da parte interna da máquina com ar comprimido. Limpeza das ferramentas de matriz Tab die e Lane die com pano umedecido em álcool isopropílico e escova de bronze . Limpar a parte interna da máquina e inspecionar possíveis anomalias ou anormalidades.
+					2- Remoção de materiais estranhos, panos, cavacos, sucata e outros que possam ter acumulado dentro da máquina;
+					3- Limpeza das linhas de retorno de lubrificação se estiverem restringindo  fluxo de óleo.''')
+				st.info('''Q01) Limpeza do tab  uncoiler:
+					1- Desconectar a energia principal do desenrolador antes de ficar na mesa do desenrolador de guias.'
+					2 - Soprar e limpar o desbobinador de material da guia, o braço de dança, o painel de controle elétrico e o rolo / alimentador de compressão do material da guia.
+					3 - Limpar somente quando estiver ocorrendo troca do bobina do Tab.''')
+				st.info('Q02) Bomba de circulação: 1-Inspecionar visualmente para detectar possíveis vazamentos.')
+				st.info('Q03) União Rotativa (Embreagem/Freio): 1-Inspecionar visualmente para detectar possíveis vazamentos.')
+				st.info('Q04) Limpeza da Conveyor #1 BB-CP e Pushers no mesanino: 1- Limpar com um pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q05) Limpeza da Conveyor #2 BB-CP e Pushers no mesanino: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q06) Limpeza da Conveyor #3 BB-CP e Pushers no mesanino: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q07) Limpeza da Conveyor #4 BB-CP e Pushers no mesanino: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q08) Limpeza das correias transportadoras dos 4 lanes 1º e 2º estagio: 1-Inpecionar quanto a integridade e executar a limpeza do mesmo.')
+				st.info('Q09) Limpeza das correias transportadoras dos 4 lanes 1º e 2º estagio: 1-Inpecionar quanto a integridade e executar a limpeza do mesmo.')
+				st.info('Q10) Limpar o Downstacker: 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q11) Limpeza Light Test. (Suporte do Técnico Eletrônico): 1- Limpar com pano umedecido com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q12) Limpeza do ferramental da 6ª estação (Formação do Rebite): 1- Limpeza com álcool e escova todas as ferramentas superiores e inferiores do Lane e Tab Die.')
+				st.info('Q13) Limpeza da área do Gap Control e Downstacker: 1- Limpeza com pano seco.')
+				st.info('Q14) Limpar os filtros da bomba de vácuo. Da câmara de 1ª a 5ª e 7ª e 8ª estação inferior: 1- Limpar com pano umedecido com álcool isopropílico.')
+				st.info('Q15) Limpeza na estrutura da máquina. (base, piso, laterais, acrílicos e etc): 1- Retirar as tampas que estiverem no chão. Utilizando soprador, vassoura e pá e verificar o sistema quanto a presença de vazamentos na area externa e possíveis anomalias.')
+				st.info('Q16) Inspecionar e limpar se necessário as mangueiras da 6ª estação: 1- Limpar com pano umedecido.')
+				st.info('Q17) Inspecionar e limpar se necessário as mangueiras de vácuo do Lane Die: 1- Limpar com pano umedecido.')
+				st.info('Q18) Limpeza das guardas de proteção da Prensa: 1-Limpar com pano umedecido  com álcool isopropílico o interior da máquina e inspecionar possíveis anomalias ou anormalidades.')
+				st.info('Q19) Limpeza das bancadas de lançamentos de dados e bancadas de retrabalho: 1- Limpar com  pano umedecido com álcool isopropílico.')
+				st.info('Q20) Inspecionar e limpar Conveyor #1 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+				st.info('Q21) Inspecionar e limpar Conveyor #2 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+				st.info('Q22) Inspecionar e limpar Conveyor #3 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
+				st.info('Q23) Inspecionar e limpar Conveyor #4 CP-PK e Pushers 1,2: 1-Inspecionar e limpar com pano umedecido com álcool isopropílico.')
 			
 		if form_selecionado == 'Conversion mensal':
 			df_cil = load_forms_cil('conversion_mensal')
@@ -2594,6 +2739,23 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05', 'C06', 'C07', 'C08', 'C09', 'C10', 'C11', 'C12',  'C13']
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+
+				st.info('Q00) Válvula direcional feed roll (tab feed roll): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q01) Cilindro tensionador da transfer belt: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+				st.info('Q02) Válvula direcional do cilindro do freio da lâmina (stock stop): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q03) Cilindro (Stock Stop): Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+				st.info('Q04) Válvula direcional (Cilindro da guarda): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q05) Cilindro de acionamento da guarda: Inspeção no cilindro afim de verificar algum desgaste ou vazamento.')
+				st.info('Q06) Válvula de bloqueio: Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q07) Válvula do lubrifil: Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q08) Filtro de ar: Verificar visualmente se existe algum desgaste.')
+				st.info('Q09) Válvula reguladora de pressão: Verificar visualmente se existe algum desgaste.')
+				st.info('Q10) Válvula de acionamento (tensionamento do cilindro da transfer belt): Inspeção das vedações afim de verificar algum desgaste ou vazamento.')
+				st.info('Q11) Mangueiras e conexões pneumáticas: Verificar se há vazamentos de ar na s mangueiras e conexões pneumáticas')
+				st.info('Q12) Sistema de vácuo: Inspecionar quanto a integridade e executar a limpeza do mesmo.')
+				st.info('Q13) Correia de transporte do conveyor: Inspecionar quanto a integridade e executar a limpeza do mesmo.')
+			
 		if form_selecionado == 'Balancer diário':
 			df_cil = load_forms_cil('balancer_diario')
 			
@@ -2603,6 +2765,12 @@ if __name__ == '__main__':
 					 'C00', 'C01', 'C02']
 			df_cil = df_cil.reindex(columns=lista_colunas)
 			
+			with st.beta_expander('Visualizar as questões?'):
+				
+				st.info('Q00) Proteções e partes externas da máquina: 1- Limpeza com pano umedecido em álcool isopropílico, nas proteções externas da máquina. Inspecionar toda a área se existe  alguma anomalia.')
+				st.info('Q01) Piso do interior da máquina: 1- Realizar a limpeza dos pontos de difícil acesso do piso e parte inferior da máquina com um soprador. Após soprar todas as tampas, utilizar vassoura e pá para recolher  e descarta-las em local adequado.')
+				st.info('Q02) Piso exterior da máquina: 1- Executar limpeza nos pontos externos de difícil acesso na parte inferior da máquina da máquina.')
+			              
 		if form_selecionado == 'Balancer semanal':
 			df_cil = load_forms_cil('balancer_semanal')
 			
@@ -2611,6 +2779,15 @@ if __name__ == '__main__':
 					 'Q00', 'Q01', 'Q02', 'Q03',  'Q04', 'Q05',
 					 'C00', 'C01', 'C02', 'C03',  'C04', 'C05']
 			df_cil = df_cil.reindex(columns=lista_colunas)
+			
+			with st.beta_expander('Visualizar as questões?'):
+
+				st.info('Q00) Limpeza dos trilhos de transporte das tampas: 1- Limpar os trilhos com pano seco, após a limpeza observar se existem partes soltas ou com folga.')
+				st.info('Q01) Limpar o braço do robô: 1- Limpeza com pano umedecido em álcool isopropílico, nas articulações e espelhos dos sensores. Inspecionar toda a área se existe  alguma anomalia.')
+				st.info('Q02) Limpeza do painel de operação IHM: 1- Limpar com um pano seco toda a interface da IHM')
+				st.info("Q03) Limpeza do sistema de armazenamento / transferência de tampas nas tray's: 1- Executar limpeza do excesso de graxa dos rolamentos, mancais, limpeza dos rolos e correntes de transmissão. Limpar mesa de transferência e unidade de conservação.")
+				st.info('Q04) Finalizar a limpeza e colocar a máquina em operação: 1- Após o procedimento de limpeza conferir se não há componentes esquecidos dentro da máquina. Deve-se garantir que não haja ninguém dentro do perímetro de proteção da máquina. Seguir todo o procedimento de partida após intervenção na máquina.')
+				st.info('Q05) Limpeza do filtro AIRCON painel elétrico, na alimentação de entrada: 1- Utilizar pistola de ar')
 		
 		col1, col2, _turno, _nome = st.beta_columns([2,2,3,9])
 		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
@@ -2654,19 +2831,6 @@ if __name__ == '__main__':
 		selected = response['selected_rows']
 		if selected != []:
 			st.table(selected)
-			
-		with st.beta_expander('Visualizar as questões?'):
-
-			# Texto das questões
-			st.info('Retirar a escova do suporte, depositar a escova dentro do recipiente com solução de limpeza durante 30 minutos.  Inspecionar as escovas para detectar possíveis anomalias e desgastes.')
-			st.info('Limpeza das guias de saída: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar as saídas para detectar possíveis anomalias e desgastes.')
-			st.info('Limpeza do conjunto Lower Turret e Upper Turret: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar o conjunto para detectar possíveis anomalias e desgastes.')
-			st.info('Limpeza da mesa e da Star Wheel: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico. Inspecionar a mesa para detectar possíveis anomalias e desgastes.')
-			st.info('Limpeza ao redor do piso do equipamento: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
-			st.info('Limpeza Balancer "B": 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
-			st.info('Limpeza do visor da estação de aplicação de vedante: 1-Limpeza do superfície utilizando pano umedecido com álcool isopropílico.')
-			st.info('Limpeza nos furos do Hopper: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
-			st.info('Limpeza na calha de rejeito das  correias transportadoras: 1-Limpeza utilizando pano umedecido com álcool isopropílico.')
 		
 	if func_escolhida == 'Visualizar Troubleshoot':
 		st.subheader('Visualizar Troubleshoot')
@@ -2995,6 +3159,4 @@ if __name__ == '__main__':
 				    enable_enterprise_modules=enable_enterprise_modules)
 
 			selected = response['selected_rows']
-	
-	
 	
