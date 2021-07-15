@@ -2914,8 +2914,8 @@ if __name__ == '__main__':
 		###############################################
 		
 		# liner diario
-		df_cil = load_forms_cil('Liner_diario')
-		liner_d = df_cil.copy()
+		df_cil_liner_d = load_forms_cil('Liner_diario')
+		liner_d = df_cil_liner_d.copy()
 		liner_d['I2'] = liner_d['I2'].dt.date
 		liner_d = liner_d.rename(columns={'I2': 'Datas'})
 		liner_d = liner_d.replace({'NOK':0, 'OK':1})
@@ -2925,8 +2925,8 @@ if __name__ == '__main__':
 		liner_d['Liner'] = round(liner_d['Liner'],2) 
 		
 		# Shell diario
-		df_cil = load_forms_cil('shell_diario')
-		shell_d = df_cil.copy()
+		df_cil_shell_d = load_forms_cil('shell_diario')
+		shell_d = df_cil_shell_d.copy()
 		shell_d['I2'] = shell_d['I2'].dt.date
 		shell_d = shell_d.rename(columns={'I2': 'Datas'})
 		shell_d.drop_duplicates(subset=['Datas'])
@@ -2937,8 +2937,8 @@ if __name__ == '__main__':
 		shell_d['Shell'] = round(shell_d['Shell'],2) 
 		
 		# autobagger diario
-		df_cil = load_forms_cil('autobagger_diario')
-		auto_d = df_cil.copy()
+		df_cil_auto_d = load_forms_cil('autobagger_diario')
+		auto_d = df_cil_auto_d.copy()
 		auto_d['I2'] = auto_d['I2'].dt.date
 		auto_d = auto_d.rename(columns={'I2': 'Datas'})
 		auto_d.drop_duplicates(subset=['Datas'])
@@ -2949,8 +2949,8 @@ if __name__ == '__main__':
 		auto_d['Autobagger'] = round(auto_d['Autobagger'],2) 
 		
 		# conversion diario
-		df_cil = load_forms_cil('conversion_diario')
-		conv_d = df_cil.copy()
+		df_cil_conv_d = load_forms_cil('conversion_diario')
+		conv_d = df_cil_conv_d.copy()
 		conv_d['I2'] = conv_d['I2'].dt.date
 		conv_d = conv_d.rename(columns={'I2': 'Datas'})
 		conv_d.drop_duplicates(subset=['Datas'])
@@ -2961,8 +2961,8 @@ if __name__ == '__main__':
 		conv_d['Conversion'] = round(conv_d['Conversion'],2) 
 				
 		# Balancer diario
-		df_cil = load_forms_cil('balancer_diario')
-		bala_d = df_cil.copy()
+		df_cil_bala_d = load_forms_cil('balancer_diario')
+		bala_d = df_cil_bala_d.copy()
 		bala_d['I2'] = bala_d['I2'].dt.date
 		bala_d = bala_d.rename(columns={'I2': 'Datas'})
 		bala_d.drop_duplicates(subset=['Datas'])
@@ -3000,8 +3000,8 @@ if __name__ == '__main__':
 		cil_semanal['Semana'] = [*range(1, 56, 1)]
 		
 		# liner semanal
-		df_cil = load_forms_cil('Liner_semanal')
-		liner_s = df_cil.copy()
+		df_cil_liner_s = load_forms_cil('Liner_semanal')
+		liner_s = df_cil_liner_s.copy()
 		liner_s['Semana'] = liner_s['I2'].dt.strftime('%V')
 		liner_s['Semana'] = liner_s['Semana'].astype(int)
 		liner_s['Semanas'] = liner_s['Semana']
@@ -3010,8 +3010,8 @@ if __name__ == '__main__':
 		liner_s = liner_s.groupby(['Semanas']).mean()
 		
 		# shell semanal
-		df_cil = load_forms_cil('shell_semanal')
-		shell_s = df_cil.copy()
+		df_cil_shell_s = load_forms_cil('shell_semanal')
+		shell_s = df_cil_shell_s.copy()
 		shell_s['Semana'] = shell_s['I2'].dt.strftime('%V')
 		shell_s['Semana'] = shell_s['Semana'].astype(int)
 		shell_s['Semanas'] = shell_s['Semana']
@@ -3020,8 +3020,8 @@ if __name__ == '__main__':
 		shell_s = shell_s.groupby(['Semanas']).mean()	
 		
 		# autobagger semanal
-		df_cil = load_forms_cil('autobagger_semanal')
-		auto_s = df_cil.copy()
+		df_cil_auto_s = load_forms_cil('autobagger_semanal')
+		auto_s = df_cil_auto_s.copy()
 		auto_s['Semana'] = auto_s['I2'].dt.strftime('%V')
 		auto_s['Semana'] = auto_s['Semana'].astype(int)
 		auto_s['Semanas'] = auto_s['Semana']
@@ -3030,8 +3030,8 @@ if __name__ == '__main__':
 		auto_s = auto_s.groupby(['Semanas']).mean()		
 		
 		# conversion semanal
-		df_cil = load_forms_cil('conversion_semanal')
-		conv_s = df_cil.copy()
+		df_cil_conv_s = load_forms_cil('conversion_semanal')
+		conv_s = df_cil_conv_s.copy()
 		conv_s['Semana'] = conv_s['I2'].dt.strftime('%V')
 		conv_s['Semana'] = conv_s['Semana'].astype(int)
 		conv_s['Semanas'] = conv_s['Semana']
@@ -3040,8 +3040,8 @@ if __name__ == '__main__':
 		conv_s = conv_s.groupby(['Semanas']).mean()	
 		
 		# balancer semanal
-		df_cil = load_forms_cil('balancer_semanal')
-		bala_s = df_cil.copy()
+		df_cil_bala_s = load_forms_cil('balancer_semanal')
+		bala_s = df_cil_bala_s.copy()
 		bala_s['Semana'] = bala_s['I2'].dt.strftime('%V')
 		bala_s['Semana'] = bala_s['Semana'].astype(int)
 		bala_s['Semanas'] = bala_s['Semana']
@@ -3072,24 +3072,24 @@ if __name__ == '__main__':
 		cil_mensal['Mes'] = [*range(1, 12, 1)]
 		
 		# autobagger semanal
-		df_cil = load_forms_cil('autobagger_mensal')
-		auto_s = df_cil.copy()
-		auto_s['Mes'] = auto_s['I2'].dt.month
-		auto_s['Mes'] = auto_s['Mes'].astype(int)
-		auto_s['Meses'] = auto_s['Mes']
-		auto_s = auto_s.replace({'NOK':0, 'OK':1})
-		auto_s['Autobagger'] = round((auto_s['Q00'] + auto_s['Q01'] + auto_s['Q02'] + auto_s['Q03'] + auto_s['Q04'] + auto_s['Q05'] + auto_s['Q06'] + auto_s['Q07'] + auto_s['Q08'])*100/9, 2)
-		auto_s = auto_s.groupby(['Meses']).mean()	
+		df_cil_auto_m = load_forms_cil('autobagger_mensal')
+		auto_m = df_cil_auto_m.copy()
+		auto_m['Mes'] = auto_m['I2'].dt.month
+		auto_m['Mes'] = auto_m['Mes'].astype(int)
+		auto_m['Meses'] = auto_m['Mes']
+		auto_m = auto_m.replace({'NOK':0, 'OK':1})
+		auto_m['Autobagger'] = round((auto_m['Q00'] + auto_m['Q01'] + auto_m['Q02'] + auto_m['Q03'] + auto_m['Q04'] + auto_m['Q05'] + auto_m['Q06'] + auto_m['Q07'] + auto_m['Q08'])*100/9, 2)
+		auto_m = auto_m.groupby(['Meses']).mean()	
 		
 		# autobagger semanal
-		df_cil = load_forms_cil('conversion_mensal')
-		conv_s = df_cil.copy()
-		conv_s['Mes'] = conv_s['I2'].dt.month
-		conv_s['Mes'] = conv_s['Mes'].astype(int)
-		conv_s['Meses'] = conv_s['Mes']
-		conv_s = conv_s.replace({'NOK':0, 'OK':1})
-		conv_s['Conversion'] = round((conv_s['Q00'] + conv_s['Q01'] + conv_s['Q02'] + conv_s['Q03'] + conv_s['Q04'] + conv_s['Q05'] + conv_s['Q06'] + conv_s['Q07'] + conv_s['Q08'] + conv_s['Q09'] + conv_s['Q10'] + conv_s['Q11'] + conv_s['Q12'] + conv_s['Q13'])*100/14, 2)
-		conv_s = conv_s.groupby(['Meses']).mean()
+		df_cil_conv_m = load_forms_cil('conversion_mensal')
+		conv_m = df_cil_conv_m.copy()
+		conv_m['Mes'] = conv_m['I2'].dt.month
+		conv_m['Mes'] = conv_m['Mes'].astype(int)
+		conv_m['Meses'] = conv_m['Mes']
+		conv_m = conv_m.replace({'NOK':0, 'OK':1})
+		conv_m['Conversion'] = round((conv_m['Q00'] + conv_m['Q01'] + conv_m['Q02'] + conv_m['Q03'] + conv_m['Q04'] + conv_m['Q05'] + conv_m['Q06'] + conv_m['Q07'] + conv_m['Q08'] + conv_m['Q09'] + conv_m['Q10'] + conv_m['Q11'] + conv_m['Q12'] + conv_m['Q13'])*100/14, 2)
+		conv_m = conv_m.groupby(['Meses']).mean()
 		
 		# concatena dataframes
 		cil_mensal = pd.merge(cil_mensal, auto_s[['Mes','Autobagger']], on='Mes', how='left')
@@ -3137,10 +3137,11 @@ if __name__ == '__main__':
 			grafico_d['Autobagger'] = np.where(aux_d['Autobagger']=='-', 0, 1) 
 			grafico_d['Conversion'] = np.where(aux_d['Conversion']=='-', 0, 1) 
 			grafico_d['Balancer'] = np.where(aux_d['Balancer']=='-', 0, 1) 
-			st.write(grafico_d)
+			
+			grafico_d['t_liner'] = df_cil_liner_d['Turno']
+			st.write(grafico_d['t_liner'])
 			
 			fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
-			#go.Bar(x=animals, y=[20, 14, 23])
 			fig.add_trace(go.Histogram(x=response['data'], marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
 			fig.update_layout(showlegend=False)
 			col_d.write(fig)
