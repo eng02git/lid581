@@ -3210,12 +3210,17 @@ if __name__ == '__main__':
 		grafico_m['Autobagger'] = np.where(aux_m['Autobagger']=='-', 0, 1) 
 		grafico_m['Conversion'] = np.where(aux_m['Conversion']=='-', 0, 1) 
 		grafico_m['Esperado'] = 1
-
-		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_d.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=1)
+		
+		colors = ['lightslategray',] * 6
+		colors[5] = 'crimson'
+		colors_m = ['lightslategray',] * 3
+		colors_m[2] = 'crimson'
+		
+		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_d.sum(), marker_color=colors), row=1, col=1)
 		fig.add_trace(go.Histogram(x=turnos_d, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=2)
-		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_s.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=3)
+		fig.add_trace(go.Bar(x=['Liner' ,'Shell', 'Autobagger', 'Conversion', 'Balancer', 'Esperado'], y=grafico_s.sum(), marker_color=colors), row=1, col=3)
 		fig.add_trace(go.Histogram(x=turnos_s, marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=4)
-		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion', 'Esperado'], y=grafico_m.sum(), marker=dict(color='rgba(12, 50, 196, 0.6)')), row=1, col=5)
+		fig.add_trace(go.Bar(x=['Autobagger', 'Conversion', 'Esperado'], y=grafico_m.sum(),  marker_color=colors), row=1, col=5)
 
 		fig.update_layout(height=300, showlegend=False)
 		st.write(fig)
