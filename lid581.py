@@ -3127,7 +3127,7 @@ if __name__ == '__main__':
 			fig = make_subplots(rows=1, 
 				    cols=2,
 				    subplot_titles=("Cil por equipamento", "Distribuição por turno"),
-				    column_widths=[0.3, 0.7]
+				    column_widths=[0.5, 0.5]
 				   )
 			
 			# gera dados sobre a quantidade de cil de cada maquina
