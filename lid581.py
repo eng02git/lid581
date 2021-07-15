@@ -2836,7 +2836,7 @@ if __name__ == '__main__':
 		st.subheader('Visualizar Troubleshoot')
 		df_troubleshoot = load_forms('troubleshoot')
 		col1, col2, _equipamento, _nome = st.beta_columns([2,2,3,9])
-		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 6, 1))
+		inicio_filtro = col1.date_input("Início (ano/mês/dia)", datetime(2021, 7, 1))
 		fim_filtro = col2.date_input("Fim (ano/mês/dia)")
 		df_troubleshootfiltrado = (df_troubleshoot[(df_troubleshoot['Data'] >= inicio_filtro) & (df_troubleshoot['Data'] <= fim_filtro)]) 
 
