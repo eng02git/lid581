@@ -1,4 +1,4 @@
-Nv1;Nv2;Solucao						
+Nv1;Nv2;Solucao
 GFS;O comprimento do feed é muito longo;A unidade está alimentando por muito tempo. Reduza o parâmetro de comprimento de alimentação por meio da interface de operação.						
 GFS;Comprimento do feed muito curto;A unidade está alimentando em curto. Aumente o comprimento da alimentação por meio da interface de operação.						
 GFS;Comprimento do feed muito curto;O material está escorregando entre os rolos. Aumente a pressão do rolo de pressão.						
