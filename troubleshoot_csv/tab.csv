@@ -1,4 +1,4 @@
-Nv1;Nv2;Causas;Solucao
+Nv1;Nv2;Causa;Solucao
 Elétrico;Não entra em linha. (GERAL);Problema no desconector principal.;Verifique a fiação e a fonte de alimentação de entrada.
 Elétrico;Não entra em linha. (GERAL);Fusível queimado (se utilizado).;Verifique e substitua.
 Elétrico;Não entra em linha. (GERAL);Desarme por sobrecarga (se presente).;Rearmar.
