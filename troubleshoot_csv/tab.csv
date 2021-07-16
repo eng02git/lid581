@@ -10,7 +10,7 @@ Elétrico;Mesa giratória não gira  (ELÉTRICA);Controle JOG, AUTO/START, CW/CC
 Elétrico;Mesa giratória não gira  (ELÉTRICA);Sensor de proximidade nº 3 queimado.;Verifique a saída, substitua se necessário.
 Elétrico;Mesa giratória não gira  (ELÉTRICA);Sensor analógico nº 2 não funciona.;Verifique a saída, substitua se necessário.
 Elétrico;Mesa giratória não gira  (ELÉTRICA);Célula fotoelétrica da BOBINA GRANDE não funciona.;Substituir se necessário.
-Elétrico;Mesa giratória não gira  (ELÉTRICA);Falha interna do motor; superaquecimento, excesso de corrente (...);Verifique as causas e corrija-as
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Falha interna do motor: superaquecimento, excesso de corrente (...);Verifique as causas e corrija-as
 Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Relé de controle não funciona.;Substituir se necessário.
 Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Controle AUTO STOP ou JOG não funciona.;Substituir se necessário.
 Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Sensor de proximidade nº 3 queimado.;Verifique a saída, substitua se necessário.
