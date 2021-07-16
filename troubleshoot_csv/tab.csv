@@ -1,49 +1,51 @@
-Nv1;Nv2;Nv3;Causa;Solucao
-Prolema elétrico?;Não entra em linha. (GERAL);;Problema no desconector principal.;Verifique a fiação e a fonte de alimentação de entrada.
-Prolema elétrico?;Não entra em linha. (GERAL);;Fusível queimado (se utilizado).;Verifique a fiação e a fonte de alimentação de entrada.
-Prolema elétrico?;Não entra em linha. (GERAL);;Desarme por sobrecarga (se presente).;Verifique e substitua.
-Prolema elétrico?;Não entra em linha. (GERAL);;E-Stop de equipamento auxiliar acionado.;Rearmar.
-Prolema elétrico?;Não entra em linha. (GERAL);;Problema no interruptor JOG/AUTO.;Inspecionar e corrigir.
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Relé de controle não funciona.;Consulte o manual do sistema do motor e solucione os problemas conforme suas instruções.
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Problema no sistema do motor, isto é, disjuntor sobrecarregado.;Substituir se necessário.
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Controle JOG, AUTO/START, CW/CCW ou JOG/AUTO não funciona.;Verifique a saída, substitua se necessário.
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Sensor de proximidade nº 3 queimado.;Substituir se necessário.
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Sensor analógico nº 2 não funciona.;Verifique as causas e corrija-as
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Célula fotoelétrica da BOBINA GRANDE não funciona.;Verifique as causas e corrija-as
-Prolema elétrico?;Mesa giratória não gira (ELÉTRICA);;Falha interna do motor, superaquecimento, excesso de corrente (...);Verifique as causas e corrija-as
-Prolema elétrico?;Mesa giratória não para ou não há variação de velocidade (ELÉTRICA);;Relé de controle não funciona.;Verifique as causas e corrija-as.
-Prolema elétrico?;Mesa giratória não para ou não há variação de velocidade (ELÉTRICA);;Controle AUTO STOP ou JOG não funciona.;Substituir se necessário.
-Prolema elétrico?;Mesa giratória não para ou não há variação de velocidade (ELÉTRICA);;Sensor de proximidade nº 3 queimado.;Verifique a saída, substitua se necessário.
-Prolema elétrico?;Mesa giratória não para ou não há variação de velocidade (ELÉTRICA);;Sensor analógico nº 2 não funciona.;Verifique as causas e corrija-as.
-Prolema elétrico?;Mesa giratória não para ou não há variação de velocidade (ELÉTRICA);;Falha interna do motor, superaquecimento, excesso de corrente (...);Verifique as causas e corrija-as.
-Prolema elétrico?;Roletes de tração não param;;Relé de controle não funciona.;Substituir se necessário.
-Prolema elétrico?;Roletes de tração não param;;Controle JOG, AUTO/STOP não funciona.;Verifique a saída, substitua se necessário.
-Prolema elétrico?;Roletes de tração não param;;Sensor de proximidade nº 1 queimado.;Inspecionar e corrigir.
-Prolema elétrico?;Roletes de tração não param;;Sensor analógico nº 1 não funciona.;Inspecionar e corrigir.
-Prolema elétrico?;Roletes de tração não param;;Problemas no motor.;Inspecionar e corrigir.
-Prolema elétrico?;Roletes de tração não giram;;Relé de controle não funciona.;Inspecionar e corrigir.
-Prolema elétrico?;Roletes de tração não giram;;Controle JOG, AUTO/START, ou JOG/AUTO não funciona.;Verifique a saída, substitua se necessário.
-Prolema elétrico?;Roletes de tração não giram;;Sensor de proximidade nº 1 queimado.;Substituir se necessário.
-Prolema elétrico?;Roletes de tração não giram;;Sensor analógico nº 1 não funciona.;Substituir se necessário.
-Prolema elétrico?;Roletes de tração não giram;;Problemas no motor.;Substituir se necessário.
-Prolema elétrico?;Junta da lança não se eleva (versão motorizada);;Relé de controle não funciona.;Verifique a saída, substitua se necessário.
-Prolema elétrico?;Junta da lança não se eleva (versão motorizada);;Botão (BOOM UP ou DOWN) não funciona.;Substituir se necessário.
-Prolema elétrico?;Junta da lança não se eleva (versão motorizada);;O sensor de proximidade nº 4 que controla o desligamento de "boom up", ou o sensor de proximidade que controla o desligamento de "boom down", está fundido internamente.;Substituir se necessário.
-Prolema elétrico?;Prensa não desliga quando ocorre uma condição de "ciclo alto" entre a prensa e a desbobinadora;;O cliente não conectou, ou conectou incorretamente, o centro de controle do motor ao bloco de terminais para ligar a prensa com esta desbobinadora - VERIFIQUE O CIRCUITO DE INTERFACE.;Corrigir. É um requisito obrigatório da ASC que a prensa seja conectada ao circuito de proximidade nº 3 como garantia de segurança, para proteger o conjunto da matriz da prensa.
-Prolema elétrico?;Prensa não desliga quando ocorre uma condição de "ciclo alto" entre a prensa e a desbobinadora;;O sensor e proximidade nº 6 não funciona.;Verifique a saída, substitua se necessário.
-Prolema elétrico?;Mesa giratória não gira ou a rotação não controlada satisfatoriamente;;Chave cisalhada na engrenagem motriz.;Substituir.
-Prolema elétrico?;Mesa giratória não gira ou a rotação não controlada satisfatoriamente;;Componente da volta interna desajustado ou solto.;Ajustar conforme as instruções deste manual. Certifique-se de que todas as peças estejam girando corretamente.
-Prolema elétrico?;Roletes de tração não giram ou rotação não controlada satisfatoriamente;;Chave cisalhada no rolete motriz inferior.;Substituir.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não giram ou rotação não controlada satisfatoriamente;;Rolamento flangeado de dois parafusos preso ou seco, ou parafusos do suporte solto.;Inspecionar e corrigir.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não giram ou rotação não controlada satisfatoriamente;;Falha em um motor ou em ambos rolamentos do rolete superior.;Reparar ou substituir.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não giram ou rotação não controlada satisfatoriamente;;Falha do motor ou redutor.;Substituir.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não giram ou rotação não controlada satisfatoriamente;;Braço oscilante preso.;Relubrificar, reapertar.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não prendem bem o material;;Suporte do rolete superior preso.;Inspecionar e corrigir.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não prendem bem o material;;Roletes contaminados (cera, fita, graxa, etc);Limpe e verifique se há rebarbas, arranhões ou entalhes. Use uma lixa grossa para limpar só o rolete superior.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Roletes de tração não prendem bem o material;;Carga da mola insuficiente.;Verifique se o rolete superior gira livremente.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Junta da lança não se eleva;;Chave cisalhada na engrenagem motriz.;Reparar.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Junta da lança não se eleva;;Corrente quebrada.;Relubrificar.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Junta da lança não se eleva;;Roda dentada livre ou engrenagem motriz danificada.;Substituir.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Junta da lança não se eleva;;Junta requer engraxe.;Reparar.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Carretel preso (qualquer);;Falha na bucha.;Desmontar e inspecionar para ver se há danos. Substituir se necessário.
-Problema Transmissão? Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Carretel preso (qualquer);;Carretel raspando no chassi.;Verifique o suporte e corrija.
+Nv1;Nv2;Causas;Solucao
+Elétrico;Não entra em linha. (GERAL);Problema no desconector principal.;Verifique a fiação e a fonte de alimentação de entrada.
+Elétrico;Não entra em linha. (GERAL);Fusível queimado (se utilizado).;Verifique e substitua.
+Elétrico;Não entra em linha. (GERAL);Desarme por sobrecarga (se presente).;Rearmar.
+Elétrico;Não entra em linha. (GERAL);E-Stop de equipamento auxiliar acionado.;Rearmar.
+Elétrico;Não entra em linha. (GERAL);Problema no interruptor JOG/AUTO.;Inspecionar e corrigir.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Relé de controle não funciona.;Substituir se necessário.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Problema no sistema do motor, isto é, disjuntor sobrecarregado.;Consulte o manual do sistema do motor e solucione os problemas conforme suas instruções.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Controle JOG, AUTO/START, CW/CCW ou JOG/AUTO não funciona.;Substituir se necessário.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Sensor de proximidade nº 3 queimado.;Verifique a saída, substitua se necessário.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Sensor analógico nº 2 não funciona.;Verifique a saída, substitua se necessário.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Célula fotoelétrica da BOBINA GRANDE não funciona.;Substituir se necessário.
+Elétrico;Mesa giratória não gira  (ELÉTRICA);Falha interna do motor; superaquecimento, excesso de corrente (...);Verifique as causas e corrija-as
+Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Relé de controle não funciona.;Substituir se necessário.
+Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Controle AUTO STOP ou JOG não funciona.;Substituir se necessário.
+Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Sensor de proximidade nº 3 queimado.;Verifique a saída, substitua se necessário.
+Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Sensor analógico nº 2 não funciona.;Verifique a saída, substitua se necessário.
+Elétrico;Mesa giratória não para ou não há variação de velocidade  (ELÉTRICA);Falha interna do motor; superaquecimento, excesso de corrente (...);Verifique as causas e corrija-as.
+Elétrico;Roletes de tração não giram;Relé de controle não funciona.;Substituir se necessário.
+Elétrico;Roletes de tração não giram;Controle JOG, AUTO/START, ou JOG/AUTO não funciona.;Substituir se necessário.
+Elétrico;Roletes de tração não giram;Sensor de proximidade nº 1 queimado.;Verifique a saída, substitua se necessário.
+Elétrico;Roletes de tração não giram;Sensor analógico nº 1 não funciona.;Verifique a saída, substitua se necessário.
+Elétrico;Roletes de tração não giram;Problemas no motor.;Inspecionar e corrigir.
+Elétrico;Roletes de tração não param;Relé de controle não funciona.;Substituir se necessário.
+Elétrico;Roletes de tração não param;Controle JOG, AUTO/STOP não funciona.;Substituir se necessário.
+Elétrico;Roletes de tração não param;Sensor de proximidade nº 1 queimado.;Verifique a saída, substitua se necessário.
+Elétrico;Roletes de tração não param;Sensor analógico nº 1 não funciona.;Verifique a saída, substitua se necessário.
+Elétrico;Roletes de tração não param;Problemas no motor.;Inspecionar e corrigir.
+Elétrico;Junta da lança não se eleva (versão motorizada);Relé de controle não funciona.;Substituir se necessário.
+Elétrico;Junta da lança não se eleva (versão motorizada);Botão (BOOM UP ou DOWN) não funciona.;Substituir se necessário.
+Elétrico;Junta da lança não se eleva (versão motorizada);O sensor de proximidade nº 4 que controla o desligamento de "boom up", ou o sensor de proximidade que controla o desligamento de "boom down", está fundido internamente.;Verifique a saída, substitua se necessário.
+Elétrico;Prensa não desliga quando ocorre uma condição de "ciclo alto" entre a prensa e a desbobinadora;O cliente não conectou, ou conectou incorretamente, o centro de controle do motor ao bloco de terminais para ligar a prensa com esta desbobinadora - VERIFIQUE O CIRCUITO DE INTERFACE.;Corrigir. É um requisito obrigatório da ASC que a prensa seja conectada ao circuito de proximidade nº 3 como garantia de segurança, para proteger o conjunto da matriz da prensa.
+Elétrico;Prensa não desliga quando ocorre uma condição de "ciclo alto" entre a prensa e a desbobinadora;O sensor e proximidade nº 6 não funciona.;Verifique a saída, substitua se necessário.
+Elétrico;Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Chave cisalhada na engrenagem motriz.;Substituir.
+Elétrico;Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Componente da volta interna desajustado ou solto.;Ajustar conforme as instruções deste manual. Certifique-se de que todas as peças estejam girando corretamente.
+Transmissão;Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Falha do motor ou redutor.;Reparar ou substituir.
+Transmissão;Mesa giratória não gira ou a rotação não controlada satisfatoriamente;Mancal principal da mesa giratória preso ou com defeito.;Inspecionar a causa. Substituir se necessário. Certifique-se de seguir o cronograma de relubrificação.
+Elétrico;Roletes de tração não giram ou rotação não controlada satisfatoriamente;Chave cisalhada no rolete motriz inferior.;Substituir.
+Transmissão;Roletes de tração não giram ou rotação não controlada satisfatoriamente;Rolamento flangeado de dois parafusos preso ou seco, ou parafusus do suporte solto.;Relubrificar, reapertar.
+Transmissão;Roletes de tração não giram ou rotação não controlada satisfatoriamente;Falha em um motor ou em ambos rolamentos do rolete superior.;Substituir.
+Transmissão;Roletes de tração não giram ou rotação não controlada satisfatoriamente;Falha do motor ou redutor.;Reparar ou substituir.
+Transmissão;Roletes de tração não giram ou rotação não controlada satisfatoriamente;Braço oscilante preso.;Inspecionar e corrigir.
+Transmissão;Roletes de tração não prendem bem o material;Suporte do rolete superior preso.;Verifique se o rolete superior gira livremente.
+Transmissão;Roletes de tração não prendem bem o material;Roletes contaminados (cera, fita, graxa, etc);Limpe e verifique se há rebarbas, arranhões ou entalhes. Use uma lixa grossa para limpar só o rolete superior.
+Transmissão;Roletes de tração não prendem bem o material;Carga da mola insuficiente.;Inspecionar e corrigir.
+Transmissão;Junta da lança não se eleva ;Chave cisalhada na engrenagem motriz.;Substituir.
+Transmissão;Junta da lança não se eleva ;Corrente quebrada.;Reparar.
+Transmissão;Junta da lança não se eleva ;Roda dentada livre ou engrenagem motriz danificada.;Substituir.
+Transmissão;Junta da lança não se eleva ;Junta requer engraxe.;Relubrificar.
+Transmissão;Cerretel preso (qualquer);Falha na bucha.;Desmontar e inspecionar para ver se há danos. Substituir se necessário.
+Transmissão;Cerretel preso (qualquer);Carretel raspando no chassi.;Verifique o suporte e corrija.

@@ -1,34 +1,34 @@
-Nv1;Nv2;Nv3;Causa;Solucao
-Problema DRY OVEN?;O secador não liga quando pressiona o botão POWER;;Interruptor principal desligado;Comute o interruptor principal para a posição LIGADO.
-Problema DRY OVEN?;O secador não liga quando pressiona o botão POWER;;Tampa do tabuleiro da bobina aberta ou portas do quadro elétrico de controlo abertas;Feche e tranque a tampa e as portas. Ajuste o interruptor de encravamento das portas.
-Problema DRY OVEN?;O secador não liga quando pressiona o botão POWER;;Interruptor de PARADA DE EMERGÊNCIA inserido;Puxe o interruptor para fora para o soltar.
-Problema DRY OVEN?;O secador não liga quando pressiona o botão POWER;;Fusíveis F1A, 1B, ou 1C abertos;Verifique os indicadores dos fusíveis: se estiver preto, substitua os fusíveis. Com a alimentação de corrente desligada e bloqueada num disjuntor externo ou num interruptor de desacoplamento, teste os fusíveis e verifique se existem ligações soltas.
-Problema DRY OVEN?;As tampas não aquecem, RUN MODE ou RAMP MODE ON;;Fusíveis F1A, 1B, ou 1C abertos;Verifique os indicadores dos fusíveis: se estiver preto, substitua os fusíveis. Com a alimentação de corrente desligada e bloqueada num disjuntor externo ou num interruptor de desacoplamento, teste os fusíveis e verifique se existem ligações soltas.
-Problema DRY OVEN?;Extremidades das latas não aquecem, RUN MODE ou RAMP MODE ON;;Lente do sensor de movimento suja;Limpe a lente com um pano limpo e macio.
-Problema DRY OVEN?;Extremidades das latas não aquecem, RUN MODE ou RAMP MODE ON;;Sensor de movimento não está calibrado;Execute o procedimento de Ajuste da sensibilidade do sensor de movimento
-Problema DRY OVEN?;Leitura irregular da temperatura atual, superior ou inferior ao valor nominal;;Termopar gasto ou com defeito;Substitua o termopar.
-Problema DRY OVEN?;Avaria COILTRAY LID OPEN;;Tampa do tabuleiro da bobina aberta ou portas do quadro elétrico de controle abertas;Feche e tranque a tampa e as portas. Ajuste o interruptor de encravamento das portas.
-Problema DRY OVEN?;Avaria AIR HEATER FAIL ou aquecedor de ar não aquecendo o ar que circula para dentro do tubo em espiral;;Fusíveis 5A e 5B, 6A e 6B, 7A e 7B abertos;Teste os fusíveis, substitua se estiverem fundidos. NOTA: Os fusíveis são específicos da aplicação, alguns sistemas não requerem os fusíveis 6 e 7.
-Problema DRY OVEN?;Avaria AIR HEATER FAIL ou aquecedor de ar não aquecendo o ar que circula para dentro do tubo em espiral;;Elemento do aquecedor partido ou fusível térmico de utilização única aberto;Substitua o aquecedor.
-Problema DRY OVEN?;Avaria AIR HEATER FAIL ou aquecedor de ar não aquecendo o ar que circula para dentro do tubo em espiral;;Termóstato do corpo do aquecedor aberto;Desligue o sistema. O aquecedor requer auto-reset ao arrefecer. Verifique o filtro do ar para assegurar que o caudal de ar não é reduzido por filtros sujos.
-Problema DRY OVEN?;Avaria COOLING AIR FAIL;;Filtro de ar obstruído ou sujo;Monte o painel de acesso corretamente.
-Problema DRY OVEN?;Avaria COOLING AIR FAIL;;Fusível F8 aberto;Teste o fusível, substitua se estiver fundido.
-Problema DRY OVEN?;Avaria COOLING AIR FAIL;;Painel de acesso traseiro solto ou retirado;Remova as obstruções que possam impedir o caudal de ar, substitua o filtro se estiver sujo.
-Problema DRY OVEN?;Excessos de temperatura ao arrancar;;Ajuste incorreto do nível de potência do modo de rampa;Executar o ajuste do temporizador e da rampa
-Problema DRY OVEN?;O sistema permanece no modo de Rampa (nunca comuta para Run Mode ON);;O temporizador de movimento está ajustado demasiado curto para compensar o avanço da linha e acumulações ou o temporizador da rampa está ajustado demasiado longo.;Aumente o ajuste do temporizador de movimento ou reduza o ajuste do temporizador da rampa.
-Problema DRY OVEN?;Avaria INVERTER OVER TEMP;;Painel de acesso traseiro solto ou retirado;Monte o painel de acesso corretamente.
-Problema DRY OVEN?;Avaria INVERTER OVER TEMP;;Filtro de ar obstruído ou sujo;Remova as obstruções que possam impedir o caudal de ar, substitua o filtro se estiver sujo.
-Problema DRY OVEN?;Avaria INVERTER OVER TEMP;;Caudal de ar obstruído sob o secador;Remova as obstruções que possam impedir o caudal de ar.
-Problema DRY OVEN?;Avaria PRODUCT TEMP HIGH;;O ajuste do temporizador de movimento não pode compensar o avanço da linha que mantém o sistema no modo de rampa, sobreaquecendo as tampas;Executar o ajuste do temporizador e da rampa
-Problema DRY OVEN?;Avaria PRODUCT TEMP HIGH;;Ajuste de potência da rampa demasiado alto;Executar o ajuste do temporizador e da rampa
-Problema DRY OVEN?;Avaria PRODUCT TEMP LOW;;Ajuste de potência da rampa demasiado alto;Executar o ajuste do temporizador da rampa
-Problema DRY OVEN?;Avaria PRODUCT TEMP LOW;;Fusível F1B aberto;Teste o fusível, substitua se estiver fundido.
-Problema DRY OVEN?;Avaria LINE PHASE LOSS;;Fusível F2A, F2B, F2C aberto;Teste os fusíveis, substitua se estiverem fundidos.
-Problema DRY OVEN?;RF BOARD FAULT;;Ocorre com uma ou mais das avarias seguintes: Inversor de corrente excessiva, tensão do tanque alta ou baixa, inversor fora do bloqueio;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
-Problema DRY OVEN?;Avaria INVERTER OVER CURRENT;;Corrente excessiva está a ser consumida pelo circuito do tanque;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
-Problema DRY OVEN?;Avaria de TANK VOLTAGE HIGH;;Corrente excessiva consumida em circuitos processando corrente de alimentação para o alternador de alta frequência.;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
-Problema DRY OVEN?;Avaria de TANK VOLTAGE LOW;;Tensão da linha baixa ou perda de fase;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
-Problema DRY OVEN?;Avaria de INVERTER OUT OF LOCK;;Avaria do circuito do tanque ou carga do produto incorreta.;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
-Problema DRY OVEN?;Avaria de INVERTER OUT OF LOCK;;Avaria placa/placa controladora RF;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
-Problema DRY OVEN?;Avaria de EXT INTLK TIMED‐OUT;;Sinal de funcionamento, fornecido pelo cliente, presente, mas o sensor de movimento não se ativa.;Obstrução da linha. Não há movimento de produto à entrada do secador. Ajuste do temporizador demasiado curto. Ajuste o temporizador para permitir que a linha se encha.
-Problema DRY OVEN?;O sistema para, indica-se THERMOCOUPLE FAULT USE MANUAL MODE";;Termopar partido;Substitua o termopar. Ponha a unidade em modo manual para continuar a operação até o termopar poder ser substituído.
+Nv1;Nv2;Causa;Solucao
+Dry oven;O secador não se liga quando se pressiona o botão POWER;Interruptor principal desligado;Comute o interruptor principal para a posição LIGADO.
+Dry oven;O secador não se liga quando se pressiona o botão POWER;Tampa do tabuleiro da bobina aberta ou portas do quadro  elétrico de controlo abertas;Feche e tranque a tampa e as portas. Ajuste o interruptor de encravamento das portas.
+Dry oven;O secador não se liga quando se pressiona o botão POWER;Interruptor de PARADA DE EMERGÊNCIA inserido;Puxe o interruptor para fora para o soltar.
+Dry oven;O secador não se liga quando se pressiona o botão POWER;Fusíveis F1A, 1B, ou 1C abertos;Verifique os indicadores dos fusíveis: se estiver preto, substitua os fusíveis. Com a alimentação de corrente desligada e bloqueada num disjuntor externo ou num interruptor de desacoplamento, teste os fusíveis e verifique se existem ligações soltas.
+Dry oven;As tampas não aquecem, RUN MODE ou RAMP MODE ON;Fusíveis F1A, 1B, ou 1C abertos;Verifique os indicadores dos fusíveis: se estiver preto, substitua os fusíveis. Com a alimentação de corrente desligada e bloqueada num disjuntor externo ou num interruptor de desacoplamento, teste os fusíveis e  verifique se existem ligações soltas.
+Dry oven;Extremidades das latas não aquecem, RUN MODE ou RAMP MODE ON;Lente do sensor de movimento suja;Limpe a lente com um pano limpo e macio.
+Dry oven;Extremidades das latas não aquecem, RUN MODE ou RAMP MODE ON;Sensor de movimento não está calibrado;Execute o procedimento de Ajuste da sensibilidade do sensor de movimento
+Dry oven;Leitura irregular da temperatura atual, superior ou inferior ao valor nominal;Termopar gasto ou com defeito;Substitua o termopar.
+Dry oven;Avaria COILTRAY LID OPEN;Tampa do tabuleiro da bobina aberta ou portas do quadro  elétrico de controlo abertas;Feche e tranque a tampa e as portas. Ajuste o interruptor de encravamento das portas.
+Dry oven;Avaria AIR HEATER FAIL ou aquecedor de ar não  aquecendo o ar que circula para dentro do tubo em espiral;Fusíveis 5A e 5B, 6A e 6B, 7A  e 7B abertos;Teste os fusíveis, substitua se estiverem fundidos.  NOTA: Os fusíveis são específicos da aplicação, alguns sistemas não requerem os fusíveis 6 e 7.
+Dry oven;Avaria AIR HEATER FAIL ou aquecedor de ar não  aquecendo o ar que circula para dentro do tubo em espiral;Elemento do aquecedor partido ou fusível térmico de  utilização única aberto;Substitua o aquecedor.
+Dry oven;Avaria AIR HEATER FAIL ou aquecedor de ar não  aquecendo o ar que circula para dentro do tubo em espiral;Termóstato do corpo do aquecedor aberto;Desligue o sistema. O aquecedor requer auto-reset ao arrefecer. Verifique o filtro do ar para assegurar  que o caudal de ar não é reduzido por filtros sujos.
+Dry oven;Avaria COOLING AIR FAIL;Filtro de ar obstruído ou sujo;Remova as obstruções que possam impedir o caudal de ar, substitua o filtro se estiver sujo.
+Dry oven;Avaria COOLING AIR FAIL;Fusível F8 aberto;Teste o fusível, substitua se estiver fundido.
+Dry oven;Avaria COOLING AIR FAIL;Painel de acesso traseiro solto ou retirado;Monte o painel de acesso corretamente.
+Dry oven;Excessos de temperatura ao arrancar;Ajuste incorreto do nível de potência do modo de rampa;Executar o ajuste do temporizador e da rampa
+Dry oven;O sistema permanece no modo de Rampa (nunca  comuta para Run Mode ON);O temporizador de movimento está ajustado demasiado curto para compensar o avanço dalinha e acumulações ou o temporizador da rampa está ajustado demasiado longo;Aumente o ajuste do temporizador de movimento ou reduza o ajuste do temporizador da rampa.
+Dry oven;Avaria INVERTER OVER TEMP;Painel de acesso traseiro solto ou retirado ;Monte o painel de acesso corretamente.
+Dry oven;Avaria INVERTER OVER TEMP;Filtro de ar obstruído ou sujo;Remova as obstruções que possam impedir o caudal de ar, substitua o filtro se estiver sujo.
+Dry oven;Avaria INVERTER OVER TEMP;Caudal de ar obstruído sob o secador;Remova as obstruções que possam impedir o caudal de ar.
+Dry oven;Avaria PRODUCT TEMP HIGH;Ajuste de potência da rampa demasiado alto;Executar o ajuste do temporizador e da rampa
+Dry oven;Avaria PRODUCT TEMP HIGH;O ajuste do temporizador de movimento não pode compensar o avanço da linha que mantém o sistema no modo de rampa, sobreaquecendo as tampas;Executar o ajuste do temporizador da rampa
+Dry oven;Avaria PRODUCT TEMP LOW;Ajuste de potência da rampa demasiado alto;Executar o ajuste do temporizador da rampa
+Dry oven;Avaria PRODUCT TEMP LOW;Fusível F1B aberto;Teste o fusível, substitua se estiver fundido.
+Dry oven;Avaria LINE PHASE LOSS;Fusível F2A, F2B, F2C aberto;Teste os fusíveis, substitua se estiverem fundidos.
+Dry oven;RF BOARD FAULT;Ocorre com uma ou mais das avarias seguintes: Inversor de corrente excessiva, tensão do tanque alta ou baixa, inversor  fora do bloqueio;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
+Dry oven;Avaria INVERTER OVER CURRENT;Corrente excessiva está a ser consumida pelo circuito do tanque;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
+Dry oven;Avaria de TANK VOLTAGE HIGH;Corrente excessiva consumida em circuitos processando  corrente de alimentação para o alternador de alta frequência;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
+Dry oven;Avaria de TANK VOLTAGE LOW;Tensão da linha baixa ou perda de fase;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
+Dry oven;Avaria de INVERTER OUT OF LOCK;Avaria do circuito do tanque ou  carga do produto incorreta;DESLIGUE E BLOQUEIE A CORRENTE DE ALIMENTAÇÃO ANTES DE CONTINUAR! Realize teste de diagnóstico em subsistemas processadores de corrente de alimentação.
+Dry oven;Avaria de INVERTER OUT OF LOCK;Avaria placa/placa controladora RF;
+Dry oven;Avaria de EXT INTLK TIMED-OUT;Sinal de funcionamento, fornecido pelo cliente,  presente, mas o sensor de movimento não se ativa.;Obstrução da linha. Não há movimento de produto à entrada do secador. Ajuste do temporizador demasiado curto. Ajuste o temporizador para permitir que a linha se encha.
+Dry oven;O sistema pára, indica-se THERMOCOUPLE FAULT  USE MANUAL MODE;Termopar partido;Substitua o termopar. Ponha a unidade em modo manual para continuar a operação até o termopar poder ser substituído.

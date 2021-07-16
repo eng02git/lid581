@@ -1,25 +1,20 @@
-Nv1;Nv2;Nv3;Causa;Solucao
-Problema GFS?;O comprimento do feed é muito longo;;;A unidade está alimentando por muito tempo. Reduza o parâmetro de comprimento de alimentação por meio da interface de operação.
-Problema GFS?;O comprimento do feed é muito longo;;;A unidade está alimentando em curto. Aumente o comprimento da alimentação por meio da interface de operação.
-Problema GFS?;O comprimento do feed é muito longo;;;O material está escorregando entre os rolos. Aumente a pressão do rolo de pressão.
-Problema GFS?;O comprimento do feed é muito longo;;;O resolvedor de prensa e o codificador Servo Feed com Vertical Loop Stand não estão alinhados. Verifique as leituras e ajuste de acordo.
-Problema GFS?;O comprimento do feed é muito longo;;;O ângulo de alimentação não está definido corretamente. Consulte a documentação do sistema sobre o ângulo de alimentação adequado e defina a alimentação do servo com suporte de loop vertical de acordo.
-Problema GFS?;Comprimento do feed muito curto;;;A unidade está alimentando por muito tempo. Reduza o parâmetro de comprimento de alimentação por meio da interface de operação.
-Problema GFS?;Comprimento do feed muito curto;;;A unidade está alimentando em curto. Aumente o comprimento da alimentação por meio da interface de operação.
-Problema GFS?;Comprimento do feed muito curto;;;O material está escorregando entre os rolos. Aumente a pressão do rolo de pressão.
-Problema GFS?;Comprimento do feed muito curto;;;O resolvedor de prensa e o codificador Servo Feed com Vertical Loop Stand não estão alinhados. Verifique as leituras e ajuste de acordo.
-Problema GFS?;Comprimento do feed muito curto;;;O ângulo de alimentação não está definido corretamente. Consulte a documentação do sistema sobre o ângulo de alimentação adequado e defina a alimentação do servo com suporte de loop vertical de acordo.
-Problema GFS?;O comprimento do feed é irregular;;;O material está escorregando entre os rolos. Aumente a pressão do rolo de pressão.
-Problema GFS?;O comprimento do feed é irregular;;;O resolver de prensa e o codificador Servo Feed com Vertical Loop Stand não estão alinhados. Verifique as leituras e ajuste de acordo.
-Problema GFS?;O comprimento do feed é irregular;;;O ângulo de alimentação não está definido corretamente. Consulte a documentação do sistema sobre o ângulo de alimentação adequado e configure a alimentação servo com suporte de loop vertical de acordo.
-Problema GFS?;O comprimento do feed é irregular;;;Frouxidão na área motor - acoplamento - caixa de engrenagens. Identifique o componente desgastado e substitua.
-Problema GFS?;O comprimento do feed é irregular;;;Acúmulo de material no rolo índice. Limpe o rolo de index.
-Problema GFS?;Verifique as etapas a seguir se o feed não iniciar;;;A desconexão na alimentação do servo com o painel elétrico do suporte de loop vertical está na posição “ON”.
-Problema GFS?;Verifique as etapas a seguir se o feed não iniciar;;;O (s) botão (ões) de parada “E” ao pressionar não estão pressionados.
-Problema GFS?;Verifique as etapas a seguir se o feed não iniciar;;;Verifique se existe pressão de ar.
-Problema GFS?;Verifique as etapas a seguir se o feed não iniciar;;;Verifique se o rolo de Pressão esta fechado
-Problema GFS?;Verifique as etapas a seguir se o feed não iniciar;;;A valvula de pressão de ar está ajustado e funcionando corretamente?
-Problema GFS?;Verifique as etapas a seguir se o feed não iniciar;;;A alimentação servo com suporte de loop vertical foi colocado em “AUTO” no painel elétrico de alimentação do servo com suporte de loop vertical.
-Problema GFS?;O material não segue em linha reta;;;Certifique-se de que os rolos estejam paralelos antes de prosseguir para as etapas a seguir.
-Problema GFS?;O material não segue em linha reta;;;Se o material estiver obstruindo a guia de saída direita, mova ambas as guias de saída para a esquerda 0,010-0,015 ”. Repita se necessário.
-Problema GFS?;O material não segue em linha reta;;;Se o material estiver obstruindo a guia de saída esquerda, mova ambas as guias de saída para a direita 0,010-0,015 ”. Repita se necessário.
+Nv1;Nv2;Solucao						
+GFS;O comprimento do feed é muito longo;A unidade está alimentando por muito tempo. Reduza o parâmetro de comprimento de alimentação por meio da interface de operação.						
+GFS;Comprimento do feed muito curto;A unidade está alimentando em curto. Aumente o comprimento da alimentação por meio da interface de operação.						
+GFS;Comprimento do feed muito curto;O material está escorregando entre os rolos. Aumente a pressão do rolo de pressão.						
+GFS;Comprimento do feed muito curto;O resolvedor de prensa e o codificador Servo Feed com Vertical Loop Stand não estão alinhados. Verifique as leituras e ajuste de acordo.						
+GFS;Comprimento do feed muito curto;O ângulo de alimentação não está definido corretamente. Consulte a documentação do sistema sobre o ângulo de alimentação adequado e defina a alimentação do servo com suporte de loop vertical de acordo.						
+GFS;O comprimento do feed é irregular; O material está escorregando entre os rolos. Aumente a pressão do rolo de pressão.						
+GFS;O comprimento do feed é irregular;O resolver de prensa e o codificador Servo Feed com Vertical Loop Stand não estão alinhados. Verifique as leituras e ajuste de acordo.						
+GFS;O comprimento do feed é irregular;O ângulo de alimentação não está definido corretamente. Consulte a documentação do sistema sobre o ângulo de alimentação adequado e configure a alimentação servo com suporte de loop vertical de acordo.						
+GFS;O comprimento do feed é irregular;Frouxidão na área motor - acoplamento - caixa de engrenagens. Identifique o componente desgastado e substitua.						
+GFS;O comprimento do feed é irregular;Acúmulo de material no rolo índice. Limpe o rolo de index.						
+GFS;Verifique as etapas a seguir se o feed não iniciar:;A desconexão na alimentação do servo com o painel elétrico do suporte de loop vertical está na posição “ON”.						
+GFS;Verifique as etapas a seguir se o feed não iniciar:;O (s) botão (ões) de parada “E” ao pressionar não estão pressionados.						
+GFS;Verifique as etapas a seguir se o feed não iniciar:;A pressão do ar está presente.						
+GFS;Verifique as etapas a seguir se o feed não iniciar:;O rolo de pressão está fechado.						
+GFS;Verifique as etapas a seguir se o feed não iniciar:;O interruptor de pressão de ar está ajustado e funcionando corretamente.						
+GFS;Verifique as etapas a seguir se o feed não iniciar:;A alimentação servo com suporte de loop vertical foi colocado em “AUTO” no painel elétrico de alimentação do servo com suporte de loop vertical.						
+GFS;O material não segue em linha reta:;Certifique-se de que os rolos estejam paralelos antes de prosseguir para as etapas a seguir.						
+GFS;O material não segue em linha reta:;Se o material estiver obstruindo a guia de saída direita, mova ambas as guias de saída para a esquerda 0,010-0,015 ”. Repita se necessário.						
+GFS;O material não segue em linha reta:;Se o material estiver obstruindo a guia de saída esquerda, mova ambas as guias de saída para a direita 0,010-0,015 ”. Repita se necessário.						

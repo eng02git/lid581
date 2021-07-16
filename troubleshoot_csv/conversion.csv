@@ -1,191 +1,189 @@
-Nv1;Nv2;Nv3;Causa;Solucao
-Problema Alimentação de tampas?;Vazamento no rebite - No topo da cabeça do rebite;;;Passe a transfer belt a da matriz fora do alinhamento com a ferramenta. Consulte a seção ""Ajuste da correia de transferência de tampa não metálica""
-Problema Alimentação de tampas?;Vazamento no rebite - Sob a cabeça do rebite;;;Molas da comporta de elevação inferior da correia de transferência quebradas. Substituir
-Problema Alimentação de tampas?;Tampas dobradas;;;"Trilhos do elevador da correia emperrados devido a desgaste ou muita tensão. Verifique a tensão da mola de acordo com a especificação. Molas corretas."
-Problema Alimentação de tampas?;Tampas dobradas;;;Desalinhamento da correia. Realinhe a correia.
-Problema Alimentação de tampas?;Tampas dobradas;;;Shells dobradas. Substitua as shells.
-Problema Alimentação de tampas?;Alimentação incorreta de tampas;;;Tampas separadores fora do tempo uns com os outros ou fora do tempo com interrupção da correia. Separadores de reajuste com correia. Consulte o tempo de downstacker.
-Problema Alimentação de tampas?;Alimentação incorreta de tampas;;;Desalinhamento da correia. Realinhe a correia.
-Problema Alimentação de tampas?;Alimentação incorreta de tampas;;;Os separadores não estão espaçados adequadamente para o curl das tampas. Re-espaçar separadores.
-Problema Alimentação de tampas?;Alimentação incorreta de tampas;;;Excesso de compound nas tampas. Limpe ou substitua as tampas conforme necessário.
-Problema Alimentação de tampas?;Alimentação incorreta de tampas;;;Tampas duplas. Verifique o downstacker. Verifique se há facas separadoras quebradas com compound em excesso.
-Problema Alimentação de tampas?;Alimentação incorreta de tampas;;;Orifícios danificados na correia. Substitua a correia.
-Problema Alimentação de tampas?;Tampas viradas - Score rotativo;;;Correia desalinhada com o ferramental. Realinhe a correia sem a tampa na correia.
-Problema Alimentação de tampas?;Tampas viradas - Score rotativo;;;Fixação da correia do trilho do elevador. Verifique se há molas fracas ou sujeira.
-Problema Alimentação de tampas?;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;;;Desgaste excessivo nos trilhos do elevador da correia. Substituir.
-Problema Alimentação de tampas?;Sucata na área do die - modo contínuo;;;As lâminas de separação do downstacker não estão ajustadas corretamente com o curl da tampa, fazendo lascas e levando até o lane die.
-Problema Conformação inferior?;Diâmetro do rebite pequeno;;;Verifique se o pino do rebite inferior da segunda estação tem a altura adequada sobre a ferramenta. Consulte o desenho de montagem ou os papéis Cordax.
-Problema Conformação inferior?;Diâmetro do rebite pequeno;;;Verifique se o pino do rebite da terceira estação inferior tem a altura adequada. Consulte o desenho de montagem ou os papéis Cordax.
-Problema Conformação inferior?;Vazamento no rebite - No topo da cabeça do rebite;;;A primeira estação bolha fora da especificação de altura inferior. Verifique o acabamento do perfurador de bolha inferior. Verifique as dimensões do produto.
-Problema Conformação inferior?;Vazamento no rebite - No topo da cabeça do rebite;;;Pino do rebite inferior da quarta estação muito alto sobre a ferramenta, causando reforma do rebite desenvolvimento da terceira operação. Este pino é usado apenas para localização e deve estar pelo menos 0,002 ”-,004” abaixo do pino de rebite da terceira estação.
-Problema Conformação inferior?;Vazamento no rebite - No topo da cabeça do rebite;;;Ferramenta de desenvolvimento de rebite inferior lascada ou quebrada. Substituir.
-Problema Conformação inferior?;Vazamento no rebite - No topo da cabeça do rebite;;;Raio muito agudo no pino da estação de piquetagem inferior. Consulte o desenho da peça.
-Problema Conformação inferior?;Vazamento no rebite - Sob a cabeça do rebite;;;A primeira estação bolha fora da especificação de altura inferior. Verifique o acabamento do perfurador de bolha inferior. Verifique as dimensões do produto.
-Problema Conformação inferior?;Vazamento no rebite - Sob a cabeça do rebite;;;Pino do rebite inferior da quarta estação muito alto sobre a ferramenta, causando reforma do rebite desenvolvimento da terceira operação. Este pino é usado apenas para localização e deve estar pelo menos 0,002 ”-,004” abaixo do pino de rebite da terceira estação.
-Problema Conformação inferior?;Vazamento no rebite - Sob a cabeça do rebite;;;Ferramenta de desenvolvimento de rebite inferior lascada ou quebrada. Substituir.
-Problema Conformação inferior?;Vazamento no rebite - Sob a cabeça do rebite;;;Raio muito agudo no pino da estação de piquetagem inferior. Consulte o desenho da peça.
-Problema Conformação Superior?;Diâmetro do rebite pequeno;;;Verifique o raio de formação do inserto do rebite superior da segunda estação. Consulte o desenho da peça.
-Problema Conformação Superior?;Vazamento no rebite - No topo da cabeça do rebite;;;Sucata na cavidade da estação de piquetagem da matriz superior.
-Problema Conformação Superior?;Vazamento no rebite - No topo da cabeça do rebite;;;O raio na segunda e terceira estação do rebite superior é muito grande. Substituir.
-Problema Conformação Superior?;Vazamento no rebite - No topo da cabeça do rebite;;;Raio do furo de folga do rebite da estação superior muito acentuado (estação de pontuação). Consulte o desenho da peça.
-Problema Conformação Superior?;Vazamento no rebite - Sob a cabeça do rebite;;;Sucata na cavidade da estação de piquetagem da matriz superior.
-Problema Conformação Superior?;Vazamento no rebite - Sob a cabeça do rebite;;;O raio na segunda e terceira estação do rebite superior é muito grande. Substituir.
-Problema Conformação Superior?;Vazamento no rebite - Sob a cabeça do rebite;;;Raio do furo de folga do rebite da estação superior muito acentuado (estação de pontuação). Consulte o desenho da peça.
-Problema conformação superior/inferior?;Diâmetro do rebite pequeno;;;Verifique o resíduo do rebite na operação de estaqueamento. Ajuste às especificações do produto.
-Problema conformação superior/inferior?;Diâmetro do rebite pequeno;;;Verifique a bolha da primeira estação quanto à altura e concentricidade adequadas. Ajuste às especificações do produto. NOTA: Verifique o anel “O” superior na 1ª estação quanto a sujeira ou desgaste.
-Problema conformação superior/inferior?;Diâmetro do rebite pequeno;;;Verifique se as ferramentas de rebite superior e inferior na estação de piquetagem estão planas, acabamento de superfície e raio. Consulte o desenho da peça.
-Problema conformação superior/inferior?;Rebite não concêntrico ou em forma de ovo;;;Verifique as ferramentas de rebite superior e inferior da primeira estação quanto a acabamento e nivelamento ruins. Substitua ou limpe o anel “O”. Consulte a impressão.
-Problema conformação superior/inferior?;Rebite não concêntrico ou em forma de ovo;;;Verifique as ferramentas de rebite superior e inferior da estação de piquetagem quanto a acabamento e nivelamento ruins. Substitua ou sobreponha.
-Problema conformação superior/inferior?;Rebite não concêntrico ou em forma de ovo;;;Possível inserção do rebite da segunda estação superior batendo com muita força. Consulte a dimensão do produto.
-Problema Die?;Diâmetro do rebite pequeno;;;Verifique a dimensão da estação de piquetagem superior da bucha ao pino de piquetagem (cavidade profundidade).
-Problema Lane Die?;Diâmetro do rebite pequeno;;;Verifique a estação de piquetagem inferior quanto à altura do pino sobre a ferramenta. Consulte o desenho de montagem ou os papéis Cordax.
-Problema Lane Die?;Rebite não concêntrico ou em forma de ovo;;;Verifique o Lane Die para possível desalinhamento. Consulte ""Instalação do molde de pista"".
-Problema Lane Die?;Rebite não concêntrico ou em forma de ovo;;;O orifício do rebite da aba não arredondado.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Sucata nos orifícios de liberação de desenvolvimento do rebite superior da quarta ou quinta estação. Verifique com o espelho e limpe.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Segunda e terceira estações sobre o pino do rebite não conforme as especificações (altura sobre a ferramenta). Consulte o desenho de montagem
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Ferramenta de desenvolvimento de rebite inferior lascada ou quebrada. Substituir.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Resíduo de rebite baixo - operação de piquetagem. Faça as dimensões do produto.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Bolha da primeira estação fora das especificações. Verifique as dimensões do produto.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Raio muito agudo no inserto de formação da segunda estação superior. Consulte o desenho da peça.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;O desenvolvimento do rebite da quinta ou sexta estação não está ajustado corretamente. Consulte o desenho Cordax. A) Pino do rebite inferior muito alto. B) A profundidade da cavidade superior é muito baixa.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Excesso de rebarbas no orifício do rebite da aba. Afie ou substitua socos, die button.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Guia deslocada da estação de piquetagem.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Estaca inferior, colagem do anel de centralização. Limpar e polir.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Anéis de centragem superiores emperrados. Limpar e polir.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;A profundidade da cavidade não está ajustada corretamente. Consulte o desenho Cordax.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Operação de grampeamento colocando a aba com muita força. Consulte o desenho Cordax.
-Problema Lane Die?;Vazamento no rebite - No topo da cabeça do rebite;;;Primeira, segunda e terceira estação não alinhadas corretamente. Verifique a concentricidade do produto da primeira, segunda e terceira estação.
-Problema Lane Die?;Tab Strip Jams;;;Os detectores de tampa dupla não estão configurados corretamente ou estão ausentes. Veja os desenhos elétricos.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Pontuação residual fora das especificações. NOTA: Lado alto da tolerância ou fora de paralelo.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Ferramenta do score gasta ou sem brilho.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Má conformação. Coin muito duro na forma de um segundo ou terceiro rebite. Bolha da primeira operação muito alta. Moeda (painel) fora das especificações. Painel embutido fora das especificações.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Ferramenta Upper rivet form desgastada - evitando que o tab fique bem apertado contra a tampa.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Painel recesso não definido de acordo com as especificações.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Ferramentas de painel embutidas gastas.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Pino inferior da operação de estaca não ajustado para a especificação.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Etapa do score fora das especificações.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Lower score anvil usada.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Painel central e painel da escotilha não estão ajustados de acordo com as especificações.
-Problema Lane Die?;Falhas de abertura ou alto valor do POP;;;Segundo e terceiro produto da estação fora das especificações.
-Problema Lane Die?;Score Blow Outs;;;Verifique o countersink da shell versus a parte inferior da ferramenta, raio externo, no lane die. A shell não deve se ajustar firmemente a ferramenta para reformar a shell.
-Problema Lane Die?;Score Blow Outs;;;Painel central e painel da escotilha não estão definidos de acordo com as especificações. Se os painéis estiverem muito apertados, é possível puxar a pontuação, fraturar e ainda não vazar sob pressão normal.
-Problema Lane Die?;Score Blow Outs;;;Verifique a folga entre as ferramentas do painel rebaixado superior e inferior.
-Problema Lane Die?;Score Blow Outs;;;Verifique o raio nas ferramentas de modelagem superior e inferior no painel rebaixado. Certifique-se de que o raio seja consistente em toda a área.
-Problema Lane Die?;Score Blow Outs;;;Verifique a faca do score quanto à consistência desde a pontuação principal até a anti-fratura score. Verifique o desenho da Stolle para a revisão mais recente.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Faca do score não paralelo ao desenho.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Ferramenta de montagem superior ou inferior não paralela.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Blocos de parada desgastados não estão no local correto para que o conjunto de matrizes permaneça paralelo. NOTA: Veja os números correspondentes no conjunto de dados vs. bloco de parada.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Sujeira ou refugo sob o score.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Bigorna de pontuação inferior usada. NOTA: Verifique o passo e o paralelismo.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Pontuação superior gasta (faca).
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Pré-carga não definida de acordo com a velocidade da impressora. Consulte ""Configuração de pré-carregamento"".
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;A folga da ferramenta não está definida corretamente sobre a espessura da ferramenta.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;O espaçador de remoção da marca superior não cabe na ferramenta plana. Certifique-se de que o espaçador tenha um ângulo de 45 ° em ambos os lados.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Acúmulo de sujeira ou cera na tampa de pontuação inferior. Limpeza necessária.
-Problema Lane Die?;Variação do Score fora da especificação (etapa e paralelismo);;;Acúmulo de sujeira, cera ou pó de alumínio entre as pontuações principais e anti-fratura. Limpe com cotonete ou pincel pequeno.
-Problema Lane Die?;Vazamento do Score;;;Upper score punch entalhado, quebrado e / ou áspero. Substituir.
-Problema Lane Die?;Vazamento do Score;;;Verifique a mistura da bigorna inferior da área alta para a área baixa, se for escalonada. Apareça e dê polimento ou substitua.
-Problema Lane Die?;Vazamento do Score;;;Resíduo de baixa pontuação sob a especificação. Defina as dimensões do produto.
-Problema Lane Die?;Vazamento do Score;;;Inserção do rebite superior da segunda estação não ajustada corretamente. Consulte as dimensões do produto.
-Problema Lane Die?;Vazamento do Score;;;A profundidade do painel não está ajustada corretamente. Consulte as dimensões do produto.
-Problema Lane Die?;Vazamento do Score;;;Ferramentas de reforma não ajustadas corretamente - como moeda e cúpula extensível. Consulte o desenho de montagem ou os relatórios Cordax.
-Problema Lane Die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;Painel central e o painel da escotilha não estão ajustados corretamente. Consulte a dimensão do produto.
-Problema Lane Die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;As ferramentas do painel recuado não estão definidas corretamente. Verifique o raio gasto nas ferramentas. Consulte as especificações do produto.
-Problema Lane Die?;Tampas dobradas;;;Colar do anel removedor de piquetagem inferior. Limpar e polir.
-Problema Lane Die?;Tampas viradas - Score rotativo;;;Anéis de localização superiores emperrados. Polir ID do anel e OD da ferramenta.
-Problema Lane Die?;Tampas viradas - Score rotativo;;;Molas quebradas nos trilhos do elevador da correia. Substituir.
-Problema Lane Die?;Tampas viradas - Score rotativo;;;Anéis de localização superiores fora de tempo com empurradores da grade da comporta de elevação. O anel de localização superior deve estar na tampa em aproximadamente 0,015 antes dos empurradores da correia começarem a se mover.
-Problema Lane Die?;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;;;Os anéis localizadores superiores não devem tocar a tampa durante qualquer indexação (movimento) da correia. Consulte o tempo de intermitência.
-Problema Lane Die?;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;;;Trilhos de fixação ou stripper plate danificados. Passe a pedra e dê polimento em qualquer área que toque as tampas.
-Problema Lane Die?;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;;;Os pinos do estabilizador (superior) na estação de estaca não estão funcionando corretamente. Verifique se há desgaste ou molas quebradas.
-Problema Lane Die?;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;;;Folga inadequada entre a correia e os trilhos do stripper. Determine as causas do excesso de folga e faça as correções.
-Problema Lane Die?;Metal exposto - área de rebite;;;Riscos de rebite NOTA: Situação especial: Verifique o alinhamento da transfer belt não metálica. Verifique o raio no pino da estaca inferior, possivelmente muito afiado. Verifique o diâmetro do anel de centragem inferior na estação de estaca (sob a ponte). A tampa da estação anterior deve ser capaz de se mover no anel de centralização 0,007 ""- 0,010 "". O acabamento em todas as ferramentas de rebite inferior deve ser um nº 4 (sem acabamento de marca de ferramenta). Os pinos estabilizadores superiores na estação de estaca devem trabalhar livremente.
-Problema Lane Die?;Metal exposto - área de rebite;;;Rebarbe no orifício do rebite do tab.
-Problema Lane Die?;Metal exposto - área de rebite;;;Verifique o tab no corpo do punção da estaca superior, certificando-se de que a guia pode se mover sobre o centro em todas as direções durante o corte e piquetagem.
-Problema Lane Die?;Metal exposto - área do Score;;;Bigorna do score inferior não polido e degrau não combinado.
-Problema Lane Die?;Metal exposto - área do Score;;;Desgaste excessivo na bigorna inferior.
-Problema Lane Die?;Metal exposto - área do Score;;;A pontuação superior do punção (faca) é muito larga devido ao desgaste.
-Problema Lane Die?;Metal exposto - área do Score;;;Punção do Score superior (faca) com ângulo incorreto. O ângulo deve ser 50 ° incluído.
-Problema Lane Die?;Metal exposto - área do Score;;;Score residual abaixo da especificação.
-Problema Lane Die?;Metal exposto - área do Score;;;A profundidade do painel recuado não atende às especificações. Verifique a profundidade do rebite. Veja o desenho do produto.
-Problema Lane Die?;Metal exposto - área do Score;;;Verifique o raio de formação na ferramenta do painel de recesso para as dimensões adequadas.
-Problema Lane Die?;Metal exposto - área do Score;;;Verifique o painel central e painel da escotilha quanto à especificação correta. Se o painel estiver muito apertado, ele pode puxar vincos e causar fraturas no revestimento da linha do score.
-Problema Lane Die?;Diversos - Moeda do raio do painel fora da especificação;;;Verifique a consistência do painel fora da Prensa Shell.
-Problema Lane Die?;Diversos - Moeda do raio do painel fora da especificação;;;O raio na ferramenta inferior está gasto.
-Problema Lane Die?;Diversos - Moeda do raio do painel fora da especificação;;;O raio na ferramenta inferior não é consistente em toda a área da ferramenta.
-Problema Lane Die?;Diversos - Moeda do raio do painel fora da especificação;;;A moeda do painel superior está gasta.
-Problema Lane Die?;Diversos - Moeda do raio do painel fora da especificação;;;Pinos guia cêntricos / excêntricos também são usados muitas vezes para esta condição de não paralelismo.
-Problema Lane Die?;Sucata na área do die - modo contínuo.;;;Excesso de marcas da barra Ryder na área da ponte.
-Problema Lane Die?;Sucata na área do die - modo contínuo.;;;Carregando punções de tiras e die button cortados ou cegos. Afie ou substitua.
-Problema Lane Die?;Sucata na área do die - modo contínuo.;;;Folga inadequada entre os cut edge superior e inferior na guia "tab cut off área."
-Problema Lane Die?;Sucata na área do die - modo contínuo.;;;Sem lubrificação do tab ou fluxo impróprio de lubrificação do tab.
-Problema Lane Die?;Sucata na área do die - modo contínuo.;;;Excesso de rebarbas no tab (no cut off da ponte).
-Problema Lubrificação?;Diâmetro do rebite pequeno;;;Verifique a possível falta de lubrificação na carcaça básica. Rebite tem uma cor marrom claro. Substitua as cápsulas ou use alguma forma de lubrificação.
-Problema Tab die?;Vazamento no rebite - Sob a cabeça do rebite;;;Tab malformado.
-Problema Tab die?;Tab Strip Jams;;;Falta de lubrificação do tab ou lubrificante impróprio. Os punções de perfuração superior do tab die ou os botões da matriz inferior estão cegos ou cortados. Isso pode ser causado por desgaste normal, falta de lubrificação ou lubrificação de lingueta inadequada.
-Problema Tab die?;Tab Strip Jams;;;Ângulo incorreto nos punções de perfuração Do upper tab. Consulte o desenho da peça.
-Problema Tab die?;Tab Strip Jams;;;Slugs na área do tab die. Consulte o desenho da peça para obter o ângulo correto no tab die do upper tab. Pressão de ar incorreta nos punções de perfuração da guia superior. NOTA: A quantidade de ar fornecida para perfurar os punções na matriz da aba deve ser suficiente. O ar é apenas para liberar o slug do tab stock, não para soprar o slug para baixo através da área de scrap da matriz. Muito ar vai soprar a guia lubrificação de estoque previamente aplicado com almofadas de feltro.
-Problema Tab die?;Tab Strip Jams;;;Almofadas de feltro do lubrificador com abas gastas. Se as almofadas de feltro estiverem gastas a ponto de não aplicarem uma camada uniforme de lubrificante o estoque, vire as almofadas se não forem usadas ou substitua por novas. NOTA: As almofadas de feltro inferiores devem ser aproximadamente 1/16 ""mais altas do que a tab stock trim die.
-Problema Tab die?;Tab Strip Jams;;;Os Tab die lower stock lifters estão emperrando e não funcionando corretamente. Verifique se há molas do levantador do stock quebradas.
-Problema Tab die?;Tab Strip Jams;;;Tab stock trim die opaca ou cortada. Afie ou substitua.
-Problema Tab die?;Tab Strip Jams;;;As strippers no tab die (superior ou inferior) não estão funcionando corretamente.
-Problema Tab die?;Tab Strip Jams;;;Os trilhos de guia na área de alimentação do rolo não estão alinhados com o feed roll. Verifique o alinhamento na stock trim die e na área do tab die.
-Problema Tab die?;Tab Strip Jams;;;Caixa de engrenagens do roll feed está gasta. Sem pré-carga dos rolos CAME para os seguidores CAME. Tab stock não está sendo indexado o mesmo a cada golpe. Substitua ou reconstrua a caixa de engrenagens e realinhe.
-Problema Tab die?;Tab Strip Jams;;;Feed roller - gasto ou diâmetro incorreto.
-Problema Tab die?;Tab Strip Jams;;;Feed roll liso, desgastado. A superfície do rolo de alimentação deve ser de cromo duro e áspero para que tab stock não escorregue durante a indexação.
-Problema Tab die?;Tab Strip Jams;;;Feed Roll - tempo e ajustes. Consulte a seção do manual para: - Pressão e tensão da mola. - Tempo e ajuste do came. -Timing com pinos lane die pilots.
-Problema Tab die?;Tab Strip Jams;;;Os tabs não estão sendo cortados e fixados nas tampas corretamente (ou seja, tabs soltos). Desenvolvimento de rebites fora das especificações. Perda de vácuo para estocar socos.
-Problema Tab die?;Tab Strip Jams;;;Tab stock fora das especificações (consulte o desenho da tab strip). Muito largo para a área da matriz. Muito estreito e escorregando dos elevadores de estoque.
-Problema Tab die?;Tab Strip Jams;;;O corpo do punção da estaca não consegue passar pela tab strip. Verifique o acabamento.
-Problema Tab die?;Tab Strip Jams;;;Tab stock coil distorcidas ou danificadas. Verifique antes de instalar. Nota: Consulte o desenho da peça ou papéis Cordax.
-Problema Tab die?;Tab Strip Jams;;;Excesso de rebarbas do picador de sucata puxando o estoque. Afie.
-Problema Tab die?;Tab Strip Jams;;;Sucata no tab die, devido ao possível deslocamento da rosca. Certifique-se de que a divisória seja empurrada contra o primeiro localizador de parada.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Verifique o raio nas bordas cortadas inferiores na ponte. Muito grande.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Verifique o raio nas bordas cortadas inferiores na ponte. Muito grande.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Bordas cortadas superiores no corpo do punção da estaca opacas ou lascadas.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Carregando punções de tiras o tab die cega ou lascada.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Folga inadequada entre a área de corte da estaca superior e inferior. Demais ou não o suficiente.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Possivelmente o dado não está ajustado corretamente. Consulte a instalação do molde da pista.
-Problema Tab die?;Rebarba da guia - Cutt off área;;;Limpe as orelhas / nariz (corte do tab). Ferramentas de matriz incorretas ou gastas não definidas.
-Problema Tab die?;Rebarba no rivet hole;;;O tab die rivet hole, os punções perfuram cegos ou cortados.
-Problema Tab die?;Rebarba no rivet hole;;;Verifique o bloco de montagem do punção quanto a desgaste, resultando em punção ou die button soltos.
-Problema Tab die?;Rebarba no rivet hole;;;Punção superior ou lower die button lascados ou quebrados.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Tabs malformados. Verifique a lubrificação do tab quanto à quantidade e aplicação adequadas.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Possivelmente não há folga suficiente no corpo da estaca (área de vácuo) para o tab centrar -se depois de cortado. NOTA: Quando o tab é cortado da tira de transporte e mantida por vácuo, ela deve permitir mover-se ligeiramente quando estiver alinhado com o desenvolvimento do rebite na parte inferior do stroke."
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Anel de centralização da estação de estaca inferior muito grande em diâmetro ou raio incorreto. NOTA: Quando o tab está centrado no desenvolvimento do rebite, a parte inferior anel de centragem não deve restringir o final do movimento neste momento.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Vácuo insuficiente na stake - área de corte.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Corte excessivo de rebarba no tab.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Os pinos de estabilização (upper stake station) não funcionam corretamente. Molas quebradas nos pinos estabilizadores. Pinos estabilizadores tortos. Pinos estabilizadores gastos.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;O upper finger hole (piloto com mola) não está funcionando corretamente. Mola quebrada ou gasta. A tab strip não está alinhada com o piloto de finger hole.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Scrap no punção e bucha da estaca superior (área de profundidade da cavidade).
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Excesso de marcas da barra Ryder.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Bordas de corte de carboneto opacas ou lascadas no corpo do punção da estaca superior ou na parte inferior ponte.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Transfer belt não metálica desalinhada com as ferramentas superior e inferior (frente para costas).
-Problema Tab die?;Tabs mal colocados ou perdidos;;;O roll feed timing não está definido corretamente.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;Verifique a tira de transporte do tab quanto ao desalinhamento do tab.
-Problema Tab die?;Tabs mal colocados ou perdidos;;;A Stake station finger hole pilot está preso.
-Problema Tab die?;Tab mal formados;;;Lubrificação inadequada do tab ou falta de lubrificação do tab.
-Problema Tab die?;Tab mal formados;;;Ferramentas do tab die desgastadas: Operação de pré-curl, Limpeza de 90 ° e Curling do tab.
-Problema Tab die?;Falhas de abertura ou alto valor do POP;;;Tab não conforme com as especificações.
-Problema Tab die?;Falhas de abertura ou alto valor do POP;;;Tab rivet hole com rebarba - não deixando o tab assentar contra a tampa.
-Problema Tab die?;Variação do Score fora da especificação (etapa e paralelismo);;;Tab die não configurada corretamente com a lane die.
-Problema Tab die?;Variação do Score fora da especificação (etapa e paralelismo);;;Tab die over shimmed.
-Problema Tab die?;Vazamento do Score;;;O tab não se ajusta à área limpa da orelha, causando levantamento do tab e fratura. Verifique os furos Do tab e do limpador de orelha quanto ao desgaste. Verifique os papéis Cordax para ajustes.
-Problema Tab die?;Vazamento do Score;;;Tampas viradas na transfer belt de estação para estação.
-Problema Tab die?;Vazamento do Score;;;Definido incorretamente a stock feed.
-Problema Tab die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;Espessura do tab muito alta. Consulte a guia Especificações do produto.
-Problema Tab die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;Ponta do tab muito alta ou muito fina. Consulte a guia Especificações do produto.
-Problema Tab die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;Os tabs não estão sendo formados corretamente no tab die.
-Problema Tab die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;Os tabs não estão sendo fixados corretamente. Verifique a mola na estação de estaca, também dimensione da bucha ao corpo do punção (cut edge). Consulte o desenho Cordax.
-Problema Tab die?;Tampas acabadas não empilhadas corretamente [tampas porosas];;;Verifique o raio superior na inserção do rebite da terceira estação quanto a desgaste (verifique com a impressão).
-Problema Tab die?;Sucata na área do die - modo contínuo Área do Lane Die;;;Tab malformado.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do Lane Die;;;Slugs do tab die surgindo no tab die.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do Lane Die;;;Excesso de rebarbas na orelha ou área de limpeza do nariz depois que o tab foi cortado. Ajuste o ferramental superior.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do tab die;;;Rebarba na tab.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do tab die;;;Lança pré-curvada e combinação de pré-curvatura muito rígidas, criando uma rebarba no tab. Verifique a área de pré-curvatura da guia quanto à largura de 0,004""- 0,005"".
-Problema Tab die?;Sucata na área do die - modo contínuo Área do tab die;;;Punção de perfuração do tab die e puxando as lesmas ou pressão de ar sobre socos puxando slugs.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do tab die;;;Tab mal formado.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do tab die;;;Acabamento áspero nas ferramentas de conformação.
-Problema Tab die?;Sucata na área do die - modo contínuo Área do tab die;;;As guias de divisória não foram colocadas corretamente antes de a divisória entrar no roll feed.
-Problema Tab die / Lane die?;Tab Strip Jams;;;Pinos piloto da pista / guia dobrados. Verifique a concentricidade total - máximo 0,001 ". Verifique o acabamento - # 4 (ou seja, sem marcas de ferramenta). Verifique o diâmetro e o desgaste.
-Problema Tab Uncoiler?;Tab Strip Jams;;;Muita tensão (sem loop) no tab stock uncoiler. O tab stock uncoiler deve ser ajustado para reduzir o trabalho na unidade de alimentação do rolo.
+Nv1;Nv2;Solucao
+Conformação superior/inferior;Diâmetro do rebite pequeno;Verifique o resíduo do rebite na operação de estaqueamento. Ajuste às especificações do produto.
+Conformação superior/inferior;Diâmetro do rebite pequeno;Verifique a bolha da primeira estação quanto à altura e concentricidade adequadas. Ajuste às especificações do produto. NOTA: Verifique o anel “O” superior na 1ª estação quanto a sujeira ou desgaste.
+Conformação inferior;Diâmetro do rebite pequeno;Verifique se o pino do rebite inferior da segunda estação tem a altura adequada sobre a ferramenta. Consulte o desenho de montagem ou os papéis Cordax. 
+Conformação superior ;Diâmetro do rebite pequeno;Verifique o raio de formação do inserto do rebite superior da segunda estação. Consulte o desenho da peça.
+Lubrificação;Diâmetro do rebite pequeno;Verifique a possível falta de lubrificação na carcaça básica. Rebite tem uma cor marrom claro. Substitua as cápsulas ou use alguma forma de lubrificação.
+Conformação superior/inferior;Diâmetro do rebite pequeno;Verifique se as ferramentas de rebite superior e inferior na estação de piquetagem estão planas, acabamento de superfície e raio. Consulte o desenho da peça. 
+Die;Diâmetro do rebite pequeno;Verifique a dimensão da estação de piquetagem superior da bucha ao pino de piquetagem (cavidade profundidade). 
+Conformação inferior;Diâmetro do rebite pequeno;Verifique se o pino do rebite da terceira estação inferior tem a altura adequada. Consulte o desenho de montagem ou os papéis Cordax.
+Lane Die;Diâmetro do rebite pequeno;Verifique a estação de piquetagem inferior quanto à altura do pino sobre a ferramenta. Consulte o desenho de montagem ou os papéis Cordax. 
+Lane Die;Rebite não concêntrico ou em forma de ovo;Verifique o Lane Die para possível desalinhamento. Consulte "Instalação do molde de pista". 
+Conformação superior/inferior;Rebite não concêntrico ou em forma de ovo;Verifique as ferramentas de rebite superior e inferior da primeira estação quanto a acabamento e nivelamento ruins. Substitua ou limpe o anel “O”. Consulte a impressão.
+Conformação superior/inferior;Rebite não concêntrico ou em forma de ovo;Verifique as ferramentas de rebite superior e inferior da estação de piquetagem quanto a acabamento e nivelamento ruins. Substitua ou sobreponha.
+Conformação superior/inferior;Rebite não concêntrico ou em forma de ovo;Possível inserção do rebite da segunda estação superior batendo com muita força. Consulte a dimensão do produto. 
+;Rebite não concêntrico ou em forma de ovo;Shells básicas secas. Lubrifique ou substitua. 
+;Rebite não concêntrico ou em forma de ovo;Consulte a seção "Diâmetro pequeno do rebite" para outras possibilidades.
+Lane Die;Rebite não concêntrico ou em forma de ovo;O orifício do rebite da aba não arredondado. 
+Conformação superior;Vazamento no rebite - No topo da cabeça do rebite;Sucata na cavidade da estação de piquetagem da matriz superior. NOTA: Verifique e limpe a área da bucha ao pino de fixação.
+Lane Die;Vazamento no rebite - No topo da cabeça do rebite;Sucata nos orifícios de liberação de desenvolvimento do rebite superior da quarta ou quinta estação. Verifique com o espelho e limpe.
+Conformação inferior;Vazamento no rebite - No topo da cabeça do rebite;A primeira estação bolha fora da especificação de altura inferior. Verifique o acabamento do perfurador de bolha inferior. Verifique as dimensões do produto.
+Lane Die;Vazamento no rebite - No topo da cabeça do rebite;Segunda e terceira estações sobre o pino do rebite não conforme as especificações (altura sobre a ferramenta). Consulte o desenho de montagem  
+Lane Die;Vazamento no rebite - No topo da cabeça do rebite;Ferramenta de desenvolvimento de rebite inferior lascada ou quebrada. Substituir. 
+Alimentação de tampas;Vazamento no rebite - No topo da cabeça do rebite;Passe a transfer belt a da matriz fora do alinhamento com a ferramenta. Consulte a seção "Ajuste da correia de transferência de tampa não metálica".
+Conformação inferior;Vazamento no rebite - No topo da cabeça do rebite;Pino do rebite inferior da quarta estação muito alto sobre a ferramenta, causando reforma do rebite desenvolvimento da terceira operação. Este pino é usado apenas para localização e deve estar pelo menos 0,002 ”-,004” abaixo do pino de rebite da terceira estação. 
+;Vazamento no rebite - No topo da cabeça do rebite;Material - lubrificação na shell básica. Falta de lubrificante. Quantidade excessiva. 
+Lane Die;Vazamento no rebite - No topo da cabeça do rebite;Resíduo de rebite baixo - operação de piquetagem. Faça as dimensões do produto.
+Conformação superior;Vazamento no rebite - No topo da cabeça do rebite;O raio na segunda e terceira estação do rebite superior é muito grande. Substituir. 
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Bolha da primeira estação fora das especificações. Verifique as dimensões do produto.
+Conformação inferior;Vazamento no rebite - Sob a cabeça do rebite;Ferramenta de desenvolvimento de rebite inferior lascada ou quebrada. Substituir.
+;Vazamento no rebite - Sob a cabeça do rebite;Passe a correia de transferência da matriz fora do alinhamento com a ferramenta. Consulte "Ajuste da correia de transferência da extremidade não metálica". 
+Conformação inferior;Vazamento no rebite - Sob a cabeça do rebite;Raio muito agudo no pino da estação de piquetagem inferior. Consulte o desenho da peça.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Raio muito agudo no inserto de formação da segunda estação superior. Consulte o desenho da peça.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;O desenvolvimento do rebite da quinta ou sexta estação não está ajustado corretamente. Consulte o desenho Cordax.  A) Pino do rebite inferior muito alto. B) A profundidade da cavidade superior é muito baixa.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Excesso de rebarbas no orifício do rebite da aba. Afie ou substitua socos, die button. 
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Guia deslocada da estação de piquetagem.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Estaca inferior, colagem do anel de centralização. Limpar e polir. 
+Alimentação de tampas;Vazamento no rebite - Sob a cabeça do rebite;Molas da comporta de elevação inferior da correia de transferência quebradas. Substituir.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Anéis de centragem superiores emperrados. Limpar e polir.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;A profundidade da cavidade não está ajustada corretamente. Consulte o desenho Cordax.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Operação de grampeamento colocando a aba com muita força. Consulte o desenho Cordax.
+Lane Die;Vazamento no rebite - Sob a cabeça do rebite;Primeira, segunda e terceira estação não alinhadas corretamente. Verifique a concentricidade do produto da primeira, segunda e terceira estação.
+Conformação superior;Vazamento no rebite - Sob a cabeça do rebite;Raio do furo de folga do rebite da estação superior muito acentuado (estação de pontuação). Consulte o desenho da peça.
+Alimentação de tampas;Vazamento no rebite - Sob a cabeça do rebite;Tampas viradas na transfer belt de estação para estação. 
+Tab die;Vazamento no rebite - Sob a cabeça do rebite;Tab malformado.
+Tab die;Tab Strip Jams;Falta de lubrificação do tab ou lubrificante impróprio. Os punções de perfuração superior do tab die ou os botões da matriz inferior estão cegos ou cortados. Isso pode ser causado por desgaste normal, falta de lubrificação ou lubrificação de lingueta inadequada. 
+Tab die;Tab Strip Jams;Ângulo incorreto nos punções de perfuração Do upper tab. Consulte o desenho da peça.
+Tab die;Tab Strip Jams;Slugs na área do tab die. Consulte o desenho da peça para obter o ângulo correto no tab die do upper tab. Pressão de ar incorreta nos punções de perfuração da guia superior. NOTA: A quantidade de ar fornecida para perfurar os punções na matriz da aba deve ser suficiente. O ar é apenas para liberar o slug do tab stock, não para soprar o slug para baixo através da área de scrap da matriz. Muito ar vai soprar a guia lubrificação de estoque previamente aplicado com almofadas de feltro. 
+Tab die;Tab Strip Jams;Almofadas de feltro do lubrificador com abas gastas. Se as almofadas de feltro estiverem gastas a ponto de não aplicarem uma camada uniforme de lubrificante o estoque, vire as almofadas se não forem usadas ou substitua por novas. NOTA: As almofadas de feltro inferiores devem ser aproximadamente 1/16 "mais altas do que a tab stock trim die.
+Tab die;Tab Strip Jams;Os Tab die lower stock lifters estão emperrando e não funcionando corretamente. Verifique se há molas do levantador do stock quebradas. 
+Tab die;Tab Strip Jams;Tab stock trim die opaca ou cortada. Afie ou substitua.
+Tab Uncoiler;Tab Strip Jams;Muita tensão (sem loop) no tab stock uncoiler. O tab stock uncoiler deve ser ajustado para reduzir o trabalho na unidade de alimentação do rolo.
+Tab die;Tab Strip Jams;As strippers no tab die (superior ou inferior) não estão funcionando corretamente.
+Tab die;Tab Strip Jams;Os trilhos de guia na área de alimentação do rolo não estão alinhados com o feed roll. Verifique o alinhamento na stock trim die e na área do tab die.
+Tab die;Tab Strip Jams;Caixa de engrenagens do roll feed está gasta. Sem pré-carga dos rolos CAME para os seguidores CAME. Tab stock não está sendo indexado o mesmo a cada golpe. Substitua ou reconstrua a caixa de engrenagens e realinhe.
+Tab die;Tab Strip Jams;Feed roller - gasto ou diâmetro incorreto.
+Tab die;Tab Strip Jams;Feed roll liso, desgastado. A superfície do rolo de alimentação deve ser de cromo duro e áspero para que tab stock não escorregue durante a indexação.
+Tab die;Tab Strip Jams;Feed Roll - tempo e ajustes. Consulte a seção do manual para: - Pressão e tensão da mola. - Tempo e ajuste do came. -Timing com pinos lane die pilots. 
+Lane Die;Tab Strip Jams;Os detectores de tampa dupla não estão configurados corretamente ou estão ausentes. Veja os desenhos elétricos. 
+Tab die;Tab Strip Jams;Os tabs não estão sendo cortados e fixados nas tampas corretamente (ou seja, tabs soltos). Desenvolvimento de rebites fora das especificações. Perda de vácuo para estocar socos. 
+Tab die;Tab Strip Jams;Tab stock fora das especificações (consulte o desenho da tab strip). Muito largo para a área da matriz. Muito estreito e escorregando dos elevadores de estoque.
+Tab die / Lane die;Tab Strip Jams;Pinos piloto da pista / guia dobrados. Verifique a concentricidade total - máximo 0,001 ". Verifique o acabamento - # 4 (ou seja, sem marcas de ferramenta). Verifique o diâmetro e o desgaste.
+Tab die;Tab Strip Jams;O corpo do punção da estaca não consegue passar pela tab strip. Verifique o acabamento.
+Tab die;Tab Strip Jams;Tab stock coil distorcidas ou danificadas. Verifique antes de instalar. Nota: Consulte o desenho da peça ou papéis Cordax. 
+Tab die;Tab Strip Jams;Excesso de rebarbas do picador de sucata puxando o estoque. Afie.
+Tab die;Tab Strip Jams;Sucata no tab die, devido ao possível deslocamento da rosca. Certifique-se de que a divisória seja empurrada contra o primeiro localizador de parada.
+Tab die;Rebarba da guia - Cutt off área;Verifique o raio nas bordas cortadas inferiores na ponte. Muito grande.
+Tab die;Rebarba da guia - Cutt off área;Bordas cortadas superiores no corpo do punção da estaca opacas ou lascadas.
+Tab die;Rebarba da guia - Cutt off área;Carregando punções de tiras o tab die cega ou lascada.
+Tab die;Rebarba da guia - Cutt off área;Folga inadequada entre a área de corte da estaca superior e inferior. Demais ou não o suficiente.
+Tab die;Rebarba da guia - Cutt off área;Possivelmente o dado não está ajustado corretamente. Consulte a instalação do molde da pista.
+Tab die;Rebarba da guia - Cutt off área;Limpe as orelhas / nariz (corte do tab). Ferramentas de matriz incorretas ou gastas não definidas.
+Tab die;Rebarba no rivet hole;O tab die rivet hole, os punções perfuram cegos ou cortados.
+Tab die;Rebarba no rivet hole;Verifique o bloco de montagem do punção quanto a desgaste, resultando em punção ou die button soltos.
+Tab die;Rebarba no rivet hole;Punção superior ou lower die button lascados ou quebrados.
+Tab die;Tabs mal colocados ou perdidos;Tabs malformados. Verifique a lubrificação do tab quanto à quantidade e aplicação adequadas.
+Tab die;Tabs mal colocados ou perdidos;Possivelmente não há folga suficiente no corpo da estaca (área de vácuo) para o tab centrar -se depois de cortado. NOTA: Quando o tab é cortado da tira de transporte e mantida por vácuo, ela deve permitir mover-se ligeiramente quando estiver alinhado com o desenvolvimento do rebite na parte inferior do stroke. 
+Tab die;Tabs mal colocados ou perdidos;Anel de centralização da estação de estaca inferior muito grande em diâmetro ou raio incorreto. NOTA: Quando o tab está centrado no desenvolvimento do rebite, a parte inferior anel de centragem não deve restringir o final do movimento neste momento.
+Tab die;Tabs mal colocados ou perdidos;Vácuo insuficiente na stake - área de corte.
+Tab die;Tabs mal colocados ou perdidos;Corte excessivo de rebarba no tab.
+Tab die;Tabs mal colocados ou perdidos;Os pinos de estabilização (upper stake station) não funcionam corretamente. Molas quebradas nos pinos estabilizadores. Pinos estabilizadores tortos. Pinos estabilizadores gastos. 
+Tab die;Tabs mal colocados ou perdidos;O upper finger hole (piloto com mola) não está funcionando corretamente. Mola quebrada ou gasta. A tab strip não está alinhada com o piloto de finger hole.
+Tab die;Tabs mal colocados ou perdidos;Scrap no punção e bucha da estaca superior (área de profundidade da cavidade).
+Tab die;Tabs mal colocados ou perdidos;Excesso de marcas da barra Ryder.
+Tab die;Tabs mal colocados ou perdidos;Bordas de corte de carboneto opacas ou lascadas no corpo do punção da estaca superior ou na parte inferior ponte.
+Tab die;Tabs mal colocados ou perdidos;Transfer belt não metálica desalinhada com as ferramentas superior e inferior (frente para costas). 
+Tab die;Tabs mal colocados ou perdidos;O roll feed timing não está definido corretamente.
+Tab die;Tabs perdidos;Verifique a tira de transporte do tab quanto ao desalinhamento do tab.
+Tab die;Tabs perdidos;A Stake station finger hole pilot está preso.
+Tab die;Tab mal formados;Lubrificação inadequada do tab ou falta de lubrificação do tab.
+Tab die;Tab mal formados;Ferramentas do tab die desgastadas: Operação de pré-curl, Limpeza de 90 ° e Curling do tab. 
+Lane Die;Falhas de abertura ou alto valor do POP;Pontuação residual fora das especificações. NOTA: Lado alto da tolerância ou fora de paralelo. 
+Lane Die;Falhas de abertura ou alto valor do POP;Ferramenta do score gasta ou sem brilho.
+Lane Die;Falhas de abertura ou alto valor do POP;Má conformação. Coin muito duro na forma de um segundo ou terceiro rebite. Bolha da primeira operação muito alta. Moeda (painel) fora das especificações. Painel embutido fora das especificações. 
+Lane Die;Falhas de abertura ou alto valor do POP;Ferramenta Upper rivet form desgastada - evitando que o tab fique bem apertado contra a tampa.
+Lane Die;Falhas de abertura ou alto valor do POP;Painel recesso não definido de acordo com as especificações.
+Lane Die;Falhas de abertura ou alto valor do POP;Ferramentas de painel embutidas gastas.
+Lane Die;Falhas de abertura ou alto valor do POP;Pino inferior da operação de estaca não ajustado para a especificação.
+Lane Die;Falhas de abertura ou alto valor do POP;Etapa do score fora das especificações.
+Lane Die;Falhas de abertura ou alto valor do POP;Lower score anvil usada.
+Tab die;Falhas de abertura ou alto valor do POP;Tab não conforme com as especificações.
+Tab die;Falhas de abertura ou alto valor do POP;Tab rivet hole com rebarba - não deixando o tab assentar contra a tampa.
+Lane Die;Falhas de abertura ou alto valor do POP;Painel central e painel da escotilha não estão ajustados de acordo com as especificações.
+Lane Die;Falhas de abertura ou alto valor do POP;Segundo e terceiro produto da estação fora das especificações.
+Lane Die;Score Blow Outs;Verifique o countersink da shell versus a parte inferior da ferramenta, raio externo, no lane die. A shell não deve se ajustar firmemente a ferramenta para reformar a shell. 
+Lane Die;Score Blow Outs;Painel central e painel da escotilha não estão definidos de acordo com as especificações. Se os painéis estiverem muito apertados, é possível puxar a pontuação, fraturar e ainda não vazar sob pressão normal. 
+Lane Die;Score Blow Outs;Verifique a folga entre as ferramentas do painel rebaixado superior e inferior.
+Lane Die;Score Blow Outs;Verifique o raio nas ferramentas de modelagem superior e inferior no painel rebaixado. Certifique-se de que o raio seja consistente em toda a área. 
+Lane Die;Score Blow Outs;Verifique a faca do score quanto à consistência desde a pontuação principal até a anti-fratura score. Verifique o desenho da Stolle para a revisão mais recente. 
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Faca do score não paralelo ao desenho.
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Ferramenta de montagem superior ou inferior não paralela.
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Blocos de parada desgastados não estão no local correto para que o conjunto de matrizes permaneça paralelo. NOTA: Veja os números correspondentes no conjunto de dados vs. bloco de parada.
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Sujeira ou refugo sob o score.
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Bigorna de pontuação inferior usada. NOTA: Verifique o passo e o paralelismo. 
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Pontuação superior gasta (faca).
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Pré-carga não definida de acordo com a velocidade da impressora. Consulte "Configuração de pré-carregamento". 
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);A folga da ferramenta  não está definida corretamente sobre a espessura da ferramenta.
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);O espaçador de remoção da marca superior não cabe na ferramenta plana. Certifique-se de que o espaçador tenha um ângulo de 45 ° em ambos os lados. 
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Acúmulo de sujeira ou cera na tampa de pontuação inferior. Limpeza necessária. 
+Tab die;Variação do Score fora da especificação (etapa e paralelismo);Tab die não configurada corretamente com a lane die.
+Lane Die;Variação do Score fora da especificação (etapa e paralelismo);Acúmulo de sujeira, cera ou pó de alumínio entre as pontuações principais e anti-fratura. Limpe com cotonete ou pincel pequeno. 
+Tab die;Variação do Score fora da especificação (etapa e paralelismo);Tab die over shimmed.
+Lane Die;Vazamento do Score;Upper score punch entalhado, quebrado e / ou áspero. Substituir.
+Lane Die;Vazamento do Score;Verifique a mistura da bigorna inferior da área alta para a área baixa, se for escalonada. Apareça e dê polimento ou substitua.
+Lane Die;Vazamento do Score;Resíduo de baixa pontuação sob a especificação. Defina as dimensões do produto. 
+Lane Die;Vazamento do Score;Inserção do rebite superior da segunda estação não ajustada corretamente. Consulte as dimensões do produto. 
+Lane Die;Vazamento do Score;A profundidade do painel não está ajustada corretamente. Consulte as dimensões do produto.
+Lane Die;Vazamento do Score;Ferramentas de reforma não ajustadas corretamente - como moeda e cúpula extensível. Consulte o desenho de montagem ou os relatórios Cordax.
+Tab die;Vazamento do Score;O tab não se ajusta à área limpa da orelha, causando levantamento do tab e fratura. Verifique os furos Do tab e do limpador de orelha quanto ao desgaste. Verifique os papéis Cordax para ajustes. 
+Tab die;Vazamento do Score;Tampas viradas na transfer belt de estação para estação.
+Tab die;Vazamento do Score;Definido incorretamente a stock feed.
+Tab die;Tampas acabadas não empilhadas corretamente [tampas porosas];Espessura do tab muito alta. Consulte a guia Especificações do produto. 
+Tab die;Tampas acabadas não empilhadas corretamente [tampas porosas];Ponta do tab muito alta ou muito fina. Consulte a guia Especificações do produto. 
+Tab die;Tampas acabadas não empilhadas corretamente [tampas porosas];Os tabs não estão sendo formados corretamente no tab die.
+Lane Die;Tampas acabadas não empilhadas corretamente [tampas porosas];Painel central e o painel da escotilha não estão ajustados corretamente. Consulte a dimensão do produto. 
+Lane Die;Tampas acabadas não empilhadas corretamente [tampas porosas];As ferramentas do painel recuado não estão definidas corretamente. Verifique o raio gasto nas ferramentas. Consulte as especificações do produto.
+Tab die;Tampas acabadas não empilhadas corretamente [tampas porosas];Os tabs não estão sendo fixados corretamente. Verifique a mola na estação de estaca, também dimensione da bucha ao corpo do punção (cut edge). Consulte o desenho Cordax.
+Tab die;Tampas acabadas não empilhadas corretamente [tampas porosas];Verifique o raio superior na inserção do rebite da terceira estação quanto a desgaste (verifique com a impressão).
+Alimentação de tampas;Tampas dobradas;Trilhos do elevador da correia emperrados devido a desgaste ou muita tensão. Verifique a tensão da mola de acordo com a especificação. Molas corretas. 
+Alimentação de tampas;Tampas dobradas;Desalinhamento da correia. Realinhe a correia.
+Lane Die;Tampas dobradas;Colar do anel removedor de piquetagem inferior. Limpar e polir.
+Alimentação de tampas;Tampas dobradas;Shells dobradas. Substitua as shells.
+Alimentação de tampas;Alimentação incorreta de tampas;Tampas separadores fora do tempo uns com os outros ou fora do tempo com interrupção da correia. Separadores de reajuste com correia. Consulte o tempo de downstacker.
+Alimentação de tampas;Alimentação incorreta de tampas;Desalinhamento da correia. Realinhe a correia.
+Alimentação de tampas;Alimentação incorreta de tampas;Os separadores não estão espaçados adequadamente para o curl das tampas. Re-espaçar separadores.
+Alimentação de tampas;Alimentação incorreta de tampas;Excesso de compound nas tampas. Limpe ou substitua as tampas conforme necessário.
+Alimentação de tampas;Alimentação incorreta de tampas;Tampas duplas. Verifique o downstacker. Verifique se há facas separadoras quebradas com compound em excesso.
+Alimentação de tampas;Alimentação incorreta de tampas;Orifícios danificados na correia. Substitua a correia.
+Alimentação de tampas;Tampas viradas - Score rotativo;Correia desalinhada com o ferramental. Realinhe a correia sem a tampa na correia. 
+Lane Die;Tampas viradas - Score rotativo;Anéis de localização superiores emperrados. Polir ID do anel e OD da ferramenta.
+Lane Die;Tampas viradas - Score rotativo;Molas quebradas nos trilhos do elevador da correia. Substituir.
+Alimentação de tampas;Tampas viradas - Score rotativo;Fixação da correia do trilho do elevador. Verifique se há molas fracas ou sujeira.
+Lane Die;Tampas viradas - Score rotativo;Anéis de localização superiores fora de tempo com empurradores da grade da comporta de elevação. O anel de localização superior deve estar na tampa em aproximadamente 0,015 antes dos empurradores da correia começarem a se mover. 
+Lane Die;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;Os anéis localizadores superiores não devem tocar a tampa durante qualquer indexação (movimento) da correia. Consulte o tempo de intermitência. 
+Alimentação de tampas;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;Desgaste excessivo nos trilhos do elevador da correia. Substituir.
+Vácuo;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;Vácuo insuficiente para os lane die. Verifique: - Filtros de vórtice para sujeira. - Selos a vácuo em cada extremidade do molde. - Rotação de sopradores Vortex. 
+Lane Die;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;Trilhos de fixação ou stripper plate danificados. Passe a pedra e dê polimento em qualquer área que toque as tampas. 
+Lane Die;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;Os pinos do estabilizador (superior) na estação de estaca não estão funcionando corretamente. Verifique se há desgaste ou molas quebradas.
+Lane Die;Transmissão principal (intermitente) não sincronizada com ferramentas do lane die.;Folga inadequada entre a correia e os trilhos do stripper. Determine as causas do excesso de folga e faça as correções.
+Lane Die;Metal exposto - área de rebite;Riscos de rebite NOTA: Situação especial Verifique o alinhamento da transfer belt não metálica. Verifique o raio no pino da estaca inferior, possivelmente muito afiado. Verifique o diâmetro do anel de centragem inferior na estação de estaca (sob a ponte). A tampa da estação anterior deve ser capaz de se mover no anel de centralização 0,007 "- 0,010 ". O acabamento em todas as ferramentas de rebite inferior deve ser um nº 4 (sem acabamento de marca de ferramenta). Os pinos estabilizadores superiores na estação de estaca devem trabalhar livremente. 
+Lane Die;Metal exposto - área de rebite;Rebarbe no orifício do rebite do tab.
+Lane Die;Metal exposto - área de rebite;Verifique o tab no corpo do punção da estaca superior, certificando-se de que a guia pode se mover sobre o centro em todas as direções durante o corte e piquetagem.
+Lane Die;Metal exposto - área do Score;Bigorna do score inferior não polido e degrau não combinado.
+Lane Die;Metal exposto - área do Score;Desgaste excessivo na bigorna inferior.
+Lane Die;Metal exposto - área do Score;A pontuação superior do punção (faca) é muito larga devido ao desgaste.
+Lane Die;Metal exposto - área do Score;Punção do Score superior (faca) com ângulo incorreto. O ângulo deve ser 50 ° incluído.
+Lane Die;Metal exposto - área do Score;Score residual abaixo da especificação.
+Lane Die;Metal exposto - área do Score;A profundidade do painel recuado não atende às especificações. Verifique a profundidade do rebite. Veja o desenho do produto.
+Lane Die;Metal exposto - área do Score;Verifique o raio de formação na ferramenta do painel de recesso para as dimensões adequadas.
+Lane Die;Metal exposto - área do Score;Verifique o painel central e painel da escotilha quanto à especificação correta. Se o painel estiver muito apertado, ele pode puxar vincos e causar fraturas no revestimento da linha do score.
+Lane Die;Diversos - Moeda do raio do painel fora da especificação;Verifique a consistência do painel fora da Prensa Shell.
+Lane Die;Diversos - Moeda do raio do painel fora da especificação;O raio na ferramenta inferior está gasto.
+Lane Die;Diversos - Moeda do raio do painel fora da especificação;O raio na ferramenta inferior não é consistente em toda a área da ferramenta.
+Lane Die;Diversos - Moeda do raio do painel fora da especificação;A moeda do painel superior está gasta.
+Lane Die;Diversos - Moeda do raio do painel fora da especificação;Pinos guia cêntricos / excêntricos também são usados muitas vezes para esta condição de não paralelismo. 
+Lane Die;Sucata na área do die - modo contínuo ( Área do Lane Die);Excesso de marcas da barra Ryder na área da ponte.
+Lane Die;Sucata na área do die - modo contínuo ( Área do Lane Die);Carregando punções de tiras e die button cortados ou cegos. Afie ou substitua.
+Lane Die;Sucata na área do die - modo contínuo ( Área do Lane Die);Folga inadequada entre os cut edge superior e inferior na guia "tab cut off área". 
+Lane Die;Sucata na área do die - modo contínuo ( Área do Lane Die);Sem lubrificação do tab ou fluxo impróprio de lubrificação do tab.
+Lane Die;Sucata na área do die - modo contínuo ( Área do Lane Die);Excesso de rebarbas no tab (no cut off da ponte).
+Tab die;Sucata na área do die - modo contínuo ( Área do Lane Die);Tab malformado.
+Tab die;Sucata na área do die - modo contínuo ( Área do Lane Die);Slugs do tab die surgindo no tab die.
+Alimentação de tampas;Sucata na área do die - modo contínuo ( Área do Lane Die);As lâminas de separação do downstacker não estão ajustadas corretamente com o curl da tampa, fazendo lascas e levando até o lane die.
+Tab die;Sucata na área do die - modo contínuo ( Área do Lane Die);Excesso de rebarbas na orelha ou área de limpeza do nariz depois que o tab foi cortado. Ajuste o ferramental superior. 
+Tab die;Sucata na área do die - modo contínuo  (Área do tab die);Rebarba na tab.
+Tab die;Sucata na área do die - modo contínuo  (Área do tab die);Lança pré-curvada e combinação de pré-curvatura muito rígidas, criando uma rebarba no tab. Verifique a área de pré-curvatura da guia quanto à largura de 0,004"- 0,005". 
+Tab die;Sucata na área do die - modo contínuo  (Área do tab die);Punção de perfuração do tab die e puxando as lesmas ou pressão de ar sobre socos puxando slugs.
+Tab die;Sucata na área do die - modo contínuo  (Área do tab die);Tab mal formado.
+Tab die;Sucata na área do die - modo contínuo  (Área do tab die);Acabamento áspero nas ferramentas de conformação.
+Tab die;Sucata na área do die - modo contínuo  (Área do tab die);As guias de divisória não foram colocadas corretamente antes de a divisória entrar no roll feed.
