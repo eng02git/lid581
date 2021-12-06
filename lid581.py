@@ -67,24 +67,24 @@ selecao_tipo = st.sidebar.selectbox('Selecione o tipo do formulario', tipos)
 tz = pytz.timezone('America/Bahia')
 
 formularios_cil = [
-	'Liner diário',
+	'Liner turno',
 	'Liner semanal',
-	'Shell diário',
+	'Shell turno',
 	'Shell semanal',
-	'Autobagger diário',
+	'Autobagger turno',
 	'Autobagger semanal',
 	'Autobagger mensal',
-	'Conversion diário',
+	'Conversion turno',
 	'Conversion semanal',
 	'Conversion mensal',
-	'Balancer diário',
+	'Balancer turno',
 	'Balancer semanal',
 	'Estatisticas',			# Gráficos com filtros
 	'Visualizar formulários',	# Filtros para visualizar os questionários desejeados
 	'Suporte Engenharia'
 ]
-formularios_cil_2 = ['Liner diário','Liner semanal','Shell diário','Shell semanal','Autobagger diário','Autobagger semanal','Autobagger mensal',
-		     'Conversion diário','Conversion semanal','Conversion mensal','Balancer diário','Balancer semanal']
+formularios_cil_2 = ['Liner turno','Liner semanal','Shell turno','Shell semanal','Autobagger turno','Autobagger semanal','Autobagger mensal',
+		     'Conversion turno','Conversion semanal','Conversion mensal','Balancer turno','Balancer semanal']
 
 formularios_trouble = [
 	'Liner',
@@ -1035,7 +1035,7 @@ def Autobagger_diario():
 		T00.info('Recolhimento de tampas (Autobagger Área do piso no entorno do equipamento, é área do piso interior do equipamento.): 1- Limpeza utilizando uma vassoura, pá e soprador de ar. Com as mãos, retire as tampas que ficaram presas dentro dos trays do Auto Bagger. Utilize o soprador para retirar as tampas do chão em parte de difícil acesso e logo após deve-se varrer e recolher as tampas utilizando a pá, e colocar no balde de scrap.')
 		T01.info('Proteções e parte externa das máquinas (Área do pallettizer / autobagger): 1- Limpeza com pano umedecido em álcool isopropílico, nas proteções externas da máquina. Inspecionar toda a área se existe alguma anomalia.')
 		T02.info('Limpeza dos filtros (entrada e saída) - Autobagger e Palettizer Unidade de conservação (verificar a numeração em campo): 1- Limpeza de ambos os filtros (filtro de partículas e filtro coalescente) utilizando fluxo de ar e drenagem. Deve-se observar se os mesmos estão saturados, se caso estiver, devem ser trocados..')
-		T03.info('Temperatura do aquecedor (Autobagger Sistema de fechamento do Bag): 1- Realizar o check diário da correta especificação de temperatura.')
+		T03.info('Temperatura do aquecedor (Autobagger Sistema de fechamento do Bag): 1- Realizar o check turno da correta especificação de temperatura.')
 		T04.info('Limpeza de todas as portas e teto da área do Autobagger. (Autobagger): 1- Limpar com pano  umedecido e álcool isopropílico.')
 		T05.info('Limpeza de todas as portas e teto da área do Autobagger: 1- Limpar com pano  umedecido e álcool isopropílico.')
 			
@@ -2356,8 +2356,8 @@ if __name__ == '__main__':
 	#			Chamadada das páginas do cil
 	##################################################################################################
 	
-	if func_escolhida == 'Liner diário':
-		st.subheader('Liner diário')
+	if func_escolhida == 'Liner turno':
+		st.subheader('Liner turno')
 		
 		proc_LD = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_LD:
@@ -2372,8 +2372,8 @@ if __name__ == '__main__':
 			Liner_semanal_proc()
 		Liner_semanal()
 		
-	if func_escolhida == 'Shell diário':
-		st.subheader('Shell diário')
+	if func_escolhida == 'Shell turno':
+		st.subheader('Shell turno')
 		proc_SD = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_SD:
 			Shell_diario_proc()
@@ -2386,8 +2386,8 @@ if __name__ == '__main__':
 			Shell_semanal_proc()
 		Shell_semanal()
 		
-	if func_escolhida == 'Autobagger diário':
-		st.subheader('Autobagger diário')
+	if func_escolhida == 'Autobagger turno':
+		st.subheader('Autobagger turno')
 		proc_LS = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_LS:
 			Autobagger_diario_proc()
@@ -2407,8 +2407,8 @@ if __name__ == '__main__':
 			Autobagger_mensal_proc()
 		Autobagger_mensal()
 		
-	if func_escolhida == 'Conversion diário':
-		st.subheader('Conversion diário')
+	if func_escolhida == 'Conversion turno':
+		st.subheader('Conversion turno')
 		proc_CD = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_CD:
 			conversion_diario_proc()
@@ -2428,8 +2428,8 @@ if __name__ == '__main__':
 			conversion_mensal_proc()
 		conversion_mensal()
 		
-	if func_escolhida == 'Balancer diário':
-		st.subheader('Balancer diário')
+	if func_escolhida == 'Balancer turno':
+		st.subheader('Balancer turno')
 		proc_BD = st.checkbox('Deseja visualizar os procedimentos?')	
 		if proc_BD:
 			balancer_diario_proc()
@@ -2489,7 +2489,7 @@ if __name__ == '__main__':
 	if func_escolhida ==  'Visualizar formulários':
 		form_selecionado = st.selectbox('Selecione o tipo de formulário que deseja visualizar', formularios_cil_2)
 		
-		if form_selecionado == 'Liner diário':
+		if form_selecionado == 'Liner turno':
 			df_cil = load_forms_cil('Liner_diario')
 			
 			# Lista e ordena as colunas do dataframe
@@ -2546,7 +2546,7 @@ if __name__ == '__main__':
 				st.info('Q21) Limpeza da Conveyor #5 LN-BB e Pushers 1,2,3 no mesanino: 1-Limpar com pano umedecido em álcool isopropílico.')
 				st.info('Q22) Limpeza do filtro AIRCON painel elétrico, na alimentação de entrada: 1- Utilizar água e pistola de ar.')
 
-		if form_selecionado == 'Shell diário':
+		if form_selecionado == 'Shell turno':
 			df_cil = load_forms_cil('shell_diario')
 			
 			# Lista e ordena as colunas do dataframe
@@ -2610,7 +2610,7 @@ if __name__ == '__main__':
 				st.info('Q19) Limpeza parte externa da máquina: Limpar parte externa do equipamento utilizando pano umedecido com álcool isopropílico.')
 				st.info('Q20) Unidade de conservação de Ar: Drenar a água do filtro da linha pneumática.')
 			
-		if form_selecionado == 'Autobagger diário':
+		if form_selecionado == 'Autobagger turno':
 			df_cil = load_forms_cil('autobagger_diario')
 			
 			# Lista e ordena as colunas do dataframe
@@ -2624,7 +2624,7 @@ if __name__ == '__main__':
 				st.info('Q00) Recolhimento de tampas (Autobagger Área do piso no entorno do equipamento, é área do piso interior do equipamento.): 1- Limpeza utilizando uma vassoura, pá e soprador de ar. Com as mãos, retire as tampas que ficaram presas dentro dos trays do Auto Bagger. Utilize o soprador para retirar as tampas do chão em parte de difícil acesso e logo após deve-se varrer e recolher as tampas utilizando a pá, e colocar no balde de scrap.')
 				st.info('Q01) Proteções e parte externa das máquinas (Área do pallettizer / autobagger): 1- Limpeza com pano umedecido em álcool isopropílico, nas proteções externas da máquina. Inspecionar toda a área se existe alguma anomalia.')
 				st.info('Q02) Limpeza dos filtros (entrada e saída) - Autobagger e Palettizer Unidade de conservação (verificar a numeração em campo): 1- Limpeza de ambos os filtros (filtro de partículas e filtro coalescente) utilizando fluxo de ar e drenagem. Deve-se observar se os mesmos estão saturados, se caso estiver, devem ser trocados..')
-				st.info('Q03) Temperatura do aquecedor (Autobagger Sistema de fechamento do Bag): 1- Realizar o check diário da correta especificação de temperatura.')
+				st.info('Q03) Temperatura do aquecedor (Autobagger Sistema de fechamento do Bag): 1- Realizar o check turno da correta especificação de temperatura.')
 				st.info('Q04) Limpeza de todas as portas e teto da área do Autobagger. (Autobagger): 1- Limpar com pano  umedecido e álcool isopropílico.')
 				st.info('Q05) Limpeza de todas as portas e teto da área do Autobagger: 1- Limpar com pano  umedecido e álcool isopropílico.')
 		
@@ -2667,7 +2667,7 @@ if __name__ == '__main__':
 				st.info('Q07) Corrente transporte (Pallet conveyor) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
 				st.info('Q08) Corrente motora ( Pallet conveyor) - Sistema de paletização do pallet: Realizar limpeza / inspeção / lubrificação do conjunto de transmissão da corrente, tirando o excesso de lubrificante e sujidades com o equipamento parado devidamente com o bloqueio loto.')
 			
-		if form_selecionado == 'Conversion diário':
+		if form_selecionado == 'Conversion turno':
 			df_cil = load_forms_cil('conversion_diario')
 			
 			# Lista e ordena as colunas do dataframe
@@ -2754,7 +2754,7 @@ if __name__ == '__main__':
 				st.info('Q12) Sistema de vácuo: Inspecionar quanto a integridade e executar a limpeza do mesmo.')
 				st.info('Q13) Correia de transporte do conveyor: Inspecionar quanto a integridade e executar a limpeza do mesmo.')
 			
-		if form_selecionado == 'Balancer diário':
+		if form_selecionado == 'Balancer turno':
 			df_cil = load_forms_cil('balancer_diario')
 			
 			# Lista e ordena as colunas do dataframe
@@ -3105,7 +3105,7 @@ if __name__ == '__main__':
 		col_d, col_s, col_m = st.beta_columns([4,4,2])
 		
 		with col_d:
-			st.subheader('Percentual de CIL diário:')
+			st.subheader('Percentual de CIL turno:')
 			# Monta planilha para exibir dados
 			gridOptions, grid_height, return_mode_value, update_mode_value, fit_columns_on_grid_load, enable_enterprise_modules = config_grid(cil_diario, True)
 			response = AgGrid(
